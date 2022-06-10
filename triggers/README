@@ -1,0 +1,34 @@
+1.
+Make sure to keep
+/u/iliana.genkova/INSTALL/obsproc/jobs
+/u/iliana.genkova/INSTALL/obsproc/scripts
+and
+
+/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/obsproc/jobs
+/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/obsproc/scripts
+IDENTICAL!!!
+
+2. After development in /u/iliana.genkova/INSTALL/obsproc
+copy over to /GIT/obsproc, and commit/push to GitHub
+feature/obsproc_global_wcoss2_IG
+
+3.Manual test command:
+jtyp=gfs cyc=12 PDY=20210824 desc=wc2 bash -l /u/iliana.genkova/bin/cycqsub jglobal_dump.wc2.lsf > /dev/null 2>&1
+or
+
+jtyp=gfs cyc=12 PDY=20210824 desc=wc2 bash -l /u/iliana.genkova/bin/cycqsub jglobal_dump.wc2.lsf 
+jtyp=gfs cyc=12 PDY=20210824 desc=wc2 bash -l /u/iliana.genkova/bin/cycqsub jglobal_dump_post.wc2.lsf
+jtyp=gfs cyc=12 PDY=20210824 desc=wc2 bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep.wc2.lsf
+jtyp=gfs cyc=12 PDY=20210824 desc=wc2 bash -l /u/iliana.genkova/bin/cycqsub jglobal_prep_post.wc2.lsf
+
+Watch run:
+qq
+
+ptmp
+ll global_wcoss2/com/obsproc/1.0.0/gfs.20210824/12/atmos/
+
+UPDATE clone (a.k.a working copy) and PUSH to GitHub
+====================================================
+rsync -avhWr --no-compress --progress /u/iliana.genkova/INSTALL/jobs/   /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/obsproc/jobs
+rsync -avhWr --no-compress --progress /u/iliana.genkova/INSTALL/scripts/   /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/obsproc/scripts
+rsync -avhWr --no-compress --progress /u/iliana.genkova/INSTALL/ush/   /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/obsproc/ush

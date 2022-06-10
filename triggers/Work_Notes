@@ -1,0 +1,42 @@
+Nick's expansive run.ver
+===
+/lfs/h2/emc/obsproc/noscrub/Nicholas.Esposito/EMC_obsproc/1.0.0/EMC_obsproc_jrap/versions/run.ver
+
+For PREP
+===
+export GETGES_COM=/lfs/h1/ops/canned/com/gfs/v16.2/
+export GESROOT=/lfs/h1/ops/canned/com/gfs/v16.2/
+
+Nicholas Esposito - NOAA Affiliate1:55 PM
+/lfs/h2/emc/obsproc/noscrub/Nicholas.Esposito/obsproc-cmake/1.0.0/jnam/prepobs_makeprepbufr.sh
+lfs/h2/emc/obsproc/noscrub/Nicholas.Esposito/obsproc-cmake/1.0.0/jnam/ush/prepobs_makeprepbufr.sh
+
+export NEMSIO_IN=.false.        # GFSv16 para
+export NETCDF_IN=.true.         # GFSv16 para
+
+WCOSS2 notes
+===
+WCOSS2 documents:
+https://drive.google.com/drive/folders/1NnWK-uBOTDaT4ZpkSYdv2-xJVN2SCWw2
+See:
+WCOSS2getingStarted.pdf
+(pp48)
+
+/apps/ops/test/nco/intel/19.1.3.304/bufr_dump.v2.0.0
+/apps/ops/prod/nco/core/prod_util.v2.0.8
+
+
+/noscrub/iliana.genkova/GIT 	using my feature/obsproc_global_wcoss2_IG
+/noscrub/iliana.genkova/GITpre	using the prerelease branch feature/obsproc_prerelease 
+
+/u/iliana.genkova/ISTALL/	all ObsProc code, /obsproc is from building feature/obsproc_global_wcoss2_IG
+/u/iliana.genkova/ISTALLpre/	only /obsproc and /bufr-dump (these two go hand-in-hand), /obsproc is from building feature/obsproc-prerelease
+
+NOTE:
+===== 
+1.Shelley will rename the feature/obsproc-prerelease to release/obsproc.v1.0.0 or something like that Dec.19,2021
+2.Release Notes (RN) for obsproc: https://docs.google.com/document/d/1U4pu4iSlLOnbNrcBqBlOU7bnNcTFfe_MpjV8uKN4S40/edit
+3.Example output and logs from running the global component of /obsproc:
+	 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ptmp_copy2keep/ 
+
+
