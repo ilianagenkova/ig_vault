@@ -40,7 +40,7 @@ export obsNET=obsproc
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # SM local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.T2B             # IG local  
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.METOPBC            # IG local  
 
 VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
 #VERSION_FILE=${userROOT}/install/obsproc-rel.v1.0.0/versions/run.ver # SM local
@@ -74,7 +74,7 @@ module load cfp/${cfp_ver}
 
 
 module unload bufr_dump
-module use ${userROOT}/GIT/play/bufr-dump.T2B/install/modulefiles
+module use ${userROOT}/GIT/play/bufr-dump.METOPBC/install/modulefiles
 module load bufr_dump/${bufr_dump_ver}
 echo LOADED ILIANA bufr-dump
 echo $BUFR_DUMPLIST
@@ -98,7 +98,9 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
+export TANK_005081=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/ #METOPBC AMVs tanks
 
+#export EPRM=${userROOT}/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
@@ -124,8 +126,7 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-exit # TEST the dump-generation, then update bufr-dump in a new jglobal_dump_post.wc2.pbs.T2B
-
+exit # TEST the dump-generation, then update bufr-dump in a new jglobal_dump_post.wc2.pbs.ATMS_VIIRS
 # Kick off dump_post job
 if [ $err -eq 0 ]; then
   echo "submit jglobal_dump_post"
