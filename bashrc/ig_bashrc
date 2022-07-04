@@ -1,7 +1,7 @@
 # .bashrc
 
 if [ "$PS1" ]; then
-        echo "Here in .bashrc"
+	echo "Here in .bashrc"
         echo "Based on Shelley Melchior and Steve Stegall"
   PS1="[\H \w]\$ "
 fi
@@ -28,9 +28,12 @@ alias llt='ls -lrt --color=auto'
 #alias clean='rm *~'
 
 alias mygit='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
+alias gits='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias trigs='cd /lfs/h2/emc/obsproc/noscrub/$USER/Trigs.KEEP'
 alias gba='git --no-pager branch -a'
 
+alias sihist='cd /lfs/h1/ops/prod/dcom/ingest_hist'
+alias oplogs='cd /lfs/h1/ops/prod/output'
 alias inst='cd /u/$USER/INSTALL'
 alias noscrub='cd /lfs/h2/emc/obsproc/noscrub/$USER'
 alias ns='cd /lfs/h2/emc/obsproc/noscrub/$USER'
@@ -38,6 +41,8 @@ alias nsda='cd /lfs/h2/emc/da/noscrub/$USER'
 alias ptmp='cd /lfs/h2/emc/ptmp/$USER'
 alias stmp='cd /lfs/h2/emc/stmp/$USER'
 
+alias sinv='/u/shelley.melchior/bin/sinv'
+alias binv='/u/shelley.melchior/bin/binv'
 alias qqq='qstat -tu $USER -w'
 alias qq='qstat -u $USER'
 alias qqa='qstat'
@@ -47,7 +52,7 @@ alias emacs='emacs -nw --color=never'
 # aliases
 alias cancom='cd /lfs/h1/ops/canned/com'
 alias candcom='cd /lfs/h1/ops/canned/dcom'
-alias to='vi /u/$USER/to'
+alias to='vi /u/$USER/to' 
 alias hh='history'
 #alias cdgitwkspc='cd /lfs/h2/emc/obsproc/noscrub/Steve.Stegall/gitwkspc'
 #alias cdgitstatic='cd /lfs/h2/emc/obsproc/noscrub/Steve.Stegall/gitstatic'
@@ -56,7 +61,6 @@ alias cdpbs_ex='cd /apps/docs/samples/intel/'
 
 # prevent escaping of command line vars, i.e. cd $COMROOT (with tab)
 shopt -u progcomp
-
 
 # modules
 #module load intel craype cray-mpich #Steve.Stegal
@@ -107,18 +111,18 @@ module use /apps/ops/test/nco/modulefiles/compiler/intel/19.1.3.304
 #module load bufr_dump/2.0.0
 
 module use /apps/ops/test/nco/modulefiles/compiler/intel/19.1.3.304
-module load bufr_dump/2.0.0
+#module load bufr_dump/2.0.0
 
 
-export bufr_util_ROOT=/lfs/h2/emc/obsproc/noscrub/Jeff.Ator/bufr_util.v1.1.0
-module use -a /lfs/h2/emc/obsproc/noscrub/Jeff.Ator/NCEPLIBS-bufr-VLab/modulefiles
+export bufr_util_ROOT=/lfs/h2/emc/obsproc/noscrub/jeff.ator/bufr_util.v1.1.0
+module use -a /lfs/h2/emc/obsproc/noscrub/jeff.ator/NCEPLIBS-bufr-VLab/modulefiles
 module load bufr_util/1.1.0
 
 # utilities
-export PATH=$PATH:/u/Jack.Woollen/bin
-export PATH=$PATH:/u/Diane.Stokes/bin
+export PATH=$PATH:/u/jack.woollen/bin
+export PATH=$PATH:/u/diane.stokes/bin
 #export PATH=$PATH:/u/$USER/INSTALL/bin
-export PATH=$PATH:/lfs/h2/emc/obsproc/noscrub/$USER/NCEPLIBS-bufr/bin
+export PATH=$PATH:/apps/ops/prod/libs/intel/19.1.3.304/bufr/11.5.0/bin #/lfs/h2/emc/obsproc/noscrub/$USER/NCEPLIBS-bufr/bin
 #
 # sshKeys location: /u/sshKeys/$USER
 # DCOMROOT=/lfs/h1/ops/canned/dcom

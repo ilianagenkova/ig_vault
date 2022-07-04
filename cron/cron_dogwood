@@ -89,7 +89,6 @@
 # ---------------
 30 * * * * jtyp=dump_monitor cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jdump_monitor.wc2.pbs > /dev/null 2>&1
 ###
-###
 ### JOBSPROC_MODS prod para for WCOSS2
 # runs daily at 14:30
 # started on: 20220610
@@ -128,14 +127,14 @@
 #47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=T2B bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.T2B > /dev/null 2>&1
 #50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=T2B bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.T2B > /dev/null 2>&1
 ###
-### KEEP High Res AMVs from EUMETSAT Meteosat RSS images (Jeff Whiting, for global hourly model)
-26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RSS bash -l  /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.RSS > /dev/null 2>&1
-###
 ### KEEP GMI global dumps until /obsproc update Jule 2022
 47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=GMI bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.GMI > /dev/null 2>&1
 50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=GMI bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.GMI > /dev/null 2>&1
 ### KEEP Metop-B/C AMVs global dumps
 47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC > /dev/null 2>&1
 50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC > /dev/null 2>&1
+### High Res AMVs from EUMETSAT Meteosat RSS images (Jeff Whiting, for global hourly model)
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RSS bash -l /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.RSS > /dev/null 2>&1
 ###
-
+###
+ 
