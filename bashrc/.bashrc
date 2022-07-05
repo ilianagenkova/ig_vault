@@ -30,6 +30,7 @@ alias llt='ls -lrt --color=auto'
 alias mygit='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias gits='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias trigs='cd /lfs/h2/emc/obsproc/noscrub/$USER/Trigs.KEEP'
+alias uts='cd /lfs/h2/emc/obsproc/noscrub/$USER/Utils/'
 alias gba='git --no-pager branch -a'
 
 alias sihist='cd /lfs/h1/ops/prod/dcom/ingest_hist'
