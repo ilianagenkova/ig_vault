@@ -1,0 +1,10 @@
+Residing on WCOSS2
+1)Establish a tunnel on Heraa
+2)Run
+-PUSH to Hera
+scp -r BOZA Iliana.Genkova@dtn-hera.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/.
+
+-PULL from Hera
+scp -r Iliana.Genkova@dtn-hera.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/fort* .
+
+(password is needed)

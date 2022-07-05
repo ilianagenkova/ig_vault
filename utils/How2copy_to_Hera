@@ -1,0 +1,1 @@
+scp -r FILE_NAME  Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/.

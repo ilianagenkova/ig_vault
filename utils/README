@@ -1,0 +1,2 @@
+qsub < my_transfers_wcoss2.sh 
+

@@ -1,0 +1,5 @@
+1. hsi  - get on HPSS and make a directory for youself in 1year, 2year or 5year
+2. send a few tar files instead of many small files
+
+hsi put 4cactus.tar : /NCEPDEV/emc-da/5year/Iliana.Genkova/OBSPROC/Venus/4cactus.tar
+

@@ -1,0 +1,32 @@
+#!/bin/bash
+#PBS -N my_transfers_wcoss2
+#PBS -j oe
+#PBS -A GFS-DEV 
+##PBS -A OBSPROC-T2O
+#PBS -q dev_transfer
+#PBS -l place=vscatter,select=1:ncpus=1:mem=50GB
+#PBS -l walltime=1:30:00
+#PBS -l debug=true
+
+set -x
+
+#Dogwood
+#ddxfer04.wcoss2.ncep.noaa.gov 
+#Cactus
+#cdxfer.wcoss2.ncep.noaa.gov 
+
+#Residing on Cactus
+#PUSG
+#scp path/on/Cactus/testC2D Iliana.Genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testC2D
+#or
+#PULL
+#scp Iliana.Genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testD2C path/on/Cactus/testD2C
+
+#Residing on Dogwood
+#PUSH
+#scp path/on/Dogwood/testD2C Iliana.Genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testD2C
+ scp /lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/Utils/greece Iliana.Genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/greece
+#or
+#PULL
+#scp Iliana.Genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testD2C path/on/Dogwood/testC2D
+
