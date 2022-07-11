@@ -27,6 +27,7 @@ alias llc='ls -l --color=auto'
 alias llt='ls -lrt --color=auto'
 #alias clean='rm *~'
 
+alias rzdm="ssh igenkova@emcrzdm.ncep.noaa.gov"
 alias mygit='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias gits='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias trigs='cd /lfs/h2/emc/obsproc/noscrub/$USER/Trigs.KEEP'
