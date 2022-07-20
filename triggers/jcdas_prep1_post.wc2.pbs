@@ -35,7 +35,7 @@ export obsNET=obsproc
 export prepobs_ver=1.0.0
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver}   # NCO para
-export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver}       # NCO prod
+export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0           # local
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver

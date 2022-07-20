@@ -1,6 +1,6 @@
 
-for fi in *wc2.pbs* ;  
-#for fi in * ;
+#for fi in *wc2.pbs* ;  
+for fi in * ;
 do	
   echo "$fi"; 
   #sed -i 's/export obsproc_ver=v1.0.0/export obsproc_ver=v1.0\nexport obsproc_ver_pckg=v1.0.0/g' $fi
@@ -11,7 +11,7 @@ do
   #sed -i 's/ptmp/stmp/g' $fi
   #sed -i 's/obsproc_ver_pckg=v1.0.0/obsproc_ver_pckg=v1.0.1/g' $fi
   #sed -i 's/shelley.melchior/iliana.genkova/g' $fi
-  sed -i 's/genkova\/triggers/genkova\/Trigs.KEEP/g' $fi
-  #sed -i 's/obsproc_ver_pckg=v1.0.1/obsproc_ver_pckg=v1.0.2/g' $fi
+  #sed -i 's/genkova\/triggers/genkova\Trigs.KEEP/g' $fi
+  sed -i 's/Iliana.Genkova/iliana.genkova/g' $fi
 done
 
