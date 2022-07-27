@@ -1,0 +1,6 @@
+How to call ue (a.k.a ufbtab_example_clean.ksh):
+List character/sttring variable to the left of "|", and numeric variables to the rightt of "|"
+
+
+./ufbtab_example_clean.ksh NC005031 'BORG |  CLATH' quiet
+

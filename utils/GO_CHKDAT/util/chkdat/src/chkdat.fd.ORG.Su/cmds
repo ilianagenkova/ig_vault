@@ -1,0 +1,8 @@
+(
+ module load ips/18.0.5.274 ;    # req'd for bufr
+ module load impi/18.0.1    ;    # req'd for w3emc
+
+ source ../load_libs.rc ;
+ module list ;
+ make
+) |& tee m.out

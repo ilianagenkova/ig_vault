@@ -1,0 +1,14 @@
+
+The following have been reloaded with a version change:
+  1) ips/18.0.1.163 => ips/18.0.5.274
+
+ll: SITE='VENUS'
+
+Currently Loaded Modules:
+  1) EnvVars/1.0.3   3) ips/18.0.5.274    5) impi/18.0.1   7) w3nco/2.0.6
+  2) lsf/10.1        4) prod_util/1.1.3   6) bufr/11.3.0   8) w3emc/2.3.0
+
+ 
+
+ifort  -o chkdat_x.x chkdat_x.o /gpfs/dell1/nco/ops/nwprod/lib/bufr/v11.3.0/ips/18.0.1/libbufr_v11.3.0_4_64.a /gpfs/dell1/nco/ops/nwprod/lib/w3emc/v2.3.0/ips/18.0.1/impi/18.0.1/libw3emc_v2.3.0_4.a /gpfs/dell1/nco/ops/nwprod/lib/w3nco/v2.0.6/ips/18.0.1/libw3nco_v2.0.6_4.a
+rm -f chkdat_x.o

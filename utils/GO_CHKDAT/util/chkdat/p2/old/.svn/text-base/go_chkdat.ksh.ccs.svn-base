@@ -1,0 +1,84 @@
+#!/usr/bin/ksh
+# go_chkdat.ksh -  3 Oct 2012
+#
+# 18 Mar 2004 - orig
+# 16 Sep 2004 - enabled gzipped source files
+#  8 Dec 2004 - updated TDIR w/ chkdat subdir
+# 18 May 2005 - generalized TDIR w/ pid ($$); rm'd TDIR
+# 26 May 2005 - generalized TDIR w/ pid ($$)
+#  5 Oct 2006 - configured for Mist implementation
+# 23 Oct 2006 - removed reference to /gpfstmp for Mist
+# 15 Feb 2007 - parameterized TDIR w/ USER
+#  2 Oct 2012 - enabled external bufrtable option (chkdat_x)
+#  3 Oct 2012 - disabled date specification
+#---
+#set -euax
+
+bfil=${1:?"chkdat <bufrfile> [external bufrtable]"}
+btab=${2}
+
+#TDIR=/nfstmp/wx20wh/chkdat 
+tbase=/stmp                               # Mist temp directory
+[ ! -d $tbase ] && tbase=/gpfstmp
+TDIR=${tbase}/$USER/chkdat.$$ 
+[ -d $TDIR ] || mkdir $TDIR || { echo "error mkdir $TDIR - exiting" ; exit ; }
+
+if [ ! -f $bfil ] ; then 
+  echo "$bfil not found - exiting" 
+  exit 
+else
+
+  tfile=''
+  if [ .`echo $bfil | egrep 'gz$'` != . ] ; then 
+    zfile=$TDIR/`basename $bfil`
+    cp -p $bfil $zfile
+    gzip -d $zfile
+    tfile=`echo $zfile | sed 's/.gz//'`
+    bfil=$tfile
+  fi # file zipped
+fi # src file exists
+
+if [ -n "$btab" ] ; then 
+  if [ ! -s $btab ] ; then 
+    echo "$lab: btab='$btab' not found - exiting" ; exit
+  else
+
+    tfile=''
+    if [ .`echo $btab | egrep 'gz$'` != . ] ; then
+      zfile=$TDIR/`basename $btab`
+      cp -p $btab $zfile
+      gzip -d $zfile
+      tfile=`echo $zfile | sed 's/.gz//'`
+      btab=$tfile
+    fi # file zipped
+  fi # btab found
+fi # btab specified
+
+arg1=''
+###[ ."$cymd" != ."" ] && arg1="-d $cymd"
+
+export XLFRTEOPTS="unit_vars=yes"
+export XLFUNITS=0
+unset `env | grep XLFUNIT | awk -F= '{print $1}'`
+
+export XLFUNIT_20="$bfil"         # ln -sf $bfil fort.20
+
+if [ -z "$btab" ] ; then
+  exec=/u/wx20wh/src/chkdat/chkdat.x
+else
+  export XLFUNIT_21="$btab"
+  exec=/u/wx20wh/src/chkdat/chkdat_x.x
+fi # btab specified
+
+###echo "gcd: exec='$exec'  btab='$btab'"
+###ls -l $exec
+
+#set -x
+$exec $arg1
+
+
+# if [ .$tfile != . ] ; then rm -f $tfile ; fi
+  /bin/rm -rf $TDIR
+
+# -- end of go_chkdat.ksh
+

@@ -1,0 +1,1 @@
+exec=$(pwd)/exec/chkdat2.x ./go_chkdat.ksh ~/sav/tmp/rtma_fail/testbed/dat/msgs/xbfmg.out.177113.000001 ~/sav/tmp/rtma_fail/testbed/tankdir/bufrtab.000

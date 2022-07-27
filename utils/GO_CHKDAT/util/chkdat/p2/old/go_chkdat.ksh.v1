@@ -1,0 +1,103 @@
+#!/bin/ksh
+# go_chkdat.ksh - 12 Feb 2014
+#
+#  7 Nov 2012 - cp'd fr stratus ver of 20 Nov 2008; mod'd for use on Linux
+# 10 Sep 2013 - trapped zero-size input files
+# 12 Feb 2014 - set tbase to p1 filesystem (for i/o efficiency)
+#---
+#set -euax
+
+bfil=${1:?"chkdat <bufrfile> [external bufrtable]"}
+btab=${2}
+
+#TDIR=/nfstmp/wx20wh/chkdat 
+tbase=/stmpp1                               # temp directory
+TDIR=${tbase}/$USER/chkdat.$$ 
+[ -d $TDIR ] || mkdir $TDIR || { echo "error mkdir $TDIR - exiting" ; exit ; }
+
+if [ ! -f $bfil ] ; then 
+  echo "$bfil not found - exiting" 
+  exit 
+else
+
+  if [ ! -s $bfil ] ; then 
+    echo "$bfil is zero-length - exiting" 
+    exit
+  fi # bfil zero length
+
+  tfile=''
+  if [ .`echo $bfil | egrep 'gz$'` != . ] ; then 
+    zfile=$TDIR/`basename $bfil`
+    cp -p $bfil $zfile
+    gzip -d $zfile
+    tfile=`echo $zfile | sed 's/.gz//'`
+    bfil=$tfile
+  fi # file zipped
+fi # src file exists
+
+if [ -n "$btab" ] ; then 
+  if [ ! -s $btab ] ; then 
+    echo "$lab: btab='$btab' not found - exiting" ; exit
+  else
+
+    tfile=''
+    if [ .`echo $btab | egrep 'gz$'` != . ] ; then
+      zfile=$TDIR/`basename $btab`
+      cp -p $btab $zfile
+      gzip -d $zfile
+      tfile=`echo $zfile | sed 's/.gz//'`
+      btab=$tfile
+    fi # file zipped
+  fi # btab found
+fi # btab specified
+
+arg1=''
+###[ ."$cymd" != ."" ] && arg1="-d $cymd"
+
+OS=`uname`
+if [ $OS = "AIX" ] ; then 
+  export XLFRTEOPTS="unit_vars=yes"
+  export XLFUNITS=0
+  unset `env | grep XLFUNIT | awk -F= '{print $1}'`
+  export XLFUNIT_20="$bfil"         # ln -sf $bfil fort.20
+
+  if [ -n "$btab" ] ; then export XLFUNIT_21="$btab" ; fi
+
+elif [ $OS = "Linux" ] ; then
+  unset FORT000 `env | grep "FORT[0-9]\{1,\}" | awk -F= '{print $1}'`
+  export FORT20=$bfil
+  if [ -n "$btab" ] ; then export FORT21="$btab" ; fi
+
+else
+  echo "OS='$OS' not supported - exiting" ; exit
+fi # OS = AIX or Linux
+
+
+if [ -z "$btab" ] ; then
+# exec=/u/wx20wh/src/chkdat/chkdat.x
+  exec=/u/Jeff.Whiting/util/chkdat/chkdat.x
+else
+# export XLFUNIT_21="$btab"
+# exec=/u/wx20wh/src/chkdat/chkdat_x.x
+  exec=/u/Jeff.Whiting/util/chkdat/chkdat_x.x
+fi # btab specified
+
+#--debug
+###echo "gcd: exec='$exec'  btab='$btab'"
+###ls -l $exec
+###env | grep "FORT[0-9]\{1,\}"
+###echo "gcd: debug exit" ; exit
+
+#set -x
+if [ -f $exec ] ; then 
+  $exec $arg1
+else
+  { echo "exec='$exec' not found - exiting" ; exit ; }
+fi # exec exists
+
+
+# if [ .$tfile != . ] ; then rm -f $tfile ; fi
+  /bin/rm -rf $TDIR
+
+# -- end of go_chkdat.ksh
+

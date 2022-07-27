@@ -1,0 +1,12 @@
+gcd: FORT21='/u/Jeff.Whiting/sav/tmp/rtma_fail/testbed/tankdir/bufrtab.000'
+ Welcome to chkdat v05.04.2020 db1
+ cd: db lunin lundx=          20          21
+ +++++++++++++++++++++WARNING+++++++++++++++++++++++
+ BUFRLIB: OPENBT - THIS IS A DUMMY BUFRLIB ROUTINE CALLED BY CKTABA OR APPL. PGM; OPENBT SHOULD BE INCL. IN-LINE IN APPL. PGM    
+ +++++++++++++++++++++WARNING+++++++++++++++++++++++
+  
+ +++++++++++++++++++++WARNING+++++++++++++++++++++++
+ BUFRLIB: CKTABA - UNRECOGNIZED TABLE A MESSAGE TYPE (FN000101) - RETURN WITH IRET = -1                                          
+ +++++++++++++++++++++WARNING+++++++++++++++++++++++
+  
+startup        0 rpts       0 msgs   date range: 2000000000 1006649634

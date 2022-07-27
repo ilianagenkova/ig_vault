@@ -1,0 +1,15 @@
+
+# latest versions (12/04/19):
+
+bufr_ver=11.3.0
+w3nco_ver=2.0.6
+w3emc_ver=2.3.0
+
+echo "ll: SITE='$SITE'"
+case "$SITE" in 
+  MARS|VENUS) module load bufr/$bufr_ver ;
+              module load w3nco/$w3nco_ver ;
+              module load w3emc/$w3emc_ver ;;
+           *) echo "ll: **** Unsupported SITE: $SITE ***** "
+  return 9
+esac

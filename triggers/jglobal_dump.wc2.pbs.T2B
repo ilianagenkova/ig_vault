@@ -74,10 +74,14 @@ module load cfp/${cfp_ver}
 
 
 module unload bufr_dump
-module use ${userROOT}/GIT/play/bufr-dump.T2B/install/modulefiles
-module load bufr_dump/${bufr_dump_ver}
+#module use ${userROOT}/GIT/play/bufr-dump.T2B/install/modulefiles
+#module load bufr_dump/${bufr_dump_ver}
+module use /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.T2B/install/modulefiles
+module load bufr_dump/1.0.0
 echo LOADED ILIANA bufr-dump
 echo $BUFR_DUMPLIST
+echo ${bufr_dump_ver}
+echo LOADED ILIANA bufr-dump end
 
 # Be sure the modules are loaded 
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_util/") -eq 0 ]]; then echo "prod_util is not loaded!"; fi
@@ -98,7 +102,18 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
+export TANK_002101=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/tanks.T2B
+export TANK_002102=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/tanks.T2B
+export TANK_002103=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/tanks.T2B
+export TANK_002104=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/tanks.T2B
+export TANK_002105=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/tanks.T2B
+#/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/tanks.T2B]$ ll 20220721/b002/xx10*
+#-rw-r--r-- 1 iliana.genkova obsproc   3280046 Jul 22 23:00 20220721/b002/xx101
+#-rw-r--r-- 1 iliana.genkova obsproc 106788448 Jul 22 22:40 20220721/b002/xx101.org
+#-rw-r--r-- 1 iliana.genkova obsproc     33736 Jul 22 22:40 20220721/b002/xx105
 
+
+#export EPRM=${userROOT}/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
@@ -124,13 +139,13 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-exit # TEST the dump-generation, then update bufr-dump in a new jglobal_dump_post.wc2.pbs.T2B
+exit #CHECK IF versions line up from here on
 
 # Kick off dump_post job
 if [ $err -eq 0 ]; then
   echo "submit jglobal_dump_post"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs 
+  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.RELv1.1.0 
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs
 fi
 
@@ -138,7 +153,7 @@ fi
 if [ $err -eq 0 ]; then
   echo "submit jglobal_prep"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.RELv1.1.0
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep.wc2.pbs
 fi
 
