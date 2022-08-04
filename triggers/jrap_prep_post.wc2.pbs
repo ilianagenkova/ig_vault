@@ -38,13 +38,13 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.0
 export obsproc_ver_pckg=v1.0.2
-export prepobs_ver=1.0.0
+#export prepobs_ver=1.0.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep          # SM local
-export HOMEobsproc=${userROOT}/GIT/obsproc                      # IG local
+#export HOMEobsproc=${userROOT}/GIT/obsproc                      # IG local
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver		             # NCO para&prod
 #VERSION_FILE=${userROOT}/install/obsproc-rmprep/versions/run.ver    # SM local
@@ -56,19 +56,25 @@ else
   exit 7
 fi
 
+export prepobs_ver=1.0.0
+
 #Load the modules
 module load grib_util/${grib_util_ver}
 module load netcdf/${netcdf_ver}
-module load bufr_dump/${bufr_dump_ver}
+#module load bufr_dump/${bufr_dump_ver}
 # use local prepobs installation
 #module use ${userROOT}/install/prepobs/modulefiles    # SM local
 #module use ${userROOT}/GIT/prepobs/install/modulefiles # IG local
-module load prepobs/${prepobs_ver}
+#module load prepobs/${prepobs_ver}
 module load intel/${intel_ver}
 module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
+
+module unload preobs
+module use ${userROOT}/GIT/prepobs/install/modulefiles 
+module load prepobs/${prepobs_ver}
 
 #Check if they exist
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)grib_util/") -eq 0 ]]; then echo "grib_util is not loaded!"; fi

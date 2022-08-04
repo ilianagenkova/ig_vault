@@ -1,48 +1,44 @@
 #!/bin/bash
-#PBS -N obsproc_%JTYP%_prep2_%PDY%_%CC%_%DESC%
+#PBS -N obsproc_%JTYP%_prep_post_%PDY%_%CC%_%TMMARK%_%DESC%
 #PBS -j oe
 #PBS -S /bin/bash
-#PBS -l walltime=0:30:00
 #PBS -q dev
 #PBS -A OBSPROC-DEV
-#PBS -l place=vscatter,select=1:ncpus=16:mem=10gb
+#PBS -l walltime=00:10:00
+#PBS -l place=vscatter,select=1:ncpus=1:mem=500MB
 #PBS -l debug=true
 
-##############################################
+#####################################################################
 # Submit notes:
 # Run from [ps]tmp when running manually
 # When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
 # For specific PDY:
-# > jtyp=cdas cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jcdas_prep2.wc2.pbs
+# > jtyp=nam cyc=00 tmmark=tm00 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jnam_prep_post.wc2.pbs
 # For latest/current PDY:
-# > jtyp=cdas cyc=00 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jcdas_prep2.wc2.pbs
+# > jtyp=nam cyc=00 tmmark=tm00 /u/iliana.genkova/bin/cycbsub /path/to/triggers/jnam_prep_post.wc2.pbs
 # cycqsub location: /u/iliana.genkova/bin
-##############################################
+#####################################################################
 
-set -xa
+set -xu
 
 export envir=prod
 export cyc=%CC%
-export cycle=t${cyc}z
 DESC=%DESC%
 JTYP=%JTYP%
-export job=${JTYP}_prep2_$cyc
+export job=${JTYP}_prep_post_$cyc
 export jobid=$job.$PBS_JOBID
-
-# Note: PDY will become PDYm1 in relation
-# to dump, dump_post, prep1, and prep1_post processing
+export tmmark=%TMMARK%
 export PDY=%PDY%
 
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
-export obsNET=obsproc
-export obsproc_ver=v1.0
-export obsproc_ver_pckg=v1.0.2
+export obsproc_ver=v1.0.0
 export prepobs_ver=1.0.0
+export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver}   # NCO para
-export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
-#export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0           # local
+#export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver}       # NCO prod
+export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0           # local
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver
 if [ -f $VERSION_FILE ]; then
@@ -77,37 +73,22 @@ if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-pals/") -eq 0 ]]; then echo "c
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cfp/") -eq 0 ]]; then echo "cfp is not loaded!"; fi
 
 export SENDECF=NO   # developer
-export SENDSDM=NO   # developer
 export SENDDBN=NO   # developer
+export SENDSDM=NO   # developer
 
-export DATAROOT=/lfs/h2/emc/stmp/${USER}
-export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.$PDY.jlogfile
-#export DATA=/lfs/h2/emc/stmp/$USER/pdy ??
-#mkdir -p $DATA  ??
+export DATAROOT=/lfs/h2/emc/stmp/$USER
+export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
 
-export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
-export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
+export COMIN_ROOT=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/com/
+export COMOUT_ROOT=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/com/
 
-#pwd=$(pwd)
-#cd $DATA
-#$UTILROOT/ush/setpdy.sh 2
-#cd $pwd
-#. $DATA/PDY
-#export COMIN=$COMIN_ROOT/obsproc/${obsproc_ver}/${JTYP}.${PDYm1}
-#export COMOUT=$COMOUT_ROOT/obsproc/${obsproc_ver}/${JTYP}.${PDYm1}
-
-#export GETGES_COM=/lfs/h1/ops/canned/com/gfs/v16.2/
-#export GESROOT=/lfs/h1/ops/canned/com/gfs/v16.2/
-
-#export GETGES_COM=$COMROOT
-#export GETGES_NWG=$GESROOT
-
-export DEBUG_LEVEL=3
-export KEEPDATA=YES
 export LOUD=ON
+export KEEPDATA=YES
+export DEBUG_LEVEL=3
 
-$HOMEobsproc/jobs/JOBSPROC_CDAS_PREP2
+$HOMEobsproc/jobs/JOBSPROC_NAM_PREP_POST
 err=$?
+
 
 # When run from cron, the stdout is written to /u/$USER
 # mv to stmp
@@ -119,12 +100,4 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-# Kick off prep2_post job
-if [ $err -eq 0 ]; then
-  echo "submit jcdas_prep2_post:"
-  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jcdas_prep2_post.wc2.pbs
-fi
-
 exit
-

@@ -37,12 +37,13 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsNET=obsproc
 export obsproc_ver=v1.0
-export obsproc_ver_pckg=v1.0.2
-export prepobs_ver=1.0.0
+export obsproc_ver_pckg=v1.0.0
+#export prepobs_ver=1.0.0
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver}   # NCO para
-export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
+#export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0           # local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.CDAS
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver
 if [ -f $VERSION_FILE ]; then
@@ -52,18 +53,24 @@ else
  exit 7
 fi
 
+export prepobs_ver=1.0.0
+
 #Load the modules
 module load grib_util/${grib_util_ver}
 module load netcdf/${netcdf_ver}
-module load bufr_dump/${bufr_dump_ver}
+#module load bufr_dump/${bufr_dump_ver}
 # use local prepobs installation
 #module use ${userROOT}/install/prepobs/modulefiles
-module load prepobs/${prepobs_ver}
+#module load prepobs/${prepobs_ver}
 module load intel/${intel_ver}
 module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
+# use local prepobs installation
+module unload prepobs
+module use ${userROOT}/GIT/play/prepobs/install/modulefiles
+module load prepobs/${prepobs_ver}
 
 #Check if they exist
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)grib_util/") -eq 0 ]]; then echo "grib_util is not loaded!"; fi
@@ -123,7 +130,7 @@ fi
 if [ $err -eq 0 ]; then
   echo "submit jcdas_prep2_post:"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jcdas_prep2_post.wc2.pbs
+  ${userROOT}/Trigs.KEEP/jcdas_prep2_post.wc2.pbs.CDAS
 fi
 
 exit

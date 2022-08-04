@@ -34,7 +34,11 @@ alias mygit='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias gits='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT'
 alias trigs='cd /lfs/h2/emc/obsproc/noscrub/$USER/Trigs.KEEP'
 alias uts='cd /lfs/h2/emc/obsproc/noscrub/$USER/Utils/'
+alias play='cd /lfs/h2/emc/obsproc/noscrub/$USER/GIT/play'
 alias gba='git --no-pager branch -a'
+
+alias ue='/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Utils/UE/ufbtab_example_clean.ksh'
+
 
 alias sihist='cd /lfs/h1/ops/prod/dcom/ingest_hist'
 alias oplogs='cd /lfs/h1/ops/prod/output'
@@ -91,7 +95,7 @@ module load util_shared/1.4.0
 module load grib_util/1.2.2
 module load hdf5/1.10.6
 module load netcdf/4.7.4
-
+export GDA=/lfs/h2/emc/global/noscrub/emc.global/dump
 # modules
 module load PrgEnv-intel/8.1.0
 module load craype/2.7.8
