@@ -107,6 +107,7 @@ export TANK_005081=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/T
 #export TANK_021246=/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/git/TANK_DUMP #${userROOT}/DCOMDIR/TEST/prod/
 
 #export EPRM=${userROOT}/sample_sdmedit.txt
+export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
@@ -115,7 +116,7 @@ export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
 export COMPONENT=atmos
 
 export DEBUG_LEVEL=3
-export LOUD=ON
+export LOUD=on #ON
 export KEEPDATA=YES
 
 

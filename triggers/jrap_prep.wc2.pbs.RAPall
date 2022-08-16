@@ -45,7 +45,8 @@ export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.RAPall   # IG local
+#export HOMEobsproc=${userROOT}/GIT/play/obsproc.RAPall   # IG local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc             # IG local  
 
 VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
 #VERSION_FILE=${userROOT}/GIT/obsproc/versions/run.ver #local

@@ -43,7 +43,8 @@ PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep     # local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.RTMA
+#export HOMEobsproc=${userROOT}/GIT/play/obsproc.RTMA
+export HOMEobsproc=${userROOT}/GIT/play/obsproc             # IG local  
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver
 if [ -f $VERSION_FILE ]; then
@@ -90,6 +91,8 @@ export TANK=$DCOMROOT
 export TANK_003010=/lfs/h1/ops/dev/dcom #Sent-6 not in prod yet
 export TANK_000015=/lfs/h1/ops/dev/dcom #snow not in prod yet
 export TANK_005081=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/ #METOPBC
+
+export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 if [ -z "$cycM" ]; then

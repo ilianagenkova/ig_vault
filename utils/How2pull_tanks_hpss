@@ -1,0 +1,38 @@
+DIANE
+module load HPSS/5.0.2.5
+htar -xvf /NCEPPROD/hpssprod/runhistory/rh2022/202208/20220808/dcom_20220808.tar     ./b005/xx024
+
+SHELLEY
+# Command
+# hpsstar getnostage /NCEPPROD/hpssprod/runhistory/rh2020/202009/20200901/dcom_prod_20200901.tar hpsstar getnostage ./b005/xx032
+
+# PDY array
+pdyarr=(20200328 20200329 20200330)
+for PDY in "${pdyarr[@]}"
+  do
+    PDYy=$(echo $PDY | cut -c1-4)
+    PDYym=$(echo $PDY | cut -c1-6)
+
+    DATADIR=/gpfs/dell2/emc/obsproc/noscrub/$USER/HPSS_GET_TANKS/FAILOVER/${PDY}
+        mkdir -p $DATADIR
+    cd $DATADIR
+
+    # satwnd array
+    satwndarr=(030 031 091)
+    for subset in "${satwndarr[@]}"
+      do
+        echo "hpsstar getnostage /NCEPPROD/hpssprod/runhistory/rh${PDYy}/${PDYym}/${PDY}/dcom_prod_${PDY}.tar hpsstar getnostage ./b005/xx${subset}"
+#        hpsstar getnostage /NCEPPROD/hpssprod/runhistory/rh${PDYy}/${PDYym}/${PDY}/dcom_prod_${PDY}.tar hpsstar getnostage ./b005/xx${subset}
+      done # satwndarr
+
+
+    # satwnd array
+    satwndarr=(017 018)
+    for subset in "${satwndarr[@]}"
+      do
+        echo "hpsstar getnostage /NCEPPROD/hpssprod/runhistory/rh${PDYy}/${PDYym}/${PDY}/dcom_prod_${PDY}.tar hpsstar getnostage ./b008/xx${subset}"
+    hpsstar getnostage /NCEPPROD/hpssprod/runhistory/rh${PDYy}/${PDYym}/${PDY}/dcom_prod_${PDY}.tar hpsstar getnostage ./b008/xx${subset}
+      done # satwndarr
+  done # pdyarr
+
+

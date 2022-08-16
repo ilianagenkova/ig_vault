@@ -39,7 +39,8 @@ PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0           # local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.URMA
+#export HOMEobsproc=${userROOT}/GIT/play/obsproc.URMA
+export HOMEobsproc=${userROOT}/GIT/play/obsproc             # IG local  
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver
 if [ -f $VERSION_FILE ]; then
@@ -49,7 +50,7 @@ else
  exit 7
 fi
 
-export prepobs_ver=v1.0.0
+export prepobs_ver=1.0.0
 
 #Load the modules
 module load grib_util/${grib_util_ver}
