@@ -5,7 +5,7 @@
 #PBS -l walltime=00:15:00
 #PBS -A OBSPROC-DEV
 #PBS -q dev 
-#PBS -l place=vscatter,select=1:ncpus=3:mem=4gb
+#PBS -l place=vscatter,select=1:ncpus=3:mem=6gb
 #PBS -l debug=true
 
 ##############################################
@@ -89,7 +89,7 @@ export TANK_005081=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/T
 export TANK_000015=/lfs/h1/ops/dev/dcom
 
 
-export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
+#export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.${PDY}.jlogfile

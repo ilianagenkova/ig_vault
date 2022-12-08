@@ -1,0 +1,63 @@
+Running prologue on parent mom node: cdxfer04...
+Job 21341735.cbqs01 nodelist: cdxfer04
+Job 21341735.cbqs01 - Prologue complete. Execution time: 2 seconds
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/8.1.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "cray-mpich/8.1.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) hdf5/1.10.6     2) netcdf/4.7.4
+
+
+The following have been reloaded with a version change:
+  1) prod_envir/2.0.4 => prod_envir/2.0.5
+
+
+The following have been reloaded with a version change:
+  1) bufr/11.6.0 => bufr/11.7.0
+
++ scp -r /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220901 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220902 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220903 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220904 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220905 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220906 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220907 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220908 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220909 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220910 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220911 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220912 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220913 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220914 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220915 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220916 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220917 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220918 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220919 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220920 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220921 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220922 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220923 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220924 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220925 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220926 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220927 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220928 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220929 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20220930 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221001 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221002 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221003 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221004 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221005 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221006 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221007 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221008 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221009 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221010 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221011 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221012 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221013 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221014 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221015 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221016 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221017 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221018 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221019 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221020 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221021 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221022 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221023 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221024 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221025 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221026 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221027 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221028 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221029 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221030 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221031 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221101 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221102 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221103 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221104 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221105 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221106 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221107 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221108 /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/gdas.20221109 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SS_LB_CIMSS/.
+Warning: Permanently added the ECDSA host key for IP address '192.58.153.58' to the list of known hosts.
+WARNING WARNING WARNING
+
+This is a U.S. Department of Commerce computer system. Commerce computer systems are provided
+for the processing of official U.S. Government information only. All data contained on Commerce
+computer systems is owned by the Department of Commerce and use may be monitored, intercepted,
+recorded, read, copied, or captured in any manner and disclosed in any manner, by authorized
+personnel. THERE IS NO RIGHT OF PRIVACY IN THIS SYSTEM. System personnel may give to law
+enforcement officials any potential evidence of crime found on Commerce computer systems.
+
+USE OF THIS SYSTEM BY ANY USER, AUTHORIZED OR UNAUTHORIZED, CONSTITUTES CONSENT TO THIS MONITORING,
+INTERCEPTION, RECORDING, READING, COPYING, OR CAPTURING and DISCLOSURE.
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/8.1.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "cray-mpich/8.1.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+which: no debufr.x in (/apps/ops/prod/libs/intel/19.1.3.304/bufr/11.7.0/bin:/apps/prod/cfp/2.0.4/intel/19.1.3.304/bin:/apps/spack/git/2.29.0/gcc/10.2.0/rkn6xaqbrdlim3u4it2l6ljqszg62s25/bin:/apps/ops/prod/nco/core/prod_util.v2.0.8/ush:/apps/spack/libjpeg/9c/intel/19.1.3.304/jkr3isi257ktoouprwaxcn4twtye747z/bin:/opt/cray/libfabric/1.11.0.0./bin:/pe/intel/compilers_and_libraries_2020.4.304/linux/bin/intel64:/pe/intel/compilers_and_libraries_2020.4.304/linux/bin:/pe/intel/compilers_and_libraries_2020.4.304/linux/mpi/intel64/bin:/pe/intel/debugger_2020/gdb/intel64/bin:/opt/cray/pe/craype/2.7.8/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/u/iliana.genkova/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin)
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) hdf5/1.10.6     2) netcdf/4.7.4
+
+
+The following have been reloaded with a version change:
+  1) prod_envir/2.0.4 => prod_envir/2.0.5
+

@@ -1,0 +1,5 @@
+scp -r filename igenkova@emcrzdm.ncep.noaa.gov:/home/people/emc/igenkova/html/.
+
+scp -r filename igenkova@emcrzdm.ncep.noaa.gov:/home/ftp/emc/mmb/data_processing/SMtest/AMV/EA
+
+

@@ -1,0 +1,6 @@
+awk 'NR==FNR{arr[$0];next} $0 in arr' file1 file2
+
+comm -12 <( sort file1 ) <( sort file2 )
+
+
+

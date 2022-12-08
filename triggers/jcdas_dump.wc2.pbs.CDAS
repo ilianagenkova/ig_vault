@@ -92,7 +92,7 @@ export TANK_003010=/lfs/h1/ops/dev/dcom #Sent-6 not in prod yet
 export TANK_000015=/lfs/h1/ops/dev/dcom #snow not in prod yet
 export TANK_005081=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/ #METOPBC
 
-export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
+#export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile

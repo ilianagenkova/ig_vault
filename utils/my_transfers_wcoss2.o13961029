@@ -1,0 +1,549 @@
+Running prologue on parent mom node: cdxfer01...
+Job 13961029.cbqs01 nodelist: cdxfer01
+Job 13961029.cbqs01 - Prologue complete. Execution time: 28 seconds
+Lmod has detected the following error: The following module(s) are unknown:
+"cray-mpich/8.1.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "cray-mpich/8.1.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+which: no debufr.x in (/apps/ops/prod/libs/intel/19.1.3.304/bufr/11.7.0/bin:/apps/prod/cfp/2.0.4/intel/19.1.3.304/bin:/apps/spack/git/2.29.0/gcc/10.2.0/rkn6xaqbrdlim3u4it2l6ljqszg62s25/bin:/apps/ops/prod/nco/core/prod_util.v2.0.8/ush:/apps/spack/libjpeg/9c/intel/19.1.3.304/jkr3isi257ktoouprwaxcn4twtye747z/bin:/opt/cray/libfabric/1.11.0.0./bin:/pe/intel/compilers_and_libraries_2020.4.304/linux/bin/intel64:/pe/intel/compilers_and_libraries_2020.4.304/linux/bin:/pe/intel/compilers_and_libraries_2020.4.304/linux/mpi/intel64/bin:/pe/intel/debugger_2020/gdb/intel64/bin:/opt/cray/pe/craype/2.7.8/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/u/iliana.genkova/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin)
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) hdf5/1.10.6     2) netcdf/4.7.4
+
+
+The following have been reloaded with a version change:
+  1) prod_envir/2.0.4 => prod_envir/2.0.5
+
++ scp /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/SATWND/com/obsproc/v1.0/gdas.20220920 /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/SATWND/com/obsproc/v1.0/gdas.20220921 /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/SATWND/com/obsproc/v1.0/gfs.20220920 /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/SATWND/com/obsproc/v1.0/gfs.20220921 Iliana.Genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/4Brett/.
+WARNING WARNING WARNING
+
+This is a U.S. Department of Commerce computer system. Commerce computer systems are provided
+for the processing of official U.S. Government information only. All data contained on Commerce
+computer systems is owned by the Department of Commerce and use may be monitored, intercepted,
+recorded, read, copied, or captured in any manner and disclosed in any manner, by authorized
+personnel. THERE IS NO RIGHT OF PRIVACY IN THIS SYSTEM. System personnel may give to law
+enforcement officials any potential evidence of crime found on Commerce computer systems.
+
+USE OF THIS SYSTEM BY ANY USER, AUTHORIZED OR UNAUTHORIZED, CONSTITUTES CONSENT TO THIS MONITORING,
+INTERCEPTION, RECORDING, READING, COPYING, OR CAPTURING and DISCLOSURE.
+
+
+Permission denied, please try again.
+Received disconnect from 192.58.153.60 port 22:2: Too many authentication failures
+Disconnected from 192.58.153.60 port 22
+lost connection
+Job 13961029.cbqs01 - Epilogue complete. Execution time: 2 seconds
+==================================================================
+BEGIN - DEBUG INFO
+==================================================================
+Job 13961029.cbqs01 - Post Job Mem Usage:
+cdxfer01: 2022-09-21.15 1 ===========================================
+cdxfer01: 2022-09-21.15 2 #### Node Memory Usage for cdxfer01 ####
+cdxfer01: 2022-09-21.15 3 ------------------
+cdxfer01: 2022-09-21.15 4 Mem: total:262922048 used:91749348 free:140965972 shared:7375432 cache:30206728 avail:161920556
+cdxfer01: 2022-09-21.15 5 4.0K	/dev/shm
+cdxfer01: 2022-09-21.15 6 
+cdxfer01: 2022-09-21.15 7 ===========================================
+cdxfer01: 2022-09-21.55 1 ===========================================
+cdxfer01: 2022-09-21.55 2 #### Node Memory Usage for cdxfer01 ####
+cdxfer01: 2022-09-21.55 3 ------------------
+cdxfer01: 2022-09-21.55 4 Mem: total:262922048 used:91734552 free:141323696 shared:7375220 cache:29863800 avail:161935596
+cdxfer01: 2022-09-21.55 5 4.0K	/dev/shm
+cdxfer01: 2022-09-21.55 6 
+cdxfer01: 2022-09-21.55 7 ===========================================
+
+------------------------------------------------------------------
+Job 13961029.cbqs01 - /var/log/messages for job duration:
+cdxfer01: 2022-09-21A--:--:--.------+--:-- cdxfer01 #### cdxfer01 - Job 13961029.cbqs01 Runtime Data from /var/log/messages
+cdxfer01: 2022-09-21T21:46:46.066606+00:00 cdxfer01 prologue: MARK: Job 13961029.cbqs01 Start
+cdxfer01: 2022-09-21T21:46:46.072273+00:00 cdxfer01 prologue: Job 13961029.cbqs01 nodelist: cdxfer01
+cdxfer01: 2022-09-21T21:46:46.073523+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Checking existing ASLR settings...
+cdxfer01: 2022-09-21T21:46:46.077490+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Checking palsd open file count...
+cdxfer01: 2022-09-21T21:46:46.163610+00:00 cdxfer01 PBS_CMD: root : /opt/pbs/bin/qstat -Bf
+cdxfer01: 2022-09-21T21:46:46.475759+00:00 cdxfer01 systemd[1]: session-749154.scope: Succeeded.
+cdxfer01: 2022-09-21T21:46:49.093844+00:00 cdxfer01 PBS_CMD: root : /opt/pbs/bin/qstat -f 13961118.cbqs01
+cdxfer01: 2022-09-21T21:46:55.170632+00:00 cdxfer01 prologue: Job 13960986.cbqs01 - Warchk Complete
+cdxfer01: 2022-09-21T21:46:55.171861+00:00 cdxfer01 prologue: Job 13960986.cbqs01 - Recording initial NFS client statistics...
+cdxfer01: 2022-09-21T21:46:55.176081+00:00 cdxfer01 prologue: Job 13960986.cbqs01 - Prologue complete. Execution time: 38 seconds
+cdxfer01: 2022-09-21T21:46:55.529563+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Checking one-shot control: False
+cdxfer01: 2022-09-21T21:46:55.531487+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Recording pre-job HSN counters...
+cdxfer01: 2022-09-21T21:46:55.612551+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Recording pre-job memory usage...
+cdxfer01: 2022-09-21T21:46:55.626483+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Enabling turboboost...
+cdxfer01: 2022-09-21T21:46:55.629085+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Verifying post-boot workarounds...
+cdxfer01: 2022-09-21T21:46:55.706795+00:00 cdxfer01 PBS_CMD: root : /opt/pbs/bin/pbsnodes -v cdxfer01
+cdxfer01: 2022-09-21T21:46:55.884009+00:00 cdxfer01 prologue: MARK: Job 13961118.cbqs01 Start
+cdxfer01: 2022-09-21T21:46:55.889741+00:00 cdxfer01 prologue: Job 13961118.cbqs01 nodelist: cdxfer01
+cdxfer01: 2022-09-21T21:46:55.891091+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Checking existing ASLR settings...
+cdxfer01: 2022-09-21T21:46:55.894754+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Checking palsd open file count...
+cdxfer01: 2022-09-21T21:46:55.975087+00:00 cdxfer01 PBS_CMD: root : /opt/pbs/bin/qstat -Bf
+cdxfer01: 2022-09-21T21:46:56.546565+00:00 cdxfer01 systemd[24343]: systemd-tmpfiles-clean.timer: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.546623+00:00 cdxfer01 systemd[24343]: Stopped Daily Cleanup of User's Temporary Directories.
+cdxfer01: 2022-09-21T21:46:56.546676+00:00 cdxfer01 systemd[24343]: dbus.socket: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.546736+00:00 cdxfer01 systemd[24343]: Closed D-Bus User Message Bus Socket.
+cdxfer01: 2022-09-21T21:46:56.546785+00:00 cdxfer01 systemd[24343]: systemd-tmpfiles-setup.service: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.546832+00:00 cdxfer01 systemd[24343]: Stopped Create User's Volatile Files and Directories.
+cdxfer01: 2022-09-21T21:46:56.546936+00:00 cdxfer01 systemd[24343]: systemd-exit.service: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.546986+00:00 cdxfer01 systemd[24343]: Finished Exit the Session.
+cdxfer01: 2022-09-21T21:46:56.549267+00:00 cdxfer01 systemd[1]: user@32116.service: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.551048+00:00 cdxfer01 systemd[1]: Stopping User Runtime Directory /run/user/32116...
+cdxfer01: 2022-09-21T21:46:56.558840+00:00 cdxfer01 systemd[1]: run-user-32116.mount: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.559253+00:00 cdxfer01 systemd[1659]: run-user-32116.mount: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.559320+00:00 cdxfer01 systemd[1]: user-runtime-dir@32116.service: Succeeded.
+cdxfer01: 2022-09-21T21:46:56.559501+00:00 cdxfer01 systemd[1]: Stopped User Runtime Directory /run/user/32116.
+cdxfer01: 2022-09-21T21:46:56.560653+00:00 cdxfer01 systemd[1]: Removed slice User Slice of UID 32116.
+cdxfer01: 2022-09-21T21:46:57.824272+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Warchk Complete
+cdxfer01: 2022-09-21T21:46:57.825599+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Recording initial NFS client statistics...
+cdxfer01: 2022-09-21T21:46:57.830542+00:00 cdxfer01 prologue: Job 13961029.cbqs01 - Prologue complete. Execution time: 28 seconds
+cdxfer01: 2022-09-21T21:46:57.876496+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Checking one-shot control: False
+cdxfer01: 2022-09-21T21:46:57.877742+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Recording pre-job HSN counters...
+cdxfer01: 2022-09-21T21:46:57.954223+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Recording pre-job memory usage...
+cdxfer01: 2022-09-21T21:46:57.966100+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Enabling turboboost...
+cdxfer01: 2022-09-21T21:46:57.968519+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Verifying post-boot workarounds...
+cdxfer01: 2022-09-21T21:46:58.045271+00:00 cdxfer01 PBS_CMD: root : /opt/pbs/bin/pbsnodes -v cdxfer01
+cdxfer01: 2022-09-21T21:47:01.255586+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Warchk Complete
+cdxfer01: 2022-09-21T21:47:01.256774+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Recording initial NFS client statistics...
+cdxfer01: 2022-09-21T21:47:01.260954+00:00 cdxfer01 prologue: Job 13961118.cbqs01 - Prologue complete. Execution time: 12 seconds
+cdxfer01: 2022-09-21T21:47:12.338839+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 complete, running post-job actions.
+cdxfer01: 2022-09-21T21:47:12.353963+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 - Recording post-job HSN counters...
+cdxfer01: 2022-09-21T21:47:12.427384+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 - Recording post-job memory usage...
+cdxfer01: 2022-09-21T21:47:12.441082+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 - Recording job NFS statistics to /tmp/nfsstats.13960626.cbqs01
+cdxfer01: 2022-09-21T21:47:12.905453+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 - Clearing /tmp...
+cdxfer01: 2022-09-21T21:47:13.964935+00:00 cdxfer01 epilogue: MARK: Job 13960626.cbqs01 Complete.
+cdxfer01: 2022-09-21T21:47:13.971358+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 - Checking for hsn0 flaps or nfs errs...
+cdxfer01: 2022-09-21T21:47:14.174260+00:00 cdxfer01 epilogue: Job 13960626.cbqs01 - Epilogue complete. Execution time: 2 seconds
+cdxfer01: 2022-09-21T21:47:15.135870+00:00 cdxfer01 systemd[1]: session-749155.scope: Succeeded.
+cdxfer01: 2022-09-21T21:47:15.362088+00:00 cdxfer01 epilogue: Job 13961029.cbqs01 complete, running post-job actions.
+cdxfer01: 2022-09-21T21:47:15.377715+00:00 cdxfer01 epilogue: Job 13961029.cbqs01 - Recording post-job HSN counters...
+cdxfer01: 2022-09-21T21:47:15.463727+00:00 cdxfer01 epilogue: Job 13961029.cbqs01 - Recording post-job memory usage...
+cdxfer01: 2022-09-21T21:47:15.476372+00:00 cdxfer01 epilogue: Job 13961029.cbqs01 - Recording job NFS statistics to /tmp/nfsstats.13961029.cbqs01
+cdxfer01: 2022-09-21T21:47:15.942542+00:00 cdxfer01 epilogue: Job 13961029.cbqs01 - Clearing /tmp...
+cdxfer01: 2022-09-21T21:47:16.674886+00:00 cdxfer01 PBS_CMD: root : /opt/pbs/bin/qstat -f 13961439.cbqs01
+cdxfer01: 2022-09-21T21:47:16.999359+00:00 cdxfer01 epilogue: MARK: Job 13961029.cbqs01 Complete.
+
+------------------------------------------------------------------
+Job 13961029.cbqs01 - dmesg output for job duration:
+cdxfer01: 2022-09-21A--:--:--.------+--:-- cdxfer01 #### cdxfer01 - Job 13961029.cbqs01 Runtime Data from dmesg
+cdxfer01: [Wed Sep 21 21:46:42 2022] MARK: Job 13961029.cbqs01 Start
+cdxfer01: [Wed Sep 21 21:46:51 2022] MARK: Job 13961118.cbqs01 Start
+cdxfer01: [Wed Sep 21 21:47:10 2022] MARK: Job 13960626.cbqs01 Complete.
+cdxfer01: [Wed Sep 21 21:47:13 2022] MARK: Job 13961029.cbqs01 Complete.
+
+------------------------------------------------------------------
+Job 13961029.cbqs01 - Pre/Post job diff on HSN (MLX) Counters:
+cdxfer01: 2022-09-21A--:--:--.------+--:-- cdxfer01 #### cdxfer01 - Job 13961029.cbqs01 HSN0 MLX Counter Post-Job Difference
+cdxfer01: multicast: 294676612					      |	multicast: 294676689
+cdxfer01: port_rcv_data: 238260026269007				      |	port_rcv_data: 238260114123939
+cdxfer01: port_rcv_packets: 302939899257				      |	port_rcv_packets: 302939989333
+cdxfer01: port_xmit_data: 67369658870333				      |	port_xmit_data: 67369661849040
+cdxfer01: port_xmit_packets: 303894571052				      |	port_xmit_packets: 303894661024
+cdxfer01: rx_bytes: 1395575029206					      |	rx_bytes: 1395587130805
+cdxfer01: rx_packets: 2291546214					      |	rx_packets: 2291556445
+cdxfer01: rx_write_requests: 2803650624				      |	rx_write_requests: 2803734585
+cdxfer01: tx_bytes: 1272905364259					      |	tx_bytes: 1272907750521
+cdxfer01: tx_packets: 2702609142					      |	tx_packets: 2702625531
+cdxfer01: unicast_rcv_packets: 302939899257			      |	unicast_rcv_packets: 302939989333
+cdxfer01: unicast_xmit_packets: 303894571052			      |	unicast_xmit_packets: 303894661024
+
+------------------------------------------------------------------
+### Job 13961029.cbqs01 - NFS Statistics for job duration:
+cdxfer01: #### 2022-09-21.00 #### cdxfer01 - Job 13961029.cbqs01 NFS Statistics for job duration (nfsstat)
+cdxfer01: ## /usr/sbin/nfsstat -v -S /tmp/nfsstats.begin.13961029.cbqs01 :
+cdxfer01: Client packet stats:
+cdxfer01: packets    udp        tcp        tcpconn
+cdxfer01: 0          0          0          0       
+cdxfer01: 
+cdxfer01: Client rpc stats:
+cdxfer01: calls      retrans    authrefrsh
+cdxfer01: 7246       0          7246    
+cdxfer01: 
+cdxfer01: Client nfs v3:
+cdxfer01: null             getattr          setattr          lookup           access           
+cdxfer01: 0         0%     7146     98%     1         0%     25        0%     13        0%     
+cdxfer01: readlink         read             write            create           mkdir            
+cdxfer01: 0         0%     4         0%     23        0%     0         0%     0         0%     
+cdxfer01: symlink          mknod            remove           rmdir            rename           
+cdxfer01: 0         0%     1         0%     0         0%     0         0%     1         0%     
+cdxfer01: link             readdir          readdirplus      fsstat           fsinfo           
+cdxfer01: 1         0%     0         0%     31        0%     0         0%     0         0%     
+cdxfer01: pathconf         commit           
+cdxfer01: 0         0%     0         0%     
+cdxfer01: 
+cdxfer01: 
+cdxfer01: -----------------------------------------------------------------------------------
+cdxfer01: 
+cdxfer01: #### 2022-09-21.00 #### cdxfer01 - Job 13961029.cbqs01 NFS Mount Statistics for job duration (mountstats)
+cdxfer01: ## /usr/sbin/mountstats iostat -S /tmp/mntstats.begin.13961029.cbqs01 /apps :
+cdxfer01: 
+cdxfer01: 
+cdxfer01: 172.20.250.16:/AZ-HFS-Cactus-apps mounted on /apps:
+cdxfer01: 
+cdxfer01:            ops/s       rpc bklog
+cdxfer01:          398.111           0.000
+cdxfer01: 
+cdxfer01: read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.000           0.000           0.000        0 (0.0%)           0.000           0.000
+cdxfer01: write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.000           0.000           0.000        0 (0.0%)           0.000           0.000
+cdxfer01: ## /usr/sbin/mountstats iostat -S /tmp/mntstats.begin.13961029.cbqs01 /sfs :
+cdxfer01: 
+cdxfer01: 
+cdxfer01: 172.20.250.16:/AZ-HFS-Cactus-sfs mounted on /sfs:
+cdxfer01: 
+cdxfer01:            ops/s       rpc bklog
+cdxfer01:          398.111           0.000
+cdxfer01: 
+cdxfer01: read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.000           0.000           0.000        0 (0.0%)           0.000           0.000
+cdxfer01: write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    1.222           3.865           3.163        0 (0.0%)           0.409           0.455
+cdxfer01: ## /usr/sbin/mountstats iostat -S /tmp/mntstats.begin.13961029.cbqs01 /u :
+cdxfer01: 
+cdxfer01: 
+cdxfer01: 172.20.250.17:/AZ-HFS-Cactus-u mounted on /u:
+cdxfer01: 
+cdxfer01:            ops/s       rpc bklog
+cdxfer01:            4.444           0.000
+cdxfer01: 
+cdxfer01: read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.222           0.701           3.153        0 (0.0%)           0.250           0.250
+cdxfer01: write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.056           0.073           1.312        0 (0.0%)           0.000           0.000
+cdxfer01: ## /usr/sbin/mountstats iostat -S /tmp/mntstats.begin.13961029.cbqs01 /pe :
+cdxfer01: 
+cdxfer01: 
+cdxfer01: 10.31.62.244:/cm_shared/image/images_rw_nfs/pe mounted on /pe:
+cdxfer01: 
+cdxfer01:            ops/s       rpc bklog
+cdxfer01:            0.000           0.000
+cdxfer01: 
+cdxfer01: read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.000           0.000           0.000        0 (0.0%)           0.000           0.000
+cdxfer01: write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)
+cdxfer01:                    0.000           0.000           0.000        0 (0.0%)           0.000           0.000
+cdxfer01: ----------------
+cdxfer01: ## /usr/sbin/mountstats mountstats -S /tmp/mntstats.begin.13961029.cbqs01 /apps :
+cdxfer01: Stats for 172.20.250.16:/AZ-HFS-Cactus-apps mounted on /apps:
+cdxfer01:   NFS mount options: ro,vers=3,rsize=65536,wsize=65536,namlen=255,acregmin=3,acregmax=60,acdirmin=30,acdirmax=60,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=172.20.250.16,mountvers=3,mountport=4048,mountproto=udp,local_lock=none
+cdxfer01:   NFS server capabilities: caps=0x3fc7,wtmult=4096,dtsize=8192,bsize=0,namlen=255
+cdxfer01:   NFS security flavor: 1  pseudoflavor: 0
+cdxfer01: 
+cdxfer01: NFS byte counts:
+cdxfer01:   applications read 2032085813 bytes via read(2)
+cdxfer01:   applications wrote 0 bytes via write(2)
+cdxfer01:   applications read 0 bytes via O_DIRECT read(2)
+cdxfer01:   applications wrote 0 bytes via O_DIRECT write(2)
+cdxfer01:   client read 0 bytes via NFS READ
+cdxfer01:   client wrote 0 bytes via NFS WRITE
+cdxfer01: 
+cdxfer01: RPC statistics:
+cdxfer01:   7166 RPC requests sent, 7166 RPC replies received (0 XIDs not found)
+cdxfer01:   average backlog queue length: 0
+cdxfer01: 
+cdxfer01: GETATTR:
+cdxfer01: 	4591 ops (64%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 112
+cdxfer01: 	backlog wait: 0.002178 	RTT: 0.067523 	total execute time: 0.078850 (milliseconds)
+cdxfer01: READDIRPLUS:
+cdxfer01: 	6 ops (0%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 850
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.000000 	total execute time: 0.166667 (milliseconds)
+cdxfer01: 
+cdxfer01: ## /usr/sbin/mountstats mountstats -S /tmp/mntstats.begin.13961029.cbqs01 /sfs :
+cdxfer01: 
+cdxfer01: Stats for 172.20.250.16:/AZ-HFS-Cactus-sfs mounted on /sfs:
+cdxfer01:   NFS mount options: rw,vers=3,rsize=65536,wsize=65536,namlen=255,acregmin=3,acregmax=60,acdirmin=30,acdirmax=60,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=172.20.250.16,mountvers=3,mountport=4048,mountproto=udp,local_lock=none
+cdxfer01:   NFS server capabilities: caps=0x3fc7,wtmult=4096,dtsize=8192,bsize=0,namlen=255
+cdxfer01:   NFS security flavor: 1  pseudoflavor: 0
+cdxfer01: 
+cdxfer01: NFS byte counts:
+cdxfer01:   applications read 156376 bytes via read(2)
+cdxfer01:   applications wrote 27989 bytes via write(2)
+cdxfer01:   applications read 0 bytes via O_DIRECT read(2)
+cdxfer01:   applications wrote 0 bytes via O_DIRECT write(2)
+cdxfer01:   client read 0 bytes via NFS READ
+cdxfer01:   client wrote 64799 bytes via NFS WRITE
+cdxfer01: 
+cdxfer01: RPC statistics:
+cdxfer01:   7166 RPC requests sent, 7166 RPC replies received (0 XIDs not found)
+cdxfer01:   average backlog queue length: 0
+cdxfer01: 
+cdxfer01: GETATTR:
+cdxfer01: 	39 ops (0%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 112
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.128205 	total execute time: 0.153846 (milliseconds)
+cdxfer01: WRITE:
+cdxfer01: 	22 ops (0%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 160
+cdxfer01: 	backlog wait: 0.045455 	RTT: 0.409091 	total execute time: 0.454545 (milliseconds)
+cdxfer01: 
+cdxfer01: ## /usr/sbin/mountstats mountstats -S /tmp/mntstats.begin.13961029.cbqs01 /u :
+cdxfer01: 
+cdxfer01: Stats for 172.20.250.17:/AZ-HFS-Cactus-u mounted on /u:
+cdxfer01:   NFS mount options: rw,vers=3,rsize=65536,wsize=65536,namlen=255,acregmin=3,acregmax=60,acdirmin=30,acdirmax=60,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=172.20.250.17,mountvers=3,mountport=4048,mountproto=udp,local_lock=none
+cdxfer01:   NFS server capabilities: caps=0x3fc7,wtmult=4096,dtsize=8192,bsize=0,namlen=255
+cdxfer01:   NFS security flavor: 1  pseudoflavor: 0
+cdxfer01: 
+cdxfer01: NFS byte counts:
+cdxfer01:   applications read 80796 bytes via read(2)
+cdxfer01:   applications wrote 1024 bytes via write(2)
+cdxfer01:   applications read 0 bytes via O_DIRECT read(2)
+cdxfer01:   applications wrote 0 bytes via O_DIRECT write(2)
+cdxfer01:   client read 11813 bytes via NFS READ
+cdxfer01:   client wrote 1024 bytes via NFS WRITE
+cdxfer01: 
+cdxfer01: RPC statistics:
+cdxfer01:   80 RPC requests sent, 80 RPC replies received (0 XIDs not found)
+cdxfer01:   average backlog queue length: 0
+cdxfer01: 
+cdxfer01: GETATTR:
+cdxfer01: 	34 ops (42%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 112
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.088235 	total execute time: 0.117647 (milliseconds)
+cdxfer01: LOOKUP:
+cdxfer01: 	25 ops (31%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 170
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.080000 	total execute time: 0.120000 (milliseconds)
+cdxfer01: ACCESS:
+cdxfer01: 	12 ops (15%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 120
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.250000 	total execute time: 0.333333 (milliseconds)
+cdxfer01: READ:
+cdxfer01: 	4 ops (5%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 3083
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.250000 	total execute time: 0.250000 (milliseconds)
+cdxfer01: SETATTR:
+cdxfer01: 	1 ops (1%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 144
+cdxfer01: 	backlog wait: 0.000000 	RTT: 1.000000 	total execute time: 0.000000 (milliseconds)
+cdxfer01: WRITE:
+cdxfer01: 	1 ops (1%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 160
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.000000 	total execute time: 0.000000 (milliseconds)
+cdxfer01: MKNOD:
+cdxfer01: 	1 ops (1%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 272
+cdxfer01: 	backlog wait: 0.000000 	RTT: 0.000000 	total execute time: 1.000000 (milliseconds)
+cdxfer01: RENAME:
+cdxfer01: 	1 ops (1%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 260
+cdxfer01: 	backlog wait: 0.000000 	RTT: 2.000000 	total execute time: 1.000000 (milliseconds)
+cdxfer01: LINK:
+cdxfer01: 	1 ops (1%) 
+cdxfer01: 	avg bytes sent per op: avg bytes received per op: 232
+cdxfer01: 	backlog wait: 0.000000 	RTT: 1.000000 	total execute time: 1.000000 (milliseconds)
+cdxfer01: 
+cdxfer01: ## /usr/sbin/mountstats mountstats -S /tmp/mntstats.begin.13961029.cbqs01 /pe :
+cdxfer01: 
+cdxfer01: Stats for 10.31.62.244:/cm_shared/image/images_rw_nfs/pe mounted on /pe:
+cdxfer01:   NFS mount options: ro,vers=3,rsize=1048576,wsize=1048576,namlen=255,acregmin=3,acregmax=60,acdirmin=30,acdirmax=60,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=10.31.62.244,mountvers=3,mountport=38465,mountproto=tcp,local_lock=all
+cdxfer01:   NFS server capabilities: caps=0x3fcf,wtmult=4096,dtsize=32768,bsize=0,namlen=255
+cdxfer01:   NFS security flavor: 1  pseudoflavor: 0
+cdxfer01: 
+cdxfer01: NFS byte counts:
+cdxfer01:   applications read 0 bytes via read(2)
+cdxfer01:   applications wrote 0 bytes via write(2)
+cdxfer01:   applications read 0 bytes via O_DIRECT read(2)
+cdxfer01:   applications wrote 0 bytes via O_DIRECT write(2)
+cdxfer01:   client read 0 bytes via NFS READ
+cdxfer01:   client wrote 0 bytes via NFS WRITE
+cdxfer01: 
+cdxfer01: RPC statistics:
+cdxfer01:   0 RPC requests sent, 0 RPC replies received (0 XIDs not found)
+cdxfer01: 
+cdxfer01: 
+cdxfer01: 
+
+------------------------------------------------------------------
+### Job 13961029.cbqs01 - Exit status is 1
+
+------------------------------------------------------------------
+Job 13961029.cbqs01 - Job summary:
+Job Id: 13961029.cbqs01
+    Job_Name = my_transfers_wcoss2
+    Job_Owner = iliana.genkova@clogin05.cactus.wcoss2.ncep.noaa.gov
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:00
+    resources_used.mem = 0b
+    resources_used.ncpus = 1
+    resources_used.vmem = 14324kb
+    resources_used.walltime = 00:00:00
+    job_state = R
+    queue = dev_transfer
+    server = cbqs01
+    Account_Name = GFS-DEV
+    Checkpoint = u
+    ctime = Wed Sep 21 21:46:26 2022
+    Error_Path = clogin05.cactus.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscr
+	ub/iliana.genkova/Utils/my_transfers_wcoss2.e13961029
+    exec_host = cdxfer01/1
+    exec_vnode = (cdxfer01:ncpus=1:mem=52428800kb)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = oed
+    Mail_Points = a
+    mtime = Wed Sep 21 21:46:58 2022
+    Output_Path = clogin05.cactus.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/nosc
+	rub/iliana.genkova/Utils/my_transfers_wcoss2.o13961029
+    Priority = 0
+    qtime = Wed Sep 21 21:46:26 2022
+    Rerunable = False
+    Resource_List.alvl = 2
+    Resource_List.aslr = True
+    Resource_List.debug = True
+    Resource_List.dfs = False
+    Resource_List.hyper = False
+    Resource_List.mem = 50gb
+    Resource_List.ncpus = 1
+    Resource_List.nodect = 1
+    Resource_List.one-shot = False
+    Resource_List.place = vscatter
+    Resource_List.select = 1:ncpus=1:mem=50GB
+    Resource_List.thp = True
+    Resource_List.turbo = True
+    Resource_List.walltime = 01:30:00
+    schedselect = 1:ncpus=1:mem=50GB:prepost=False
+    stime = Wed Sep 21 21:46:29 2022
+    session_id = 24259
+    jobdir = /u/iliana.genkova
+    substate = 42
+    Variable_List = PBS_O_HOME=/u/iliana.genkova,PBS_O_LANG=en_US.UTF-8,
+	PBS_O_LOGNAME=iliana.genkova,
+	PBS_O_PATH=/apps/ops/prod/nco/intel/19.1.3.304/bufr_util.v1.1.0/exec:/
+	apps/ops/prod/nco/intel/19.1.3.304/bufr_util.v1.1.0/ush:/apps/prod/hpc-
+	stack/intel-19.1.3.304/cray-mpich-8.1.4/netcdf/4.7.4/bin:/apps/prod/hpc
+	-stack/intel-19.1.3.304/cray-mpich-8.1.4/hdf5/1.10.6/bin:/apps/ops/prod
+	/nco/intel/19.1.3.304/util_shared.v1.4.0/ush:/apps/ops/prod/libs/intel/
+	19.1.3.304/bufr/11.7.0/bin:/apps/prod/cfp/2.0.4/intel/19.1.3.304/bin:/a
+	pps/spack/git/2.29.0/gcc/10.2.0/rkn6xaqbrdlim3u4it2l6ljqszg62s25/bin:/a
+	pps/ops/prod/nco/core/prod_util.v2.0.8/ush:/apps/ops/prod/libs/intel/19
+	.1.3.304/grib_util/1.2.2/bin:/apps/spack/libjpeg/9c/intel/19.1.3.304/jk
+	r3isi257ktoouprwaxcn4twtye747z/bin:/pe/intel/compilers_and_libraries_20
+	20.4.304/linux/bin/intel64:/pe/intel/compilers_and_libraries_2020.4.304
+	/linux/bin:/pe/intel/compilers_and_libraries_2020.4.304/linux/mpi/intel
+	64/bin:/pe/intel/debugger_2020/gdb/intel64/bin:/opt/cray/pe/craype/2.7.
+	8/bin:/opt/cray/libfabric/1.11.0.0./bin:/opt/clmgr/sbin:/opt/clmgr/bin:
+	/opt/sgi/sbin:/opt/sgi/bin:/u/iliana.genkova/bin:/usr/local/bin:/usr/bi
+	n:/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/
+	pe/bin:/u/jack.woollen/bin:/u/diane.stokes/bin:/apps/ops/prod/libs/inte
+	l/19.1.3.304/bufr/11.7.0/bin,PBS_O_MAIL=/var/spool/mail/iliana.genkova,
+	PBS_O_SHELL=/bin/bash,
+	PBS_O_WORKDIR=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Utils,
+	PBS_O_SYSTEM=Linux,PBS_O_QUEUE=dev_transfer,
+	PBS_O_HOST=clogin05.cactus.wcoss2.ncep.noaa.gov
+    euser = iliana.genkova
+    egroup = emc
+    hashname = 13961029.cbqs01
+    queue_rank = 1663796786798
+    queue_type = E
+    comment = Job run at Wed Sep 21 at 21:46 on (cdxfer01:ncpus=1:mem=52428800k
+	b)
+    etime = Wed Sep 21 21:46:26 2022
+    umask = 22
+    run_count = 6
+    eligible_time = 00:00:00
+    accrue_type = 3
+    project = GFS-DEV
+    run_version = 1
+    Submit_Host = clogin05.cactus.wcoss2.ncep.noaa.gov
+
+
+------------------------------------------------------------------
+Job 13961029.cbqs01 - PBS tracejob output (for parent mom node only):
+
+Job: 13961029.cbqs01
+
+09/21/2022 21:46:29  M    update_job_usage: CPU usage: 0.000 secs
+09/21/2022 21:46:29  M    update_job_usage: cpupercent initialized to zero
+09/21/2022 21:46:29  M    update_job_usage: Memory usage: mem=0b
+09/21/2022 21:46:29  M    no active tasks
+09/21/2022 21:46:49  M    no active tasks
+09/21/2022 21:46:58  M    Started, pid = 24259
+09/21/2022 21:47:14  M    task 00000001 terminated
+09/21/2022 21:47:14  M    Terminated
+09/21/2022 21:47:14  M    task 00000001 cput=00:00:10
+09/21/2022 21:47:14  M    kill_job
+09/21/2022 21:47:14  M    cdxfer01 cput=00:00:00 mem=0kb
+09/21/2022 21:47:14  M    no active tasks
+09/21/2022 21:47:14  M    update_job_usage: CPU usage: 9.829 secs
+09/21/2022 21:47:14  M    update_job_usage: 13961029.cbqs01 measured interval cpupercent 21 increased job cpupercent to 21
+09/21/2022 21:47:14  M    update_job_usage: Memory usage: mem=21708kb
+09/21/2022 21:47:16  M    no active tasks
+09/21/2022 21:47:19  M    no active tasks
+
+------------------------------------------------------------------
+To see full PBS log data, run: /sfs/admin/scripts/tracejob.sh 13961029.cbqs01
+
+==================================================================
+END - DEBUG INFO
+==================================================================
+
+##### Job 13961029.cbqs01 - PBS Job Script:
+
+#!/bin/bash
+#PBS -N my_transfers_wcoss2
+#PBS -N my_transfers_wcoss2
+#PBS -j oe
+#PBS -j oe
+#PBS -A GFS-DEV 
+#PBS -A GFS-DEV 
+##PBS -A OBSPROC-T2O
+#PBS -q dev_transfer
+#PBS -q dev_transfer
+#PBS -l place=vscatter,select=1:ncpus=1:mem=50GB
+#PBS -l place=vscatter,select=1:ncpus=1:mem=50GB
+#PBS -l walltime=1:30:00
+#PBS -l walltime=1:30:00
+#PBS -l debug=true
+#PBS -l debug=true
+
+set -x
+
+###USAGE: qsub < my_transfers_wcoss2.sh
+
+
+###Dogwood
+###ddxfer04.wcoss2.ncep.noaa.gov 
+###Cactus
+###cdxfer.wcoss2.ncep.noaa.gov 
+###Hera
+###Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov
+
+
+###Residing on Cactus
+###PUSH
+###scp path/on/Cactus/testC2D Iliana.Genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testC2D
+   scp /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/SATWND/com/obsproc/v1.0/g*.2022092* Iliana.Genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/4Brett/.
+###or
+###PULL
+###scp Iliana.Genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testD2C path/on/Cactus/testD2C
+
+###Residing on Dogwood
+###PUSH
+###scp path/on/Dogwood/testD2C Iliana.Genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testD2C
+  #scp /lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/noscrub.Dogwood.p3.tar Iliana.Genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/noscrub.Dogwood.p3.tar
+###or
+###PULL
+###scp Iliana.Genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/testD2C path/on/Dogwood/testC2D
+
+###Residing on either WCOSS2 machine
+###PUSH to Hera
+###scp -r path/to/wcoss2/file_name Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/.
+
+   #scp -r /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Utils/BOZA Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/.
+   #scp -r /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Utils/BOZA Iliana.Genkova@dtn-hera.rdhpcs.noaa.gov://scratch1/NCEPDEV/da/Iliana.Genkova/BOZA 
+###or
+###PULL from Hera
+###scp -r Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/file_name path/to/wcoss2/file_name
+
+
+
+##### End of job script
+------------------------------------------------------------------
