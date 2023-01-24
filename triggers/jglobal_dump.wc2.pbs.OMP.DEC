@@ -93,8 +93,9 @@ export TANK_021206=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/CRIS/
 #/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/20221126/b008/xx018  TC
 #/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/20221126/b008/xx019  LP
 
-export TANK_008018=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW
-export TANK_008019=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW
+export TANK_008017=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW #NP
+export TANK_008018=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW #TC
+#export TANK_008019=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW #LP - not on I&T
 
 #export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export DATAROOT=/lfs/h2/emc/obsproc/noscrub/$USER

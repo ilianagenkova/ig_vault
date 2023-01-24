@@ -1,0 +1,2 @@
+jtyp=rtma cyc=12 cycM=00 PDY=20230117 desc=ASH3D bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.extra > /dev/null 2>&1
+

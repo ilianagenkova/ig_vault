@@ -1,0 +1,17 @@
+for (( mm=7; mm<=7; mdd++ ))
+do
+echo MONTH:: ${mm}
+ for dd in 08
+ do
+ echo DAY:: ${dd}
+jtyp=gfs cyc=00 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gfs cyc=06 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gfs cyc=12 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gfs cyc=18 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gdas cyc=00 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gdas cyc=06 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gdas cyc=12 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+#jtyp=gdas cyc=18 PDY=202207${dd} desc=METOPBC bash -l /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC
+ done
+done
+

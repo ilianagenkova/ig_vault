@@ -1,0 +1,143 @@
+#PBS -N obsproc_dump_alert
+#PBS -j oe
+#PBS -S /bin/bash
+#PBS -q dev
+#PBS -A OBSPROC-DEV
+#PBS -l walltime=00:30:00
+#PBS -l place=vscatter,select=1:ncpus=4:mem=2gb
+#PBS -l debug=true
+
+
+
+##!/bin/sh 
+##PBS -N obsproc_jdump_alert
+##PBS -o /lfs/h2/emc/ptmp/Iliana.Genkova/obsproc_dump_alert_test.o%J
+##PBS -e /lfs/h2/emc/ptmp/Iliana.Genkova/obsproc_dump_alert_test.o%
+##PBS -q dev
+##PBS -A OBSPROC-DEV
+##PBS -l walltime=00:30:00
+##PBS -l place=vscatter,select=1:ncpus=4:mem=2gb
+##PBS -l debug=true
+
+#######################################################
+##  Job [gdas][gfs][nam]_dump_alert -- run here at 12Z
+#######################################################
+
+##  CURRENT SET-UP IS TO RUN ON PHASE 2
+
+######################################################
+##
+##  #BSUB -q dev2       run on compute nodes, uses full node(s)
+##                      #BSUB -x is forced regardless if in LSF cards
+##                         (running NOT shared)
+##
+##  #BSUB -q dev2_shared
+##                      run on compute nodes, doesn't use full node(s)
+##                      must specify memory limits
+##                         #BSUB -R rusage[mem=xxxx]
+##                         #BSUB -R affinity[zzzz]
+##
+##  #BSUB -q transfer   run on interactive nodes
+##                      use only for small jobs - can cause memory issues
+##                      can run ftp, ssh & mail
+##                      must specify memory limits
+##                         #BSUB -R rusage[mem=xxxx]
+##                         #BSUB -R affinity[zzzz]
+##  #BSUB -L /bin/sh should be commented out if importing variables from
+##    executing script, make sure ~Dennis.Keyser/host.list exists
+##
+######################################################
+
+
+##OLD job card
+##BSUB -J jgfs_dump_alert_12
+##BSUB -o /gpfs/dell2/ptmp/Shelley.Melchior/gfs_dump_alert_12.o%J
+##BSUB -e /gpfs/dell2/ptmp/Shelley.Melchior/gfs_dump_alert_12.o%J
+##BSUB -L /bin/sh
+##BSUB -q dev
+##BSUB -R rusage[mem=500]
+##BSUB -R affinity[core]
+######BSUB -cwd /ptmpp2/Dennis.Keyser
+##BSUB -W 00:15
+##BSUB -P OBSPROC-T2O
+
+cat /etc/motd
+echo;echo "*************************************************************"
+###[ -z "????" ] || echo "LSF command:  " $???
+[ -z "$LSB_JOBNAME" ] || echo "LSF job name:         " $LSB_JOBNAME
+[ -z "$LSFUSER" ] ||     echo "User:                 " $LSFUSER
+[ -z "$LSB_QUEUE" ] ||   echo "Queue:                " $LSB_QUEUE
+[ -z "$LSB_HOSTS" ] ||   echo "Submitted to Node(s): " $LSB_HOSTS
+echo "*************************************************************";echo
+
+set -xa
+
+userROOT=/u/Iliana.Genkova/INSTALL
+
+#What is this? IG
+# For Dell
+[ -d /usrx/local/prod/lmod ] && . /usrx/local/prod/lmod/lmod/init/profile > /dev/null 2>&1
+
+VERSION_FILE=/lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/GIT/obsproc/versions/run.ver
+#VERSION_FILE=$PACKAGEROOT/obsproc/${obsproc_ver}/versions/run.ver # when /obsproc goes live
+if [ -f $VERSION_FILE ]; then
+   . $VERSION_FILE
+else
+  echo Need version info...  Exiting...
+ exit 7
+fi
+
+# source moduleload file
+# GitHub location: release/obsproc.v1.0.0/triggers/moduleload
+. /lfs/h2/emc/obsproc/noscrub/Iliana.Genkova/Trigs.KEEP/SetEnvironment/moduleload
+
+# load correct version bufr_dump for WCOSS2
+module use /u/Iliana.Genkova/INSTALL/bufr-dump/modulefiles/
+module load bufr_dump/1.0.0
+
+#export DATAROOT=/gpfs/dell2/ptmp/${USER}
+export DATAROOT=/lfs/h2/emc/ptmp/${USER}
+
+envir=prod # scripts point to production files as default
+export DEBUG_LEVEL=3
+
+export KEEPDATA=YES
+
+export SENDECF=NO
+export SENDDBN=NO
+export SENDSDM=NO
+
+# --> these must normally be set based on the particular run you are making
+
+export cyc=12  # must always be exported (choices are 00, 06, 12, 18)
+
+## ==> select RUN here
+## -------------------
+export RUN=gdas # must always be exported
+##export RUN=gfs # must always be exported
+##export RUN=nam # must always be exported
+
+export obsproc_ver=1.0.0
+
+export NET=$RUN
+[ $RUN = gdas ] && export NET=gfs
+export job=${RUN}_dump_alert_${cyc} # normally not changed, but needs $RUN and $cyc
+
+
+export PDY=20210824 # Add this to force in a different date than in /com2/date
+
+
+#export COMIN_ROOT=/gpfs/dell2/ptmp/$USER
+export COMIN_ROOT=/lfs/h2/emc/ptmp/$USER/
+##export COMIN=$COMIN_ROOT/com/obsproc/${RUN}.$PDY/${cyc}/atmos
+export COMIN=$COMIN_ROOT/global_wcoss2/com/obsproc/${obsproc_ver}/${RUN}.$PDY
+
+#export HOMEobsproc=$NWROOT/obsproc.${obsproc_ver}
+# !!! git branch EMC_obsproc: wcoss2
+#export HOMEobsproc=${userROOT}/gitstatic/EMC_obsproc_wcoss2
+export HOMEobsproc=/u/Iliana.Genkova/INSTALL/obsproc
+
+
+$HOMEobsproc/jobs/JDUMP_ALERT
+
+                           
