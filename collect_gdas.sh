@@ -15,9 +15,6 @@ do
 	cp /lfs/h2/emc/da/noscrub/dagmar.merkova/T2Bcom/CRON/gfsT2B/com/obsproc/v1.1/gfs.${yyyy}${mm}${dd}/${hh}/atmos/gfs.t${hh}z.prepbufr.acft_profiles  GFS/gfs.${yyyy}${mm}${dd}/${hh}/atmos/.
 	cp /lfs/h2/emc/da/noscrub/dagmar.merkova/T2Bcom/CRON/gfsT2B/com/obsproc/v1.1/gfs.${yyyy}${mm}${dd}/${hh}/atmos/gfs.t${hh}z.prepbufr_pre-qc         GFS/gfs.${yyyy}${mm}${dd}/${hh}/atmos/.
         cp /lfs/h2/emc/da/noscrub/dagmar.merkova/T2Bcom/CRON/gfsT2B/com/obsproc/v1.1/gfs.${yyyy}${mm}${dd}/${hh}/atmos/gfs.t${hh}z.prepbufr_pre-qc.nr      GFS/gfs.${yyyy}${mm}${dd}/${hh}/atmos/.
-
-
-
        done
     done
   done    

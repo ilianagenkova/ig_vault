@@ -29,7 +29,7 @@ do
   do
     for dd in {01..31}
     do
-      for hh in 00 06 12 18
+      for hh in {00..23}
       do
       echo ${yyyy}-${mm}-${dd} ${hh}UTC
       mkdir -p RAP/rap.${yyyy}${mm}${dd}
