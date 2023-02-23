@@ -31,9 +31,9 @@ set -x
    #scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/SATWND/com/obsproc/v1.0/gdas.20220921 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Brett/gdas.20220921
    #scp -r /lfs/h2/emc/obsproc/noscrub/steve.stegall/COMDIR/CIMSS/v1.0/* iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SS_LB_CIMSS/.
    #scp -r /u/ashley.stanfield/* iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Ashley
-   scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/ASCAT/com/obsproc/v1.0/gdas.20221207 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Emily_ATMS21/.
-   scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/ASCAT/com/obsproc/v1.0/gdas.20221208 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Emily_ATMS21/.
-   scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/ASCAT/com/obsproc/v1.0/gdas.20221209 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Emily_ATMS21/. 
+   #scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/ASCAT/com/obsproc/v1.0/gdas.20221207 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Emily_ATMS21/.
+   #scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/ASCAT/com/obsproc/v1.0/gdas.20221208 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Emily_ATMS21/.
+   #scp -r /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/ASCAT/com/obsproc/v1.0/gdas.20221209 iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/4Emily_ATMS21/. 
 ###or
 ###PULL
 ###scp iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/testD2C path/on/Cactus/testD2C
@@ -44,7 +44,7 @@ set -x
   #scp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/noscrub.Dogwood.p3.tar iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/noscrub.Dogwood.p3.tar
 ###or
 ###PULL
-###scp iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/testD2C path/on/Dogwood/testC2D
+  scp -r iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/MarineArchive/dcom_d10/2022/07/* /lfs/h2/emc/obsproc/noscrub/iliana.genkova/07/.  
 
 ###Residing on either WCOSS2 machine
 ###PUSH to Hera
