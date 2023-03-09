@@ -33,14 +33,14 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.1
-export obsproc_ver_pckg=v1.1.2
+export obsproc_ver_pckg=v1.1.0
 #export bufr_dump_ver=1.0.0
 export obsNET=obsproc
 #PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # SM local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.W3             # IG local  
+export HOMEobsproc=${userROOT}/GIT/play/DEPENDENCIES/obsproc             # IG local  
 
 VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
 #VERSION_FILE=${userROOT}/install/obsproc-rel.v1.0.0/versions/run.ver # SM local
@@ -53,7 +53,7 @@ else
 fi
 
 #already in versioins/run.ver :)
-export bufr_dump_ver=1.1.2 #1.0.0
+export bufr_dump_ver=1.1.0 #1.0.0
 
 # Load the modules specified in $VERSION_FILE
 module load libjpeg
@@ -75,7 +75,7 @@ module load cfp/${cfp_ver}
 
 
 module unload bufr_dump
-module use ${userROOT}/GIT/play/bufr-dump.W3/install/modulefiles
+module use ${userROOT}/GIT/play/DEPENDENCIES/bufr-dump/install/modulefiles
 module load bufr_dump/${bufr_dump_ver}
 echo LOADED ILIANA bufr-dump
 echo $BUFR_DUMPLIST
@@ -99,6 +99,7 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
+export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
 
 # GMI tanks are in prod already June 2022
 #export TANK_021246=/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/git/TANK_DUMP #${userROOT}/DCOMDIR/TEST/prod/
