@@ -94,7 +94,7 @@ export SENDDBN=NO  # developer
 export SENDSDM=NO  # developer
 
 export TANK=$DCOMROOT
-export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
+#export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
