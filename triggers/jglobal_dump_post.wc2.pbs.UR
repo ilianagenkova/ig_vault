@@ -1,0 +1,162 @@
+#!/bin/sh  
+#PBS -N obsproc_%JTYP%_dump_post_%PDY%_%CC%_%DESC%
+#PBS -j oe
+#PBS -S /bin/bash
+#PBS -q dev
+#PBS -l walltime=00:15:00
+#PBS -A OBSPROC-DEV
+#PBS -l place=vscatter,select=1:ncpus=3:mem=4gb
+#PBS -l debug=true
+
+
+#####################################################################
+# Submit notes:
+# Run from [ps]tmp when running manually
+# When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
+# For specific PDY:
+# > jtyp=gdas cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/cycqsub /path/to/triggers/jglobal_dump_post.wc2.pbs
+# For latest/current PDY:
+# > jtyp=gdas cyc=00 desc=somethingfun /u/iliana.genkova/cycqsub /path/to/triggers/jglobal_*.wc2.lsf
+# cycqsub location: /u/iliana.genkova/bin
+#####################################################################
+
+set -xu
+
+export envir=prod
+export cyc=%CC%
+DESC=%DESC%
+JTYP=%JTYP%
+export job=${JTYP}_dump_post_$cyc
+export jobid=$job.$PBS_JOBID
+export PDY=%PDY%
+PDYm1=$(date -d "${PDY} 1 day ago" +%Y%m%d)
+PDYm2=$(date -d "${PDY} 2 days ago" +%Y%m%d)
+
+userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
+
+export obsNET=obsproc
+export obsproc_ver=v1.1 
+export obsproc_ver_pckg=v1.1.2 
+export bufr_dump_ver=1.0.0
+
+#export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
+#export HOMEobsproc=${PACKAGEROOT}/${obsNET}.${obsproc_ver_pckg}     # NCO prod
+#export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # SM local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.UR                     # IG local  
+
+VERSION_FILE=$HOMEobsproc/versions/run.ver                           # NCO para & prod
+#VERSION_FILE=${userROOT}/install/obsproc-rel.v1.0.0/versions/run.ver # SM local
+#VERSION_FILE=${userROOT}/GIT/obsproc/versions/run.ver                 # IG local
+if [ -f $VERSION_FILE ]; then
+   . $VERSION_FILE
+else
+ echo Need version info...  Exiting...
+ exit 7
+fi
+
+#export bufr_dump_ver=1.1.0
+
+# Load the modules specified in $VERSION_FILE
+module load grib_util/${grib_util_ver}
+module load netcdf/${netcdf_ver}
+# use para installation
+module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304 
+# use local installation
+#module use ${userROOT}/install/bufr-dump/modulefiles         # SM local
+#module use ${userROOT}/GIT/bufr-dump/install/modulefiles    # IG local
+#module load bufr_dump/${bufr_dump_ver}
+module load intel/${intel_ver}
+module load craype/${craype_ver}
+module load cray-mpich/${cray_mpich_ver}
+module load cray-pals/${cray_pals_ver}
+module load cfp/${cfp_ver}
+
+# use local installation
+module unload bufr_dump
+#module use ${userROOT}/install/bufr-dump/modulefiles         # SM local
+module use ${userROOT}/GIT/play/bufr-dump.UR/install/modulefiles    # IG local
+module load bufr_dump/${bufr_dump_ver}
+
+
+# Be sure the modules are loaded 
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_util/") -eq 0 ]]; then echo "prod_util is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_envir/") -eq 0 ]]; then echo "prod_envir is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)grib_util/") -eq 0 ]]; then echo "grib_util is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)netcdf/") -eq 0 ]]; then echo "netcdf is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)bufr_dump/") -eq 0 ]]; then echo "bufr_dump is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)intel/") -eq 0 ]]; then echo "intel is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)craype/") -eq 0 ]]; then echo "craype is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-mpich/") -eq 0 ]]; then echo "cray-mpich is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-pals/") -eq 0 ]]; then echo "cray-pals is not loaded!"; fi
+if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cfp/") -eq 0 ]]; then echo "cfp is not loaded!"; fi
+
+export SENDECF=NO  # developer
+export SENDDBN=NO  # developer
+export SENDSDM=NO  # developer
+
+export TANK=$DCOMROOT
+
+export DATAROOT=/lfs/h2/emc/stmp/$USER 
+export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
+
+export DEBUG_LEVEL=3
+export LOUD=ON
+export KEEPDATA=YES
+
+export COMPONENT=atmos
+#export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
+export COMIN_ROOT=$COMROOT 
+export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
+export comin=${COMIN_ROOT}/${obsNET}/${obsproc_ver}/${JTYP}.${PDY}/${cyc}/${COMPONENT}
+export comin_m1=${COMIN_ROOT}/${obsNET}/${obsproc_ver}/${JTYP}.${PDYm1}/${cyc}/${COMPONENT}
+
+export COPY=YES
+export HOMEarch=${COMOUT_ROOT}/${obsNET}/${obsproc_ver}/sdm_rtdm/gfs
+export AVGDarch_IN=$HOMEarch/avgdata
+export AVGDarch_OUT=$HOMEarch/avgdata
+export OBCNTarch=$HOMEarch/obcount_30day
+
+export PROCESS_REMOREST_dm2=YES
+
+$HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP_POST
+
+err=$?
+echo $err
+
+#SEE SHELLY's TRIGGER!!!!
+#jglobal_dump_post.wc2.pbs.nr-33
+#jscp_dump_post.wc2.pbs.nr-33
+# scp re-processed aircar and aircft bufr_d.nr files to emcrzdm
+#user=smelchior
+#system=emcrzdm.ncep.noaa.gov
+#localdir=${COMOUT_ROOT}/${obsNET}/${obsproc_ver}/${JTYP}.${PDYm2}/${cyc}/${COMPONENT}
+#remotedir=/home/ftp/emc/users/smelchior/wcoss2/GDAS_NON_RESTRICTED_48HRS
+#if [ -f $localdir/${JTYP}.t${cyc}z.aircar.tm00.bufr_d.nr ]; then
+#  echo "submit ssh and scp job"
+#  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
+#  /lfs/h2/emc/obsproc/noscrub/shelley.melchior/triggers/jscp_dump_post.wc2.pbs.nr-33
+#fi
+# If you wish to only run dump_post, un-comment the exit line below
+#exit
+#SEE SHELLY's TRIGGER!!!!_end
+
+# When run from cron, the stdout is written to /u/$USER
+# mv to stmp
+pbsjobid=$(echo $PBS_JOBID | cut -d'.' -f1)
+cronlogfile=/u/$USER/$PBS_JOBNAME.o$pbsjobid
+outputdir=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/output
+if [ -f "$cronlogfile" ]; then
+  mkdir -p $outputdir
+  mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
+fi
+
+exit
+
+# Kick off prep job
+if [ $err -eq 0 ]; then
+  echo "submit jrap_prep"
+  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.W3
+fi
+
+exit
