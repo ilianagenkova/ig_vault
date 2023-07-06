@@ -32,8 +32,9 @@ if test "$now_on" = "$now_backup"
 then
   echo "$now_on is the dev machine."
   echo "DO WHAT YOU NEED TO DO!"
+  exit 0
 else
   echo "$now_on is the prod machine."
   echo "ABORT - only run on dev machine"
-  exit
+  exit 1
 fi

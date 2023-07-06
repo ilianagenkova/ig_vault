@@ -423,7 +423,7 @@ else
      fi  # write permission
 fi
 
-cp ufbtab_example.out ${bfile}.UE
+#cp ufbtab_example.out ${bfile}.UE
 
 echo 'normal end of script'
 

@@ -115,6 +115,9 @@ export AVGDarch_IN=$HOMEarch/avgdata
 export AVGDarch_OUT=$HOMEarch/avgdata
 export OBCNTarch=$HOMEarch/obcount_30day
 
+#This is the key variable, and run this code only on dev machine
+export PROCESS_REMOREST_dm2=YES
+
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP_POST
 
 err=$?
@@ -130,7 +133,6 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-exit
 
 # Kick off prep job
 if [ $err -eq 0 ]; then

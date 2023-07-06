@@ -3,9 +3,9 @@
 #PBS -j oe
 #PBS -S /bin/bash
 #PBS -q dev
-#PBS -l walltime=00:20:00
+#PBS -l walltime=01:00:00
 #PBS -A OBSPROC-DEV
-#PBS -l place=vscatter,select=1:ncpus=14:mem=160gb
+#PBS -l place=vscatter,select=1:ncpus=14:mem=360gb
 #PBS -l debug=true
 
 ##############################################
@@ -142,6 +142,8 @@ if [ $err -eq 0 ]; then
   ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.R12 
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs
 fi
+
+exit
 
 # Kick off prep job
 if [ $err -eq 0 ]; then

@@ -37,7 +37,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 export obsNET=obsproc
 export obsproc_ver=v1.1 
 export obsproc_ver_pckg=v1.1.2 
-export bufr_dump_ver=1.0.0
+export bufr_dump_ver=1.1.2
 
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/${obsNET}.${obsproc_ver_pckg}     # NCO prod
@@ -54,7 +54,7 @@ else
  exit 7
 fi
 
-#export bufr_dump_ver=1.1.0
+export bufr_dump_ver=1.1.2
 
 # Load the modules specified in $VERSION_FILE
 module load grib_util/${grib_util_ver}
@@ -116,6 +116,7 @@ export AVGDarch_IN=$HOMEarch/avgdata
 export AVGDarch_OUT=$HOMEarch/avgdata
 export OBCNTarch=$HOMEarch/obcount_30day
 
+#This is the key variable, and run this code only on dev machine
 export PROCESS_REMOREST_dm2=YES
 
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP_POST
@@ -156,7 +157,7 @@ exit
 if [ $err -eq 0 ]; then
   echo "submit jrap_prep"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.W3
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.UR
 fi
 
 exit

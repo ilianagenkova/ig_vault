@@ -1,2 +1,9 @@
-qsub < my_transfers_wcoss2.sh 
+qisub < my_transfers_wcoss2.sh 
+
+-----
+ sed -i '1,2d' test
+
+-----
+
+
 

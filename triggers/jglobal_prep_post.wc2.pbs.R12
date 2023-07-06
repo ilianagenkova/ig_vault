@@ -106,6 +106,9 @@ export LOUD=ON
 #export DATCOM1_IN=/lfs/h1/ops/canned/com/gfs/v16.2/gdascounts
 #export COMIN1=/lfs/h1/ops/canned/com/gfs/v16.2/$JTYP.
 
+#This is the key variable, and run this code only on dev machine
+export PROCESS_REMOREST_dm2=YES
+
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_PREP_POST
 
 err=$?
