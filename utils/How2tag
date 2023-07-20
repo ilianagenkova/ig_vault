@@ -1,0 +1,11 @@
+Make a Tag
+https://vlab.noaa.gov/redmine/projects/emc-obsproc/wiki/Make_a_Tag
+
+
+ git checkout branchname_you_want_to_tag
+ git tag -a tagname           # where tagname = OT.reponame.vX.Y.Z_YYYYMMDD
+ git show tagname             # to view tag annotations at the top of screen
+ git push origin tagname      # OR: git push --tags  # for multiple tags
+ git tag -l
+
+

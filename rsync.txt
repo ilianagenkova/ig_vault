@@ -4,8 +4,9 @@
 
  ### WHILE IN /ig_vault
 
- crontab -l > crontab_Dogwood_YYYYMMDD
- cp /u/iliana.genkova/.bashrc bashrc/.bashrc.Dogwood.YYYYMMDD
+ PDY=`date +\%Y\%m\%d` 
+ crontab -l > cron/crontab_Dogwood_$PDY
+ cp /u/iliana.genkova/.bashrc bashrc/.bashrc.Dogwood.$PDY
  rsync -avhWr --no-compress --progress ../Utils/ utils
  rsync -avhWr --no-compress --progress ../Trigs.KEEP/ triggers/
  # Manually add the top level "helpers" (from /noscrub to /ig_vault)

@@ -34,7 +34,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 export obsNET=obsproc
 export obsproc_ver=v1.1
 export obsproc_ver_pckg=v1.1.2
-export prepobs_ver=1.0.0
+export prepobs_ver=1.0.1
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver}   # NCO para
 export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
@@ -48,18 +48,23 @@ else
  exit 7
 fi
 
+export prepobs_ver=1.0.1
+
 #Load the modules
 module load grib_util/${grib_util_ver}
 module load netcdf/${netcdf_ver}
-module load bufr_dump/${bufr_dump_ver}
+#module load bufr_dump/${bufr_dump_ver}
 # use local prepobs installation
 #module use ${userROOT}/install/prepobs/modulefiles
-module load prepobs/${prepobs_ver}
+#module load prepobs/${prepobs_ver}
 module load intel/${intel_ver}
 module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
+
+module unload prepobs
+module load prepobs/${prepobs_ver}
 
 #Check if they exist
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)grib_util/") -eq 0 ]]; then echo "grib_util is not loaded!"; fi

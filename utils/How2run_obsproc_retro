@@ -1,0 +1,13 @@
+#  need to get dumpfile data , use 
+~/UTIL/stahnihpss-dump.sh
+#  for prepstep you need atmf and log file, *nc and *txt
+#  set  your date -6h for atmf.006 files
+#  set  your date -9h for atmf.009 files
+~/UTIL/stahnihpss.sh
+#
+#set TANK in your dump code
+#export TANK=/lfs/h2/emc/stmp/dagmar.merkova/dump     #temp tanks in stmp
+##export TANK=$DCOMROOT     #OPERATIONAL
+#set location for gfs/gdas fcst files 
+#export HOMEgfs=/lfs/h2/emc/stmp/dagmar.merkova/       #NCO approved shared location for common GFS files
+#
