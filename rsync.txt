@@ -11,3 +11,6 @@
  rsync -avhWr --no-compress --progress ../Trigs.KEEP/ triggers/
  # Manually add the top level "helpers" (from /noscrub to /ig_vault)
 
+ON NEW DEV, WHILE IN /ig_vault
+   rsync -avhWr --no-compress --progress utils/ ../Utils
+   rsync -avhWr --no-compress --progress triggers/ ../Trigs.KEEP/
