@@ -34,7 +34,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.1 #needs to match what is in /versions/VERSION
 export obsproc_ver_pckg=v1.1.2
-export bufr_dump_ver=1.1.0
+#export bufr_dump_ver=1.1.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
@@ -52,7 +52,7 @@ else
  exit 7
 fi
 
-export bufr_dump_ver=1.1.0
+#export bufr_dump_ver=1.1.0
 
 # Load the modules specified in $VERSION_FILE
 module load libjpeg
