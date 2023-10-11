@@ -20,5 +20,5 @@ ON NEW DEV, WHILE IN /ig_vault
    rsync -avhWr --no-compress --progress utils/ ../Utils
    rsync -avhWr --no-compress --progress triggers/ ../Trigs.KEEP/
    #Manually coppy the top level "helpers"
-
+   Git PULL the repositories
 
