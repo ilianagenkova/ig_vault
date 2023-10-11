@@ -10,7 +10,15 @@
  rsync -avhWr --no-compress --progress ../Utils/ utils
  rsync -avhWr --no-compress --progress ../Trigs.KEEP/ triggers/
  # Manually add the top level "helpers" (from /noscrub to /ig_vault)
+ git status
+ git add ...
+ git commit
+ git push
 
 ON NEW DEV, WHILE IN /ig_vault
+   git pull
    rsync -avhWr --no-compress --progress utils/ ../Utils
    rsync -avhWr --no-compress --progress triggers/ ../Trigs.KEEP/
+   #Manually coppy the top level "helpers"
+
+
