@@ -3,3 +3,13 @@ scp -r filename igenkova@emcrzdm.ncep.noaa.gov:/home/people/emc/igenkova/html/.
 scp -r filename igenkova@emcrzdm.ncep.noaa.gov:/home/ftp/emc/mmb/data_processing/SMtest/AMV/EA
 
 
+ RZDM access:
+ ssh igenkova@emcrzdm.ncep.noaa.gov
+ 
+ Put data on RZDM:
+ From /da/noscrub/Iliana.Genkova/VSDB_Webs:
+ scp -r web.G16*.tar igenkova@emcrzdm.ncep.noaa.gov:/home/people/emc/igenkova/html/.
+
+ Untar data on RZDM, URL will be: http://www.emc.ncep.noaa.gov/users/Iliana.Genkova/untarred_web_directory_name/
+
+

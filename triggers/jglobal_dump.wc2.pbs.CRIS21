@@ -100,7 +100,9 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
-export TANK_021206=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/new_CRIS_NESDIS/PARA/dcom/ #YYYYMMDD/b021/xx206
+export TANK_021206=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/CRIS_CLUSTER # /202312*/b021/xx206
+                  #=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW
+                  #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/new_CRIS_NESDIS/PARA/dcom/ #YYYYMMDD/b021/xx206 # CRIS 431
 
 #export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
 

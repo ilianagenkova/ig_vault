@@ -11,6 +11,10 @@ case "$FRUIT" in
  crontab -l > cron/crontab_dev_$PDY
  cp /u/iliana.genkova/.bashrc bashrc/.bashrc.dev.$PDY
  rsync -avhWr --no-compress --progress ../Utils/ utils
+ rm -rf utils/my_transfers_wcoss2.o*
+ rm -rf utils/log.my_transfers_wcoss2.o*
+ rm -rf utils/*.UE
+ ll utils/*.UE
  rsync -avhWr --no-compress --progress ../Trigs.KEEP/ triggers/
  ## Manually add the top level "helpers" (from /noscrub to /ig_vault)
  #git status
@@ -19,7 +23,12 @@ case "$FRUIT" in
  #git push
  cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/obsproc_paths .
  cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/pda_IPs.txt .
- cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/where_are_the_logs . 
+ cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/where_are_the_logs .
+ echo "PROCEED with manual:............"
+ echo "git status"
+ echo "git add (Careful not to add *.o)"
+ echo "git commit"
+ echo "git push" 
    ;;
    "NEW")
    echo "Set up NEW dev..."

@@ -59,7 +59,7 @@ export bufr_dump_ver=1.2.0
 module load grib_util/${grib_util_ver}
 module load netcdf/${netcdf_ver}
 # use para installation
-module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304 
+#module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304 
 # use local installation
 #module use ${userROOT}/install/bufr-dump/modulefiles         # SM local
 #module use ${userROOT}/GIT/bufr-dump/install/modulefiles    # IG local
@@ -115,8 +115,8 @@ export AVGDarch_IN=$HOMEarch/avgdata
 export AVGDarch_OUT=$HOMEarch/avgdata
 export OBCNTarch=$HOMEarch/obcount_30day
 
-#This is the key variable, and run this code only on dev machine
-export PROCESS_REMOREST_dm2=YES
+#This is the key variable, for unrestricting aircraft data after 48h, and run this code only on dev machine
+#export PROCESS_REMOREST_dm2=YES
 
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP_POST
 

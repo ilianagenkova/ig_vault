@@ -1,0 +1,12 @@
+Path to HPSS back up (one-two years on HD, more or HPSS)
+/NCEPDEV/emc-da/5year/Ashley.Stanfield/MarineArchive
+
+[hpsscore1]/NCEPDEV->ls /NCEPDEV/emc-da/5year/Ashley.Stanfield/MarineArchive
+/NCEPDEV/emc-da/5year/Ashley.Stanfield/MarineArchive:
+2018.tar   2019.tar   2020.tar   2021.tar   2022.tar   2023/
+
+
+[hpsscore1]/NCEPDEV->ls /NCEPDEV/emc-da/5year/Ashley.Stanfield/MarineArchive/2023
+/NCEPDEV/emc-da/5year/Ashley.Stanfield/MarineArchive/2023:
+2023_01.tar   2023_02.tar   2023_03.tar   2023_04.tar   2023_05.tar   2023_06.tar   2023_07.tar
+

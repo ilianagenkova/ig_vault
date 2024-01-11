@@ -5,7 +5,7 @@
 #PBS -A OBSPROC-DEV
 #PBS -q dev
 #PBS -l place=vscatter,select=1:ncpus=3:mem=8gb
-#BPS -l debug=true
+#PBS -l debug=true
 
 ##############################################
 # Submit notes:

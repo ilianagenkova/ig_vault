@@ -1,3 +1,6 @@
+#!/bin/bash
+## MUST BE BASH!!
+#
 # Script to determine if you are on a dev(BACKUP) or prod(PRIMARY) machine
 # It uses:
 #[clogin07 /lfs/h2/emc/obsproc/noscrub/iliana.genkova]$ cat /etc/cluster_name

@@ -6,7 +6,7 @@
 #PBS -A OBSPROC-DEV
 #PBS -l walltime=00:20:00
 ##PBS -l place=vscatter,select=1:ncpus=7:mem=6000MB
-#PBS -l place=vscatter,select=1:ncpus=7:mem=7000MB
+#PBS -l place=vscatter,select=1:ncpus=10:mem=7000MB
 #PBS -l debug=true
 ##############################################
 # Submit notes:

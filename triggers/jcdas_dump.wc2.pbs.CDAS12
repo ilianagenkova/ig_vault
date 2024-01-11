@@ -5,8 +5,8 @@
 #PBS -A OBSPROC-DEV
 #PBS -q dev
 ###PBS -l place=vscatter,select=1:ncpus=3:mem=16gb -> 36gb
-#PBS -l place=vscatter,select=1:ncpus=9:mem=100gb
-#BPS -l debug=true
+#PBS -l place=vscatter,select=1:ncpus=10:mem=200gb
+#PBS -l debug=true
 
 ##############################################
 # Submit notes:

@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -N obsproc_%JTYP%_prep_%PDY%_%CC%_%DESC%
 #PBS -j oe
-#BPS -S /bin/bash
+#PBS -S /bin/bash
 #PBS -l walltime=0:25:00
 #PBS -q dev
 #PBS -A OBSPROC-DEV
@@ -98,7 +98,12 @@ export DEBUG_LEVEL=3
 export LOUD=ON
 export KEEPDATA=YES
 
-$HOMEobsproc/jobs/JOBSPROC_URMA_PREP
+#TEMPPRARY 18 Dec 2023 - STEVEN LEVINE MATT MORRIS
+#export GLERLBUFR=NO
+#in
+/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/JOBSPROC_URMA_PREP
+#$HOMEobsproc/jobs/JOBSPROC_URMA_PREP
+
 err=$?
 
 # When run from cron, the stdout is written to /u/$USER

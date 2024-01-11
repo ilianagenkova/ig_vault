@@ -1,0 +1,14 @@
+Hello, do you have handy the command that extract multiple variables from a debufred file and puts them on the same line in the output file?
+
+Dagmar Merkova - NOAA Affiliate, 5 min
+Best is UE ;-), if you cannot use it then there is a sequence you can follow:
+example:
+firs you create awk program:
+cat<<EOF>cti.awkBEGIN { RS = "PRLC" } {for(i=1; i<=3; i++) if (\$i=="") \$i="MISSING"; print \$1,",",\$3}EOF
+then with grep , you extract variables and awk will read them and write in one line:
+
+Dagmar Merkova - NOAA Affiliate, 3 min, Edited
+grep -e "007004  PRLC" -e "012101  TMDB" file| awk ' {print $2,$3}'>temp
+awk -f cti.awk temp |sed "/MISSING/d"  >finalfile
+
+

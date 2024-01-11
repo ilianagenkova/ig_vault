@@ -1,0 +1,1 @@
+find ./photos/john_doe -type f -name '*.jpg' -exec du -ch {} + | grep total$

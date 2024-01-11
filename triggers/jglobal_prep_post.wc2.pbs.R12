@@ -106,8 +106,22 @@ export LOUD=ON
 #export DATCOM1_IN=/lfs/h1/ops/canned/com/gfs/v16.2/gdascounts
 #export COMIN1=/lfs/h1/ops/canned/com/gfs/v16.2/$JTYP.
 
-#This is the key variable, and run this code only on dev machine
-export PROCESS_REMOREST_dm2=YES
+#not sure which one is needed, so let's have both
+export COMINgfs=${COMIN_ROOT}/obsproc/${obsproc_ver}/gfs.$PDY/${cyc}/atmos
+export COMINGFS=${COMIN_ROOT}/obsproc/${obsproc_ver}/gfs.$PDY/${cyc}/atmos
+#example to follow
+#COMINgfs=/lfs/h1/ops/prod/com/obsproc/v1.1/gfs.20231023/12/atmos
+#COMINGFS=/lfs/h1/ops/prod/com/obsproc/v1.1/gfs.20231023/12/atmos
+
+#export COMIN1=/lfs/h1/ops/para/com/obsproc/v1.2/gdas. # previous cycle's upa_* files ?! check with Shelley # can be taken from PROD or PARA (just to get going the COMIN1)
+export COMIN1=/lfs/h1/ops/prod/com/obsproc/v1.1/gdas.
+#export COMIN1=${COMOUT_ROOT}/obsproc/v1.2/gdas.
+
+#export COMIN1=${COMOUT_ROOT}/obsproc/v1.1/${JTYP}. #R12 and v1.1 don't coexist!
+#COMIN1=/lfs/h1/ops/para/com/obsproc/v1.1/gdas.   #v1.1 or v1.2???
+
+#This is the key variable,to unrestrict 48h odl aircraft, and run this code only on dev machine
+#export PROCESS_REMOREST_dm2=YES
 
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_PREP_POST
 
