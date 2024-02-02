@@ -12,7 +12,7 @@ fi
 # User specific aliases and functions
 export GIT_SSH=$HOME/.ssh-mine/ssh-mine.sh
 
-# For vi 
+#  For vi 
 TERM=xterm
 
 # Set aliases
