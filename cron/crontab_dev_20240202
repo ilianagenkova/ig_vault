@@ -1,0 +1,338 @@
+SHELL=/bin/bash -l
+gcd=/u/iliana.genkova/bin/am_i_on_dev.sh
+### wc2para - ongoing
+###
+### Make sure /lfs/h2/emc/[ps]tmp/iliana.genkova/CRON is present via a mkdir every 10 minutes throughout the day
+# ---------------
+00,10,20,30,40,50 * * * * mkdir -p /lfs/h2/emc/ptmp/iliana.genkova/CRON  > /dev/null 2>&1
+00,10,20,30,40,50 * * * * mkdir -p /lfs/h2/emc/stmp/iliana.genkova/CRON  > /dev/null 2>&1
+###
+### Clean out empty CRON directories
+# ---------------
+00 16 * * * find /lfs/h2/emc/*tmp/iliana.genkova/CRON/*/com/ -type d -empty -delete
+00 16 * * * find /lfs/h2/emc/*tmp/iliana.genkova/* -type f -mtime +10 -exec rm {} \;
+### Clean out stmp/ptmp files older than 10 days
+# ---------------
+14 18 * * * find /lfs/h2/emc/*tmp/iliana.genkova/ -mtime +10 -type d | xargs rm -f -r
+###
+### JOBSPROC_CDAS prod para for WCOSS2
+# started on: 20220610 (dump, dump_post, prep1, prep1_post, prep2, pre2_post)
+# turned off:
+# ---------------
+10 16,22 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs > /dev/null 2>&1
+10 04,10 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_GLOBAL prod para for WCOSS2
+# started on: 20220610 (dump, dump_post, prep, prep_post)
+# turned off:
+# ---------------
+47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs > /dev/null 2>&1
+50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_NAM prod para for WCOSS2
+# started on: 20220610 (dump, dump2, dump_post, prep, prep_post)
+# turned off:
+# ---------------
+18 0,6,12,18 * * * jtyp=nam cyc=`date +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm01 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+15 1,7,13,19 * * * jtyp=nam cyc=`date --date="-1 hour" +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm00 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+41 3,9,15 * * * jtyp=nam cyc=`date --date="+3 hours" +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm06 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+01 4,10,16 * * * jtyp=nam cyc=`date --date="+2 hours" +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm05 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+00 4,10,16 * * * jtyp=nam cyc=`date --date="+2 hours" +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm04 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+30 4,10,16 * * * jtyp=nam cyc=`date --date="+2 hours" +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm03 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+23 5,11,17 * * * jtyp=nam cyc=`date --date="+1 hour" +\%H` PDY=`date +\%Y\%m\%d` tmmark=tm02 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+41 21 * * * jtyp=nam cyc=00 PDY=`date --date="+1 day" +\%Y\%m\%d` tmmark=tm06 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+01 22 * * * jtyp=nam cyc=00 PDY=`date --date="+1 day" +\%Y\%m\%d` tmmark=tm05 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+00 22 * * * jtyp=nam cyc=00 PDY=`date --date="+1 day" +\%Y\%m\%d` tmmark=tm04 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+30 22 * * * jtyp=nam cyc=00 PDY=`date --date="+1 day" +\%Y\%m\%d` tmmark=tm03 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+23 23 * * * jtyp=nam cyc=00 PDY=`date --date="+1 day" +\%Y\%m\%d` tmmark=tm02 desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jnam_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_RAP prod para for WCOSS2
+# started on: 20220610 (dump, dump_post, prep, prep_post)
+# turned off:
+# ---------------
+00 7,19 * * * jtyp=rap_p cyc=`date --date="-4 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+00 7,8,19,20 * * * jtyp=rap_p cyc=`date --date="-3 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+00 8,9,20,21 * * * jtyp=rap_p cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+00 9,21 * * * jtyp=rap_p cyc=`date --date="-1 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+#---
+26 0,12 * * * jtyp=rap_e cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+#---
+26 1-11 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+26 13-23 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+#---
+58 0,12 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_RTMA prod para for WCOSS2
+# runs hourly at HH:30 for cycle time HH
+# started on: 20220610 (dump, dump_post, prep, prep_post)
+# turned off:
+# ---------------
+08 * * * * jtyp=rtma cyc=`date +\%H` cycM=00 PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs > /dev/null 2>&1
+23 * * * * jtyp=rtma cyc=`date +\%H` cycM=15 PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs > /dev/null 2>&1
+30 * * * * jtyp=rtma cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs > /dev/null 2>&1
+38 * * * * jtyp=rtma cyc=`date +\%H` cycM=30 PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs > /dev/null 2>&1
+53 * * * * jtyp=rtma cyc=`date +\%H` cycM=45 PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_URMA prod para for WCOSS2
+# runs hourly at HH:30 for cycle time HH-6
+# started on: 20220610 (dump, dump_post, prep, prep_post)
+# turned off:
+# ---------------
+30 6-23 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs > /dev/null 2>&1
+30 0-5 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_AIRNOW prod para for WCOSS2
+# runs daily at 21:00
+# started on: 20220610
+# turned off:
+# ---------------
+00 21 * * * jtyp=airnow cyc=12 PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jairnow_dump.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_DUMP_MONITOR prod para for WCOSS2
+# runs hourly at HH:30
+# started on: 20220610
+# turned off:
+# ---------------
+30 * * * * jtyp=dump_monitor cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jdump_monitor.wc2.pbs > /dev/null 2>&1
+###
+### JOBSPROC_MODS prod para for WCOSS2
+# runs daily at 14:30
+# started on: 20220610
+# turned off:
+# ---------------
+30 14 * * * jtyp=mods cyc=14 PDY=`date +\%Y\%m\%d` desc=wc2para /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jmods.wc2.pbs > /dev/null 2>&1
+###
+###
+### Submit hourly GDAS DUMPS at RAP cyc:26 cut-off time (types dumped over [-6.00,+0.50] time window) hrlyGDAS
+### Submit hourly GDAS DUMPS at RAP cyc:26 cut-off time (types dumped over [-3.00,+0.50] time window) hrlyGDAS2
+### Submit hourly GDAS DUMPS at RAP cyc:26 cut-off time (types dumped over [-0.50,+0.50] time window) hrlyGDAS3
+### (requested by Jeffrey Whitaker, Daryl Kleist, Jacob Carley, Donnie Lippi)
+# started on: 20220610
+# turned off:
+### -----------------------------
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=GDAShrly /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.hrly > /dev/null 2>&1
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=GDAShrly2 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.hrly2 > /dev/null 2>&1
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=GDAShrly3 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.hrly3 > /dev/null 2>&1
+###
+###
+### RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries RESEARCH Entries 
+###
+### Archive Production sdmedit lists start:19 May 2023
+00 21 * * * mkdir -p  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT_archive
+05 21 * * * cp /lfs/h1/ops/prod/dcom/sdmedit /lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT_archive/sdmedit.`date +\%Y\%m\%d`
+###
+###
+### KEEP China AMDAR dumps: global & rap
+# started on: 20220610
+# turned off: now & again
+##---global
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=AMDglo /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.AMD > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=AMDglo /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.AMD > /dev/null 2>&1
+##---rap
+#26 1-11 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=AMDrap /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.AMD > /dev/null 2>&1
+#26 13-23 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=AMDrap /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs > /dev/null 2>&1
+#58 0,12 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=AMDrap /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.AMD > /dev/null 2>&1
+###
+### TAC2BUFR uprair dump TEST (failed)
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=T2B /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.T2B > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=T2B /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.T2B > /dev/null 2>&1
+###
+### KEEP GMI global dumps until /obsproc update Jule 2022
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=GMI /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.GMI > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=GMI /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.GMI > /dev/null 2>&1
+### KEEP Metop-B/C AMVs global dumps
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=METOPBC /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=METOPBC /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.METOPBC > /dev/null 2>&1
+### High Res AMVs from EUMETSAT Meteosat RSS images (Jeff Whiting, for global hourly model)
+#26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RSS /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.RSS > /dev/null 2>&1
+###
+### GENERATE SATWND DUMPS WITH 6h JMA HIMAWARI-8 AMVs, /noscrub/CRON/JMA6
+47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=JMA6 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.JMA6 > /dev/null 2>&1
+50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=JMA6 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.JMA6 > /dev/null 2>&1 
+###
+#TEST RELv1.1.0 for FULL global
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.RELv1.1.0 > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.RELv1.1.0 > /dev/null 2>&1
+# TEST release v1.1.0 for RAPall
+#00 7,19 * * * jtyp=rap_p cyc=`date --date="-4 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#00 7,8,19,20 * * * jtyp=rap_p cyc=`date --date="-3 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#00 8,9,20,21 * * * jtyp=rap_p cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#00 9,21 * * * jtyp=rap_p cyc=`date --date="-1 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#---
+#26 0,12 * * * jtyp=rap_e cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#---
+#26 1-11 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#26 13-23 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#---
+#58 0,12 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RAPall /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+###
+###
+# TEST release v.1.1.0 for CDAS
+#10 16,22 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date +\%Y\%m\%d` desc=CDAS /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS > /dev/null 2>&1
+#10 04,10 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=CDAS /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS > /dev/null 2>&1
+###
+# TEST release v1.1.0 for RTMA
+#08 * * * * jtyp=rtma cyc=`date +\%H` cycM=00 PDY=`date +\%Y\%m\%d` desc=RTMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#23 * * * * jtyp=rtma cyc=`date +\%H` cycM=15 PDY=`date +\%Y\%m\%d` desc=RTMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#30 * * * * jtyp=rtma cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RTMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#38 * * * * jtyp=rtma cyc=`date +\%H` cycM=30 PDY=`date +\%Y\%m\%d` desc=RTMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#53 * * * * jtyp=rtma cyc=`date +\%H` cycM=45 PDY=`date +\%Y\%m\%d` desc=RTMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+###
+# TEST release v1.1.0 fo URMA
+#30 6-23 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=URMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.URMA > /dev/null 2>&1
+#30 0-5 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=URMA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.URMA > /dev/null 2>&1
+###
+# TEST release v1.1.0 for FULL RAP
+#00 7,19 * * * jtyp=rap_p cyc=`date --date="-4 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#00 7,8,19,20 * * * jtyp=rap_p cyc=`date --date="-3 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#00 8,9,20,21 * * * jtyp=rap_p cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#00 9,21 * * * jtyp=rap_p cyc=`date --date="-1 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#---
+#26 0,12 * * * jtyp=rap_e cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#---
+#26 1-11 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#26 13-23 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+#---
+#58 0,12 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall > /dev/null 2>&1
+###
+###
+# TEST release v.1.1.0 for FULL CDAS
+#10 16,22 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS > /dev/null 2>&1
+#10 04,10 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS > /dev/null 2>&1
+###
+# TEST release v1.1.0 for FULL RTMA
+#08 * * * * jtyp=rtma cyc=`date +\%H` cycM=00 PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#23 * * * * jtyp=rtma cyc=`date +\%H` cycM=15 PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#30 * * * * jtyp=rtma cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#38 * * * * jtyp=rtma cyc=`date +\%H` cycM=30 PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+#53 * * * * jtyp=rtma cyc=`date +\%H` cycM=45 PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.RTMA > /dev/null 2>&1
+###
+# TEST release v1.1.0 for FULL URMA
+#30 6-23 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.URMA > /dev/null 2>&1
+#30 0-5 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=RELv1.1.0 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.URMA > /dev/null 2>&1
+
+##### OPTMIZE RUN TIME
+## TEST release v1.1.0 for FULL RAP
+#00 7,19 * * * jtyp=rap_p cyc=`date --date="-4 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+#00 7,8,19,20 * * * jtyp=rap_p cyc=`date --date="-3 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+#00 8,9,20,21 * * * jtyp=rap_p cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+#00 9,21 * * * jtyp=rap_p cyc=`date --date="-1 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+##---
+#26 0,12 * * * jtyp=rap_e cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+##---
+#26 1-11 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+#26 13-23 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+##---
+#58 0,12 * * * jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.RAPall_O > /dev/null 2>&1
+#####
+#TEST RELv1.1.0 Optimize groups order for FULL global
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.RELv1.1.0_O > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=RELv1.1.0_O /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.RELv1.1.0_O > /dev/null 2>&1
+
+# TEST GMI2 - GMI from NCCF
+#47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=GMI2 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.GMI2 > /dev/null 2>&1
+#50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=GMI2 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.GMI2 > /dev/null 2>&1
+
+## FIX GMI /noscrub/CRON/FIXGMI
+47 2,8,14,20 * * * jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=FIXGMI /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.FIXGMI > /dev/null 2>&1
+50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=FIXGMI /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.FIXGMI > /dev/null 2>&1
+
+##
+#### JOBSPROC_GLOBAL_DUMP_POST trigger for making 48-hour old aircft and aircar dumps which are 100% non-restricted
+### For Daryl Kleist, Doug Schuster, and Thomas Cram at UCAR.
+### Kate Friedman is archiving in GDA; should set sites on operations soon
+### https://ftp.emc.ncep.noaa.gov/users/smelchior/wcoss2/GDAS_NON_RESTRICTED_48HRS/
+# ---------------
+# dump_post
+53 7,13,19 * * * jtyp=gfs cyc=`date --date="-7 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs.UR
+52 7,13,19 * * * jtyp=gdas cyc=`date --date="-7 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs.UR
+53 1 * * * jtyp=gfs cyc=`date --date="-7 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs.UR
+52 1 * * * jtyp=gdas cyc=`date --date="-7 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs.UR
+# prep_post
+08 8,14,20 * * * jtyp=gfs cyc=`date --date="-8 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep_post.wc2.pbs.UR
+07 8,14,20 * * * jtyp=gdas cyc=`date --date="-8 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep_post.wc2.pbs.UR
+08 2 * * * jtyp=gdas cyc=`date --date="-8 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep_post.wc2.pbs.UR
+07 2 * * * jtyp=gfs cyc=`date --date="-8 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=UR /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep_post.wc2.pbs.UR
+###
+#
+#### T2B v1.1.1 (CH+NE)
+#global
+47 2,8,14,20 * * *  jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.111 > /dev/null 2>&1
+50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.111 > /dev/null 2>&1
+#rap 
+#00 7,19 * * *      jtyp=rap_p cyc=`date --date="-4 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+#00 7,8,19,20 * * * jtyp=rap_p cyc=`date --date="-3 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+#00 8,9,20,21 * * * jtyp=rap_p cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+#00 9,21 * * *      jtyp=rap_p cyc=`date --date="-1 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+##---
+#26 0,12 * * *      jtyp=rap_e cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+##---
+26 1-11 * * *      jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+26 13-23 * * *     jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+58 0,12 * * *      jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=111 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.111 > /dev/null 2>&1
+#####
+#
+#### R12 (Release v1.2)
+# global
+47 2,8,14,20 * * *  jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.R12 > /dev/null 2>&1
+50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.R12 > /dev/null 2>&1
+# rap 
+00 7,19 * * *      jtyp=rap_p cyc=`date --date="-4 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+00 7,8,19,20 * * * jtyp=rap_p cyc=`date --date="-3 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+00 8,9,20,21 * * * jtyp=rap_p cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+00 9,21 * * *      jtyp=rap_p cyc=`date --date="-1 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+##---
+26 0,12 * * *      jtyp=rap_e cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+##---
+26 1-11 * * *      jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+26 13-23 * * *     jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+##---
+58 0,12 * * *      jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.R12 > /dev/null 2>&1
+# cdas O:v1.2 B-D:v1.2 PREP:v1.0.1(oper.)
+10 16,22 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS12 > /dev/null 2>&1
+10 04,10 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS12 > /dev/null 2>&1
+# rtma & urma - Ashley
+# nam - Dagmar
+# airnow 
+00 21 * * * jtyp=airnow cyc=12 PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jairnow_dump.wc2.pbs.R12 > /dev/null 2>&1
+# dump_monitory
+30 * * * * jtyp=dump_monitor cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jdump_monitor.wc2.pbs.R12 > /dev/null 2>&1
+# mods
+30 14 * * * jtyp=mods cyc=14 PDY=`date +\%Y\%m\%d` desc=R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jmods.wc2.pbs.R12 > /dev/null 2>&1
+# hourly
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=GDAShrly_R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.hrly.R12 > /dev/null 2>&1
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=GDAShrly2_R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.hrly2.R12 > /dev/null 2>&1
+26 * * * * jtyp=gdas cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=GDAShrly3_R12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEEP/jglobal_dump.wc2.pbs.hrly3.R12 > /dev/null 2>&1
+###
+###
+#
+#WEI Marine/Ocean insitu data b001 and b031
+47 2,8,14,20 * * *  jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=SOCA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.WEI > /dev/null 2>&1
+50 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=SOCA /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.WEI > /dev/null 2>&1
+#
+# cdas O:v1.2 B-D:v1.2 PREP:v1.2 (not good yet)
+10 16,22 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date +\%Y\%m\%d` desc=R120 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS120 > /dev/null 2>&1
+10 04,10 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=R120 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS120 > /dev/null 2>&1
+#
+# Marine NETCDF - SST,...
+15 3,9,15,21 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SST_6h_dumps.sh
+00 6,12,18 * * *        $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ADT_6h_dumps.sh # soon after 09:36 on the same day
+15 4,10,16,22 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh # data latency is 3-4 h
+15 3,9,15,21 * * *  $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMAP_6h_dumps.sh 
+15 3,9,15,21 * * *  $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMOS_6h_dumps.sh
+#
+# Probe/verify *crisf4* production dumps
+30 4 * * * /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21/verify_crisf4.sh >> /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21/COM_crisf4_N21.LOG.KEEP
+#10 00 * * * /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21/verify_crisf4.sh >> COM_crisf4_N21.LOG.KEEP
+#
+#
+# R12 v1.2.0 - early kick off, allowing time for long dump steps
+# global - 10 min earlier
+37 2,8,14,20 * * *  jtyp=gfs cyc=`date --date="-2 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=ER12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.ER12 > /dev/null 2>&1
+40 5,11,17,23 * * * jtyp=gdas cyc=`date --date="-5 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=ER12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump.wc2.pbs.ER12 > /dev/null 2>&1
+## rap - 15 min earlier 
+24 1-11 * * *      jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=ER12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.ER12 > /dev/null 2>&1
+24 13-23 * * *     jtyp=rap cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=ER12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrap_dump.wc2.pbs.ER12 > /dev/null 2>&1
+#
+# SAFE no-GLERL Urma files
+50 5 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Utils/urma_no_glerl.sh >>  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/URMA_METAR_GLERLobs/LOG.urma

@@ -3,6 +3,7 @@
 ###  rsync -avhWr --no-compress --progress src/   destination
 
 FRUIT="OLD"
+#FRUIT="NEW"
 
 case "$FRUIT" in
    "OLD") 

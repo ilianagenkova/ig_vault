@@ -1,0 +1,5 @@
+lftp 140.90.190.122 - for PDA I&T. 
+lftp 140.90.190.143  - for PDA OPS
+
+lftp NCEP_EMC_SNADIGA@140.90.190.122
+

@@ -1,0 +1,5 @@
+/lfs/h1/ops/prod/output/20220524/satingest_*
+                                           *history*
+                                 *obsproc*
+
+grep PROCESSED /lfs/h1/ops/prod/dcom/ingest_hist/ozone.omi.orbitlist.history | more  (when counts in RTDM are low)
