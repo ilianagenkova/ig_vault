@@ -47,7 +47,7 @@ PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep      # local
 #export HOMEobsproc=${userROOT}/GIT/play/obsproc.RAPall
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.E12             # IG local  
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.ER12             # IG local  
 
 VERSION_FILE=$HOMEobsproc/versions/run.ver
 if [ -f $VERSION_FILE ]; then

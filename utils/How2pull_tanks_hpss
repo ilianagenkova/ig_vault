@@ -1,8 +1,8 @@
-DIANE
-module load HPSS/5.0.2.5
+DIANE 
+#module load HPSS/5.0.2.5 <-- No longer needed!!!
 htar -xvf /NCEPPROD/hpssprod/runhistory/rh2022/202208/20220808/dcom_20220808.tar     ./b005/xx024
 
-SHELLEY
+SHELLEY WCOSS1 :(
 # Command
 # hpsstar getnostage /NCEPPROD/hpssprod/runhistory/rh2020/202009/20200901/dcom_prod_20200901.tar hpsstar getnostage ./b005/xx032
 

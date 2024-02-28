@@ -8,4 +8,10 @@ https://vlab.noaa.gov/redmine/projects/emc-obsproc/wiki/Make_a_Tag
  git push origin tagname      # OR: git push --tags  # for multiple tags
  git tag -l
 
+Once a release/* is tagged:
+- merge it into /develop
+- update "OBSPROC VERSION NUMBER HISTORY inverted" with RFC number
+  https://docs.google.com/spreadsheets/d/13uRXpn_tLQQbl84x9QRQjgqLsTo8c4Mgk9V0Wr9iv2g/edit#gid=2138325012
+
+
 
