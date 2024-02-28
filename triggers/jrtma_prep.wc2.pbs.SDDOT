@@ -10,7 +10,7 @@
 ##############################################
 ### Submit notes:
 ## Run from [ps]tmp when running manually
-## When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
+## When running from cron, output is written to /u/$USER. Bottom of trigger mv's to ptmp
 ### For specific PDY:
 ### > jtyp=rtma cyc=00 PDY=20190520 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jrtma_prep.wc2.pbs
 ### For latest/current PDY:
@@ -82,11 +82,11 @@ export SENDECF=NO   # developer
 export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
-export DATAROOT=/lfs/h2/emc/stmp/${USER}
+export DATAROOT=/lfs/h2/emc/obsproc/noscrub/${USER}
 if [ -z "$cycM" ]; then
-  export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.${PDY}.jlogfile
+  export jlogfile=/lfs/h2/emc/obsproc/noscrub/${USER}/${JTYP}.${PDY}.jlogfile
 else
-  export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}_ru.${PDY}.jlogfile
+  export jlogfile=/lfs/h2/emc/obsproc/noscrub/${USER}/${JTYP}_ru.${PDY}.jlogfile
 fi
 
 if [ -z "$cycM" ]; then
@@ -103,9 +103,9 @@ export COMPONENT=atmos
 
 # Test if this is an hourly RTMA run or a Rapid Update RTMA run; assign $tstsp accordingly
 #if [ -z "$cycM" ]; then
-#  export tstsp=/lfs/h2/emc/stmp/$USER/com/obsproc/${JTYP}.${PDY}/${JTYP}.t${cyc}z.
+#  export tstsp=/lfs/h2/emc/obsproc/noscrub/$USER/com/obsproc/${JTYP}.${PDY}/${JTYP}.t${cyc}z.
 #else
-#  export tstsp=/lfs/h2/emc/stmp/$USER/com/obsproc/${JTYP}_ru.${PDY}/${JTYP}_ru.t${cyc}${cycM}z.
+#  export tstsp=/lfs/h2/emc/obsproc/noscrub/$USER/com/obsproc/${JTYP}_ru.${PDY}/${JTYP}_ru.t${cyc}${cycM}z.
 #fi
 
 export LOUD=ON
@@ -116,10 +116,10 @@ $HOMEobsproc/jobs/JOBSPROC_RTMA_PREP
 err=$?
 
 # When run from cron, the stdout is written to /u/$USER
-# mv to stmp
+# mv to ptmp
 pbsjobid=$(echo $PBS_JOBID | cut -d'.' -f1)
 cronlogfile=/u/$USER/$PBS_JOBNAME.o$pbsjobid
-outputdir=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/output
+outputdir=/lfs/h2/emc/obsproc/noscrub/${USER}/CRON/${DESC}/output
 if [ -f "$cronlogfile" ]; then
   mkdir -p $outputdir
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid

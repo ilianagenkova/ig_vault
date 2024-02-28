@@ -11,7 +11,7 @@
 ##############################################
 ## Submit notes:
 ## Run from [ps]tmp when running manually
-## When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
+## When running from cron, output is written to /u/$USER. Bottom of trigger mv's to ptmp
 ## For specific PDY:
 ## > jtyp=rtma cyc=14 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jrtma_dump.wc2.pbs
 ## cycqsub location: /u/iliana.genkova/bin
@@ -94,14 +94,14 @@ export TANK_255028=/lfs/h1/ops/dev/dcom #VADOT
 export TANK_255005=/lfs/h1/ops/dev/dcom #KSDOT
 export TANK_255022=/lfs/h1/ops/dev/dcom #CO-E-470
 
-export DATAROOT=/lfs/h2/emc/stmp/${USER}
+export DATAROOT=/lfs/h2/emc/obsproc/noscrub/${USER}
 if [ -z "$cycM" ]; then
-  export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.${PDY}.jlogfile
+  export jlogfile=/lfs/h2/emc/obsproc/noscrub/${USER}/${JTYP}.${PDY}.jlogfile
 else
-  export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}_ru.${PDY}.jlogfile
+  export jlogfile=/lfs/h2/emc/obsproc/noscrub/${USER}/${JTYP}_ru.${PDY}.jlogfile
 fi
 
-export COMOUT_ROOT=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/com
+export COMOUT_ROOT=/lfs/h2/emc/obsproc/noscrub/${USER}/CRON/${DESC}/com
 if [ -z "$cycM" ]; then
   export COMOUT=${DATAROOT}/CRON/${DESC}/com/${obsNET}/$obsproc_ver/${JTYP}.${PDY}
 else
@@ -116,10 +116,10 @@ $HOMEobsproc/jobs/JOBSPROC_RTMA_DUMP
 err=$?
 
 # When run from cron, the stdout is written to /u/$USER
-# mv to stmp
+# mv to ptmp
 pbsjobid=$(echo $PBS_JOBID | cut -d'.' -f1)
 cronlogfile=/u/$USER/$PBS_JOBNAME.o$pbsjobid
-outputdir=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/output
+outputdir=/lfs/h2/emc/obsproc/noscrub/${USER}/CRON/${DESC}/output
 if [ -f "$cronlogfile" ]; then
   mkdir -p $outputdir
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid

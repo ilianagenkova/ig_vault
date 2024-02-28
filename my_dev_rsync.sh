@@ -43,6 +43,7 @@ case "$FRUIT" in
    cp obsproc_paths /lfs/h2/emc/obsproc/noscrub/iliana.genkova/obsproc_paths
    cp pda_IPs.txt  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/pda_IPs.txt
    cp where_are_the_logs /lfs/h2/emc/obsproc/noscrub/iliana.genkova/where_are_the_logs   
+   echo "Mirror the /play directories if necessary!!! (manually with my_transfers_wcoss2.sh)"
    ;;
 esac
 
