@@ -1,0 +1,21 @@
+mkdir TEST
+
+cdate=$PDY
+
+ls * # ( something to do)
+err=$? (status of last commandi, i.e. ls)
+
+rm -rf log
+
+if [ $err -eq 1 ]; then
+  echo "ALL not OK" >> log.txt
+  echo "more" >> log.txt
+
+  echo "WARNING: ${cdate} TANK b005/xx004 exceeds TANK_MAX_255004 => not dumped" | mail iliana.genkova@noaa.gov
+
+fi
+
+--not tested!!==
+mailx -a log.txt iliana.genkova@noaa.gov
+
+

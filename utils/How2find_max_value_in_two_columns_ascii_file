@@ -1,0 +1,4 @@
+msg_sub is the 2 coulumns files
+find the max value in the second ($2) column an dprint that row:
+
+awk '$2 == hi {print}' hi=$(awk '{print $2}' msg_sub | sort -n | tail -1) msg_sub

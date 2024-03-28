@@ -32,7 +32,7 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.1.2
+export obsproc_ver_pckg=v1.1.3
 #export bufr_dump_ver=1.0.0
 export obsNET=obsproc
 PACKAGEROOT=/lfs/h1/ops/prod/packages
@@ -106,7 +106,8 @@ export KEEPDATA=YES
 export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
 export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com 
 
-$HOMEobsproc/jobs/JOBSPROC_CDAS_DUMP
+/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/JOBSPROC_CDAS_DUMP.wes
+#$HOMEobsproc/jobs/JOBSPROC_CDAS_DUMP
 err=$?
 
 # When run from cron, the stdout is written to /u/$USER

@@ -1,0 +1,3 @@
+grep -e "SAID" -e "BORG" -e "CLATH" gfs.t12z.gpsro.tm00.bufr_d.debufr.out | awk '{print $2 " " $3}' | paste - - - | sort | uniq > test
+
+YES :)

@@ -1,0 +1,2 @@
+ftn -c -integer-size 32 -real-size 32 temp_readall.f90 
+ftn temp_readall.o -o temp_readall.x ${W3NCO_LIB4}  ${BUFR_LIB4}

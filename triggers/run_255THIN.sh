@@ -1,0 +1,18 @@
+
+my_desc=255THIN
+yy=2024
+
+for mm in 03 # {01..12} #keep two digits
+do
+for dd in 03 # {01..31}
+do
+  echo 'YEAR/MONTH/DAY::' ${yy} '-' ${mm} '-' ${dd}
+  for hh in 00 06 12 18
+  do
+    echo 'HH::' ${hh}
+jtyp=rtma  cyc=${hh} PDY=${yy}${mm}${dd} desc=${my_desc} /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.${my_desc}
+  done #hh
+done #dd
+done #mm
+
+

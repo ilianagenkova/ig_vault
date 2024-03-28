@@ -43,6 +43,8 @@ set -x
    #scp -r /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21   iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21
 ###or
 ###PULL from D
+
+   scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/u/robert.grumbine/noscrub/com/seaice_analysis/v4.4/seaice_analysis.20240313 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/seaice_analysis.20240313
 ### scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/testD2C path/on/Cactus/testD2C
 ### scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/new_CRIS_NESDIS/readmp.x  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/new_CRIS_NESDIS/readmp.x   
     #scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/dagmar.merkova/GIT/play/prepobs.12/docs/Release_Notes.txt /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Release_Notes.txt.prep.v12
@@ -59,7 +61,8 @@ set -x
   #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/ iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12
   #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/prepobs.12/ iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/prepobs.12
   #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/ iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP
-  rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_2021/ iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_2021
+  #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_2021/ iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_2021
+
 
 ###or
 ###PULL from C

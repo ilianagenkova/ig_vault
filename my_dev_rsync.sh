@@ -2,8 +2,8 @@
  PDY=`date +\%Y\%m\%d`
 ###  rsync -avhWr --no-compress --progress src/   destination
 
-#FRUIT="OLD"
-FRUIT="NEW"
+FRUIT="OLD"
+#FRUIT="NEW"
 
 case "$FRUIT" in
    "OLD") 
