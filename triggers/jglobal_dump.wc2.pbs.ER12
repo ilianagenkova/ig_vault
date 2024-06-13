@@ -101,6 +101,8 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
+#export TANK_003010=/lfs/h1/ops/dev/dcom/
+#export TANK_255034=/lfs/h1/ops/dev/dcom #SDDOT
 #export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
 
 # GMI tanks are in prod already June 2022

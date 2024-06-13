@@ -1,12 +1,12 @@
 #!/bin/sh  
-#PBS -N obsproc_%JTYP%_dump_RON_%PDY%_%CC%_%DESC%
+#PBS -N obsproc_%JTYP%_dump_%PDY%_%CC%_%DESC%
 #PBS -j oe
 #PBS -S /bin/bash
 #PBS -q dev
 #PBS -l walltime=01:00:00
 #PBS -A OBSPROC-DEV
-##PBS -l place=vscatter,select=1:ncpus=14:mem=360gb
-#PBS -l place=vscatter,select=1:ncpus=128:mem=500gb
+##PBS -l place=vscatter,select=1:ncpus=128:mem=360gb
+#PBS -l place=vscatter,select=1:ncpus=14:mem=500gb
 #PBS -l debug=true
 
 ##############################################
@@ -41,7 +41,7 @@ export obsNET=obsproc
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # SM local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.RON             # IG local  
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.ER12             # IG local  
 
 VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
 #VERSION_FILE=${userROOT}/install/obsproc-rel.v1.0.0/versions/run.ver # SM local
@@ -77,7 +77,7 @@ module load cfp/${cfp_ver}
 
 
 module unload bufr_dump
-module use ${userROOT}/GIT/play/bufr-dump.RON/install/modulefiles
+module use ${userROOT}/GIT/play/bufr-dump.12/install/modulefiles
 module load bufr_dump/${bufr_dump_ver}
 echo LOADED ILIANA bufr-dump
 echo $BUFR_DUMPLIST
@@ -101,6 +101,8 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
+export TANK_003010=/lfs/h1/ops/dev/dcom 
+export TANK_255034=/lfs/h1/ops/dev/dcom  #SDDOT
 #export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
 
 # GMI tanks are in prod already June 2022
@@ -119,12 +121,17 @@ export DEBUG_LEVEL=3
 export LOUD=on #ON
 export KEEPDATA=YES
 
+#export ADPUPA_wait=NO
+
+echo "CURRENT MODULEPATH IS:  " ${MODULEPATH}
+echo "CURRENT DUMPLIST IS:    " ${BUFR_DUMPLIST}
 
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP
 err=$?
 
 echo 'ILIANA JOB COMPLETED but how??'
-#exit #testing only uprair dump speed up
+exit
+
 
 # When run from cron, the stdout is written to /u/$USER
 # mv to stmp
@@ -136,16 +143,14 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-echo "passing the ball to DUMP POST"
 
 # Kick off dump_post job
 if [ $err -eq 0 ]; then
   echo "submit jglobal_dump_post"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.RON
+  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.R12 
+  #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs
 fi
-
-echo "ball should be back"
 
 exit
 

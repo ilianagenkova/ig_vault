@@ -1,0 +1,21 @@
+#point to production code's version
+grep obsproc_ver_pckg= *pbs 
+sed --in-place "s/export obsproc_ver_pckg=v1.1.3/export obsproc_ver_pckg=v1.2.0/g" *pbs
+grep obsproc_ver_pckg= *pbs
+
+#set version in /com path
+grep "export obsproc_ver" *pbs
+sed --in-place "s/export obsproc_ver=v1.1/export obsproc_ver=v1.2/g" *pbs
+grep "export obsproc_ver" *pbs
+
+grep "export bufr_dump_ver=" *pbs
+sed --in-place "s/export bufr_dump_ver=1.1.2/export bufr_dump_ver=1.2.0/g" *pbs
+grep "export bufr_dump_ver=" *pbs
+
+grep "export prepobs_ver=" *pbs
+sed --in-place "s/export prepobs_ver=1.0.1/export prepobs_ver=1.1.0/g" *pbs
+grep "export prepobs_ver=" *pbs
+
+grep "module use" *pbs
+grep HOMEobsproc= *pbs
+

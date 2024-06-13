@@ -1,0 +1,15 @@
+#/lfs/h1/ops/prod/com/rtdm/v5.1/web/realtime/$model/t??z/, where model: gfs, gds, rap, hourly, nam, etc.
+
+tar -cvf TEST.tar  /lfs/h1/ops/prod/com/rtdm/v5.1/web/realtime/gfs/t00z/*
+
+# ... and
+#gfs.007.gif  gfs.022.gif  gfs.037.gif  gfs.052.gif  gfs.067.gif  gfs.082.gif  gfs.097.gif  index.shtml
+#gfs.008.gif  gfs.023.gif  gfs.038.gif  gfs.053.gif  gfs.068.gif  gfs.083.gif  gfs.098.gif  index.summary.shtml
+#gfs.009.gif  gfs.024.gif  gfs.039.gif  gfs.054.gif  gfs.069.gif  gfs.084.gif  gfs.099.gif  summary.html
+#gfs.010.gif  gfs.025.gif  gfs.040.gif  gfs.055.gif  gfs.070.gif  gfs.085.gif  gfs.100.gif  table.html
+#gfs.011.gif  gfs.026.gif  gfs.041.gif  gfs.056.gif  gfs.071.gif  gfs.086.gif  gfs.101.gif
+
+tar -tvf TEST.tar 
+
+mailx -a  TEST.tar iliana.genkova@noaa.gov
+

@@ -92,8 +92,8 @@ export TANK=$DCOMROOT
 
 #export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
 
-export DATAROOT=/lfs/h2/emc/stmp/$USER
-export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
+export DATAROOT=/lfs/h2/emc/ptmp/$USER
+export jlogfile=/lfs/h2/emc/ptmp/$USER/${JTYP}.$PDY.jlogfile
 
 export DEBUG_LEVEL=3
 export LOUD=on #ON
@@ -103,8 +103,8 @@ export KEEPDATA=YES
 #export COM_ENGICE=$CANCOMROOT/omb/v4.4/sice
 #export COM_SSTOI=$CANCOMROOT/gfs/v16.2/sst
 #export COMIN=$COMROOT/obsproc/${JTYP}.${PDY}
-export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
-export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com 
+export COMIN_ROOT=/lfs/h2/emc/ptmp/$USER/CRON/${DESC}/com
+export COMOUT_ROOT=/lfs/h2/emc/ptmp/$USER/CRON/${DESC}/com 
 
 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/JOBSPROC_CDAS_DUMP.wes
 #$HOMEobsproc/jobs/JOBSPROC_CDAS_DUMP

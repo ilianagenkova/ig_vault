@@ -1,12 +1,11 @@
 #!/bin/sh  
-#PBS -N obsproc_%JTYP%_dump_RON_%PDY%_%CC%_%DESC%
+#PBS -N obsproc_%JTYP%_dump_%PDY%_%CC%_%DESC%
 #PBS -j oe
 #PBS -S /bin/bash
 #PBS -q dev
-#PBS -l walltime=01:00:00
+#PBS -l walltime=00:20:00
 #PBS -A OBSPROC-DEV
-##PBS -l place=vscatter,select=1:ncpus=14:mem=360gb
-#PBS -l place=vscatter,select=1:ncpus=128:mem=500gb
+#PBS -l place=vscatter,select=1:ncpus=14:mem=500gb
 #PBS -l debug=true
 
 ##############################################
@@ -33,15 +32,15 @@ export PDY=%PDY%
 
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
-export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.1.0
-#export bufr_dump_ver=1.0.0
+export obsproc_ver=v1.2 #needs to match what is in /versions/VERSION
+export obsproc_ver_pckg=v1.1.3
+#export bufr_dump_ver=1.1.0
 export obsNET=obsproc
-#PACKAGEROOTpara=/lfs/h1/ops/para/packages
+PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # SM local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.RON             # IG local  
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.12            # IG local  - point to your build code
 
 VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
 #VERSION_FILE=${userROOT}/install/obsproc-rel.v1.0.0/versions/run.ver # SM local
@@ -53,10 +52,8 @@ else
  exit 7
 fi
 
-#already in versioins/run.ver :)
-export bufr_dump_ver=1.2.0 #1.0.0
+export bufr_dump_ver=1.3.0
 
-echo 'ILIANA VERSIONS set'
 # Load the modules specified in $VERSION_FILE
 module load libjpeg
 module load grib_util/${grib_util_ver}
@@ -64,23 +61,25 @@ module load netcdf/${netcdf_ver}
 # use para installation
 #module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304 
 #module use ${userROOT}/install/bufr-dump/modulefiles
-#module unload bufr_dump/${bufr_dump_ver}
-#module use ${userROOT}/GIT/play/bufr-dump.R12/install/modulefiles 
-#module load bufr_dump/${bufr_dump_ver}
-#echo LOADED ILIANA bufr-dump
-#module use ${userROOT}/GIT/prepobs/install/modulefiles
+
+# module unload bufr_dump
+# module use /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.SPIRE/install/modulefiles             
+# module load bufr_dump/1.2.0                                                                                    
+# echo "LETS SEE"
+# module show  bufr_dump
+
 module load intel/${intel_ver}
 module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
 
+ module unload bufr_dump
+  module use /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.SPIRE/install/modulefiles
+   module load bufr_dump/1.3.0
+    echo "LETS SEE"
+     module show  bufr_dump/1.3.0
 
-module unload bufr_dump
-module use ${userROOT}/GIT/play/bufr-dump.RON/install/modulefiles
-module load bufr_dump/${bufr_dump_ver}
-echo LOADED ILIANA bufr-dump
-echo $BUFR_DUMPLIST
 
 # Be sure the modules are loaded 
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_util/") -eq 0 ]]; then echo "prod_util is not loaded!"; fi
@@ -101,13 +100,11 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
-#export TANK_002001=/lfs/h1/ops/dev/dcom/ # dev tank 002/001 TAC profiles with 5 extra variables: STBS5,MWDL, MWSL, MWDH, MWSH
-
-# GMI tanks are in prod already June 2022
-#export TANK_021246=/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/git/TANK_DUMP #${userROOT}/DCOMDIR/TEST/prod/
+export TANK_003010=/lfs/h1/ops/dev/dcom 
+export TANK_255034=/lfs/h1/ops/dev/dcom  #SDDOT
+#export TANK_001121=/lfs/h1/ops/dev/dcom
 
 #export EPRM=${userROOT}/sample_sdmedit.txt
-#export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
@@ -116,15 +113,24 @@ export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
 export COMPONENT=atmos
 
 export DEBUG_LEVEL=3
-export LOUD=on #ON
+export LOUD=ON
 export KEEPDATA=YES
+
+# TEST BOB GRUMBINE's seaice_analysis 2024-03-13
+#default:
+#export COM_ENGICE=${COM_ENGICE:-$(compath.py $envir/seaice_analysis/$seaice_analysis_ver)/seaice_analysis}
+#export COM_ICE5MIN=${COM_ICE5MIN:-$(compath.py $envir/seaice_analysis/$seaice_analysis_ver)/seaice_analysis}
+# Bob's
+#export COM_ENGICE=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/seaice_analysis #[.20240313]
+                  #/u/robert.grumbine/noscrub/com/seaice_analysis/v4.4/seaice_analysis
+#export COM_ICE5MIN=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/seaice_analysis #[.20240313]
+                  #/u/robert.grumbine/noscrub/com/seaice_analysis/v4.4/seaice_analysis
 
 
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP
 err=$?
 
-echo 'ILIANA JOB COMPLETED but how??'
-#exit #testing only uprair dump speed up
+exit
 
 # When run from cron, the stdout is written to /u/$USER
 # mv to stmp
@@ -136,24 +142,22 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-echo "passing the ball to DUMP POST"
+exit
+#ADD next steps after initial Ali evaluation
 
 # Kick off dump_post job
 if [ $err -eq 0 ]; then
   echo "submit jglobal_dump_post"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.RON
+  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs 
+  #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs
 fi
-
-echo "ball should be back"
-
-exit
 
 # Kick off prep job
 if [ $err -eq 0 ]; then
   echo "submit jglobal_prep"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.R12
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep.wc2.pbs
 fi
 

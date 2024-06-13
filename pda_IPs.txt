@@ -3,3 +3,7 @@ lftp 140.90.190.143  - for PDA OPS
 
 lftp NCEP_EMC_SNADIGA@140.90.190.122
 
+machine OPS 140.90.190.143
+machine CBU 140.172.119.158
+machine I&T 140.90.190.122
+

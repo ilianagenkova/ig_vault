@@ -1,0 +1,322 @@
+SED in place
+sed --in-place "s/iliana/glory/g" test
+sed --in-place "s/\*\*\*\*\*\*\*\*\*\*/\ \ \ \ \ \ \ \ \ 9/g" fort.all_old_winds
+replaces ********** with "         9"  , i.e. 10 snowflakes with 9 empty spaces and number 9
+
+Remove lines containing an unwanted string
+sed --in-place '/some string/d' myfile 
+
+Detect the lines that start with a string:
+grep "^strt" f.txt
+
+Find the lines that end with a string:
+grep "endstr$" f.txt
+
+Count total number of files in a directory:
+find DIR_NAME -type f | wc -l
+
+GFS Operational code (on WCOSS only):
+$NWROOTp3/gfs.v15.2.9   (i.e.  /gpfs/dell1/nco/ops/nwprod/gfs.v15.2.9 )
+
+Operational model output (only the latest week):
+/gpfs/dell1/nco/ops/com/gfs/prod/
+
+Operational model output (on HPSS; the current day or two may not be on HPSS yet):
+/NCEPPROD/hpssprod/runhistory/rhYYYY/YYYYMM/YYYYMMDD/
+After ~1 March: com_gfs_prod_gdas.YYYYMMDD_HH.gdas.tar  (for gsistat.gdas*)
+Before ~1 March: gpfs_dell1_nco_ops_com_gfs_prod_gdas.YYYYMMDD_HH.gdas.tar (for gsistat.gdas*)
+
+GDA on WCOSS (depending on which WCOSS machine):
+/gpfs/dell3/emc/global/dump/
+or
+/gpfs/gp1/emc/globaldump/2019091012/gdasy/satwnd.gdas.*
+or 
+/gpfs/tp1/emc/globaldump/2019091012/gdasy/satwnd.gdas.*
+
+GDA (Global Data Archive) on HERA:
+DMPDIR = /scratch1/NCEPDEV/global/glopara/dump
+
+A bit more info about HERA (from Kate):
+Within the Hera commit were changes to adjust the following:
+1) dump file names (parallel convention to production convention)
+parallel naming convention: $TYPE.$CDUMP.$CDATE
+production naming convention: $CDUMP.t$CYCz.$TYPE...
+
+2) GDA directory structure
+phase 1 GDA: $DMPDIR/$CDATE/$CDUMP$DUMP_SUFFIX
+phase 3 GDA: $DMPDIR/$CDUMP$DUMP_SUFFIX.$PDY/$CYC
+...where $DUMP_SUFFIX is empty for production data, "nr" for non-restricted restricted files, "p" for pre-production dumps, and "x" or "y" for experimental dump files.
+
+Directory size report:
+du -bh   is better than du -sh 
+
+Count number of files (only) per directory (may take a while):
+du -a | cut -d/ -f2 | sort | uniq -c | sort -nr
+
+List only filenames in a directory:
+ls -A   
+
+
+On Sat, Jan 29, 2022 at 8:50 AM Iliana Genkova - NOAA Affiliate <iliana.genkova@noaa.gov> wrote:
+Trusted + "Impact on users:"     :) Movers & Shakers! 
+
+module load bufr_util/1.0.1
+$DEBUFR <filename>  
+ Will generate a verbose listing of the file contents in <filename>.debufr.out in the same directory. 
+You can also do a "$DEBUFR -h" to see all of the available options when running this tool.
+
+How to copy from Hera to WCOSS and vice versa (old):
+Open a Mac Terminal and log into to Hera:
+ssh -X  -L22114:localhost:22114 Iliana.Genkova@hera-rsa.boulder.rdhpcs.noaa.gov
+Keep that window open! 
+On WCOSS:
+scp -r satwnd* Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/.
+or
+scp -r  Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/*  /WCOSSpath/.
+
+
+Extract unique mnemonic values from debufr:
+grep SID filename.debufr.out | sort | uniq -c
+
+Cancel ALL my jobs in queue on Hera:
+squeue -u $USER | awk '{print $1}' | tail -n+2 | xargs scancel
+
+Moving from Hera to WCOSS (while sitting on WCOSS)
+ scp -r Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/stmp2/Iliana.Genkova/nwpvrfy96604/v16x*tar .
+
+Hera accounts and projects:
+[hfe01:~]$ groups
+da rstprod stmp global da-cpu
+[hfe01:~]$ saccount_params
+ Account Params -- Information regarding project associations for Iliana.Genkova
+ Home Quota (/home/Iliana.Genkova) Used: 572 MB Quota: 5120 MB
+>>> Project: da
+>>> ProjectFairshare=0.000 (92/166) Core Hours Used (30 days)=0.0, 30-day Allocation=0
+>>> Partition Access: ALL except: fge
+>>> Available QOSes: batch,debug,novel,urgent,windfall
+>>> Directory: /scratch1/NCEPDEV/da DiskInUse=77920 GB, Quota=94000 GB, Files=18215279, FileQUota=18800000
+>>> Project: da-cpu
+>>> ProjectFairshare=0.622 (73/166) Core Hours Used (30 days)=7626136.7, 30-day Allocation=5327157
+>>> Partition Access: ALL except: fge
+>>> Available QOSes: batch,debug,novel,urgent,windfall
+>>> Project: global
+>>> ProjectFairshare=0.000 (92/166) Core Hours Used (30 days)=0.0, 30-day Allocation=0
+>>> Partition Access: ALL except: fge
+>>> Available QOSes: batch,debug,novel,urgent,windfall
+>>> Directory: /scratch1/NCEPDEV/global DiskInUse=348588 GB, Quota=387000 GB, Files=27493035, FileQUota=77400000
+>>> Project: rstprod
+>>> ProjectFairshare=0.000 (92/166) Core Hours Used (30 days)=0.0, 30-day Allocation=0
+>>> Partition Access: ALL except: fge
+>>> Available QOSes: batch,debug,novel,urgent,windfall
+>>> Directory: /scratch1/NCEPDEV/rstprod DiskInUse=28232 GB, Quota=46000 GB, Files=260690, FileQUota=9200000
+>>> Project: stmp
+>>> ProjectFairshare=0.000 (92/166) Core Hours Used (30 days)=0.0, 30-day Allocation=0
+>>> Partition Access: ALL except: fge
+>>> Available QOSes: batch,debug,novel,urgent,windfall
+>>> Directory: /scratch2/NCEPDEV/stmp1 DiskInUse=472399 GB, Quota=400000 GB, Files=17108892, FileQUota=80000000
+>>> Directory: /scratch1/NCEPDEV/stmp2 DiskInUse=399277 GB, Quota=400000 GB, Files=22512411, FileQUota=80000000
+>>> Directory: /scratch2/NCEPDEV/stmp3 DiskInUse=472400 GB, Quota=400000 GB, Files=17108985, FileQUota=80000000
+>>> Directory: /scratch1/NCEPDEV/stmp4 DiskInUse=399278 GB, Quota=400000 GB, Files=22512412, FileQUota=80000000
+>>> Note: for an explanation of the meaning of these values and general scheduling information see:
+>>>     https://rdhpcs-common-docs.rdhpcs.noaa.gov/wiki/index.php/SLURM_Fair-share
+
+For those of you new onto Orion, some helpful tips to get you started once you're on:
+load the contrib and noaatools/1.0 modules for access to other useful modules like rocoto and saccount_params (module load contrib & module load noaatools/1.0)
+ use "groups" and "saccount_params" to check which groups and allocations you have access to; make sure you have stmp for scratch space and know the difference between compute projects (e.g. fv3-cpu) and disk projects (e.g. global)
+once you determine which group space you have access to you can find it under "/work/noaa" and then can make your own username directory under both the project space and the stmp space
+ Remember, just like Hera, Orion does not have scrubbing! Also Orion has half the disk space of Hera so be considerate!
+ For those of you porting or setting up shared systems on Orion please see notes I started while porting global-workflow to Orion:
+ https://docs.google.com/document/d/1URotI68m8AGZiW3_8hkGlTnOVaJmriS3nDA72RE6iIo/edit?usp=sharing
+
+Archiving to HPSS archive (from Dagmar)
+ htar -cvf  /NCEPDEV/emc-da/5year/Iliana.Genkova/SSSS/data_to_archive.tar  /data_to_archive
+ htar -cvf  /5year/NCEPDEV/emc-da/Dagmar.Merkova/v16.tar  /gpfs/dell2/emc/modeling/noscrub/emc.glopara/archive/v16rt2/*cnv*
+
+Tunneling/Copying Hera to WCOSS to Hera 
+ In one window:
+ ssh -X  -L22114:localhost:22114 Iliana.Genkova@hera-rsa.boulder.rdhpcs.noaa.gov
+ and keep it open.
+---
+ In another window:
+ scp -P 22114 Iliana.Genkova@localhost:/scratch1/NCEPDEV/da/Iliana.Genkova/prAeolus_20190501_branch/AAA_*png .
+
+BUFR tables (obsproc vs decoders)
+ There are two bufrtab.005 files !!!
+ /gpfs/dell1/nco/ops/nwprod/decoders/decod_shared/fix/bufrtab.005
+ and
+ $NWROOT/obsproc_satingest.v3.10.2/fix/bufrtab.005
+ There are two bufrtab.005 files !!! since decoders and obsproc each handle satellite winds data. 
+The bufrtab.005 in the path:
+ /gpfs/dell1/nco/ops/nwprod/decoders/decod_shared/fix/bufrtab.005
+ encompasses those data that arrive via GTS and are processed by the decoders.
+The burftab.005 at this path:
+$NWROOT/obsproc_satingest.v3.10.2/fix/bufrtab.005.
+ encompass those data that arrive via PDA and are processed by obsproc (i.e. NESDIS winds)
+
+Copy WCOSS to Hera (may be no longer working)
+scp -P 22114 *himawari*zip Iliana.Genkova@localhost:/scratch1/NCEPDEV/da/Iliana.Genkova/.
+So try this instead:
+>>>>>>>>> >> In one window:
+>>>>>>>>> >> ssh -X  -L22114:localhost:22114 Iliana.Genkova@hera-rsa.boulder.rdhpcs.noaa.gov
+>>>>>>>>> >> and keep it open.
+>>>>>>>>> >> In another window:
+>>>>>>>>> >> scp -P 22114 Iliana.Genkova@localhost:/scratch1/NCEPDEV/da/Iliana.Genkova/prAeolus_20190501_branch/AAA_*png .
+
+
+How to Update fix files in GSI (Mike)
+https://vlab.ncep.noaa.gov/redmine/projects/comgsi/wiki/Updating_fix_files_in_ProdGSI
+
+How to make a tag in GitHUB (Russ)
+https://git-scm.com/book/en/v2/Git-Basics-Tagging
+
+How to sync fork with authoritative  (Karina)
+ https://docs.google.com/document/d/1q9M-SfLO2bmHTq4bKd4dRy_8tNrb65vUw2k6bjJzrS0/edit
+
+How to mail an attachment from command line
+ mailx -a "noAMV_5_used_map.png" iliana.genkova@noaa.gov  
+> Enter Subject when prompted, then hit "Ctrl+D"
+
+How to count files with common name element
+ ls -l | grep _uv_ | wc -l        :: counting files with common name element in current directory
+
+How to find a name in current dir and subdirectories
+ find . -iname "radiosonde.yaml"
+
+GLOBAL DATA ARCHIVE
+ The Phase 3 GDA path accessible from all of WCOSS (dev or prod) is:
+ export DMPDIR="/gpfs/dell3/emc/global/dump"
+
+ ProdGSI Gerrit users (Mike Lueken)
+I put together a Wiki page in Redmine detailing the features of code review that I went over in the GSI meeting yesterday.  
+You can view the page "Useful information regarding VLab's Code-Review"
+
+GDA
+/gpfs/dell3/emc/global/dump/
+Obsolete ones:
+ >>>>>>>>>> /gpfs/gp1/emc/globaldump/2019091012/gdasy/satwnd.gdas.*
+ or
+ >>>>>>>>>> /gpfs/tp1/emc/globaldump/2019091012/gdasy/satwnd.gdas.*
+
+Leo-Geo AMVs Winds (Dec 4, 2019)
+>>>>>>>>> >>>>>>>>>>> LeoGeo winds ontop of Goes16 AND Goes17:
+>>>>>>>>> >>>>>>>>>>> in GDAS-y  , real-time winds on WCOSS-Dell, starting Sept 1, 2019 (or 10th?), NC005072, Satid=854, type in NCEP=255
+>>>>>>>>> >>>>>>>>>>> /gpfs/gp1/emc/globaldump/2019091012/gdasy/satwnd.gdas.*
+>>>>>>>>> >>>>>>>>>>> or
+>>>>>>>>> >>>>>>>>>>> /gpfs/tp1/emc/globaldump/2019091012/gdasy/satwnd.gdas.*
+
+How to probe satwnd dump on WCOSS
+ /u/Jeff.Whiting/bin/go_chkdat    /gpfs/dell3/emc/global/dump/gdas.20190809/18/gdas.t18z.satwnd.tm00.bufr_d
+
+How to output in a log file
+ 2>&1 > output.log
+ 2>&1 | tee output.log
+
+ Global FV3 workflow tutorial, as a wiki-page now (and only).
+ https://vlab.ncep.noaa.gov/redmine/projects/global-workflow/wiki
+
+ Checks the wall time after GSI_ANL :
+grep "wall time" /gpfs/dell3/ptmp/Iliana.Genkova/ROTDIRS/prG17on/logs/20190530*/gdasanal.log  |sort -n -k8 |tail -4    
+
+Copy recursively large directories
+ rsync -avhWr --no-compress --progress src/   destination
+
+List directories in current directory
+ls -d */        
+
+Internal WEBPAGE
+ http://www2.emc.ncep.noaa.gov/EMC-IMSG.html
+
+Find / Look for a file recursively :
+ find -iname filename.extension
+
+Combined Standart deviation (Matlab calculates the Bessel corrected combined STD)
+https://stats.stackexchange.com/questions/55999/is-it-possible-to-find-the-combined-standard-deviation/56000
+and may be also:
+ https://math.stackexchange.com/questions/420077/find-standard-deviation-of-two-different-sets-of-numbers-when-combined
+ https://en.wikipedia.org/wiki/Standard_deviation
+
+Model performance statistics in real time -
+ http://www.emc.ncep.noaa.gov/gmb/STATS/STATS.html
+ http://www.emc.ncep.noaa.gov/gmb/STATS_vsdb/
+
+ RZDM access:
+ ssh igenkova@emcrzdm.ncep.noaa.gov
+Put data on RZDM:
+ From /da/noscrub/Iliana.Genkova/VSDB_Webs:
+ scp -r web.G16*.tar igenkova@emcrzdm.ncep.noaa.gov:/home/people/emc/igenkova/html/.
+ Untar data on RZDM, URL will be: http://www.emc.ncep.noaa.gov/users/Iliana.Genkova/untarred_web_directory_name/
+
+Direct login to WCOSS/Theia
+ssh -XY Iliana.Genkova@devbastion.ncep.noaa.gov
+ssh -XY -L47394:localhost:47394 Iliana.Genkova@theia-rsa.boulder.rdhpcs.noaa.gov
+
+Swap
+>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>> Reston, VA: Tide, Luna, (soon to be Mars)
+>>>>>>>>> >>>>>>>>>>>>>>>>>>>>>>>> Orlando, FL: Gyre, Surge, Venus
+
+List directory sizes
+du -sh * | sort -h      ordered in increasing size order
+
+Matlab (on Hera)
+ matlab -nodesktop -nodisplay -nosplash  
+ matlab -nojvm -nodisplay -nosplash    
+
+Plucking tar files
+$ tar --list --file=collection.tar
+ blues
+ folk
+ jazz
+ rock
+ $ tar --delete --file=collection.tar blues
+ $ tar --list --file=collection.tar
+ folk
+jazz
+rock
+
+ Surge disk space usage per user (ptmp and stmp):
+ls /usrx/local/filesets/fileset.per.user
+vi /usrx/local/filesets/fileset.per.user  
+Surge disk space usage total:
+vi /gpfs/hps/ibm/monitors/fsets/surge.filesets.hps3
+vi /gpfs/hps/ibm/monitors/fsets/surge.filesets.hps
+etc.
+
+Unite convertor
+https://www.translatorscafe.com/unit-converter/EN/frequency-wavelength/1-31/hertz-wavelength%20in%20micrometres/
+
+SED in place
+sed --in-place "s/iliana/glory/g" test
+sed --in-place "s/\*\*\*\*\*\*\*\*\*\*/\ \ \ \ \ \ \ \ \ 9/g" fort.all_old_winds
+replaces ********** with "         9"  , i.e. 10 snowflakes with 9 empty spaces and number 9
+
+Operational GSI on Venus/Mars
+ /nwprod2/global_shared.v13.0.5 (30 Jan 2017 Russ)
+
+WCOSS jobs/experiments:
+bsub rungsi_globalprod.sh
+bkill #JOBID
+bjobs -w -u Iliana.Genkova
+
+Model output in real time on WCOSS
+/com2/gfs/prod/gdas.YYYYMMDD
+see:
+gdas1.tHHz.gsistat
+gdas1.tHHz.cnvstat
+where HH=00,06,12,18
+
+Model output on HPSS is:
+/NCEPPROD/hpssprod/runhistory/rhYYYY/YYYYMM/YYYYMMDD
+and it's in the tarball:
+com2_gfs_prod_gdas.<datestamp>.tar/YYYYMMDD
+
+Count files and report volume
+du -ch path_to_files/*.jpg | grep total  (count files and total volume)
+ ls -l | wc -l   (counts files in current dir)
+
+Count lines 
+Count lines in ASCII files, if lines start with specific string: (count the empty spots!!)
+grep " 172.00 1.00" fort* | awk '{print $1}' | uniq -c
+
+Remove lines containing an unwanted string
+sed --in-place '/some string/d' myfile
+

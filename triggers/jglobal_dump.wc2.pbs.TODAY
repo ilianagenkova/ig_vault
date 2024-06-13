@@ -1,53 +1,52 @@
-#!/bin/bash
-#PBS -N obsproc_%JTYP%_dump_post_%PDY%_%CC%_%TMMARK%_%DESC%
-#PBS -j oe 
+#!/bin/sh  
+#PBS -N obsproc_%JTYP%_dump_%PDY%_%CC%_%DESC%
+#PBS -j oe
 #PBS -S /bin/bash
 #PBS -q dev
+#PBS -l walltime=00:20:00
 #PBS -A OBSPROC-DEV
-#PBS -l walltime=00:30:00
-#PBS -l place=vscatter,select=1:ncpus=1:mem=3000MB
+#PBS -l place=vscatter,select=1:ncpus=24:mem=460gb
 #PBS -l debug=true
-#####################################################################
-# Submit notes:
+
+##############################################
+# Submit notes:%
 # Run from [ps]tmp when running manually
 # When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
 # For specific PDY:
-# > jtyp=nam cyc=00 PDY=20170126 tmmark=tm04desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jnam_dump_post.wc2.pbs
+# > jtyp=[gdas][gfs] cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jglobal_dump.wc2.pbs
 # For latest/current PDY:
-# > jtyp=nam cyc=00 tmmark=tm04 /u/iliana.genkova/bin/cycqsub /path/to/triggers/jnam_dump_post.wc2.pbs
-# cycqsub location: /u/iliana.genkova/bin
-#####################################################################
+# > jtyp=[gdas][gfs] cyc=00 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jglobal_dump.wc2.pbs
+# cycqsub location: /u/iliana.genkova/bin 
+##############################################
 
 set -xu
 
 export envir=prod
+
 export cyc=%CC%
 DESC=%DESC%
 JTYP=%JTYP%
-export job=${JTYP}_dump_post_$cyc
+export job=${JTYP}_dump_$cyc
 export jobid=$job.$PBS_JOBID
-export tmmark=%TMMARK%
 export PDY=%PDY%
-PDYm1=$(date -d "${PDY} 1 day ago" +%Y%m%d)
 
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
 export obsproc_ver_pckg=v1.2.0
-export bufr_dump_ver=1.2.0
 export obsNET=obsproc
-PACKAGEROOTpara=/lfs/h1/ops/para/packages
-#export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
-export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
-#export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.12             # IG local  
 
-VERSION_FILE=$HOMEobsproc/versions/run.ver
+VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
 if [ -f $VERSION_FILE ]; then
    . $VERSION_FILE
 else
- echo Need version info...  Exiting...
+  echo Need version info...  Exiting...
  exit 7
 fi
+
+#already in versioins/run.ver :)
+export bufr_dump_ver=1.2.0 #1.0.0
 
 # Load the modules specified in $VERSION_FILE
 module load libjpeg
@@ -58,11 +57,14 @@ module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
-# use para installation
+
 module unload bufr_dump
-#module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304 
-#module use ${userROOT}/install/bufr-dump-rel.1.0.0/modulefiles
+module use ${userROOT}/GIT/play/bufr-dump.12SDDOT/install/modulefiles
 module load bufr_dump/${bufr_dump_ver}
+module show bufr_dump
+
+echo LOADED ILIANA bufr-dump
+echo 'BUFR_DUMPLIST = ' $BUFR_DUMPLIST 
 
 # Be sure the modules are loaded 
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_util/") -eq 0 ]]; then echo "prod_util is not loaded!"; fi
@@ -77,35 +79,34 @@ if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-mpich/") -eq 0 ]]; then echo "
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-pals/") -eq 0 ]]; then echo "cray-pals is not loaded!"; fi
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cfp/") -eq 0 ]]; then echo "cfp is not loaded!"; fi
 
-export SENDECF=NO  # developer
-export SENDDBN=NO  # developer
-export SENDSDM=NO  # developer
 
-#export SENDDBN=YES
-#export DBNROOT=${UTILROOT}/fakedbn
-#export DBNLOG=YES
+export SENDECF=NO   # developer
+export SENDDBN=NO   # developer
+export SENDSDM=NO   # developer
 
-export DATAROOT=/lfs/h2/emc/stmp/$USER
+export TANK=$DCOMROOT
+export TANK_003010=/lfs/h1/ops/dev/dcom/ # 20220908/b012/xx023
+                   #/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/20220909/b012
+
+export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
 
-export LOUD=ON
-export KEEPDATA=YES
+export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
+export COMPONENT=atmos
+
 export DEBUG_LEVEL=3
-
-export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com/
-export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com/
-
-# Need these settings only when cyc=18, tmmark=tm00, and have local set of dump status
-# files to process
-export COPY=YES
-export HOMEarch=${COMOUT_ROOT}/${obsNET}/${obsproc_ver}/sdm_rtdm/nam
-#export AVGDarch_IN=$HOMEarch/avgdata
-export AVGDarch_OUT=$HOMEarch/avgdata
-export OBCNTarch=$HOMEarch/obcount_30day
+export LOUD=on #ON
+export KEEPDATA=YES
 
 
-$HOMEobsproc/jobs/JOBSPROC_NAM_DUMP_POST
+echo 'TODAY'
+module show bufr_dump
+
+echo 'TODAY AGAIN'
+$HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP
 err=$?
+
+exit
 
 # When run from cron, the stdout is written to /u/$USER
 # mv to stmp
@@ -117,16 +118,22 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-# If you wish to stop at the dump_post job, un-comment the exit line below
-#exit
+exit
 
-# Kick off dump_alert job
+# Kick off dump_post job
 if [ $err -eq 0 ]; then
-  if [ "$tmmark" = "tm00" ]; then
-    echo "submit jdump_alert"
-    jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-    ${userROOT}/Trigs.KEEP/jdump_alert.wc2.pbs
-  fi
+  echo "submit jglobal_dump_post"
+  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
+  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.RELv1.1.0 
+  #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs
+fi
+
+# Kick off prep job
+if [ $err -eq 0 ]; then
+  echo "submit jglobal_prep"
+  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.RELv1.1.0
+  #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep.wc2.pbs
 fi
 
 exit

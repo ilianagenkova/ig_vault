@@ -1,5 +1,14 @@
 1. hsi  - get on HPSS and make a directory for youself in 1year, 2year or 5year
 2. send a few tar files instead of many small files
 
-hsi put 4cactus.tar : /NCEPDEV/emc-da/5year/Iliana.Genkova/OBSPROC/Venus/4cactus.tar
+   hsi put 4cactus.tar : /NCEPDEV/emc-da/5year/Iliana.Genkova/OBSPROC/Venus/4cactus.tar
+
+Need to run one more command to creat index *idx file:
+
+   htar -Xvf  /NCEPDEV/emc-da/5year/Ashley.Stanfield/MarineArchive/2022.tar  (the X is capital!!!)
+ 
+This command will create *.idx files for each *tar file, and would allow the users to extract only sections of the big tar files, for example -
+htar -xvf /NCEPPROD/..../filename.tar     ./path2single_file/single_file_name
+
+
 
