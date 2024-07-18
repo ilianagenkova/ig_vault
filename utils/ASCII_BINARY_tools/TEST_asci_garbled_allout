@@ -1,0 +1,4229 @@
+
+********************************************************************
+********************************************************************
+     STARTING EXECUTION OF THE UNIVERSAL DUMP SCRIPT - DUMPJB       
+                    version 08-20-2020                              
+             Start time: Sat Apr 13 13:30:42 UTC 2024                                  
+********************************************************************
+********************************************************************
+
+All executables used in this run of DUMPJB are found in directory path
+/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec
+
+
+The bufr_dumplist file used in this run of DUMPJB is found in path
+/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/fix/bufr_dumplist
+********************************************************************
+********************************************************************
+  THIS EXECUTION OF DUMPJB USED THIS BUFR_DUMPLIST FILE             
+  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/fix/bufr_dumplist                                                             
+********************************************************************
+********************************************************************
+
+IG : SDMEDIT flag file: /lfs/h1/ops/prod/dcom/sdmedit
+
+Dumping 002.001 in data group adpupa for 2024041312.50-2024041313.49
+Domain for 002.001 in data group adpupa : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Missing 002.002 in data group adpupa for 2024041312.50-2024041313.49
+Domain for 002.002 in data group adpupa : Global (NO lat/lon filtering)
+
+Dumping 002.003 in data group adpupa for 2024041312.50-2024041313.49
+Domain for 002.003 in data group adpupa : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Missing 002.004 in data group adpupa for 2024041312.50-2024041313.49
+Domain for 002.004 in data group adpupa : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 002.005 in data group adpupa for 2024041312.50-2024041313.49
+Domain for 002.005 in data group adpupa : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Missing 004.005 in data group adpupa for 2024041312.50-2024041313.49
+Domain for 004.005 in data group adpupa : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Missing 008.011 in data group osbuv8 for 2024041311.00-2024041311.99
+Domain for 008.011 in data group osbuv8 : Global (NO lat/lon filtering)
+
+Dumping 021.027 in data group 1bmhs  for 2024041311.00-2024041311.99
+Domain for 021.027 in data group 1bmhs  : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 021.028 in data group 1bhrs4 for 2024041311.00-2024041311.99
+Domain for 021.028 in data group 1bhrs4 : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 031.002 in data group tesac  for 2024041312.50-2024041313.49
+Domain for 031.002 in data group tesac  : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 031.003 in data group trkob  for 2024041311.50-2024041312.49
+Domain for 031.003 in data group trkob  : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 012.160 in data group efclam for 2024041312.50-2024041313.49
+Domain for 012.160 in data group efclam : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Missing 021.242 in data group saphir for 2024041310.50-2024041311.49
+Domain for 021.242 in data group saphir : Global (NO lat/lon filtering)
+
+Dumping 021.213 in data group atmsdb for 2024041311.50-2024041312.49
+Domain for 021.213 in data group atmsdb : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 008.017 in data group ompsn8 for 2024041311.00-2024041311.99
+Domain for 008.017 in data group ompsn8 : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 008.018 in data group ompst8 for 2024041311.00-2024041311.99
+Domain for 008.018 in data group ompst8 : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+Dumping 008.019 in data group ompslp for 2024041306.00-2024041306.99
+Domain for 008.019 in data group ompslp : Global (NO lat/lon filtering)
+ ===> W A R N I N G :  MPMD is OFF
+      Will process each subtype serially
+
+
+Duplicate checking completed for all dump files
+
+
+Q.C. changes in SDMEDIT flag file (if present) applied to reports in adpupa
+over date range 2024041312.50 - 2024041313.49
+
+
+Dump Status: adpupa : RC=22
+
+Dump Status: osbuv8 : RC=22
+
+Dump Status: 1bmhs : RC=0
+
+Dump Status: 1bhrs4 : RC=0
+
+Dump Status: tesac : RC=0
+
+Dump Status: trkob : RC=0
+
+Dump Status: efclam : RC=0
+
+Dump Status: saphir : RC=22
+
+Dump Status: atmsdb : RC=0
+
+Dump Status: ompsn8 : RC=0
+
+Dump Status: ompst8 : RC=0
+
+Dump Status: ompslp : RC=0
+
+Dump processing completed with return code 22
+
+********************************************************************
+********************************************************************
+                THIS EXECUTION OF DUMPJB IS FINISHED                
+                End time: Sat Apr 13 13:31:27 UTC 2024                                 
+********************************************************************
+********************************************************************
+
+**WARNING: adpupa dump EMPTY, all subtypes missing (RC=22)
+ 
+**WARNING: osbuv8 dump EMPTY, all subtypes missing (RC=22)
+ 
+1bmhs dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+1bhrs4 dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+tesac dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+trkob dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+efclam dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+**WARNING: saphir dump EMPTY, all subtypes missing (RC=22)
+ 
+atmsdb dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+ompsn8 dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+ompst8 dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+ompslp dump SUCCESSFUL, all subtypes contain reports (RC=0)
+ 
+==> The final overall return code for this run of dumpjb remains 22
+     
+
+********************************************************************
+********************************************************************
+                     Contents of adpupa.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 002.001.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:42 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 002.001 in data group adpupa for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupmrg
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b002/xx001
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:42.465  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b002/xx001
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/di
+ rd/01_002.001
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+      671 MESSAGES READ IN  FROM DATABASE
+
+      217 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:42.536  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.071118
+The total amount of time in user mode                = 0.036995
+The total amount of time in sys mode                 = 0.014798
+The maximum resident set size (KB)                   = 7696
+Number of page faults without I/O activity           = 974
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 18976
+Number of times filesystem performed OUTPUT          = 7720
+Number of Voluntary Context Switches                 = 31
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.10s
+user	0m0.03s
+sys	0m0.02s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPMRG HAS BEGUN. COMPILED 2022081.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:42.572  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPMRG - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041312.50
+REQUESTED LATEST   DATE IS .......   2024041313.49
+
+UNCHECKED AND UNMERGED INPUT FILE IS        
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dird/01_002.001
+DUPLICATE CHECKED AND MERGED OUTPUT FILE IS 
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dest/01_002.001
+
+BUFR_DUPMRG PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.000
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.000
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.000
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.000
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+The number of embedded BUFR tables (including at the top of the file) read in is 1
+
+
+OUTPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+
+BUFR_DUPMRG READ IN A TOTAL OF    4164 REPORT PARTS
+   NUMBER THAT ARE UNCORRECTED (AND USED IN MERGING PROCESS) .....      0
+   NUMBER THAT ARE CORRECTED (AND USED IN MERGING PROCESS) .......      0
+   NUMBER THAT ARE DUPLICATES (THESE ARE SKIPPED) ................      0
+   NUMBER THAT ARE OUTSIDE TIME WINDOW FOR TRIMMING (SKIPPED) ....   4164
+
+TOTAL NUMBER OF REPORTS WRITTEN OUT (SOME CREATED FROM THE MERGING OF INPUT REPORTS) ...      0
+
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+ ---------------------------------------------------
+ INVENTORY FROM MERGE PROCESS IN SUBROUTINE INVMRG:
+ ---------------------------------------------------
+ NUMBER OF DRB EXPANSIONS  =        0                                                                                            
+ NUMBER OF MERGES          =        0                                                                                            
+ NUMBER THAT ARE AMBIGUOUS =        0                                                                                            
+ ---------------------------------------------------
+ TOTAL NUMBER OF VISITS    =         0                                                                                           
+ ---------------------------------------------------
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+  
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:42.652  104  SAT   2460414
+     PROGRAM BUFR_DUPMRG HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.080148
+The total amount of time in user mode                = 0.057010
+The total amount of time in sys mode                 = 0.011402
+The maximum resident set size (KB)                   = 13336
+Number of page faults without I/O activity           = 1386
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 3904
+Number of times filesystem performed OUTPUT          = 72
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.11s
+user	0m0.06s
+sys	0m0.01s
+--------------------------------------------------------------------
+********************************************************************
+Script 002.001.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:42 UTC 2024
+********************************************************************
+
+********************************************************************
+Script 002.003.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:42 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 002.003 in data group adpupa for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupmrg
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b002/xx003
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:42.799  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b002/xx003
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/di
+ rd/03_002.003
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+        5 MESSAGES READ IN  FROM DATABASE
+
+        4 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:42.860  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.060930
+The total amount of time in user mode                = 0.036569
+The total amount of time in sys mode                 = 0.004063
+The maximum resident set size (KB)                   = 7484
+Number of page faults without I/O activity           = 899
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 72
+Number of times filesystem performed OUTPUT          = 72
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.06s
+user	0m0.03s
+sys	0m0.00s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPMRG HAS BEGUN. COMPILED 2022081.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:42.865  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPMRG - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041312.50
+REQUESTED LATEST   DATE IS .......   2024041313.49
+
+UNCHECKED AND UNMERGED INPUT FILE IS        
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dird/03_002.003
+DUPLICATE CHECKED AND MERGED OUTPUT FILE IS 
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dest/03_002.003
+
+BUFR_DUPMRG PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.000
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.000
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.000
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.000
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+The number of embedded BUFR tables (including at the top of the file) read in is 1
+
+
+OUTPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+
+BUFR_DUPMRG READ IN A TOTAL OF       5 REPORT PARTS
+   NUMBER THAT ARE UNCORRECTED (AND USED IN MERGING PROCESS) .....      0
+   NUMBER THAT ARE CORRECTED (AND USED IN MERGING PROCESS) .......      0
+   NUMBER THAT ARE DUPLICATES (THESE ARE SKIPPED) ................      0
+   NUMBER THAT ARE OUTSIDE TIME WINDOW FOR TRIMMING (SKIPPED) ....      5
+
+TOTAL NUMBER OF REPORTS WRITTEN OUT (SOME CREATED FROM THE MERGING OF INPUT REPORTS) ...      0
+
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+ ---------------------------------------------------
+ INVENTORY FROM MERGE PROCESS IN SUBROUTINE INVMRG:
+ ---------------------------------------------------
+ NUMBER OF DRB EXPANSIONS  =        0                                                                                            
+ NUMBER OF MERGES          =        0                                                                                            
+ NUMBER THAT ARE AMBIGUOUS =        0                                                                                            
+ ---------------------------------------------------
+ TOTAL NUMBER OF VISITS    =         0                                                                                           
+ ---------------------------------------------------
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+  
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:42.904  104  SAT   2460414
+     PROGRAM BUFR_DUPMRG HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.040064
+The total amount of time in user mode                = 0.035767
+The total amount of time in sys mode                 = 0.003974
+The maximum resident set size (KB)                   = 5620
+Number of page faults without I/O activity           = 989
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 72
+Number of Voluntary Context Switches                 = 17
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.04s
+user	0m0.04s
+sys	0m0.01s
+--------------------------------------------------------------------
+********************************************************************
+Script 002.003.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:42 UTC 2024
+********************************************************************
+
+********************************************************************
+Script 002.004.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:42 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 002.004 in data group adpupa for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupmrg
+BUFR Database file(s):
+ -1- Originally NONE, so go back one day to: /lfs/h1/ops/prod/dcom/20240412/b002/xx004
+      (dump will have ZERO reports but will contain dictionary, center and dump time messages)
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:42.984  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240412/b002/xx004
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/di
+ rd/04_002.004
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+        1 MESSAGES READ IN  FROM DATABASE
+
+        0 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.043  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.059144
+The total amount of time in user mode                = 0.028728
+The total amount of time in sys mode                 = 0.010773
+The maximum resident set size (KB)                   = 7500
+Number of page faults without I/O activity           = 901
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 64
+Number of times filesystem performed OUTPUT          = 64
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.07s
+user	0m0.03s
+sys	0m0.01s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPMRG HAS BEGUN. COMPILED 2022081.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.048  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPMRG - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041312.50
+REQUESTED LATEST   DATE IS .......   2024041313.49
+
+UNCHECKED AND UNMERGED INPUT FILE IS        
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dird/04_002.004
+DUPLICATE CHECKED AND MERGED OUTPUT FILE IS 
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dest/04_002.004
+
+BUFR_DUPMRG PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.000
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.000
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.000
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.000
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+
+INPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ 
+ ### WARNING: A total of ZERO input reports //dupmrg
+ 
+
+BUFR_DUPMRG READ IN A TOTAL OF       0 REPORT PARTS
+   NUMBER THAT ARE UNCORRECTED (AND USED IN MERGING PROCESS) .....      0
+   NUMBER THAT ARE CORRECTED (AND USED IN MERGING PROCESS) .......      0
+   NUMBER THAT ARE DUPLICATES (THESE ARE SKIPPED) ................      0
+   NUMBER THAT ARE OUTSIDE TIME WINDOW FOR TRIMMING (SKIPPED) ....      0
+
+TOTAL NUMBER OF REPORTS WRITTEN OUT (SOME CREATED FROM THE MERGING OF INPUT REPORTS) ...      0
+
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+ ---------------------------------------------------
+ INVENTORY FROM MERGE PROCESS IN SUBROUTINE INVMRG:
+ ---------------------------------------------------
+ NUMBER OF DRB EXPANSIONS  =        0                                                                                            
+ NUMBER OF MERGES          =        0                                                                                            
+ NUMBER THAT ARE AMBIGUOUS =        0                                                                                            
+ ---------------------------------------------------
+ TOTAL NUMBER OF VISITS    =         0                                                                                           
+ ---------------------------------------------------
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+  
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.061  104  SAT   2460414
+     PROGRAM BUFR_DUPMRG HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.013477
+The total amount of time in user mode                = 0.014193
+The total amount of time in sys mode                 = 0.000000
+The maximum resident set size (KB)                   = 4972
+Number of page faults without I/O activity           = 715
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 5
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.02s
+user	0m0.02s
+sys	0m0.00s
+--------------------------------------------------------------------
+********************************************************************
+Script 002.004.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:43 UTC 2024
+********************************************************************
+
+********************************************************************
+Script 002.005.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:43 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 002.005 in data group adpupa for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupmrg
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b002/xx005
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.143  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b002/xx005
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/di
+ rd/05_002.005
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+      149 MESSAGES READ IN  FROM DATABASE
+
+       26 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.214  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.071790
+The total amount of time in user mode                = 0.035065
+The total amount of time in sys mode                 = 0.004383
+The maximum resident set size (KB)                   = 7500
+Number of page faults without I/O activity           = 946
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 304
+Number of times filesystem performed OUTPUT          = 120
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.07s
+user	0m0.04s
+sys	0m0.00s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPMRG HAS BEGUN. COMPILED 2022081.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.220  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPMRG - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041312.50
+REQUESTED LATEST   DATE IS .......   2024041313.49
+
+UNCHECKED AND UNMERGED INPUT FILE IS        
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dird/05_002.005
+DUPLICATE CHECKED AND MERGED OUTPUT FILE IS 
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/dest/05_002.005
+
+BUFR_DUPMRG PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.000
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.000
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.000
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.000
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    2
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+The number of embedded BUFR tables (including at the top of the file) read in is 1
+
+
+OUTPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+
+BUFR_DUPMRG READ IN A TOTAL OF     159 REPORT PARTS
+   NUMBER THAT ARE UNCORRECTED (AND USED IN MERGING PROCESS) .....      0
+   NUMBER THAT ARE CORRECTED (AND USED IN MERGING PROCESS) .......      0
+   NUMBER THAT ARE DUPLICATES (THESE ARE SKIPPED) ................      0
+   NUMBER THAT ARE OUTSIDE TIME WINDOW FOR TRIMMING (SKIPPED) ....    159
+
+TOTAL NUMBER OF REPORTS WRITTEN OUT (SOME CREATED FROM THE MERGING OF INPUT REPORTS) ...      0
+
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+ ---------------------------------------------------
+ INVENTORY FROM MERGE PROCESS IN SUBROUTINE INVMRG:
+ ---------------------------------------------------
+ NUMBER OF DRB EXPANSIONS  =        0                                                                                            
+ NUMBER OF MERGES          =        0                                                                                            
+ NUMBER THAT ARE AMBIGUOUS =        0                                                                                            
+ ---------------------------------------------------
+ TOTAL NUMBER OF VISITS    =         0                                                                                           
+ ---------------------------------------------------
+ +++++++++++++++++++++BUFRLIB+++++++++++++++++++++++
+  
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.260  104  SAT   2460414
+     PROGRAM BUFR_DUPMRG HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.040682
+The total amount of time in user mode                = 0.032597
+The total amount of time in sys mode                 = 0.007243
+The maximum resident set size (KB)                   = 7816
+Number of page faults without I/O activity           = 991
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 72
+Number of Voluntary Context Switches                 = 18
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.04s
+user	0m0.03s
+sys	0m0.01s
+--------------------------------------------------------------------
+********************************************************************
+Script 002.005.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:43 UTC 2024
+********************************************************************
+
+********************************************************************
+Script 004.005.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:43 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 004.005 in data group adpupa for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupcor
+BUFR Database file(s):
+ -1- Originally NONE, so go back one day to: /lfs/h1/ops/prod/dcom/20240412/b004/xx005
+      (dump will have ZERO reports but will contain dictionary, center and dump time messages)
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.337  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240412/b004/xx005
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/adpupa/di
+ rd/06_004.005
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    4
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+        3 MESSAGES READ IN  FROM DATABASE
+
+        0 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.362  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.025354
+The total amount of time in user mode                = 0.017991
+The total amount of time in sys mode                 = 0.005997
+The maximum resident set size (KB)                   = 5356
+Number of page faults without I/O activity           = 924
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 48
+Number of times filesystem performed OUTPUT          = 48
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.03s
+user	0m0.01s
+sys	0m0.01s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPCOR HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.366  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPCOR - Version 03-25-2022
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+INPUT BUFR FILE HAS NO DATA MESSAGES
+FIRST MESSAGE TYPE FOUND IS  -11
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   50000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ===> BUFR_DUPCOR - NO DATA IN INPUT FILE
+ ===> THIS PROGRAM IS DONE - STOP
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.376  104  SAT   2460414
+     PROGRAM BUFR_DUPCOR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.010100
+The total amount of time in user mode                = 0.009300
+The total amount of time in sys mode                 = 0.000000
+The maximum resident set size (KB)                   = 4876
+Number of page faults without I/O activity           = 692
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 56
+Number of Voluntary Context Switches                 = 17
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.01s
+user	0m0.01s
+sys	0m0.00s
+--------------------------------------------------------------------
+********************************************************************
+Script 004.005.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:43 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group adpupa              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Apply q.c. changes from SDMEDIT flag file entries to all subtypes in
+BUFR types 000.* - 002.*, 004.*, 005* and 255.* (surface land,
+surface marine, upper-air, aircraft, satellite-derived wind, mesonet)
+
+SDMEDIT flag file: /lfs/h1/ops/prod/dcom/sdmedit
+Program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_edtbfr
+
+Date range for checking reports is: 2024041312.50 - 2024041313.49
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_EDTBFR HAS BEGUN. COMPILED 2023332.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:23.657  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_EDTBFR - Version 09-02-2021
+ IG: MEDT=5000
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+ BUFRLIB value for missing is: 1000000000.000000
+
+    -- NETWORK = 'DUMP'
+
+
+  ALL REPORTS IN DUMP FILE(S) ARE READ AND COMPARED TO REPORT ENTRIES IN SDMEDIT FLAG FILE.
+   IF REPORT TYPE, STATION ID, BUFR MESSAGE TYPE (in the form NCtttsss, where ttt is the BUFR report type and sss is the BUFR
+   report subtype), WMO BULLETIN HEADER AND ORIGINATOR {in the form TTAAii CCCC, where TTAAii is the 6 character bulletin header
+   (4 letters and 2 numbers) and CCCC is the bulletin originator (4 characters)}, INSTRUMENT TYPE (FOR RADIOSONDES/DROPSONDES
+   ONLY), AND NETWORK (based on environment variable "NET" set in the parent script) MATCH AN ENTRY IN SDMEDIT FLAG FILE (SEE **),
+   THEN THE REPORT WILL BE CONSIDERED FOR Q.C. EDITING IF ALL OF THE FOLLOWING CONDITIONS ARE MET:
+       1) REPORT LAT IS WITHIN 0.25 DEGREES OF LAT IN FLAG FILE ENTRY FOR TYPES REPORTING LOW-ACCURACY LAT -- or --
+          REPORT LAT IS WITHIN 0.01 DEGREES OF LAT IN FLAG FILE ENTRY FOR TYPES REPORTING HIGH-ACCURACY LAT
+          (IN EITHER CASE, IF LAT NOT SPECIFIED IN ENTRY REPORT, LAT IS NOT CHECKED UNLESS A LAT-LON BOUNDARY IS SPECIFIED IN WHICH
+          CASE THE LAT MUST BE WITHIN THE BOUNDARY RANGE)
+       2) REPORT LON IS WITHIN 0.25 * COS(LAT *  0.0174532) DEGREES OF LON IN FLAG FILE ENTRY FOR TYPES REPORTING LOW-ACCURACY LON
+          -- or --
+          REPORT LON IS WITHIN 0.01 * COS(LAT *  0.0174532) DEGREES OF LON IN FLAG FILE ENTRY FOR TYPES REPORTING HIGH-ACCURACY LON
+          (WHERE, IN EITHER CASE, "LAT" IS REPORT LAT) (IN EITHER CASE, IF LON NOT SPECIFIED IN ENTRY, REPORT LON IS NOT CHECKED
+          UNLESS A LAT-LON BOUNDARY IS SPECIFIED IN WHICH CASE THE LON MUST BE WITHIN THE BOUNDARY RANGE; IF LAT NOT SPECIFIED IN
+          ENTRY BUT LON IS, THEN TOLERANCE IS SAME AS FOR LAT)
+       3) REPORT DATE (YYYYMMDDHH.hh) IS WITHIN EITHER 2.01 (FOR SATELLITE-DERIVED WINDS) OR 0.01 (ALL OTHER TYPES)
+          HOURS OF DATE IN FLAG FILE ENTRY (IF ENTIRE DATE NOT SPECIFIED IN ENTRY, REPORT DATE IS NOT CHECKED; IF ONLY REPORT HOUR
+          IS SPECIFIED IN ENTRY, REPORT YYYYMMDD IS NOT CHECKED BUT HH.hh IS CHECKED; IF ONLY REPORT YEAR, MONTH AND DAY IS
+          SPECIFIED IN ENTRY, REPORT HH.hh IS NOT CHECKED BUT REPORT YYYYMMDD IS CHECKED)
+
+   ** - IF ID IN FLAG FILE ENTRY CONTAINS ONLY A WILD CARD CHARACTER "*", THEN ALL ID'S WILL MATCH IT {SUBJECT TO CONDITIONS
+        (SEE %%)}. IF ID IN FLAG FILE ENTRY ENDS WITH A WILD CARD CHARACTER "*", THEN THE ONLY REQUIREMENT FOR AN ID MATCH IS THAT
+        THE BEGINNING CHARACTERS OF THE REPORT ID MATCH THE FLAG FILE ID CHARACTERS UP TO THE "*".  IF ID IN FLAG FILE ENTRY BEGINS
+        WITH A WILD CARD CHARACTER "*" THEN THE ONLY REQUIREMENT FOR AN ID MATCH IS THAT THE ENDING CHARACTERS OF THE REPORT ID
+        MATCH THE FLAG FILE ID CHARACTERS AFTER THE "*".  IF ANY CHARACTER IN ID IN FLAG FILE ENTRY CONTAINS A WILD CARD CHARACTER
+        "?", THEN THAT CHARACTER MATCHES ANY CHARACTER IN THAT SAME POSITION OF THE REPORT ID (OF COURSE ALL OTHER NON-WILD CARD
+        CHARACTERS MUST MATCH). IF BUFR MESSAGE TYPE IS "--------" OR "        " (ALL BLANKS) IN THE FLAG FILE ENTRY, THEN IT IS
+        ASSUMED TO MATCH THE REPORT'S BUFR MESSAGE TYPE, WHATEVER THAT MIGHT BE.  IF WMO BULLETIN HEADER AND ORIGINATOR IS
+        "-----------" OR "           " (ALL BLANKS) IN THE FLAG FILE ENTRY, THEN IT IS ASSUMED TO MATCH THE REPORT'S WMO BULLETIN
+        HEADER AND ORIGINATOR, WHATEVER THEY MIGHT BE.  IF THE REPORT'S WMO BULLETIN HEADER AND/OR ORIGINATOR IS MISSING, THEN IT
+        IS ASSUMED TO MATCH THE FLAG FILE ENTRY REGARDLESS OF WHAT THE FLAG FILE ENTRY IS FOR WMO BULLETIN HEADER AND ORIGINATOR.
+        IF UPPER-AIR INSTRUMENT TYPE IS "---" OR "   " (ALL BLANKS) IN THE FLAG FILE ENTRY, THEN IT IS ASSUMED TO MATCH THE
+        REPORT'S UPPER-AIR INSTRUMENT TYPE, WHATEVER THAT MIGHT BE.  IF THE REPORT'S UPPER-AIR INSTRUMENT TYPE IS MISSING, THEN IT
+        IS ASSUMED TO MATCH THE FLAG FILE ENTRY REGARDLESS OF WHAT THE FLAG FILE ENTRY IS FOR UPPER-AIR INSTRUMENT TYPE.  IF
+        NETWORKS LISTED (UP TO FOUR) ARE "-------------------" or "                   " "(ALL BLANKS) IN THE FLAG FILE ENTRY, THEN
+        IT IS ASSUMED TO MATCH THE REPORT'S NETWORK, WHATEVER THAT MIGHT BE.  IF THE PARENT SCRIPT DOES NOT SET ENVIRONMENT
+        VARIABLE "NET", THEN IT IS ASSUMED TO MATCH THE FLAG FILE ENTRY REGARDLESS OF WHAT THE FLAG FILE ENTRY IS FOR NETWORKS(S).
+
+   %% - IF ID IN FLAG FILE ENTRY CONTAINS ONLY A WILD CARD CHARACTER "*", THEN ALL ID'S WILL MATCH IT ONLY IF ONE OR MORE OF THE
+        FOLLOWING THREE FIELDS ARE FILLED (I.E. THEY DO NOT CONTAIN EITHER ALL BLANKS OR ALL DASHES):
+           - CHARACTERS  78- 88: WMO BULLETIN HEADER AND ORIGINATOR
+           - CHARACTERS  91-102: LAT/LON BOUNDARY FOR CONSIDERING REPORTS
+           - CHARACTERS 105-107: UPPER-AIR INSTRUMENT TYPE
+
+
+TIME WINDOW FOR CHECKING REPORTS AGAINST SDMEDIT FLAG FILE ENTRIES IS: 2024041312.50  to  2024041313.49  UTC
+
+READ IN 5720 RECORDS FROM SDMEDIT FLAG FILE IN UNIT 20
+       For report type SFC, a total of   869 records are within requested time window and read into memory
+       For report type SHP, a total of    21 records are within requested time window and read into memory
+       For report type UPA, a total of   100 records are within requested time window and read into memory
+       For report type ACF, a total of   662 records are within requested time window and read into memory
+       For report type SAT, a total of     1 records are within requested time window and read into memory
+       For report type MSO, a total of  1533 records are within requested time window and read into memory
+
+
+===> NEXT BUFR FILE TO CHECK HAS TYPE= 002, SUBTYPE= 001, SDMEDIT TYPE: UPA     RAWINSONDE - FIXED LAND                 
+     INPUT BUFR FILE HAS NO DATA MESSAGES
+
+
+===> NEXT BUFR FILE TO CHECK HAS TYPE= 002, SUBTYPE= 003, SDMEDIT TYPE: UPA     RAWINSONDE - SHIP                       
+     INPUT BUFR FILE HAS NO DATA MESSAGES
+
+
+===> NEXT BUFR FILE TO CHECK HAS TYPE= 002, SUBTYPE= 005, SDMEDIT TYPE: UPA     PIBAL                                   
+     INPUT BUFR FILE HAS NO DATA MESSAGES
+
+
+===> NEXT BUFR FILE TO CHECK HAS TYPE= 004, SUBTYPE= 005, SDMEDIT TYPE: ACF                                             
+     INPUT BUFR FILE HAS NO DATA MESSAGES
+
+==================================================================================================================
+SUMMARY:
+   TOTAL NUMBER OF REPORTS OF ALL TYPES READ FROM ALL DUMPS CHECKED IN THIS GROUP .........................      0
+
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   TOTAL NUMBER OF REPORTS OF ALL TYPES WRITTEN BACK TO ALL DUMPS CHECKED IN THIS GROUP ...................      0
+
+==================================================================================================================
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:23.807  104  SAT   2460414
+     PROGRAM BUFR_EDTBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.153537
+The total amount of time in user mode                = 0.106217
+The total amount of time in sys mode                 = 0.043273
+The maximum resident set size (KB)                   = 339944
+Number of page faults without I/O activity           = 713
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 24
+Number of Voluntary Context Switches                 = 25
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.16s
+user	0m0.10s
+sys	0m0.05s
+--------------------------------------------------------------------
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:23.826  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_002.001
+        File 01_002.001 is first to contain internal dictionary msgs - copy them to "check" file
+
+002.001  HAS        0 REPORTS
+
+--> Open file 02_002.002 using dictionary msgs from "check" file
+
+002.002  HAS        0 REPORTS
+
+--> Open file 03_002.003 using dictionary msgs from "check" file
+
+002.003  HAS        0 REPORTS
+
+--> Open file 04_002.004 using dictionary msgs from "check" file
+
+002.004  HAS        0 REPORTS
+
+--> Open file 05_002.005 using dictionary msgs from "check" file
+
+002.005  HAS        0 REPORTS
+
+--> Open file 06_004.005 using dictionary msgs from "check" file
+
+004.005  HAS        0 REPORTS
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:23.940  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.115987
+The total amount of time in user mode                = 0.099715
+The total amount of time in sys mode                 = 0.011965
+The maximum resident set size (KB)                   = 6704
+Number of page faults without I/O activity           = 725
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 16
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 33
+Number of InVoluntary Context Switches               = 4
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.12s
+user	0m0.10s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group adpupa and writing the output into $DATA as adpupa.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:23.970  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
++++ WARNING: CANNOT FIND A BUFR TABLE TO WRITE INTO OUTPUT FILE - OUTPUT FILE MUST BE EMPTY!!
+
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 01_002.001 TO COMBINED OUTPUT FILE
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 02_002.002 TO COMBINED OUTPUT FILE
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 03_002.003 TO COMBINED OUTPUT FILE
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 04_002.004 TO COMBINED OUTPUT FILE
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 05_002.005 TO COMBINED OUTPUT FILE
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 06_004.005 TO COMBINED OUTPUT FILE
+ 
+ NO INPUT DATA MESSAGES FOUND - FORCE OUTPUT (DUMP) FILE TO BE EMPTY
+ 
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.071  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.108228
+The total amount of time in user mode                = 0.074240
+The total amount of time in sys mode                 = 0.012373
+The maximum resident set size (KB)                   = 5512
+Number of page faults without I/O activity           = 713
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 59
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.12s
+user	0m0.08s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of osbuv8.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group osbuv8              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:24.174  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_008.011
+        File 01_008.011 does not contain internal dictionary msgs - must be empty
+
+008.011  HAS        0 REPORTS
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.178  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.006839
+The total amount of time in user mode                = 0.000000
+The total amount of time in sys mode                 = 0.006207
+The maximum resident set size (KB)                   = 5568
+Number of page faults without I/O activity           = 445
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 8
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.01s
+user	0m0.00s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group osbuv8 and writing the output into $DATA as osbuv8.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:24.200  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
++++ WARNING: CANNOT FIND A BUFR TABLE TO WRITE INTO OUTPUT FILE - OUTPUT FILE MUST BE EMPTY!!
+
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 01_008.011 TO COMBINED OUTPUT FILE
+ 
+ NO INPUT DATA MESSAGES FOUND - FORCE OUTPUT (DUMP) FILE TO BE EMPTY
+ 
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.213  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.014851
+The total amount of time in user mode                = 0.000000
+The total amount of time in sys mode                 = 0.007047
+The maximum resident set size (KB)                   = 5576
+Number of page faults without I/O activity           = 571
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 0
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.02s
+user	0m0.00s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of 1bmhs.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 021.027.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:43 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 021.027 in data group 1bmhs for 2024041311.00-2024041311.99
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupsat
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b021/xx027
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.551  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041311.00000     
+ REQUESTED LATEST   DATE IS ...    2024041311.99000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b021/xx027
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/1bmhs/dir
+ d/01_021.027
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+     9911 MESSAGES READ IN  FROM DATABASE
+
+      634 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:43.728  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.177243
+The total amount of time in user mode                = 0.098916
+The total amount of time in sys mode                 = 0.060871
+The maximum resident set size (KB)                   = 7436
+Number of page faults without I/O activity           = 951
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 163840
+Number of times filesystem performed OUTPUT          = 12392
+Number of Voluntary Context Switches                 = 25
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.18s
+user	0m0.10s
+sys	0m0.06s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPSAT HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:43.734  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPSAT - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041311.00
+REQUESTED LATEST   DATE IS .......   2024041311.99
+
+UNCHECKED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/1bmhs/dird/01_021.027
+DUPLICATE CHECKED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/1bmhs/dest/01_021.027
+
+BUFR_DUPSAT PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..  0.01
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........  0.00
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........  0.00
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....  0.00
+   TOLERANCE FOR SECOND CHECK (IN SECONDS) ....  0.00
+   GEOGRAPHICAL FILTERING NOT PERFORMED HERE
+
+
+INPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   25000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+
+BUFR_DUPSAT READ IN A TOTAL OF      296133 REPORTS
+BUFR_DUPSAT CHECKED A TOTAL OF      296133 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT .....................      283749
+NUMBER OF REPORTS SKIPPED DUE TO:
+   MISSING LATITUDE OR LONGITUDE ..................           0
+   UNREASONABLE LATITUDE OR LONGITUDE .............           0
+   FAILING DUPLICATE CHECK ........................        9965
+   ... number of above w/i lat/lon tolerance ..     146
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING .........        2419
+NUMBER OF RPTS WITH LONGITUDE CORRECTED (BUFR STD).           0
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:44.319  104  SAT   2460414
+     PROGRAM BUFR_DUPSAT HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.586431
+The total amount of time in user mode                = 0.563836
+The total amount of time in sys mode                 = 0.020281
+The maximum resident set size (KB)                   = 48352
+Number of page faults without I/O activity           = 4490
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 11856
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.60s
+user	0m0.56s
+sys	0m0.02s
+--------------------------------------------------------------------
+********************************************************************
+Script 021.027.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:44 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group 1bmhs              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:24.315  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_021.027
+        File 01_021.027 is first to contain internal dictionary msgs - copy them to "check" file
+
+021.027  HAS   283749 REPORTS
+         ---> 021.027 (in 1bmhs ) SAT. ID    3 has   119240 reports
+         ---> 021.027 (in 1bmhs ) SAT. ID    5 has    45303 reports
+         ---> 021.027 (in 1bmhs ) SAT. ID  223 has   119206 reports
+                                                                     %#
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.380  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.068007
+The total amount of time in user mode                = 0.061561
+The total amount of time in sys mode                 = 0.004397
+The maximum resident set size (KB)                   = 8424
+Number of page faults without I/O activity           = 1655
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 5
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.07s
+user	0m0.07s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group 1bmhs and writing the output into $DATA as 1bmhs.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:24.403  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_021.027
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --    592 BUFR MESSAGES COPIED FROM INPUT FILE 01_021.027 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.464  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.063562
+The total amount of time in user mode                = 0.053655
+The total amount of time in sys mode                 = 0.008254
+The maximum resident set size (KB)                   = 7740
+Number of page faults without I/O activity           = 977
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 11840
+Number of Voluntary Context Switches                 = 21
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.07s
+user	0m0.05s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of 1bhrs4.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 021.028.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:44 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 021.028 in data group 1bhrs4 for 2024041311.00-2024041311.99
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupsat
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b021/xx028
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:44.442  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041311.00000     
+ REQUESTED LATEST   DATE IS ...    2024041311.99000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b021/xx028
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/1bhrs4/di
+ rd/01_021.028
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+     3443 MESSAGES READ IN  FROM DATABASE
+
+      255 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:44.586  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.143994
+The total amount of time in user mode                = 0.045804
+The total amount of time in sys mode                 = 0.038170
+The maximum resident set size (KB)                   = 7544
+Number of page faults without I/O activity           = 904
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 66720
+Number of times filesystem performed OUTPUT          = 5008
+Number of Voluntary Context Switches                 = 25
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.15s
+user	0m0.04s
+sys	0m0.04s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPSAT HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:44.591  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPSAT - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041311.00
+REQUESTED LATEST   DATE IS .......   2024041311.99
+
+UNCHECKED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/1bhrs4/dird/01_021.028
+DUPLICATE CHECKED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/1bhrs4/dest/01_021.028
+
+BUFR_DUPSAT PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..  0.01
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........  0.00
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........  0.00
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....  0.00
+   TOLERANCE FOR SECOND CHECK (IN SECONDS) ....  0.00
+   GEOGRAPHICAL FILTERING NOT PERFORMED HERE
+
+
+INPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   25000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+
+BUFR_DUPSAT READ IN A TOTAL OF       59861 REPORTS
+BUFR_DUPSAT CHECKED A TOTAL OF       59861 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT .....................       59245
+NUMBER OF REPORTS SKIPPED DUE TO:
+   MISSING LATITUDE OR LONGITUDE ..................           0
+   UNREASONABLE LATITUDE OR LONGITUDE .............           0
+   FAILING DUPLICATE CHECK ........................           0
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING .........         616
+NUMBER OF RPTS WITH LONGITUDE CORRECTED (BUFR STD).           0
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:44.714  104  SAT   2460414
+     PROGRAM BUFR_DUPSAT HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.122826
+The total amount of time in user mode                = 0.113825
+The total amount of time in sys mode                 = 0.007850
+The maximum resident set size (KB)                   = 15800
+Number of page faults without I/O activity           = 2511
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 4968
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.13s
+user	0m0.12s
+sys	0m0.01s
+--------------------------------------------------------------------
+********************************************************************
+Script 021.028.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:44 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group 1bhrs4              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:24.686  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_021.028
+        File 01_021.028 is first to contain internal dictionary msgs - copy them to "check" file
+
+021.028  HAS    59245 REPORTS
+         ---> 021.028 (in 1bhrs4) SAT. ID  209 has    29624 reports
+         ---> 021.028 (in 1bhrs4) SAT. ID  223 has    29621 reports
+                                                                     %#
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.739  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.055799
+The total amount of time in user mode                = 0.042023
+The total amount of time in sys mode                 = 0.011461
+The maximum resident set size (KB)                   = 5696
+Number of page faults without I/O activity           = 991
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.06s
+user	0m0.04s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group 1bhrs4 and writing the output into $DATA as 1bhrs4.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:24.765  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_021.028
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --    252 BUFR MESSAGES COPIED FROM INPUT FILE 01_021.028 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:24.818  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.055479
+The total amount of time in user mode                = 0.030602
+The total amount of time in sys mode                 = 0.022952
+The maximum resident set size (KB)                   = 11916
+Number of page faults without I/O activity           = 969
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 4944
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.06s
+user	0m0.03s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of tesac.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 031.002.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:44 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 031.002 in data group tesac for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupcor
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/202404/b031/xx002
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:44.818  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/202404/b031/xx002
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/tesac/dir
+ d/01_031.002
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+    43267 MESSAGES READ IN  FROM DATABASE
+
+      111 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:45.120  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.301870
+The total amount of time in user mode                = 0.200265
+The total amount of time in sys mode                 = 0.058901
+The maximum resident set size (KB)                   = 7284
+Number of page faults without I/O activity           = 823
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 50208
+Number of times filesystem performed OUTPUT          = 264
+Number of Voluntary Context Switches                 = 25
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.31s
+user	0m0.20s
+sys	0m0.06s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPCOR HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:45.124  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPCOR - Version 03-25-2022
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   50000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+REQUESTED EARLIEST DATE IS .......   2024041312.50
+REQUESTED LATEST   DATE IS .......   2024041313.49
+
+UNCHECKED AND UNCORRECTED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/tesac/dird/01_031.002
+DUPLICATE CHECKED AND CORRECTED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/tesac/dest/01_031.002
+
+BUFR_DUPCOR PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.0
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (IN MONTHS) ......   0.0
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.0
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.0
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.0
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+
+BUFR_DUPCOR READ IN A TOTAL OF         343 REPORTS
+BUFR_DUPCOR CHECKED A TOTAL OF         343 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT ..................    165
+   INCLUDES      165 UNIQUE REPORTS
+   INCLUDES        0 CORRECTED REPORTS
+NUMBER OF REPORTS SKIPPED DUE TO:
+   FAILING DUPLICATE CHECK .....................      1
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING ......    177
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:45.252  104  SAT   2460414
+     PROGRAM BUFR_DUPCOR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.127755
+The total amount of time in user mode                = 0.121314
+The total amount of time in sys mode                 = 0.004183
+The maximum resident set size (KB)                   = 9716
+Number of page faults without I/O activity           = 1018
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 200
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.13s
+user	0m0.12s
+sys	0m0.00s
+--------------------------------------------------------------------
+********************************************************************
+Script 031.002.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:45 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group tesac              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:25.084  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_031.002
+        File 01_031.002 is first to contain internal dictionary msgs - copy them to "check" file
+
+031.002  HAS      165 REPORTS
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:25.125  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.044036
+The total amount of time in user mode                = 0.038154
+The total amount of time in sys mode                 = 0.004239
+The maximum resident set size (KB)                   = 6768
+Number of page faults without I/O activity           = 702
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 16
+Number of Voluntary Context Switches                 = 16
+Number of InVoluntary Context Switches               = 4
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.05s
+user	0m0.04s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group tesac and writing the output into $DATA as tesac.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:25.148  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_031.002
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --     54 BUFR MESSAGES COPIED FROM INPUT FILE 01_031.002 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:25.229  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.083985
+The total amount of time in user mode                = 0.072219
+The total amount of time in sys mode                 = 0.008024
+The maximum resident set size (KB)                   = 7860
+Number of page faults without I/O activity           = 982
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 176
+Number of Voluntary Context Switches                 = 21
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.09s
+user	0m0.08s
+sys	0m0.00s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of trkob.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 031.003.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:45 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 031.003 in data group trkob for 2024041311.50-2024041312.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupcor
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/202404/b031/xx003
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:45.365  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041311.50000     
+ REQUESTED LATEST   DATE IS ...    2024041312.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/202404/b031/xx003
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/trkob/dir
+ d/01_031.003
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+    14237 MESSAGES READ IN  FROM DATABASE
+
+        6 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:45.521  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.156639
+The total amount of time in user mode                = 0.116323
+The total amount of time in sys mode                 = 0.016044
+The maximum resident set size (KB)                   = 7816
+Number of page faults without I/O activity           = 961
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 37128
+Number of times filesystem performed OUTPUT          = 152
+Number of Voluntary Context Switches                 = 25
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.16s
+user	0m0.11s
+sys	0m0.01s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPCOR HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:45.527  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPCOR - Version 03-25-2022
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   50000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+REQUESTED EARLIEST DATE IS .......   2024041311.50
+REQUESTED LATEST   DATE IS .......   2024041312.49
+
+UNCHECKED AND UNCORRECTED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/trkob/dird/01_031.003
+DUPLICATE CHECKED AND CORRECTED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/trkob/dest/01_031.003
+
+BUFR_DUPCOR PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.0
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (IN MONTHS) ......   0.0
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.0
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.0
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.0
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   31
+
+
+BUFR_DUPCOR READ IN A TOTAL OF         120 REPORTS
+BUFR_DUPCOR CHECKED A TOTAL OF         120 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT ..................     60
+   INCLUDES       60 UNIQUE REPORTS
+   INCLUDES        0 CORRECTED REPORTS
+NUMBER OF REPORTS SKIPPED DUE TO:
+   FAILING DUPLICATE CHECK .....................      0
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING ......     60
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:45.652  104  SAT   2460414
+     PROGRAM BUFR_DUPCOR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.126661
+The total amount of time in user mode                = 0.116922
+The total amount of time in sys mode                 = 0.008063
+The maximum resident set size (KB)                   = 11856
+Number of page faults without I/O activity           = 1012
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 144
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.13s
+user	0m0.12s
+sys	0m0.00s
+--------------------------------------------------------------------
+********************************************************************
+Script 031.003.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:30:45 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group trkob              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:25.331  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_031.003
+        File 01_031.003 is first to contain internal dictionary msgs - copy them to "check" file
+
+031.003  HAS       60 REPORTS
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:25.372  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.044242
+The total amount of time in user mode                = 0.037670
+The total amount of time in sys mode                 = 0.004185
+The maximum resident set size (KB)                   = 5584
+Number of page faults without I/O activity           = 812
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 16
+Number of Voluntary Context Switches                 = 16
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.05s
+user	0m0.04s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group trkob and writing the output into $DATA as trkob.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:25.394  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_031.003
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --      5 BUFR MESSAGES COPIED FROM INPUT FILE 01_031.003 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:25.475  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.082589
+The total amount of time in user mode                = 0.061441
+The total amount of time in sys mode                 = 0.019200
+The maximum resident set size (KB)                   = 7672
+Number of page faults without I/O activity           = 958
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 128
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.09s
+user	0m0.06s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of efclam.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 012.160.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:30:45 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 012.160 in data group efclam for 2024041312.50-2024041313.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupsat
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b012/xx160
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:45.750  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041312.50000     
+ REQUESTED LATEST   DATE IS ...    2024041313.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b012/xx160
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/efclam/di
+ rd/01_012.160
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   12
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+   130221 MESSAGES READ IN  FROM DATABASE
+
+    12045 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   12
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:30:47.279  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 1.529360
+The total amount of time in user mode                = 0.879767
+The total amount of time in sys mode                 = 0.586511
+The maximum resident set size (KB)                   = 5360
+Number of page faults without I/O activity           = 931
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 557056
+Number of times filesystem performed OUTPUT          = 235224
+Number of Voluntary Context Switches                 = 33
+Number of InVoluntary Context Switches               = 5
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m1.54s
+user	0m0.88s
+sys	0m0.59s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPSAT HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:30:47.286  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPSAT - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041312.50
+REQUESTED LATEST   DATE IS .......   2024041313.49
+
+UNCHECKED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/efclam/dird/01_012.160
+DUPLICATE CHECKED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/efclam/dest/01_012.160
+
+BUFR_DUPSAT PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..  0.00
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........  0.00
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........  0.00
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....  0.00
+   TOLERANCE FOR SECOND CHECK (IN SECONDS) ....  0.00
+   GEOGRAPHICAL FILTERING NOT PERFORMED HERE
+
+
+INPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   12
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   25000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   12
+
+
+BUFR_DUPSAT READ IN A TOTAL OF    14079570 REPORTS
+BUFR_DUPSAT CHECKED A TOTAL OF    14079570 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT .....................     8299325
+NUMBER OF REPORTS SKIPPED DUE TO:
+   MISSING LATITUDE OR LONGITUDE ..................           0
+   UNREASONABLE LATITUDE OR LONGITUDE .............           0
+   FAILING DUPLICATE CHECK ........................         268
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING .........     5779977
+NUMBER OF RPTS WITH LONGITUDE CORRECTED (BUFR STD).           0
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:16.969  104  SAT   2460414
+     PROGRAM BUFR_DUPSAT HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 29.684156
+The total amount of time in user mode                = 29.384960
+The total amount of time in sys mode                 = 0.256008
+The maximum resident set size (KB)                   = 1357736
+Number of page faults without I/O activity           = 5782
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 65536
+Number of times filesystem performed OUTPUT          = 138648
+Number of Voluntary Context Switches                 = 28
+Number of InVoluntary Context Switches               = 22
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m29.69s
+user	0m29.38s
+sys	0m0.26s
+--------------------------------------------------------------------
+********************************************************************
+Script 012.160.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:31:16 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group efclam              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:25.616  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_012.160
+        File 01_012.160 is first to contain internal dictionary msgs - copy them to "check" file
+
+012.160  HAS  8299325 REPORTS
+         ---> 012.160 (in efclam) SAT. ID  270 has  2964407 reports
+         ---> 012.160 (in efclam) SAT. ID  272 has  5334918 reports
+                                                                     %#
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:25.988  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.374476
+The total amount of time in user mode                = 0.313116
+The total amount of time in sys mode                 = 0.059452
+The maximum resident set size (KB)                   = 102172
+Number of page faults without I/O activity           = 1607
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 19
+Number of InVoluntary Context Switches               = 5
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.38s
+user	0m0.31s
+sys	0m0.06s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group efclam and writing the output into $DATA as efclam.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.019  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_012.160
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --   7082 BUFR MESSAGES COPIED FROM INPUT FILE 01_012.160 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:26.289  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.279584
+The total amount of time in user mode                = 0.110921
+The total amount of time in sys mode                 = 0.118844
+The maximum resident set size (KB)                   = 9656
+Number of page faults without I/O activity           = 948
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 138624
+Number of Voluntary Context Switches                 = 28
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.28s
+user	0m0.12s
+sys	0m0.12s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of saphir.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group saphir              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.391  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_021.242
+        File 01_021.242 does not contain internal dictionary msgs - must be empty
+
+021.242  HAS        0 REPORTS
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:26.395  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.010046
+The total amount of time in user mode                = 0.000000
+The total amount of time in sys mode                 = 0.005739
+The maximum resident set size (KB)                   = 5584
+Number of page faults without I/O activity           = 445
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 8
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 17
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.01s
+user	0m0.00s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group saphir and writing the output into $DATA as saphir.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.416  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
++++ WARNING: CANNOT FIND A BUFR TABLE TO WRITE INTO OUTPUT FILE - OUTPUT FILE MUST BE EMPTY!!
+
+
+
+  --      0 BUFR MESSAGES COPIED FROM INPUT FILE 01_021.242 TO COMBINED OUTPUT FILE
+ 
+ NO INPUT DATA MESSAGES FOUND - FORCE OUTPUT (DUMP) FILE TO BE EMPTY
+ 
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:26.428  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.014486
+The total amount of time in user mode                = 0.000000
+The total amount of time in sys mode                 = 0.006843
+The maximum resident set size (KB)                   = 5584
+Number of page faults without I/O activity           = 570
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 0
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.02s
+user	0m0.00s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+NOTE: saphir dump contains RESTRICTED data, only users in rstprod group have read permission
+ 
+
+********************************************************************
+********************************************************************
+                     Contents of atmsdb.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 021.213.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:31:17 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 021.213 in data group atmsdb for 2024041311.50-2024041312.49
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupsat
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b021/xx213
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:17.225  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041311.50000     
+ REQUESTED LATEST   DATE IS ...    2024041312.49000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b021/xx213
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/atmsdb/di
+ rd/01_021.213
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+     5193 MESSAGES READ IN  FROM DATABASE
+
+      854 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:17.446  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.221903
+The total amount of time in user mode                = 0.052525
+The total amount of time in sys mode                 = 0.072727
+The maximum resident set size (KB)                   = 7476
+Number of page faults without I/O activity           = 939
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 98304
+Number of times filesystem performed OUTPUT          = 50040
+Number of Voluntary Context Switches                 = 27
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.22s
+user	0m0.05s
+sys	0m0.07s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPSAT HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:17.452  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPSAT - Version 03-25-2022
+ 
+ 
+ BUFRLIB value for missing is:    1000000000.00000     
+ 
+
+REQUESTED EARLIEST DATE IS .......   2024041311.50
+REQUESTED LATEST   DATE IS .......   2024041312.49
+
+UNCHECKED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/atmsdb/dird/01_021.213
+DUPLICATE CHECKED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/atmsdb/dest/01_021.213
+
+BUFR_DUPSAT PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..  0.00
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........  0.00
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........  0.00
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....  0.00
+   TOLERANCE FOR SECOND CHECK (IN SECONDS) ....  0.00
+   GEOGRAPHICAL FILTERING NOT PERFORMED HERE
+
+
+INPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   25000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS   21
+
+
+BUFR_DUPSAT READ IN A TOTAL OF      245376 REPORTS
+BUFR_DUPSAT CHECKED A TOTAL OF      245376 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT .....................      132860
+NUMBER OF REPORTS SKIPPED DUE TO:
+   MISSING LATITUDE OR LONGITUDE ..................           0
+   UNREASONABLE LATITUDE OR LONGITUDE .............           0
+   FAILING DUPLICATE CHECK ........................           0
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING .........      112516
+NUMBER OF RPTS WITH LONGITUDE CORRECTED (BUFR STD).           0
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:21.282  104  SAT   2460414
+     PROGRAM BUFR_DUPSAT HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 3.830352
+The total amount of time in user mode                = 3.777476
+The total amount of time in sys mode                 = 0.039973
+The maximum resident set size (KB)                   = 55352
+Number of page faults without I/O activity           = 3726
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 26984
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 15
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m3.84s
+user	0m3.78s
+sys	0m0.04s
+--------------------------------------------------------------------
+********************************************************************
+Script 021.213.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:31:21 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group atmsdb              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.529  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_021.213
+        File 01_021.213 is first to contain internal dictionary msgs - copy them to "check" file
+
+021.213  HAS   132860 REPORTS
+         ---> 021.213 (in atmsdb) SAT. ID  224 has    46885 reports
+         ---> 021.213 (in atmsdb) SAT. ID  225 has    41047 reports
+         ---> 021.213 (in atmsdb) SAT. ID  226 has    44928 reports
+                                                                     %#
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:26.575  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.049235
+The total amount of time in user mode                = 0.047488
+The total amount of time in sys mode                 = 0.000000
+The maximum resident set size (KB)                   = 6488
+Number of page faults without I/O activity           = 1199
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 8
+Number of Voluntary Context Switches                 = 18
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.05s
+user	0m0.05s
+sys	0m0.00s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group atmsdb and writing the output into $DATA as atmsdb.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.601  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_021.213
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --    463 BUFR MESSAGES COPIED FROM INPUT FILE 01_021.213 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:26.654  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.055359
+The total amount of time in user mode                = 0.034147
+The total amount of time in sys mode                 = 0.018970
+The maximum resident set size (KB)                   = 7812
+Number of page faults without I/O activity           = 957
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 26960
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.06s
+user	0m0.04s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of ompsn8.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 008.017.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:31:21 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 008.017 in data group ompsn8 for 2024041311.00-2024041311.99
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupcor
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b008/xx017
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:21.383  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041311.00000     
+ REQUESTED LATEST   DATE IS ...    2024041311.99000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b008/xx017
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompsn8/di
+ rd/01_008.017
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+     1448 MESSAGES READ IN  FROM DATABASE
+
+      126 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:21.465  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.082379
+The total amount of time in user mode                = 0.021661
+The total amount of time in sys mode                 = 0.018051
+The maximum resident set size (KB)                   = 5440
+Number of page faults without I/O activity           = 939
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 23912
+Number of times filesystem performed OUTPUT          = 2152
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.08s
+user	0m0.02s
+sys	0m0.01s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPCOR HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:21.470  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPCOR - Version 03-25-2022
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   50000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+REQUESTED EARLIEST DATE IS .......   2024041311.00
+REQUESTED LATEST   DATE IS .......   2024041311.99
+
+UNCHECKED AND UNCORRECTED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompsn8/dird/01_008.017
+DUPLICATE CHECKED AND CORRECTED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompsn8/dest/01_008.017
+
+BUFR_DUPCOR PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.0
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (IN MONTHS) ......   0.0
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.0
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.0
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.0
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+
+BUFR_DUPCOR READ IN A TOTAL OF         611 REPORTS
+BUFR_DUPCOR CHECKED A TOTAL OF         611 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT ..................    611
+   INCLUDES      611 UNIQUE REPORTS
+   INCLUDES        0 CORRECTED REPORTS
+NUMBER OF REPORTS SKIPPED DUE TO:
+   FAILING DUPLICATE CHECK .....................      0
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING ......      0
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:21.522  104  SAT   2460414
+     PROGRAM BUFR_DUPCOR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.052557
+The total amount of time in user mode                = 0.045560
+The total amount of time in sys mode                 = 0.005062
+The maximum resident set size (KB)                   = 5728
+Number of page faults without I/O activity           = 1010
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 2160
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 0
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.05s
+user	0m0.05s
+sys	0m0.01s
+--------------------------------------------------------------------
+********************************************************************
+Script 008.017.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:31:21 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group ompsn8              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.907  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_008.017
+        File 01_008.017 is first to contain internal dictionary msgs - copy them to "check" file
+
+008.017  HAS      611 REPORTS
+         ---> 008.017 (in ompsn8) SAT. ID  224 has       76 reports
+         ---> 008.017 (in ompsn8) SAT. ID  225 has      214 reports
+         ---> 008.017 (in ompsn8) SAT. ID  226 has      321 reports
+                                                                     %#
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:26.942  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.038386
+The total amount of time in user mode                = 0.023056
+The total amount of time in sys mode                 = 0.013174
+The maximum resident set size (KB)                   = 5584
+Number of page faults without I/O activity           = 821
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 16
+Number of Voluntary Context Switches                 = 18
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.04s
+user	0m0.02s
+sys	0m0.02s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group ompsn8 and writing the output into $DATA as ompsn8.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:26.966  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_008.017
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --    126 BUFR MESSAGES COPIED FROM INPUT FILE 01_008.017 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:27.003  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.038688
+The total amount of time in user mode                = 0.027135
+The total amount of time in sys mode                 = 0.009045
+The maximum resident set size (KB)                   = 7288
+Number of page faults without I/O activity           = 869
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 2144
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.05s
+user	0m0.03s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of ompst8.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 008.018.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:31:21 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 008.018 in data group ompst8 for 2024041311.00-2024041311.99
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupcor
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b008/xx018
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:21.620  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041311.00000     
+ REQUESTED LATEST   DATE IS ...    2024041311.99000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b008/xx018
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompst8/di
+ rd/01_008.018
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+    59834 MESSAGES READ IN  FROM DATABASE
+
+     5167 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:22.288  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.668451
+The total amount of time in user mode                = 0.318979
+The total amount of time in sys mode                 = 0.247209
+The maximum resident set size (KB)                   = 7484
+Number of page faults without I/O activity           = 938
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 262144
+Number of times filesystem performed OUTPUT          = 100584
+Number of Voluntary Context Switches                 = 67
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.68s
+user	0m0.32s
+sys	0m0.25s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPCOR HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:22.293  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPCOR - Version 03-25-2022
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+INPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   50000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+REQUESTED EARLIEST DATE IS .......   2024041311.00
+REQUESTED LATEST   DATE IS .......   2024041311.99
+
+UNCHECKED AND UNCORRECTED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompst8/dird/01_008.018
+DUPLICATE CHECKED AND CORRECTED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompst8/dest/01_008.018
+
+BUFR_DUPCOR PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.0
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (IN MONTHS) ......   0.0
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.0
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.0
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.0
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   U N C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+
+BUFR_DUPCOR READ IN A TOTAL OF      387183 REPORTS
+BUFR_DUPCOR CHECKED A TOTAL OF      387183 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT .................. 387183
+   INCLUDES   387183 UNIQUE REPORTS
+   INCLUDES        0 CORRECTED REPORTS
+NUMBER OF REPORTS SKIPPED DUE TO:
+   FAILING DUPLICATE CHECK .....................      0
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING ......      0
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:23.355  104  SAT   2460414
+     PROGRAM BUFR_DUPCOR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 1.062372
+The total amount of time in user mode                = 0.832745
+The total amount of time in sys mode                 = 0.152136
+The maximum resident set size (KB)                   = 72816
+Number of page faults without I/O activity           = 4458
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 65536
+Number of times filesystem performed OUTPUT          = 100592
+Number of Voluntary Context Switches                 = 75
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m1.06s
+user	0m0.83s
+sys	0m0.15s
+--------------------------------------------------------------------
+********************************************************************
+Script 008.018.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:31:23 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group ompst8              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:27.110  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_008.018
+        File 01_008.018 is first to contain internal dictionary msgs - copy them to "check" file
+
+008.018  HAS   387183 REPORTS
+         ---> 008.018 (in ompst8) SAT. ID  224 has    13475 reports
+         ---> 008.018 (in ompst8) SAT. ID  225 has    22540 reports
+         ---> 008.018 (in ompst8) SAT. ID  226 has   351168 reports
+                                                                     %#
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:27.299  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.196432
+The total amount of time in user mode                = 0.166162
+The total amount of time in sys mode                 = 0.023737
+The maximum resident set size (KB)                   = 9640
+Number of page faults without I/O activity           = 1437
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 16
+Number of Voluntary Context Switches                 = 18
+Number of InVoluntary Context Switches               = 5
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.20s
+user	0m0.17s
+sys	0m0.03s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group ompst8 and writing the output into $DATA as ompst8.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:27.322  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_008.018
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --   5167 BUFR MESSAGES COPIED FROM INPUT FILE 01_008.018 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:27.506  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.186154
+The total amount of time in user mode                = 0.085501
+The total amount of time in sys mode                 = 0.077728
+The maximum resident set size (KB)                   = 9496
+Number of page faults without I/O activity           = 958
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 100576
+Number of Voluntary Context Switches                 = 29
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.19s
+user	0m0.08s
+sys	0m0.08s
+--------------------------------------------------------------------
+
+
+********************************************************************
+********************************************************************
+                     Contents of ompslp.out ...                     
+********************************************************************
+********************************************************************
+
+********************************************************************
+Script 008.019.sh
+Executing on node  nid001177
+Starting time: Sat Apr 13 13:31:23 UTC 2024
+********************************************************************
+
+--------------------------------------------------------------------
+DUMPING 008.019 in data group ompslp for 2024041306.00-2024041306.99
+Duplicate check program: /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.12/install/exec/bufr_dupcor
+BUFR Database file(s):
+ -1- /lfs/h1/ops/prod/dcom/20240413/b008/xx019
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUMPMD HAS BEGUN. COMPILED 2020233.62     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:23.454  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUMPMD - Version 08-20-2020
+ 
+ REQUESTED EARLIEST DATE IS ...    2024041306.00000     
+ REQUESTED LATEST   DATE IS ...    2024041306.99000     
+ REQUESTED CENTER   DATE IS ...    2024041313.00000     
+ 
+ DATABASE INPUT FILE 1 IS
+      /lfs/h1/ops/prod/dcom/20240413/b008/xx019
+ DATABASE INPUT FILE 2 IS
+      NONE
+ TIME WINDOWED OUTPUT DUMP FILE IS
+      
+ /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompslp/di
+ rd/01_008.019
+ 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+INPUT BUFR FILE 1 MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+      561 MESSAGES READ IN  FROM DATABASE
+
+       76 MESSAGES WINDOWED FROM DATABASE
+
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:23.488  104  SAT   2460414
+     PROGRAM BUFR_DUMPMD HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.035205
+The total amount of time in user mode                = 0.026833
+The total amount of time in sys mode                 = 0.004472
+The maximum resident set size (KB)                   = 7544
+Number of page faults without I/O activity           = 922
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 9312
+Number of times filesystem performed OUTPUT          = 1280
+Number of Voluntary Context Switches                 = 24
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.04s
+user	0m0.03s
+sys	0m0.00s
+--------------------------------------------------------------------
+ILIANA DUPC =  on
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_DUPCOR HAS BEGUN. COMPILED 2022095.00     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:23.493  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_DUPCOR - Version 03-25-2022
+ 
+
+ MAXIMUM NUMBER OF DATA VALUES IN AN UNCOMPRESSED BUFR SUBSET (MAXSS) SET TO 300000
+
+INPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: MAXOUT - THE RECORD LENGTH OF ALL BUFR MESSAGES CREATED FROM THIS POINT ON IS BEING CHANGED FROM   10000 TO   50000    
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+REQUESTED EARLIEST DATE IS .......   2024041306.00
+REQUESTED LATEST   DATE IS .......   2024041306.99
+
+UNCHECKED AND UNCORRECTED INPUT FILE IS         
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompslp/dird/01_008.019
+DUPLICATE CHECKED AND CORRECTED OUTPUT FILE IS
+     /lfs/h2/emc/stmp/iliana.genkova/dumpjb.nid001177.20240413133042.50843/ompslp/dest/01_008.019
+
+BUFR_DUPCOR PARAMETERS:
+   TOLERANCE FOR LAT/LON CHECKS (IN DEGREES) ..   0.0
+   TOLERANCE FOR YEAR CHECK (** NOT CHECKED **) 
+   TOLERANCE FOR MONTH CHECK (IN MONTHS) ......   0.0
+   TOLERANCE FOR DAY CHECK (IN DAYS) ..........   0.0
+   TOLERANCE FOR HOUR CHECK (IN HOURS) ........   0.0
+   TOLERANCE FOR MINUTE CHECK (IN MINUTES) ....   0.0
+   TOLERANCE FOR SECOND CHECK (** NOT CHECKED **) 
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  0 (limited - default)         TO  1 (all warnings)             
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: READMG - INTERNAL DICTIONARY MESSAGE READ; ACCOUNT FOR IT THEN READ IN NEXT MESSAGE WITHOUT RETURNING                  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+ BUFRLIB: OPENBF - DEGREE OF MESSAGE PRINT INDICATOR CHNGED FROM  1 (all warnings)              TO  0 (limited - default)        
+ ++++++++++++++BUFR ARCHIVE LIBRARY+++++++++++++++++
+  
+
+OUTPUT BUFR FILE MESSAGES   C O M P R E S S E D
+FIRST MESSAGE TYPE FOUND IS    8
+
+
+BUFR_DUPCOR READ IN A TOTAL OF         392 REPORTS
+BUFR_DUPCOR CHECKED A TOTAL OF         392 REPORTS
+
+NUMBER OF REPORTS WRITTEN OUT ..................    392
+   INCLUDES      392 UNIQUE REPORTS
+   INCLUDES        0 CORRECTED REPORTS
+NUMBER OF REPORTS SKIPPED DUE TO:
+   FAILING DUPLICATE CHECK .....................      0
+   BEING OUTSIDE TIME WINDOW FOR TRIMMING ......      0
+
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:23.549  104  SAT   2460414
+     PROGRAM BUFR_DUPCOR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.056788
+The total amount of time in user mode                = 0.051278
+The total amount of time in sys mode                 = 0.003944
+The maximum resident set size (KB)                   = 5616
+Number of page faults without I/O activity           = 1003
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 1288
+Number of Voluntary Context Switches                 = 20
+Number of InVoluntary Context Switches               = 3
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.06s
+user	0m0.05s
+sys	0m0.00s
+--------------------------------------------------------------------
+********************************************************************
+Script 008.019.sh
+Finished executing on node  nid001177
+Ending time  : Sat Apr 13 13:31:23 UTC 2024
+********************************************************************
+
+********************************************************************
+              Wrap-up Processing for Data Group ompslp              
+********************************************************************
+
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.003 and 001.103
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Duplicate check of TAC v BUFR  reports in 001.002 and 001.102
+-- NOT PERFORMED - missing input data stream:
+-- FILES_T2B=
+--------------------------------------------------------------------
+
+
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_CHKBFR HAS BEGUN. COMPILED 2018302.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:27.634  104  SAT   2460414
+
+
+ ==> Welcome to BUFR_CHKBFR -- Version 10-29-2018
+
+ 
+ --> Open file 01_008.019
+        File 01_008.019 is first to contain internal dictionary msgs - copy them to "check" file
+
+008.019  HAS      392 REPORTS
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:27.652  104  SAT   2460414
+     PROGRAM BUFR_CHKBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.026485
+The total amount of time in user mode                = 0.011654
+The total amount of time in sys mode                 = 0.007769
+The maximum resident set size (KB)                   = 5584
+Number of page faults without I/O activity           = 789
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 16
+Number of Voluntary Context Switches                 = 16
+Number of InVoluntary Context Switches               = 2
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.03s
+user	0m0.01s
+sys	0m0.01s
+--------------------------------------------------------------------
+
+--------------------------------------------------------------------
+Combining individual BUFR type/subtype database dump files in data
+group ompslp and writing the output into $DATA as ompslp.ibm
+--------------------------------------------------------------------
+
+
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+     PROGRAM BUFR_COMBFR HAS BEGUN. COMPILED 2023024.50     ORG: NP22
+     STARTING DATE-TIME  APR 13,2024  13:31:27.676  104  SAT   2460414
+
+
+ 
+ ---> Welcome to BUFR_COMBFR - Version 01-24-2013
+ 
+ REQUESTED CENTER DATE IS ...    2024041313.00000     
+ DUMP PROCESSING  DATE IS ...    202404131331.000     
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+ BUFRLIB: CLOSBF WAS CALLED WITHOUT HAVING PREVIOUSLY CALLED OPENBF                                                              
+ ++++++++++++++++++++WARNING++++++++++++++++++++++
+
+ --> Will write output file using BUFR table internal to
+     01_008.019
+     (the first non-empty input file)
+
+
+ ==> "Dummy" messages containing dump center time and wall-clock processing time successfully written to top of output file
+
+
+
+  --     76 BUFR MESSAGES COPIED FROM INPUT FILE 01_008.019 TO COMBINED OUTPUT FILE
+ 
+ PROGRAM COMPLETED SUCCESSFULLY
+ 
+
+
+     ENDING DATE-TIME    APR 13,2024  13:31:27.710  104  SAT   2460414
+     PROGRAM BUFR_COMBFR HAS ENDED.
+* . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . * . 
+*****************RESOURCE STATISTICS*******************************
+The total amount of wall time                        = 0.036326
+The total amount of time in user mode                = 0.021344
+The total amount of time in sys mode                 = 0.012806
+The maximum resident set size (KB)                   = 7660
+Number of page faults without I/O activity           = 966
+Number of page faults with I/O activity              = 0
+Number of times filesystem performed INPUT           = 0
+Number of times filesystem performed OUTPUT          = 1264
+Number of Voluntary Context Switches                 = 22
+Number of InVoluntary Context Switches               = 1
+*****************END OF RESOURCE STATISTICS*************************
+
+
+real	0m0.04s
+user	0m0.02s
+sys	0m0.01s
+--------------------------------------------------------------------
+

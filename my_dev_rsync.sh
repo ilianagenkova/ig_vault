@@ -34,6 +34,7 @@ case "$FRUIT" in
    "NEW")
    echo "Set up NEW dev..."
    ##ON NEW DEV, WHILE IN /ig_vault
+   git fetch
    git pull
    rsync -avhWr --no-compress --progress utils/ ../Utils
    rsync -avhWr --no-compress --progress triggers/ ../Trigs.KEEP/

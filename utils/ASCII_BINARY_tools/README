@@ -1,0 +1,86 @@
+
+TEST_asci_garbled_allout = ascii file with UNWANTED Binary characters, $DATA/*/*_allout  file
+
+CLEAN the files from Binary characters:
+tr -cd '[:print:]\n\r'  < TEST_asci_garbled_allout  > pop1
+
+COLLECT the Binary charactes only:
+tr -d '[:print:]\n\r'  < TEST_asci_garbled_allout  > pop2
+
+INTERPRET/VISUALIZE the Binary characters:
+od -bc < pop2  >pop3
+
+
+Example:
+grep ILIANA TEST_asci_garbled_allout
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+Binary file TEST_asci_garbled_allout matches
+
+
+grep ILIANA pop1
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+
+[dlogin04 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ASCII_BINARY_tools]$ grep ILIANA pop1
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+
+[dlogin04 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ASCII_BINARY_tools]$ grep --text ILIANA TEST_asci_garbled_allout 
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+
+[dlogin04 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ASCII_BINARY_tools]$ grep -a ILIANA TEST_asci_garbled_allout 
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+ILIANA DUPC =  on
+
+

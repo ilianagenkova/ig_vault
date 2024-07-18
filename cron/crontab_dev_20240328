@@ -315,14 +315,18 @@ gcd=/u/iliana.genkova/bin/am_i_on_dev.sh
 10 04,10 * * * jtyp=cdas cyc=`date --date="-16 hour" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=R120 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jcdas_dump.wc2.pbs.CDAS120 > /dev/null 2>&1
 #
 # Marine NETCDF - SST,...
-15 3,9,15,21 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SST_6h_dumps.sh
-00 6,12,18 * * *        $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ADT_6h_dumps.sh # soon after 09:36 on the same day
-#15 4,10,16,22 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh # data latency is 3-4 h
-55 4,10,16,22 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh # data latency is 3-4 h
-15 3,9,15,21 * * *  $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMAP_6h_dumps.sh 
-15 3,9,15,21 * * *  $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMOS_6h_dumps.sh
-#test what's wrong
-15 18  * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh  > /u/iliana.genkova/log_ICEC
+#15 3,9,15,21 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SST_6h_dumps.sh
+#00 6,12,18 * * *        $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ADT_6h_dumps.sh # soon after 09:36 on the same day
+###15 4,10,16,22 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh # data latency is 3-4 h
+#55 4,10,16,22 * * * $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh # data latency is 3-4 h
+#15 3,9,15,21 * * *  $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMAP_6h_dumps.sh 
+#15 3,9,15,21 * * *  $gcd && source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMOS_6h_dumps.sh
+#
+15 3,9,15,21 * * *  source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SST_6h_dumps.sh
+00 6,12,18 * * *    source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ADT_6h_dumps.sh # soon after 09:36 on the same day
+55 4,10,16,22 * * * source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_ICEC_6h_dumps.sh # data latency is 3-4 h
+15 3,9,15,21 * * *  source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMAP_6h_dumps.sh 
+15 3,9,15,21 * * *  source /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/create_SMOS_6h_dumps.sh
 #
 # Probe/verify *crisf4* production dumps
 30 4 * * * /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21/verify_crisf4.sh >> /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21/COM_crisf4_N21.LOG.KEEP
@@ -345,8 +349,3 @@ gcd=/u/iliana.genkova/bin/am_i_on_dev.sh
 # SDDOT + RWIS4 additions (dev tanks) URMA
 30 6-23 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=SDDOT /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.SDDOT > /dev/null 2>&1
 30 0-5 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=SDDOT /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.SDDOT > /dev/null 2>&1
-#
-# THINNED b255/xx003, xx004 // rtma and urma v1.2
-30 * * * * jtyp=rtma cyc=`date +\%H` PDY=`date +\%Y\%m\%d` desc=THIN12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jrtma_dump.wc2.pbs.THIN12 > /dev/null 2>&1
-0 6-23 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date +\%Y\%m\%d` desc=THIN12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.THIN12 > /dev/null 2>&1
-30 0-5 * * * jtyp=urma cyc=`date --date="-6 hours" +\%H` PDY=`date --date="-1 day" +\%Y\%m\%d` desc=THIN12 /u/iliana.genkova/bin/cycqsub /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jurma_dump.wc2.pbs.THIN12 > /dev/null 2>&1
