@@ -378,4 +378,4 @@ gcd=/u/iliana.genkova/bin/am_i_on_dev.sh
 #
 02 * * * * echo  `date +\%Y\%m\%d\%H` >>  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ADT.LOG.growth 
 15 * * * * ls -l  /lfs/h1/ops/prod/dcom/20240715/wgrdbul/adt/* >> /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ADT.LOG.growth
-16 * * * * echo '---------------'  >> /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ADT.LOG.growth
+16 * * * * echo  '---------------'  >> /lfs/h2/emc/obsproc/noscrub/iliana.genkova/ADT.LOG.growth
