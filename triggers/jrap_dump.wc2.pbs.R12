@@ -57,8 +57,7 @@ else
   exit 7
 fi
 
-#export bufr_dump_ver=1.3.0 #1.0.0
-export bufr_dump_ver=1.2.1
+export bufr_dump_ver=1.2.0 #1.0.0
 
 # Load the modules specified in $VERSION_FILE
 module load libjpeg
@@ -75,8 +74,7 @@ module load cfp/${cfp_ver}
 module unload bufr_dump
 #module use ${userROOT}/install/bufr_dump/modulefiles
 #module use ${userROOT}/install/bufr-dump-rel.1.0.0/modulefiles
-#module use /lfs/h2/emc/obsproc/noscrub/${USER}/GIT/play/bufr-dump.SPIRE/install/modulefiles #RELv1.1.0
-module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304
+module use /lfs/h2/emc/obsproc/noscrub/${USER}/GIT/play/bufr-dump.12/install/modulefiles #RELv1.1.0
 module load bufr_dump/${bufr_dump_ver}
 
 # Be sure the modules are loaded 
@@ -97,8 +95,6 @@ export SENDSDM=NO   # developer
 export SENDDBN=NO   # developer
 
 export TANK=$DCOMROOT
-export TANK_003010=/lfs/h1/ops/dev/dcom
-export TANK_255034=/lfs/h1/ops/dev/dcom
 #export TANK_003010=/lfs/h1/ops/dev/dcom #Sent-6 not in prod yet
 #export TANK_000015=/lfs/h1/ops/dev/dcom #snow not in prod yet
 #export TANK_005081=/lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/SCRIPTDIR/SEMIOPS/TEMPNEW/ #METOPBC

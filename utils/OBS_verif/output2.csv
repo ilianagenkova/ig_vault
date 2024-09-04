@@ -1,0 +1,18 @@
+/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/Data.KEEP/CRON/rrfs_12/com/obsproc/v1.2/rrfs.20240801/rrfs.t00z.prepbufr.tm00
+ 
+type        messages       subsets         bytes
+ 
+ADPUPA           121           714       5416910        5.90
+AIRCAR           999         93148       9927464       93.24
+AIRCFT            93          9159        923640       98.48
+SATWND            16         11724        798096      732.75
+PROFLR             5            42         46326        8.40
+VADWND           567          1118       4154416        1.97
+ADPSFC            28         18079       1386774      645.68
+SFCSHP            13          9276        622782      713.54
+MSONET           887        540762      44258878      609.65
+GPSIPW             1           578         28954      578.00
+RASSDA             1            26          9896       26.00
+ASCATW            30         26147       1492000      871.57
+TOTAL           2761        710773      69066136
+ 

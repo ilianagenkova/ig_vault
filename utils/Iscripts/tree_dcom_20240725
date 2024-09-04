@@ -1,0 +1,1020 @@
+.
+├── af_viirs
+│   ├── AF-Iband_v1r1_j01_s202407250000533_e202407250002178_c202407250015156.txt
+│   ├── AF-Iband_v1r1_j01_s202407250002191_e202407250003436_c202407250015209.txt
+│   ├── AF-Iband_v1r1_n21_s202407252349019_e202407260001264_c202407260040220.txt
+│   ├── EFIRE-VIIRSI_v1r3_n20_s202407250000533_e202407250002178_c202407250019090.txt
+│   ├── EFIRE-VIIRSI_v1r3_n20_s202407250002191_e202407250003436_c202407250017548.txt
+│   ├── EFIRE-VIIRSI_v1r3_n21_s202407252357364_e202407252359011_c202407260046251.txt
+│   └── EFIRE-VIIRSI_v1r3_n21_s202407252359023_e202407260000270_c202407260046077.txt
+├── airnow
+│   ├── daily_data.dat
+│   ├── daily_data_v2.dat
+│   ├── HourlyAQObs_2024072500.dat
+│   ├── HourlyAQObs_2024072501.dat
+│   ├── HourlyAQObs_2024072522.dat
+│   ├── HourlyAQObs_2024072523.dat
+│   ├── HourlyData_2024072500.dat
+│   ├── HourlyData_2024072521.dat
+│   ├── HourlyData_2024072522.dat
+│   ├── HourlyData_2024072523.dat
+│   ├── monitoring_site_locations.dat
+│   └── Monitoring_Site_Locations_V2.dat
+├── b000
+│   ├── xx000
+│   ├── xx001
+│   ├── xx002
+│   ├── xx007
+│   ├── xx010
+│   ├── xx011
+│   ├── xx015
+│   ├── xx100
+│   ├── xx101
+│   └── xx102
+├── b001
+│   ├── xx001
+│   ├── xx002
+│   ├── xx003
+│   ├── xx004
+│   ├── xx005
+│   ├── xx007
+│   ├── xx008
+│   ├── xx009
+│   ├── xx010
+│   ├── xx011
+│   ├── xx012
+│   ├── xx013
+│   ├── xx014
+│   ├── xx022
+│   ├── xx101
+│   ├── xx102
+│   ├── xx103
+│   ├── xx104
+│   ├── xx113
+│   ├── xx120
+│   └── xx121
+├── b002
+│   ├── xx001
+│   ├── xx003
+│   ├── xx004
+│   ├── xx005
+│   ├── xx009
+│   ├── xx011
+│   ├── xx012
+│   ├── xx013
+│   ├── xx014
+│   ├── xx016
+│   ├── xx017
+│   ├── xx018
+│   ├── xx101
+│   ├── xx102
+│   ├── xx103
+│   ├── xx104
+│   └── xx105
+├── b003
+│   └── xx010
+├── b004
+│   ├── xx001
+│   ├── xx002
+│   ├── xx003
+│   ├── xx004
+│   ├── xx005
+│   ├── xx006
+│   ├── xx010
+│   ├── xx011
+│   ├── xx015
+│   └── xx103
+├── b005
+│   ├── xx024
+│   ├── xx025
+│   ├── xx026
+│   ├── xx030
+│   ├── xx031
+│   ├── xx032
+│   ├── xx034
+│   ├── xx039
+│   ├── xx044
+│   ├── xx045
+│   ├── xx046
+│   ├── xx052
+│   ├── xx053
+│   ├── xx054
+│   ├── xx055
+│   ├── xx056
+│   ├── xx067
+│   ├── xx068
+│   ├── xx069
+│   ├── xx072
+│   ├── xx081
+│   ├── xx091
+│   └── xx099
+├── b006
+│   ├── xx010
+│   ├── xx011
+│   ├── xx012
+│   ├── xx013
+│   ├── xx014
+│   ├── xx015
+│   ├── xx016
+│   ├── xx017
+│   ├── xx018
+│   ├── xx019
+│   ├── xx020
+│   ├── xx021
+│   ├── xx022
+│   ├── xx023
+│   ├── xx024
+│   ├── xx025
+│   ├── xx026
+│   ├── xx027
+│   ├── xx028
+│   ├── xx029
+│   ├── xx030
+│   ├── xx031
+│   ├── xx032
+│   ├── xx033
+│   ├── xx040
+│   ├── xx041
+│   ├── xx042
+│   ├── xx043
+│   ├── xx044
+│   ├── xx045
+│   ├── xx046
+│   ├── xx047
+│   ├── xx048
+│   ├── xx049
+│   ├── xx050
+│   ├── xx051
+│   ├── xx052
+│   ├── xx053
+│   ├── xx054
+│   ├── xx055
+│   ├── xx056
+│   ├── xx057
+│   ├── xx058
+│   ├── xx059
+│   ├── xx060
+│   ├── xx061
+│   ├── xx062
+│   └── xx063
+├── b007
+│   ├── xx001
+│   ├── xx002
+│   ├── xx003
+│   └── xx021
+├── b008
+│   ├── xx012
+│   ├── xx013
+│   ├── xx017
+│   └── xx018
+├── b012
+│   ├── xx004
+│   ├── xx012
+│   ├── xx023
+│   ├── xx024
+│   ├── xx122
+│   ├── xx150
+│   ├── xx160
+│   └── xx222
+├── b021
+│   ├── xx023
+│   ├── xx027
+│   ├── xx028
+│   ├── xx033
+│   ├── xx035
+│   ├── xx036
+│   ├── xx038
+│   ├── xx039
+│   ├── xx042
+│   ├── xx044
+│   ├── xx045
+│   ├── xx046
+│   ├── xx051
+│   ├── xx052
+│   ├── xx053
+│   ├── xx054
+│   ├── xx123
+│   ├── xx201
+│   ├── xx203
+│   ├── xx206
+│   ├── xx212
+│   ├── xx213
+│   ├── xx239
+│   ├── xx241
+│   ├── xx246
+│   └── xx248
+├── b031
+│   ├── xx120
+│   ├── xx121
+│   ├── xx122
+│   ├── xx123
+│   ├── xx124
+│   ├── xx127
+│   ├── xx130
+│   ├── xx133
+│   ├── xx134
+│   └── xx135
+├── b255
+│   ├── xx001
+│   ├── xx002
+│   ├── xx003
+│   ├── xx004
+│   ├── xx005
+│   ├── xx006
+│   ├── xx010
+│   ├── xx014
+│   ├── xx015
+│   ├── xx016
+│   ├── xx017
+│   ├── xx019
+│   ├── xx022
+│   ├── xx026
+│   ├── xx028
+│   ├── xx029
+│   ├── xx030
+│   ├── xx031
+│   ├── xx034
+│   ├── xx101
+│   ├── xx102
+│   ├── xx111
+│   ├── xx131
+│   └── xx160
+├── buoy
+│   ├── IOBX02KWBC.20240725001525
+│   ├── IOBX02KWBC.20240725135536
+│   ├── IOWX02KWBC.20240725043245
+│   ├── IOWX02KWBC.20240725051229
+│   └── IOWX02KWBC.20240725233220
+├── buoys
+│   ├── 00
+│   │   ├── A01.aanderaa.tilt.realtime.nc
+│   │   ├── A01.doppler.realtime.nc
+│   │   ├── A01.sbe37.realtime.1m.nc
+│   │   ├── A01.sbe37.realtime.20m.nc
+│   │   ├── B01.aanderaa.tilt.realtime.nc
+│   │   ├── B01.doppler.realtime.nc
+│   │   ├── B01.sbe37.pres.realtime.10m.nc
+│   │   ├── B01.sbe37.pres.realtime.50m.nc
+│   │   ├── N01.sbe37.realtime.20m.nc
+│   │   └── N01.sbe37.realtime.50m.nc
+│   ├── 01
+│   │   ├── A01.aanderaa.tilt.realtime.nc
+│   │   ├── A01.doppler.realtime.nc
+│   │   ├── A01.sbe16.pres.disox.realtime.50m.nc
+│   │   ├── A01.sbe37.pres.realtime.10m.nc
+│   │   ├── A01.sbe37.realtime.1m.nc
+│   │   └── N01.sbe37.realtime.50m.nc
+│   ├── 01
+│   │   ├── A01.aanderaa.tilt.realtime.nc
+│   │   ├── A01.doppler.realtime.nc
+│   │   ├── A01.sbe16.pres.disox.realtime.50m.nc
+│   │   ├── A01.sbe37.pres.realtime.10m.nc
+│   │   ├── A01.sbe37.realtime.1m.nc
+│   │   ├── A01.sbe37.realtime.20m.nc
+│   │   ├── B01.aanderaa.tilt.realtime.nc
+│   │   ├── B01.doppler.realtime.nc
+│   │   └── N01.sbe37.realtime.50m.nc
+...
+│   ├── 23
+│   │   ├── A01.aanderaa.tilt.realtime.nc
+│   │   ├── A01.doppler.realtime.nc
+│       ├── M01.doppler.realtime.lr38.nc
+│       ├── M01.sbe37.pres.realtime.10m.nc
+│       ├── M01.sbe37.realtime.100m.nc
+│       ├── N01.aanderaa.realtime.nc
+│       ├── N01.doppler.realtime.nc
+│       ├── N01.sbe37.realtime.100m.nc
+│       ├── N01.sbe37.realtime.20m.nc
+│       └── N01.sbe37.realtime.50m.nc
+├── canadian_water
+│   ├── ON_02HK010_hourly_hydrometric.csv
+│   ├── ON_02HL001_hourly_hydrometric.csv
+│   ├── ON_02HM003_hourly_hydrometric.csv
+│   ├── ON_02HM005_hourly_hydrometric.csv
+│   ├── ON_02HM006_hourly_hydrometric.csv
+│   ├── ON_02HM007_hourly_hydrometric.csv
+│   └── QC_02OA016_hourly_hydrometric.csv
+├── cmorph2
+│   ├── CMORPH2_0.25deg-30min_S202407251500_E202407251529.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251530_E202407251559.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251600_E202407251629.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251630_E202407251659.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251700_E202407251729.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251730_E202407251759.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251800_E202407251829.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251830_E202407251859.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251900_E202407251929.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407251930_E202407251959.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252000_E202407252029.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252030_E202407252059.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252100_E202407252129.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252130_E202407252159.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252200_E202407252229.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252230_E202407252259.RT.nc
+│   ├── CMORPH2_0.25deg-30min_S202407252300_E202407252329.RT.nc
+│   └── CMORPH2_0.25deg-30min_S202407252330_E202407252359.RT.nc
+├── coops_waterlvlobs
+a A Aa a a  1276370.xml
+│   ├── 9014098.xml
+│   ├── 9034052.xml
+│   ├── 9044020.xml
+│   ├── 9044030.xml
+│   ├── 9759413.xml
+│   ├── 9759938.xml
+│   ├── 9999530.xml
+│   ├── 9999531.xml
+│   └── active_coops_stations.html
+├── firewx
+│   ├── GBBEPx-all01GRID_v5r0_blend_s202407250000000_e202407252359590_c202407260131310.nc
+│   ├── GBBEPx-BC-emissions_v5r0_blend_s202407250000000_e202407252359590_c202407260131270.nc
+│   ├── GBBEPx-CO2-emissions_v5r0_blend_s202407250000000_e202407252359590_c202407260131260.nc
+│   ├── GBBEPx-CO-emissions_v5r0_blend_s202407250000000_e202407252359590_c202407260131260.nc
+│   ├── GBBEPxemis-BC-C384GT1_v5r0_blend_s202407250000000_e202407252359590_c202407260132070.bin
+│   ├── GBBEPxemis-BC-C384GT2_v5r0_blend_s202407250000000_e202407252359590_c202407260132070.bin
+│   ├── GBBEPxemis-PM25-C384GT3_v5r0_blend_s202407250000000_e202407252359590_c202407260132070.bin
+│   ├── GBBEPxemis-PM25-C384GT5_v5r0_blend_s202407250000000_e202407252359590_c202407260132070.bin
+│   ├── GBBEPxemis-PM25-C384GT6_v5r0_blend_s202407250000000_e202407252359590_c202407260132070.bin
+│   ├── GBBEPxemis-SO2-C384GT1_v5r0_blend_s202407250000000_e202407252359590_c202407260132080.bin
+│   ├── GBBEPxemis-SO2-C384GT2_v5r0_blend_s202407250000000_e202407252359590_c202407260132080.bin
+│   ├── GBBEPxFRP-MeanFRP-C384GT2_v5r0_blend_s202407250000000_e202407252359590_c202407260132080.bin
+│   ├── GBBEPxFRP-MeanFRP-C384GT3_v5r0_blend_s202407250000000_e202407252359590_c202407260132080.bin
+│   ├── GBBEPxFRP-MeanFRP-C384GT6_v5r0_blend_s202407250000000_e202407252359590_c202407260132080.bin
+│   ├── GBBEPx-MeanFRP_v5r0_blend_s202407250000000_e202407252359590_c202407260131270.nc
+│   ├── GBBEPx-OC-emissions_v5r0_blend_s202407250000000_e202407252359590_c202407260131270.nc
+│   ├── GBBEPx-PM25-emissions_v5r0_blend_s202407250000000_e202407252359590_c202407260131270.nc
+│   └── GBBEPx-SO2-emissions_v5r0_blend_s202407250000000_e202407252359590_c202407260131260.nc
+├── globcomp_nc
+│   └── GLOBCOMPWV_nc.2024072523
+├── jrr_aod
+│   ├── JRR-AOD_v3r2_j01_s202407250000533_e202407250002178_c202407250034109.nc
+│   ├── MODIS_C6_1_Global_MCD14DL_NRT_2024207_202407260100.txt
+│   └── MODIS_C6_1_Global_MCD14DL_NRT_2024207_202407260200.txt
+├── qpf_verif
+│   ├── cmc_2024072500_012_036
+│   ├── cmc_2024072512_024_048
+│   ├── cmcglb_2024072500_012_036.grb2
+│   ├── cmcglb_2024072500_036_060.grb2
+│   ├── cmcglb_2024072512_024_048.grb2
+│   ├── cmcglb_2024072512_048_072.grb2
+│   ├── dwd_2024072500_000_024
+│   ├── UWD202407251200072612001
+│   ├── UWD202407251200072712001
+│   └── UWD202407251200072812001
+├── rave
+│   ├── RAVE-HrlyEmiss-13km_v1r3_blend_s202407250000000_e202407250059590_c202407250202180.nc
+│   ├── RAVE-HrlyEmiss-13km_v1r3_blend_s202407250100000_e202407250159590_c202407250302100.nc
+│   ├── RAVE-HrlyEmiss-3km_v1r3_blend_s202407252100000_e202407252159590_c202407252301420.nc
+│   ├── RAVE-HrlyEmiss-3km_v1r3_blend_s202407252200000_e202407252259590_c202407260001470.nc
+│   └── RAVE-HrlyEmiss-3km_v1r3_blend_s202407252300000_e202407252359590_c202407260101470.nc
+├── seaice
+│   ├── osisaf
+│   │   ├── ice_conc_nh_polstere-100_amsr2_202407251200.nc
+│   │   ├── ice_conc_nh_polstere-100_multi_202407251200.nc
+│   │   ├── ice_conc_sh_polstere-100_amsr2_202407251200.nc
+│   │   └── ice_conc_sh_polstere-100_multi_202407251200.nc
+│   └── pda
+│       ├── AMSR2-SEAICE-NH_v2r2_GW1_s202407250125160_e202407250301140_c202407250332190.nc
+│       ├── AMSR2-SEAICE-NH_v2r2_GW1_s202407250301150_e202407250440150_c202407250511570.nc
+│       ├── AMSR2-SEAICE-SH_v2r2_GW1_s202407251746180_e202407251925160_c202407251956580.nc
+│       ├── AMSR2-SEAICE-SH_v2r2_GW1_s202407251925170_e202407252107160_c202407252140470.nc
+│       ├── AMSR2-SEAICE-SH_v2r2_GW1_s202407252107180_e202407252249160_c202407252320530.nc
+│       └── AMSR2-SEAICE-SH_v2r2_GW1_s202407252249170_e202407260028150_c202407260100010.nc
+├── sst
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTskin-MSG02-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTskin-MSG03-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTsubskin-AHI_H09-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTsubskin-AVHRRF_MB-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTsubskin-AVHRRF_MC-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L2P_GHRSST-SSTsubskin-VIIRS_N21-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L3C_GHRSST-SSTsubskin-AHI_H09-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L3U_GHRSST-SSTsubskin-AVHRRF_MB-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L3U_GHRSST-SSTsubskin-AVHRRF_MC-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L3U_GHRSST-SSTsubskin-VIIRS_N21-ACSPO_V2.80-v02.0-fv01.0.nc
+│   ├── 20240725000000-OSPO-L4_GHRSST-SSTfnd-Geo_Polar_Blended-GLOB-v02.0-fv01.0.nc
+│   ├── 20240725000000-STAR-L2P_GHRSST-SSTsubskin-ABI_G18-ACSPO_V2.90-v02.0-fv01.0.nc
+│   ├── 20240725000000-STAR-L3C_GHRSST-SSTsubskin-ABI_G16-ACSPO_V2.70-v02.0-fv01.0.nc
+│   ├── 20240725023000-OSPO-L3U_GHRSST-SSTsubskin-AVHRRF_MC-ACSPO_V2.80-v02.0-fv01.0.nc
+   geospace
+│   ├── geospace_input-20240725T2101.xml
+│   ├── geospace_input-20240725T2318.xml
+│   ├── geospace_input-20240725T2359.xml
+│   └── wam
+│       ├── swpc_aurora_power_20240725.txt
+│       ├── wam_input-20240725T0015.xml
+│       ├── wam-ipe_config_20240725T0050.json
+│       ├── wam-ipe_config_20240725T0150.json
+├── validation_data
+│   ├── aq
+│   │   ├── abi
+│   │   │   ├── ABI-L3-AOD_GEFS_20240725_000000.nc
+│   │   ├── aeronet
+│   │   │   └── 20240725.lev15
+│   │   ├── geos5
+│   │   │   ├── GEOS.fp.asm.tavg3_2d_aer_Nx.20240725_0130.V01.nc4
+│   │   │   ├── GEOS.fp.asm.tavg3_2d_aer_Nx.20240725_0130.V01.nc4.1
+│   │   │   ├── GEOS.fp.asm.tavg3_2d_aer_Nx.20240725_2230.V01.nc4.8
+│   │   │   └── GEOS.fp.asm.tavg3_2d_aer_Nx.20240725_2230.V01.nc4.9
+│   │   ├── icap
+│   │   │   ├── icap_2024072500_C4_dustaod550.nc
+│   │   │   ├── icap_2024072500_C4_modeaod550.nc
+│   │   │   ├── icap_2024072500_C4_pm.nc
+│   │   │   ├── icap_2024072500_C4_seasaltaod550.nc
+│   │   │   ├── icap_2024072500_C4_smokeaod550.nc
+│   │   │   └── icap_2024072500_C4_sulfateaod550.nc
+│   │   └── viirs
+│   │       ├── ^VIIRS-L3-AOD_AQM_.*
+│   │       └── ^VIIRS-L3-AOD_GEFS_.*
+│   ├── CoCoRaHS
+│   │   └── cocorahs.20240725.dailyprecip.csv
+│   ├── landsfc
+│   │   └── olr
+│   │       ├── olr-daily_v01r02-preliminary_20240101_latest.nc
+│   │       └── olr-monthly_v02r07_197901_latest.nc
+│   ├── marine
+│   │   ├── argo
+│   │   │   ├── atlantic_ocean
+│   │   │   │   └── 20240725_prof.nc
+│   │   │   ├── indian_ocean
+│   │   │   │   └── 20240725_prof.nc
+│   │   │   └── pacific_ocean
+│   │   │       └── 20240725_prof.nc
+│   │   ├── buoy
+│   │   │   ├── 13001.txt
+│   │   │   ├── 62145.txt
+│   │   │   ├── 62146.txt
+│   │   │   ├── 62148.txt
+│   │   │   ├── SLVM5.txt
+│   │   │   ├── SLXA2.txt
+│   │   │   ├── YATA2.txt
+│   │   │   ├── YGNN6.txt
+│   │   │   ├── YKTV2.txt
+│   │   │   └── YRSV2.txt
+│   │   ├── cable
+│   │   │   └── FC_cable_transport_2024.dat
+│   │   ├── cmems
+│   │   │   ├── ssh
+│   │   │   │   └── nrt_global_allsat_phy_l4_20240725_20240725.nc
+│   │   │   └── sst
+│   │   │       └── 20240725120000-UKMO-L4_GHRSST-SSTfnd-OSTIA-GLOB-v02.0-fv02.0.nc
+│   │   ├── ghrsst
+│   │   │   └── 20240725_OSPO_L4_GHRSST.nc
+│   │   ├── hfradar
+│   │   │   ├── 202407250000_hfr_gak_6km_rtv_uwls_NDBC.nc
+│   │   │   ├── 202407250000_hfr_glna_6km_rtv_uwls_NDBC.nc
+│   │   │   ├── 202407250000_hfr_prvi_2km_rtv_uwls_NDBC.nc
+│   │   │   ├── 202407252300_hfr_usegc_6km_rtv_uwls_NDBC.nc
+│   │   │   ├── 202407252300_hfr_ushi_6km_rtv_uwls_NDBC.nc
+│   │   │   └── 202407252300_hfr_uswc_6km_rtv_uwls_NDBC.nc
+│   │   ├── smap
+│   │   │   └── FR_20240725.dat
+│   │   └── smos
+│   │       └── SM_D2024207_Map_SATSSS_data_1day.nc
+│   └── weather
+│       └── spc
+│           ├── day1otlk_20240725_1200-shp.zip
+│           ├── day2otlk_20240725_1730-shp.zip
+│           └── day3otlk_20240725_0730-shp.zip
+├── wbufbul
+│   ├── ecmwf_tropical_storms
+│   └── jma
+│       ├── Z__C_RJTD_20240725000000_OBS_SAT_PScsr_N01_bufr4.bin
+│       ├── Z__C_RJTD_20240725000000_OBS_SAT_PScsr_N02_bufr4.bin
+│       ├── Z__C_RJTD_20240725000000_OBS_SAT_PScsr_N03_bufr4.bin
+│       └── Z__C_RJTD_20240725230000_OBS_SAT_PScsr_N06_bufr4.bin
+├── wgrbbul
+│   ├── 557thWW_snow
+│   │   ├── PS.557WW_SC.U_DI.C_GP.USAFSI_GR.C0P09DEG_AR.GLOBAL_PA.SNOW-ICE_DD.20240725_DT.0000_DF.GR2
+│   │   ├── PS.557WW_SC.U_DI.C_GP.USAFSI_GR.C0P09DEG_AR.GLOBAL_PA.SNOW-ICE_DD.20240725_DT.0600_DF.GR2
+│   │   ├── PS.557WW_SC.U_DI.C_GP.USAFSI_GR.C0P09DEG_AR.GLOBAL_PA.SNOW-ICE_DD.20240725_DT.1200_DF.GR2
+│   │   └── PS.557WW_SC.U_DI.C_GP.USAFSI_GR.C0P09DEG_AR.GLOBAL_PA.SNOW-ICE_DD.20240725_DT.1800_DF.GR2
+│   ├── adds_cip
+│   │   ├── ADDS_CIP_20
+│   │   ├── ADDS_CIP_21
+│   │   ├── ADDS_CIP_22
+│   │   └── ADDS_CIP_23
+│   ├── adds_fip
+│   │   ├── ADDS_FIP_20
+│   │   ├── ADDS_FIP_21
+│   │   ├── ADDS_FIP_22
+│   │   └── ADDS_FIP_23
+│   ├── adds_gtg
+│   │   ├── YVWD32.grb
+│   │   ├── YVWM39.grb
+│   │   ├── YVWM41.grb
+│   │   ├── YVWM43.grb
+│   │   ├── YVWM45.grb
+│   │   ├── YVWM46.grb
+│   │   ├── YVWM48.grb
+│   │   └── YVWM50.grb
+│   ├── bom_accessg
+│   │   ├── ens
+│   │   │   ├── IDY25750.APS3.temp.scrn.2024072500.160.surface.grb2
+│   │   │   ├── IDY25764.APS3.rh2m.scrn.2024072518.241.surface.grb2
+│   │   │   ├── IDY25764.APS3.rh2m.scrn.2024072518.242.surface.grb2
+│   │   │   ├── IDY25764.APS3.rh2m.scrn.2024072518.243.surface.grb2
+│   │   │   ├── IDY25764.APS3.rh2m.scrn.2024072518.244.surface.grb2
+│   │   │   ├── IDY25764.APS3.rh2m.scrn.2024072518.245.surface.grb2
+│   │   │   └── IDY25764.APS3.rh2m.scrn.2024072518.246.surface.grb2
+│   │   ├── IDY25000.APS3.all-flds.slv.2024072512.099.surface.grb2
+│   │   ├── IDY25000.APS3.all-flds.slv.2024072512.100.surface.grb2
+│   │   └── IDY25000.APS3.all-flds.slv.2024072518.084.surface.grb2
+│   ├── cmc
+│   │   ├── glb_00_000
+│   │   ├── glb_00_006
+│   │   ├── 2024072500_CMC_naefsbc_hr_latlon0p5x0p5_P000_000.grib2
+│   │   ├── 2024072500_CMC_naefsbc_hr_latlon0p5x0p5_P000_001.grib2
+│   │   ├── 2024072512_CMC_naefsbc_hr_latlon0p5x0p5_P384_016.grib2
+│   │   ├── 2024072512_CMC_naefsbc_hr_latlon0p5x0p5_P384_017.grib2
+│   │   ├── 2024072512_CMC_naefsbc_hr_latlon0p5x0p5_P384_018.grib2
+│   │   ├── 2024072512_CMC_naefsbc_hr_latlon0p5x0p5_P384_019.grib2
+│   │   └── 2024072512_CMC_naefsbc_hr_latlon0p5x0p5_P384_020.grib2
+│   ├── cmcens_gb2
+│   │   ├── 2024072512_CMC_naefs_hr_latlon0p5x0p5_P348_008.grib2
+│   │   ├── 2024072512_CMC_naefs_hr_latlon0p5x0p5_P348_009.grib2
+│   │   ├── 2024072512_CMC_naefs_hr_latlon0p5x0p5_P348_010.grib2
+│   │   ├── 2024072500_MSC_GEWPS_LatLon0.25_P006_mbr-019.grib2
+│   │   ├── 2024072500_MSC_GEWPS_LatLon0.25_P006_mbr-020.grib2
+│   │   ├── 2024072500_MSC_GEWPS_LatLon0.25_P312_mbr-006.grib2
+│   │   ├── 2024072500_Master_CMC_reps_ps15km_P003_003_ncep.grib2
+│   │   ├── 2024072500_Master_CMC_reps_ps15km_P003_004_ncep.grib2
+│   │   ├── 2024072518_Master_CMC_reps_ps15km_P021_004_ncep.grib2
+│   │   ├── 2024072500_MSC_REWPS-Great-Lakes_LatLon0.022x0.031_P018_mbr-001.grib2
+│   │   └── CMC_riops-forecast_WTMP_ps5km_2024072518_084.grib2
+│   ├── SH2km_autoice.grb.grib2
+│   ├── SH2km_autosnow.grb.grib2
+│   ├── tgftp_ndfd
+│   │   ├── ndfd_conus_apt.grib2
+│   │   ├── ndfd_conus_cig.grib2
+│   │   ├── ndfd_conus_iceaccum.grib2
+│   │   ├── ndfd_conus_maxrh.grib2
+│   │   ├── ndfd_conus_maxt.grib2
+│   │   ├── ndfd_conus_minrh.grib2
+│   │   ├── ndfd_conus_mint.grib2
+│   │   ├── ndfd_conus_pop12.grib2
+│   │   ├── ndfd_conus_ppi.grib2
+│   │   ├── ndfd_conus_qpf.grib2
+│   │   ├── ndfd_conus_rhm.grib2
+│   │   ├── ndfd_conus_sky.grib2
+│   │   ├── ndfd_conus_snow.grib2
+│   │   ├── ndfd_conus_td.grib2
+│   │   ├── ndfd_conus_temp.grib2
+│   │   ├── ndfd_conus_vis.grib2
+│   │   ├── ndfd_conus_waveh.grib2
+│   │   ├── ndfd_conus_wdir.grib2
+│   │   ├── ndfd_conus_wgust.grib2
+│   │   ├── ndfd_conus_wspd.grib2
+│   │   └── ndfd_conus_wx.grib2
+│   ├── T_OEBA88_C_KNWC_20240725120000.gr1
+│   ├── uk25_00
+│   ├── uk25_12
+│   ├── ukmet_hires
+│   │   ├── GAB0011T.GRB
+│   │   ├── GAB0022T.GRB
+│   │   ├── GAB00AAT.GRB
+│   │   ├── GAB00BBT.GRB
+│   │   ├── GAB00CCT.GRB
+│   │   ├── GAB00DDT.GRB
+│   │   ├── GAB00EET.GRB
+│   │   ├── GAB00FFT.GRB
+│   │   ├── GAB00GGT.GRB
+│   │   ├── GAB00HHT.GRB
+│   │   ├── GAB00IIT.GRB
+│   │   ├── GAB00JJT.GRB
+│   │   ├── GAB00KKT.GRB
+│   │   ├── GAB00LLT.GRB
+│   │   ├── GAB00MMT.GRB
+│   │   ├── GAB00NNT.GRB
+│   │   ├── GAB00OOT.GRB
+│   │   ├── GAB00PPA.GRB
+│   │   ├── GAB00QQT.GRB
+│   │   ├── GAB00TTT.GRB
+│   │   ├── GAB00UUT.GRB
+│   │   ├── GAB00VVT.GRB
+│   │   ├── GAB1211T.GRB
+│   │   ├── GAB1222T.GRB
+│   │   ├── GAB12AAT.GRB
+│   │   ├── GAB12BBT.GRB
+│   │   ├── GAB12CCT.GRB
+│   │   ├── GAB12DDT.GRB
+│   │   ├── GAB12EET.GRB
+│   │   ├── GAB12FFT.GRB
+│   │   ├── GAB12GGT.GRB
+│   │   ├── GAB12HHT.GRB
+│   │   ├── GAB12IIT.GRB
+│   │   ├── GAB12JJT.GRB
+│   │   ├── GAB12KKT.GRB
+│   │   ├── GAB12LLT.GRB
+│   │   ├── GAB12MMT.GRB
+│   │   ├── GAB12NNT.GRB
+│   │   ├── GAB12OOT.GRB
+│   │   ├── GAB12PPA.GRB
+│   │   ├── GAB12QQT.GRB
+│   │   ├── GAB12TTT.GRB
+│   │   ├── GAB12UUT.GRB
+│   │   └── GAB12VVT.GRB
+│   ├── ukmet_wafs
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_00z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_06z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_12z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_cb_unblended_20240725_18z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_00z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_06z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_12z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_icing_unblended_20240725_18z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_00z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_06z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_12z_t48.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t06.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t07.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t08.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t09.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t10.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t11.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t12.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t13.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t14.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t15.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t16.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t17.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t18.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t19.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t20.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t21.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t22.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t23.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t24.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t27.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t30.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t33.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t36.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t39.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t42.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t45.grib2
+│   │   ├── EGRR_WAFS_0p25_turb_unblended_20240725_18z_t48.grib2
+a a adt
+│   │   ├── ^rads_adt.*207.nc$
+│   │   ├── rads_adt_3a_2024207.nc
+│   │   ├── rads_adt_3b_2024207.nc
+│   │   ├── rads_adt_6a_2024207.nc
+│   │   ├── rads_adt_c2_2024207.nc
+│   │   ├── rads_adt_j3_2024207.nc
+│   │   ├── rads_adt_ncoda_3a_2024207.nc
+│   │   ├── rads_adt_ncoda_3b_2024207.nc
+│   │   ├── rads_adt_ncoda_6a_2024207.nc
+│   │   ├── rads_adt_ncoda_c2_2024207.nc
+│   │   ├── rads_adt_ncoda_j3_2024207.nc
+│   │   ├── rads_adt_ncoda_sa_2024207.nc
+│   │   ├── rads_adt_ncoda_sw_2024207.nc
+│   │   ├── rads_adt_sa_2024207.nc
+│   │   └── rads_adt_sw_2024207.nc
+│   ├── amseas_u_ocn_ncout_grid1_2024072500_t0000-0024.tgz
+│   ├── amseas_u_ocn_ncout_grid1_2024072500_t0025-0048.tgz
+│   ├── amseas_u_ocn_ncout_grid1_2024072500_t0049-0072.tgz
+│   ├── amseas_u_ocn_ncout_grid1_2024072500_t0073-0096.tgz
+│   ├── cice.restart.2024072500_930.gz
+│   ├── glerl
+│   │   ├── tsfc_hrrrgrid_202420700.nc
+│   │   └── tsfc_hrrrgrid_202420712.nc
+│   ├── hawaii_u_ocn_ncout_grid1_2024072500_t0000-0024.tgz
+│   ├── hawaii_u_ocn_ncout_grid1_2024072500_t0025-0048.tgz
+│   ├── hawaii_u_ocn_ncout_grid1_2024072500_t0049-0072.tgz
+│   ├── hawaii_u_ocn_ncout_grid1_2024072500_t0073-0096.tgz
+│   ├── IST
+│   │   ├── JRR-IceConcentration_v3r3_j01_s202407250000533_e202407250002178_c202407250039216.nc
+│   │   ├── JRR-IceConcentration_v3r3_j01_s202407250002191_e202407250003436_c202407250026124.nc
+│   │   ├── JRR-IceConcentration_v3r3_j01_s202407250003448_e202407250005093_c202407250037284.nc
+│   ├── navy_hycom
+│   │   ├── hycom_glb_regp01_2024072500_t000.nc.gz
+│   │   ├── hycom_glb_regp01_2024072500_t003.nc.gz
+│   └── useast_u_ocn_ncout_grid1_2024072500_t0073-0096.tgz
+└── wtxtbul
+    ├── atcf_ukm_fxxt04
+    ├── atl_non_trop_cyc
+    ├── bathy
+    ├── ccfs
+    ├── climat
+    ├── dpa_00
+    ├── dpa_01
+    ├── dpa_02
+    ├── dpa_03
+    ├── glsea-temps.dat
+    ├── japan_aam_anl
+    ├── japan_aam_fcst
+    ├── ms207xx.mrf
+    ├── np207xx.mrf
+    ├── OpenWater.nc
+    ├── qps
+    ├── satSSS
+    │   ├── SMAP
+    │   │   └── ^SMAP_L2B_SSS.*.h5$
+    │   └── SMOS
+    │       ├── SM_OPER_MIR_OSUDP2_20240725T003147_20240725T012458_700_001_1.nc
+    │       ├── SM_OPER_MIR_OSUDP2_20240725T012147_20240725T021459_700_001_1.nc
+    │       ├── SM_OPER_MIR_OSUDP2_20240725T021148_20240725T030502_700_001_1.nc
+    │       ├── SM_OPER_MIR_OSUDP2_20240725T235246_20240726T004558_700_001_1.nc
+    │       └── ^SM_OPER_MIR_OSUDP2.*.nc$
+    ├── shef_hyd
+    ├── shef_other
+    ├── storm_data
+    │   ├── storm1
+    │   └── storm1.log
+    ├── tcus_east
+    ├── tcus_west
+    ├── tide_shef
+    ├── tropcyc
+    ├── ukmet_tropical_storms
+    ├── uscg
+    ├── usgs_river.2010
+    ├── usgs_river.2110
+    ├── usgs_river.2210
+    └── usgs_river.2310
+
+136 directories, 67901 files

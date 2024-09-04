@@ -40,11 +40,13 @@ set -x
    #scp -r /lfs/h2/emc/obsproc/noscrub/steve.stegall/CRIS.tar  iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/CRIS.tar
    #scp -r /lfs/h2/emc/obsproc/noscrub/ashley.stanfield/git     iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/git
    #scp -r /lfs/h2/emc/obsproc/noscrub/ashley.stanfield/Trigs.KEEP     iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP.AS
-   #scp -r /lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21   iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/COM_crisf4_N21
+   scp -r  /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/CONUS/com/obsproc/v1.0/g*20240903   iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/.
 ###or
 ###PULL from D
-
-   scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/u/robert.grumbine/noscrub/com/seaice_analysis/v4.4/seaice_analysis.20240313 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/seaice_analysis.20240313
+   #scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SOCA_ICE/good_pull_ice.sh /lfs/h2/emc/obsproc/noscrub/iliana.genkova/SOCA_ICE/good_pull_ice.sh
+   #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.JD/ iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.JD
+   #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.JD/ iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.JD
+   #scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/u/robert.grumbine/noscrub/com/seaice_analysis/v4.4/seaice_analysis.20240313 /lfs/h2/emc/obsproc/noscrub/iliana.genkova/seaice_analysis.20240313
 ### scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/testD2C path/on/Cactus/testD2C
 ### scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/new_CRIS_NESDIS/readmp.x  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/new_CRIS_NESDIS/readmp.x   
     #scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/dagmar.merkova/GIT/play/prepobs.12/docs/Release_Notes.txt /lfs/h2/emc/obsproc/noscrub/iliana.genkova/Release_Notes.txt.prep.v12
@@ -67,9 +69,7 @@ set -x
 ###or
 ###PULL from C
 ###scp -r iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/testD2C path/on/Dogwood/testC2D
-  rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code
-  rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT
-
+  #rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code
 
 ###======================================
 #
