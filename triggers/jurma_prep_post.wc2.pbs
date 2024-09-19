@@ -5,7 +5,7 @@
 #PBS -l walltime=0:25:00
 #PBS -q dev
 #PBS -A OBSPROC-DEV
-#PBS -l select=1:ncpus=1:mem=1gb
+#PBS -l select=1:ncpus=1:mem=2gb
 #PBS -l debug=true
 
 #####################################################################
@@ -32,7 +32,7 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.0
+export obsproc_ver_pckg=v1.2.1
 export prepobs_ver=1.1.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages

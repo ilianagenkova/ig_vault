@@ -2,8 +2,8 @@
 DIRWORK=/lfs/h2/emc/obsproc/noscrub/$USER/DATA_for_SN_TEMP
 mkdir -p $DIRWORK
 cd $DIRWORK
-MYID='NCEP_EMC_SERV1'
-MYPASSWORD='DWwsy-+3aqSpt2'
+MYID='NCEP_EMC_igenkova' 
+MYPASSWORD='DWwsy-+3aqSpt2' #old
 lftp -u $MYID,$MYPASSWORD 140.90.190.122 << EOF
 cd PDAFileLinks/PULL/NETCDF
 mget RAVE*

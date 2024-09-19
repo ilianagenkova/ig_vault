@@ -54,7 +54,7 @@ else
 fi
 
 #already in versioins/run.ver :)
-export bufr_dump_ver=1.2.0 #1.0.0
+export bufr_dump_ver=1.2.1 #1.0.0
 
 echo 'ILIANA VERSIONS set'
 # Load the modules specified in $VERSION_FILE

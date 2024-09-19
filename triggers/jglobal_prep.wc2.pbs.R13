@@ -33,8 +33,8 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsNET=obsproc
 export obsproc_ver=v1.3
-export obsproc_ver_pckg=v1.1.0
-export prepobs_ver=1.1.0
+export obsproc_ver_pckg=v1.2.1
+export prepobs_ver=1.2.0
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
@@ -51,7 +51,7 @@ else
  exit 7
 fi
 
-export prepobs_ver=1.1.0
+export prepobs_ver=1.2.0
 
 #Load the modules
 module load grib_util/${grib_util_ver}
@@ -72,7 +72,8 @@ module load cfp/${cfp_ver}
 # use local prepobs installation
 module unload prepobs
 #module use ${userROOT}/install/prepobs/modulefiles            # SM local
-module use ${userROOT}/GIT/play/prepobs.12/install/modulefiles         # IG local
+#module use ${userROOT}/GIT/play/prepobs.12/install/modulefiles         # IG local
+module use ${userROOT}/GIT/play/prepobs.13/install/modulefiles #release v1.2
 module load prepobs/${prepobs_ver}
 
 

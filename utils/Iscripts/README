@@ -3,3 +3,8 @@ Usage:
  ./copy.py  -l jcopy.log -i /scratch1/NCEPDEV/da/Iliana.Genkova/test_dcom/20240710/ -o /scratch1/NCEPDEV/da/Iliana.Genkova/junk -l
 
  ./copy.py  -l jcopy.log -i $DCOMROOT/20240725 -o ./junk -l
+
+
+./copy.py -i $DCOMROOT/20240915/sst -o ./JUNK -I sst -l log.copy -d 20240915_0600 
+
+

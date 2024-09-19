@@ -52,7 +52,7 @@ else
  exit 7
 fi
 
-export bufr_dump_ver=1.2.0
+export bufr_dump_ver=1.2.1
 
 # Load the modules specified in $VERSION_FILE
 module load libjpeg
