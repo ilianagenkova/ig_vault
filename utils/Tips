@@ -1,3 +1,7 @@
+GREP without the commented lines:
+---
+grep "^[^#;]" jglobal_dump.wc2.pbs | grep HOMEobsproc= 
+
 SED in place
 sed --in-place "s/iliana/glory/g" test
 sed --in-place "s/\*\*\*\*\*\*\*\*\*\*/\ \ \ \ \ \ \ \ \ 9/g" fort.all_old_winds

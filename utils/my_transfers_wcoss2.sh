@@ -43,6 +43,13 @@ set -x
    #scp -r  /lfs/h2/emc/obsproc/noscrub/sudhir.nadiga/DUMPDIR/JGLOBALDUMP/CRON/CONUS/com/obsproc/v1.0/g*20240903   iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/.
 ###or
 ###PULL from D
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.13/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.13
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/prepobs.13/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/prepobs.13
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.13WB/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.13WB
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13WB/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13WB
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13SAL/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13SAL
+    rsync -avhWr --no-compress iliana.genkova@dxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code/ /lfs/h2/emc/obsproc/noscrub/iliana.genkova/MARINE_code
    #scp -r iliana.genkova@ddxfer04.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SOCA_ICE/good_pull_ice.sh /lfs/h2/emc/obsproc/noscrub/iliana.genkova/SOCA_ICE/good_pull_ice.sh
    #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.JD/ iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.JD
    #rsync -avhWr --no-compress /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.JD/ iliana.genkova@ddxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.JD
@@ -79,7 +86,7 @@ set -x
 #rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/prepobs.13/        /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/prepobs.13
 #rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13SAL/     /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/obsproc.13SAL
 #rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.13/      /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.13
-rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.RM/      /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.RM
+#rsync -avhWr --no-compress iliana.genkova@cdxfer.wcoss2.ncep.noaa.gov:/lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.RM/      /lfs/h2/emc/obsproc/noscrub/iliana.genkova/GIT/play/bufr-dump.RM
 ###======================================
 #
 ###I am Residing on either WCOSS2 machine

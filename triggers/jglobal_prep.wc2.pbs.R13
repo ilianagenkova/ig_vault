@@ -113,6 +113,8 @@ export KEEPDATA=NO
 export LOUD=ON
 
 
+#export EPRM=/lfs/h2/emc/stmp/iliana.genkova/CRON/R13/sdmedit
+
 $HOMEobsproc/jobs/JOBSPROC_GLOBAL_PREP
 err=$?
 

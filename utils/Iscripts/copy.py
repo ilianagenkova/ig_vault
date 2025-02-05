@@ -50,6 +50,7 @@ instrument_codes = {
     'ice': 'icec',
     'smap': 'smap',
     'SM_OPER_MIR_OSUDP': 'sss',     # smos ???
+    'AOD_': 'aod', #IG
     'sst': 'sst'
 }
 
