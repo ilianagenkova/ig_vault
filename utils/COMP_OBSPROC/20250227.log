@@ -1,0 +1,527 @@
+Comparing directories:
+mySTMP: /lfs/h1/ops/prod/com/obsproc/v1.2/gfs.20250227/00/atmos
+myCOMROOT: /lfs/h1/ops/para/com/obsproc/v1.2/gfs.20250227/00/atmos
+
++-----------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+| File                                    | Size in dir1 (bytes) | Size in dir2 (bytes) | Size Difference (bytes) | Relative Size Difference (%) | Status       |
++-----------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+| gfs.t00z.1bamua.tm00.bufr_d             |              9543328 |              9543328 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.1bhrs4.tm00.bufr_d             |             11708192 |             11708192 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.1bmhs.tm00.bufr_d              |             33105056 |             33105056 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.NPR.SNWN.SP.S1200.MESH16.grb   |              2252792 |              2252792 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.NPR.SNWS.SP.S1200.MESH16.grb   |              2281514 |              2281514 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_dup                       |                  961 |                  961 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_grc                       |                12991 |                12991 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_inc                       |               274101 |               274101 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_inv                       |               133068 |               133068 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_log                       |            247348198 |            247348198 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_lst                       |               314876 |               314876 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_merged.prof_sorted        |             57811930 |             57811930 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_merged_sorted             |             39428612 |             39428612 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_ord                       |               572776 |               572776 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_spk                       |                  464 |                  464 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_stk                       |             10355044 |             10355044 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.acqc_sus                       |              1678228 |              1678228 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.adpsfc.tm00.bufr_d             |             17264688 |             17264688 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.adpsfc.tm00.bufr_d.listing     |             44641667 |             44641667 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.adpsfc.tm00.bufr_d.nr          |             16816112 |             16816112 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.adpupa.tm00.bufr_d             |              1697360 |              1697360 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.adpupa.tm00.bufr_d.listing     |              2913103 |              2913103 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ahicsr.tm00.bufr_d             |             11114520 |             11114520 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.aircar.tm00.bufr_d             |             20155304 |             20155304 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.aircar.tm00.bufr_d.listing     |             40829038 |             40829037 |                       1 |                        0.00% | Size differs |
+| gfs.t00z.aircar.tm00.bufr_d.nr          |                22760 |                22760 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.aircar_status_flag.tm00.bufr_d |                   62 |                   62 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.aircft.tm00.bufr_d             |              3691288 |              3691288 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.aircft.tm00.bufr_d.listing     |              5676340 |              5676339 |                       1 |                        0.00% | Size differs |
+| gfs.t00z.aircft.tm00.bufr_d.nr          |               475672 |               475672 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.airsev.tm00.bufr_d             |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.amsr2.tm00.bufr_d              |            251461872 |            251461872 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ascatt.tm00.bufr_d             |              9867552 |              9867552 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ascatw.tm00.bufr_d             |              3541944 |              3541944 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ascatw.tm00.bufr_d.listing     |             17006680 |             17006680 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.atmges.nc                      |           6758493360 |           6758493360 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.atmgm3.nc                      |           6768548904 |           6768548904 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.atmgp3.nc                      |           6696462578 |           6696462578 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.atms.tm00.bufr_d               |            184469584 |            184469584 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.atmsdb.tm00.bufr_d             |             46788832 |             46788832 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.avcsam.tm00.bufr_d             |            167875488 |            167875488 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.avcspm.tm00.bufr_d             |            194947680 |            194947680 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.bathy.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.bufr_dumplist.tm00             |                74344 |                74344 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.cqc_events                     |               175654 |               175654 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.cqc_radcor                     |               139100 |               139100 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.cqc_sdm                        |              8137616 |              8137616 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.cqc_stncnt                     |                  528 |                  528 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.cqc_stnlst                     |               880218 |               880218 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.crisf4.tm00.bufr_d             |           1187579984 |           1187579984 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.crsfdb.tm00.bufr_d             |            280660216 |            280660216 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.dump_alert_flag                |                    2 |                    2 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.dump_alert_flag.tm00           |                    2 |                    2 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.engicegrb                      |               259284 |               259284 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.esamua.tm00.bufr_d             |             13297376 |             13297376 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.esatms.tm00.bufr_d             |             43973984 |             43973984 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.eshrs3.tm00.bufr_d             |             25356248 |             25356248 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.esiasi.tm00.bufr_d             |            369400376 |            369400376 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.esmhs.tm00.bufr_d              |             58222456 |             58222456 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.geoimr.tm00.bufr_d             |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gmi1cr.tm00.bufr_d             |             94674128 |             94674128 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gome.tm00.bufr_d               |              7553496 |              7553496 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gpsipw.tm00.bufr_d             |               247448 |               247448 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gpsipw.tm00.bufr_d.listing     |              1093630 |              1093630 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gpsipw.tm00.bufr_d.nr          |              1662232 |              1662232 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gpsro.tm00.bufr_d              |             45594912 |             45594912 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gpsro.tm00.bufr_d.nr           |             45575368 |             45575368 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gsrasr.tm00.bufr_d             |            451976496 |            451976496 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.gsrcsr.tm00.bufr_d             |            167377192 |            167377192 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.hdob.tm00.bufr_d               |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.iasidb.tm00.bufr_d             |            454041856 |            454041856 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.imssnow96.grib2                |             10329209 |             10329209 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.mtiasi.tm00.bufr_d             |            578514632 |            578514632 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.nsstbufr                       |             10273112 |             10273112 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.omi.tm00.bufr_d                |              4384384 |              4384384 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ompslp.tm00.bufr_d             |              1232496 |              1232496 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ompsn8.tm00.bufr_d             |              5050536 |              5050536 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ompst8.tm00.bufr_d             |            238225688 |            238225688 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.osbuv8.tm00.bufr_d             |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.prep.bufrtable                 |                89991 |                89991 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.prepbufr                       |             93570072 |             93570072 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.prepbufr.acft_profiles         |             19188328 |             19188328 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.prepbufr.nr                    |             53802856 |             53802856 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.prepbufr_pre-qc                |             92331864 |             92331864 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.prepbufr_pre-qc.nr             |             53155168 |             53155168 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.proflr.tm00.bufr_d             |               181512 |               181512 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.proflr.tm00.bufr_d.listing     |              1850306 |              1850306 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.rassda.tm00.bufr_d             |                55256 |                55256 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.rassda.tm00.bufr_d.listing     |               147562 |               147562 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.rtgssthr.grb                   |             13996884 |             13996884 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.rtgssthr.grib2                 |              2590191 |              2590191 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.saldrn.tm00.bufr_d             |                53680 |                53680 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.satwhr.tm00.bufr_d             |             68253984 |             68253984 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.satwnd.tm00.bufr_d             |            128411952 |            128411952 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.satwnd.tm00.bufr_d.listing     |            407682424 |            407682423 |                       1 |                        0.00% | Size differs |
+| gfs.t00z.seaice.5min.grb                |              8164884 |              8164884 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.seaice.5min.grib2              |               430598 |               430598 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sevasr.tm00.bufr_d             |             55004648 |             55004648 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sfcshp.tm00.bufr_d             |              8910736 |              8910736 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sfcshp.tm00.bufr_d.listing     |             14661862 |             14661862 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sfcshp.tm00.bufr_d.nr          |              8910736 |              8910736 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sgesprep_pathname.tm00         |                   75 |                   75 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.snocvr.tm00.bufr_d             |              1476880 |              1476880 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.ssmisu.tm00.bufr_d             |             73734560 |             73734560 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sstvcw.tm00.bufr_d             |           2073026584 |           2073026584 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.sstvpw.tm00.bufr_d             |            505621888 |            505621888 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.status.tm00.bufr_d             |                42345 |                42345 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.subpfl.tm00.bufr_d             |               284184 |               284184 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.syndata.bogdata                |                85418 |                85418 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.syndata.bogrept                |                  300 |                  300 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.syndata.dthistry               |               552270 |               552270 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.tesac.tm00.bufr_d              |               438144 |               438144 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.tideg.tm00.bufr_d              |              1033928 |              1033928 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.trkob.tm00.bufr_d              |               148224 |               148224 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.updated.status.tm00.bufr_d     |                13608 |                10773 |                    2835 |                       20.83% | Size differs |
+| gfs.t00z.uprair.tm00.bufr_d             |             28538168 |             28538168 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.vadwnd.tm00.bufr_d             |              1171808 |              1171808 |                       0 |                        0.00% | Identical    |
+| gfs.t00z.vadwnd.tm00.bufr_d.listing     |             10353419 |             10353419 |                       0 |                        0.00% | Identical    |
++-----------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+
+File Type Counts per Directory:
++----------------+-----------------+--------------------+
+| File Type      | Count in mySTMP | Count in myCOMROOT |
++----------------+-----------------+--------------------+
+| Listing Files  |              11 |                 11 |
+| NR Files       |               8 |                  8 |
+| BUFR_D Files   |              60 |                 60 |
+| Prepbufr Files |               3 |                  3 |
++----------------+-----------------+--------------------+
+Network: gfs, Date: 20250227, HH: 00, TM: 00
+Prepbufr File Creation Times:
+/lfs/h1/ops/prod/com/obsproc/v1.2/gfs.20250227/00/atmos/gfs.t00z.prepbufr -> 2025-02-27 02:57:58
+/lfs/h1/ops/para/com/obsproc/v1.2/gfs.20250227/00/atmos/gfs.t00z.prepbufr -> 2025-02-27 02:58:03
+Separator output saved in: compare_prepb_gfs_20250227_00_00.csv
+      name  type  subset     bytes     val
+0   ADPUPA   168    1280   7718928    7.62
+1   AIRCAR  3473  324692  34545888   93.49
+2   AIRCFT   508   49312   5046372   97.07
+3   SATWND   299  197013  14595108  658.91
+4   VADWND   858    2343   6938870    2.73
+5   ADPSFC   293  156700  14631684  534.81
+6   SFCSHP    71   46817   3543264  659.39
+7   GPSIPW     2     400     21708  200.00
+8   RASSDA     3     175    102564   58.33
+9   ASCATW   127  103489   6319688  814.87
+10  SYNDAT     1     195     27410  195.00
+11   TOTAL  5803  882416  93491484     NaN
+      name  type  subset     bytes     val
+0   ADPUPA   168    1280   7718928    7.62
+1   AIRCAR  3473  324692  34545888   93.49
+2   AIRCFT   508   49312   5046372   97.07
+3   SATWND   299  197013  14595108  658.91
+4   VADWND   858    2343   6938870    2.73
+5   ADPSFC   293  156700  14631684  534.81
+6   SFCSHP    71   46817   3543264  659.39
+7   GPSIPW     2     400     21708  200.00
+8   RASSDA     3     175    102564   58.33
+9   ASCATW   127  103489   6319688  814.87
+10  SYNDAT     1     195     27410  195.00
+11   TOTAL  5803  882416  93491484     NaN
+      name  type  subset  bytes  val  bytes_relative_diff
+0   ADPUPA     0       0      0  0.0                  0.0
+1   AIRCAR     0       0      0  0.0                  0.0
+2   AIRCFT     0       0      0  0.0                  0.0
+3   SATWND     0       0      0  0.0                  0.0
+4   VADWND     0       0      0  0.0                  0.0
+5   ADPSFC     0       0      0  0.0                  0.0
+6   SFCSHP     0       0      0  0.0                  0.0
+7   GPSIPW     0       0      0  0.0                  0.0
+8   RASSDA     0       0      0  0.0                  0.0
+9   ASCATW     0       0      0  0.0                  0.0
+10  SYNDAT     0       0      0  0.0                  0.0
+11   TOTAL     0       0      0  NaN                  0.0
+Comparing directories:
+mySTMP: /lfs/h1/ops/prod/com/obsproc/v1.2/gdas.20250227/00/atmos
+myCOMROOT: /lfs/h1/ops/para/com/obsproc/v1.2/gdas.20250227/00/atmos
+
++------------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+| File                                     | Size in dir1 (bytes) | Size in dir2 (bytes) | Size Difference (bytes) | Relative Size Difference (%) | Status       |
++------------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+| gdas.t00z.1bamua.tm00.bufr_d             |             13455048 |             13455048 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.1bhrs4.tm00.bufr_d             |             15212528 |             15212528 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.1bmhs.tm00.bufr_d              |             45885504 |             45885504 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.NPR.SNWN.SP.S1200.MESH16.grb   |              2252792 |              2252792 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.NPR.SNWS.SP.S1200.MESH16.grb   |              2281514 |              2281514 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_dup                       |                  963 |                  963 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_grc                       |                17170 |                17170 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_inc                       |               300568 |               300568 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_inv                       |               142620 |               142620 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_log                       |            288220345 |            288220345 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_lst                       |               376765 |               376765 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_merged.prof_sorted        |             62733253 |             62733253 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_merged_sorted             |             42986012 |             42986012 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_ord                       |               687002 |               687002 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_spk                       |                  464 |                  464 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_stk                       |             11546855 |             11546855 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.acqc_sus                       |              1907078 |              1907078 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.adpsfc.tm00.bufr_d             |             18027328 |             18027328 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.adpsfc.tm00.bufr_d.listing     |             46406321 |             46406320 |                       1 |                        0.00% | Size differs |
+| gdas.t00z.adpsfc.tm00.bufr_d.nr          |             17578752 |             17578752 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.adpupa.tm00.bufr_d             |              1700824 |              1700824 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.adpupa.tm00.bufr_d.listing     |              2919559 |              2919559 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ahicsr.tm00.bufr_d             |             13362496 |             13362496 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.aircar.tm00.bufr_d             |             22550680 |             22550680 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.aircar.tm00.bufr_d.listing     |             45611955 |             45611955 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.aircar.tm00.bufr_d.nr          |                22760 |                22760 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.aircar_status_flag.tm00.bufr_d |                   62 |                   62 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.aircft.tm00.bufr_d             |              4417552 |              4417552 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.aircft.tm00.bufr_d.listing     |              6774441 |              6774442 |                       1 |                        0.00% | Size differs |
+| gdas.t00z.aircft.tm00.bufr_d.nr          |               543152 |               543152 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.airsev.tm00.bufr_d             |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.amsr2.tm00.bufr_d              |            352566928 |            352566928 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ascatt.tm00.bufr_d             |             15958064 |             15958064 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ascatw.tm00.bufr_d             |              5219488 |              5219488 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ascatw.tm00.bufr_d.listing     |             25083344 |             25083344 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.atmges.nc                      |           6758493360 |           6758493360 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.atmgm3.nc                      |           6768548904 |           6768548904 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.atmgp3.nc                      |           6696462578 |           6696462578 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.atms.tm00.bufr_d               |            217091088 |            217091088 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.atmsdb.tm00.bufr_d             |             52886384 |             52886384 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.atovs.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.avcsam.tm00.bufr_d             |            216374968 |            216374968 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.avcspm.tm00.bufr_d             |            244398768 |            244398768 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.bathy.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.bufr_dumplist.tm00             |                74344 |                74344 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.cqc_events                     |               175370 |               175370 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.cqc_radcor                     |               139202 |               139202 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.cqc_sdm                        |              8205407 |              8205407 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.cqc_stncnt                     |                  528 |                  528 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.cqc_stnlst                     |               881640 |               881640 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.crisf4.tm00.bufr_d             |           1482026608 |           1482026608 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.crsfdb.tm00.bufr_d             |            334424792 |            334424792 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.dump_alert_flag                |                    2 |                    2 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.dump_alert_flag.tm00           |                    2 |                    2 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.engicegrb                      |               259284 |               259284 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.engicegrb.grib2                |                49078 |                49078 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.esamua.tm00.bufr_d             |             14463360 |             14463360 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.esatms.tm00.bufr_d             |             45922176 |             45922176 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.eshrs3.tm00.bufr_d             |             28838944 |             28838944 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.esiasi.tm00.bufr_d             |            391502984 |            391502984 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.esmhs.tm00.bufr_d              |             63381032 |             63381032 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.geoimr.tm00.bufr_d             |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gmi1cr.tm00.bufr_d             |            104049952 |            104049952 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gome.tm00.bufr_d               |             10575272 |             10575272 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gpsipw.tm00.bufr_d             |               251552 |               251552 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gpsipw.tm00.bufr_d.listing     |              1111948 |              1111948 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gpsipw.tm00.bufr_d.nr          |              1692328 |              1692328 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gpsro.tm00.bufr_d              |             56535888 |             56535888 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gpsro.tm00.bufr_d.nr           |             56507936 |             56507936 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gsrasr.tm00.bufr_d             |            485608584 |            485608584 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.gsrcsr.tm00.bufr_d             |            176793752 |            176793752 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.hdob.tm00.bufr_d               |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.iasidb.tm00.bufr_d             |            524498936 |            524498936 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.imssnow96.grib2                |             10329209 |             10329209 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.mtiasi.tm00.bufr_d             |            822682376 |            822682376 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.nsstbufr                       |             11912704 |             11912704 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.omi.tm00.bufr_d                |              7614784 |              7614784 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ompslp.tm00.bufr_d             |              2238712 |              2238712 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ompsn8.tm00.bufr_d             |              5905048 |              5905048 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ompst8.tm00.bufr_d             |            291702616 |            291702616 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.osbuv8.tm00.bufr_d             |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.prep.bufrtable                 |                89991 |                89991 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.prepbufr                       |            101671456 |            101671456 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.prepbufr.acft_profiles         |             20844248 |             20844248 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.prepbufr.nr                    |             58354296 |             58354296 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.prepbufr_pre-qc                |            101772104 |            101772104 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.prepbufr_pre-qc.nr             |             57712160 |             57712160 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.proflr.tm00.bufr_d             |               211720 |               211720 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.proflr.tm00.bufr_d.listing     |              2219173 |              2219173 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.rassda.tm00.bufr_d             |                57344 |                57344 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.rassda.tm00.bufr_d.listing     |               160034 |               160034 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.rtgssthr.grb                   |             13996884 |             13996884 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.rtgssthr.grib2                 |              2590191 |              2590191 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.saldrn.tm00.bufr_d             |                54008 |                54008 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.satwhr.tm00.bufr_d             |             70350448 |             70350448 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.satwnd.tm00.bufr_d             |            138984504 |            138984504 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.satwnd.tm00.bufr_d.listing     |            456354254 |            456354252 |                       2 |                        0.00% | Size differs |
+| gdas.t00z.seaice.5min.grb                |              8164884 |              8164884 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.seaice.5min.grib2              |               430598 |               430598 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.sevasr.tm00.bufr_d             |             66037984 |             66037984 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.sfcshp.tm00.bufr_d             |              9725072 |              9725072 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.sfcshp.tm00.bufr_d.listing     |             16238624 |             16238625 |                       1 |                        0.00% | Size differs |
+| gdas.t00z.sfcshp.tm00.bufr_d.nr          |              9725072 |              9725072 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.sgesprep_pathname.tm00         |                   75 |                   75 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.snocvr.tm00.bufr_d             |              2745472 |              2745472 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.ssmisu.tm00.bufr_d             |             93071920 |             93071920 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.sstvcw.tm00.bufr_d             |           3114302008 |           3114302008 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.sstvpw.tm00.bufr_d             |            745363200 |            745363200 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.status.tm00.bufr_d             |                42690 |                42690 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.subpfl.tm00.bufr_d             |               905704 |               905704 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.syndata.bogdata                |                85418 |                85418 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.syndata.bogrept                |                  300 |                  300 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.syndata.dthistry               |               605533 |               605533 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.tesac.tm00.bufr_d              |               528752 |               528752 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.tideg.tm00.bufr_d              |              1184832 |              1184832 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.trkob.tm00.bufr_d              |               170416 |               170416 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.updated.status.tm00.bufr_d     |                13689 |                10854 |                    2835 |                       20.71% | Size differs |
+| gdas.t00z.uprair.tm00.bufr_d             |             28707800 |             28707800 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.vadwnd.tm00.bufr_d             |              1237512 |              1237512 |                       0 |                        0.00% | Identical    |
+| gdas.t00z.vadwnd.tm00.bufr_d.listing     |             10954218 |             10954218 |                       0 |                        0.00% | Identical    |
++------------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+
+File Type Counts per Directory:
++----------------+-----------------+--------------------+
+| File Type      | Count in mySTMP | Count in myCOMROOT |
++----------------+-----------------+--------------------+
+| Listing Files  |              11 |                 11 |
+| NR Files       |               8 |                  8 |
+| BUFR_D Files   |              61 |                 61 |
+| Prepbufr Files |               3 |                  3 |
++----------------+-----------------+--------------------+
+Network: gdas, Date: 20250227, HH: 00, TM: 00
+Prepbufr File Creation Times:
+/lfs/h1/ops/prod/com/obsproc/v1.2/gdas.20250227/00/atmos/gdas.t00z.prepbufr -> 2025-02-27 06:02:10
+/lfs/h1/ops/para/com/obsproc/v1.2/gdas.20250227/00/atmos/gdas.t00z.prepbufr -> 2025-02-27 06:02:05
+Separator output saved in: compare_prepb_gdas_20250227_00_00.csv
+      name  type  subset      bytes     val
+0   ADPUPA   168    1282    7773694    7.63
+1   AIRCAR  3759  351480   37394578   93.50
+2   AIRCFT   580   56332    5766870   97.12
+3   SATWND   297  197013   14595000  663.34
+4   VADWND   908    2494    7339790    2.75
+5   ADPSFC   307  164091   15314814  534.50
+6   SFCSHP    79   52022    3929970  658.51
+7   GPSIPW     2     400      21708  200.00
+8   RASSDA     3     191     111244   63.67
+9   ASCATW   187  152550    9315648  815.78
+10  SYNDAT     1     195      27410  195.00
+11   TOTAL  6291  978050  101590726     NaN
+      name  type  subset      bytes     val
+0   ADPUPA   168    1282    7773694    7.63
+1   AIRCAR  3759  351480   37394578   93.50
+2   AIRCFT   580   56332    5766870   97.12
+3   SATWND   297  197013   14595000  663.34
+4   VADWND   908    2494    7339790    2.75
+5   ADPSFC   307  164091   15314814  534.50
+6   SFCSHP    79   52022    3929970  658.51
+7   GPSIPW     2     400      21708  200.00
+8   RASSDA     3     191     111244   63.67
+9   ASCATW   187  152550    9315648  815.78
+10  SYNDAT     1     195      27410  195.00
+11   TOTAL  6291  978050  101590726     NaN
+      name  type  subset  bytes  val  bytes_relative_diff
+0   ADPUPA     0       0      0  0.0                  0.0
+1   AIRCAR     0       0      0  0.0                  0.0
+2   AIRCFT     0       0      0  0.0                  0.0
+3   SATWND     0       0      0  0.0                  0.0
+4   VADWND     0       0      0  0.0                  0.0
+5   ADPSFC     0       0      0  0.0                  0.0
+6   SFCSHP     0       0      0  0.0                  0.0
+7   GPSIPW     0       0      0  0.0                  0.0
+8   RASSDA     0       0      0  0.0                  0.0
+9   ASCATW     0       0      0  0.0                  0.0
+10  SYNDAT     0       0      0  0.0                  0.0
+11   TOTAL     0       0      0  NaN                  0.0
+Comparing directories:
+mySTMP: /lfs/h1/ops/prod/com/obsproc/v1.2/rap.20250227
+myCOMROOT: /lfs/h1/ops/para/com/obsproc/v1.2/rap.20250227
+
++------------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+| File                                     | Size in dir1 (bytes) | Size in dir2 (bytes) | Size Difference (bytes) | Relative Size Difference (%) | Status       |
++------------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+| rap.t00z.1bamua.tm00.bufr_d              |              1646832 |              1646832 |                       0 |                        0.00% | Identical    |
+| rap.t00z.1bhrs4.tm00.bufr_d              |              1355936 |              1355936 |                       0 |                        0.00% | Identical    |
+| rap.t00z.1bmhs.tm00.bufr_d               |              6219368 |              6219368 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_dup.tm00                   |                  960 |                  960 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_grc.tm00                   |                 3837 |                 3837 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_inc.tm00                   |               196291 |               196291 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_inv.tm00                   |                93069 |                93069 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_log.tm00                   |            140822080 |            140822080 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_lst.tm00                   |               203632 |               203632 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_merged.prof_sorted.tm00    |              8179237 |              8179237 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_merged_sorted.tm00         |             11599202 |             11599202 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_ord.tm00                   |               388900 |               388900 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_spk.tm00                   |                  464 |                  464 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_stk.tm00                   |              6862593 |              6862593 |                       0 |                        0.00% | Identical    |
+| rap.t00z.acqc_sus.tm00                   |              1107894 |              1107894 |                       0 |                        0.00% | Identical    |
+| rap.t00z.adpsfc.tm00.bufr_d              |              1838464 |              1838464 |                       0 |                        0.00% | Identical    |
+| rap.t00z.adpsfc.tm00.bufr_d.listing      |              4700555 |              4700555 |                       0 |                        0.00% | Identical    |
+| rap.t00z.adpsfc.tm00.bufr_d.nr           |              1779792 |              1779792 |                       0 |                        0.00% | Identical    |
+| rap.t00z.adpupa.tm00.bufr_d              |               523312 |               523312 |                       0 |                        0.00% | Identical    |
+| rap.t00z.adpupa.tm00.bufr_d.listing      |               805380 |               805380 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircar.tm00.bufr_d              |             14084552 |             14084552 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircar.tm00.bufr_d.listing      |             28562570 |             28562570 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircar.tm00.bufr_d.nr           |                22760 |                22760 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircar_status_flag.tm00.bufr_d  |                   62 |                   62 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircft.tm00.bufr_d              |              2403488 |              2403488 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircft.tm00.bufr_d.listing      |              3747903 |              3747903 |                       0 |                        0.00% | Identical    |
+| rap.t00z.aircft.tm00.bufr_d.nr           |               293888 |               293888 |                       0 |                        0.00% | Identical    |
+| rap.t00z.airsev.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| rap.t00z.amsr2.tm00.bufr_d               |             25059264 |             25059264 |                       0 |                        0.00% | Identical    |
+| rap.t00z.ascatt.tm00.bufr_d              |              1330680 |              1330680 |                       0 |                        0.00% | Identical    |
+| rap.t00z.ascatw.tm00.bufr_d              |               495032 |               495032 |                       0 |                        0.00% | Identical    |
+| rap.t00z.ascatw.tm00.bufr_d.listing      |              2363835 |              2363835 |                       0 |                        0.00% | Identical    |
+| rap.t00z.atms.tm00.bufr_d                |             23617592 |             23617592 |                       0 |                        0.00% | Identical    |
+| rap.t00z.atmsdb.tm00.bufr_d              |             15907000 |             15907000 |                       0 |                        0.00% | Identical    |
+| rap.t00z.bufr_dumplist.tm00              |                74344 |                74344 |                       0 |                        0.00% | Identical    |
+| rap.t00z.cqc_events.tm00                 |               144698 |               144698 |                       0 |                        0.00% | Identical    |
+| rap.t00z.cqc_radcor.tm00                 |                85374 |                85374 |                       0 |                        0.00% | Identical    |
+| rap.t00z.cqc_sdm.tm00                    |              5557101 |              5557101 |                       0 |                        0.00% | Identical    |
+| rap.t00z.cqc_stncnt.tm00                 |                  528 |                  528 |                       0 |                        0.00% | Identical    |
+| rap.t00z.cqc_stnlst.tm00                 |               509076 |               509076 |                       0 |                        0.00% | Identical    |
+| rap.t00z.cqcvad.birdqc.tm00              |                19784 |                19784 |                       0 |                        0.00% | Identical    |
+| rap.t00z.crisf4.tm00.bufr_d              |            113279680 |            113279680 |                       0 |                        0.00% | Identical    |
+| rap.t00z.crsfdb.tm00.bufr_d              |             79181336 |             79181336 |                       0 |                        0.00% | Identical    |
+| rap.t00z.esamua.tm00.bufr_d              |              1811544 |              1811544 |                       0 |                        0.00% | Identical    |
+| rap.t00z.esatms.tm00.bufr_d              |              3537288 |              3537288 |                       0 |                        0.00% | Identical    |
+| rap.t00z.eshrs3.tm00.bufr_d              |              3203688 |              3203688 |                       0 |                        0.00% | Identical    |
+| rap.t00z.esiasi.tm00.bufr_d              |            131973368 |            131973368 |                       0 |                        0.00% | Identical    |
+| rap.t00z.esmhs.tm00.bufr_d               |              6556960 |              6556960 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gmi1cr.tm00.bufr_d              |              7248944 |              7248944 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gpsipw.tm00.bufr_d              |               155784 |               155784 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gpsipw.tm00.bufr_d.listing      |               720667 |               720667 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gpsipw.tm00.bufr_d.nr           |              1035104 |              1035104 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gpsro.tm00.bufr_d               |              3939328 |              3939328 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gpsro.tm00.bufr_d.nr            |              3929128 |              3929128 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gsrasr.tm00.bufr_d              |             88592944 |             88592944 |                       0 |                        0.00% | Identical    |
+| rap.t00z.gsrcsr.tm00.bufr_d              |             36301400 |             36301400 |                       0 |                        0.00% | Identical    |
+| rap.t00z.iasidb.tm00.bufr_d              |             69910200 |             69910200 |                       0 |                        0.00% | Identical    |
+| rap.t00z.imssnow                         |             19958468 |             19958468 |                       0 |                        0.00% | Identical    |
+| rap.t00z.imssnow.grib2                   |             10329209 |             10329209 |                       0 |                        0.00% | Identical    |
+| rap.t00z.lghtng.tm00.bufr_d              |               259968 |               259968 |                       0 |                        0.00% | Identical    |
+| rap.t00z.lghtng.tm00.bufr_d.nr           |                 7112 |                 7112 |                       0 |                        0.00% | Identical    |
+| rap.t00z.lgycld.tm00.bufr_d              |             58563616 |             58563616 |                       0 |                        0.00% | Identical    |
+| rap.t00z.msone1.tm00.bufr_d              |              9004432 |              9004432 |                       0 |                        0.00% | Identical    |
+| rap.t00z.msonet.tm00.bufr_d              |             39223200 |             39223200 |                       0 |                        0.00% | Identical    |
+| rap.t00z.msonet.tm00.bufr_d.listing      |             89770827 |             89770827 |                       0 |                        0.00% | Identical    |
+| rap.t00z.msonet.tm00.bufr_d.nr           |                35688 |                35688 |                       0 |                        0.00% | Identical    |
+| rap.t00z.mtiasi.tm00.bufr_d              |             51497208 |             51497208 |                       0 |                        0.00% | Identical    |
+| rap.t00z.nexrad.tm00.bufr_d              |            428425408 |            428425408 |                       0 |                        0.00% | Identical    |
+| rap.t00z.osbuv8.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prep.bufrtable                  |                89991 |                89991 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prepbufr.acft_profiles.tm00     |              3048104 |              3048104 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prepbufr.acft_profiles_sfc.tm00 |              1965344 |              1965344 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prepbufr.tm00                   |             68350384 |             68350384 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prepbufr.tm00.nr                |             10757296 |             10757296 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prepbufr_pre-qc.tm00            |             83602880 |             83602880 |                       0 |                        0.00% | Identical    |
+| rap.t00z.prepbufr_pre-qc.tm00.nr         |             10623072 |             10623072 |                       0 |                        0.00% | Identical    |
+| rap.t00z.proflr.tm00.bufr_d              |                79416 |                79416 |                       0 |                        0.00% | Identical    |
+| rap.t00z.proflr.tm00.bufr_d.listing      |               593434 |               593434 |                       0 |                        0.00% | Identical    |
+| rap.t00z.rassda.tm00.bufr_d              |                35792 |                35792 |                       0 |                        0.00% | Identical    |
+| rap.t00z.rassda.tm00.bufr_d.listing      |                29397 |                29397 |                       0 |                        0.00% | Identical    |
+| rap.t00z.saldrn.tm00.bufr_d              |                52696 |                52696 |                       0 |                        0.00% | Identical    |
+| rap.t00z.saphir.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| rap.t00z.saphir.tm00.bufr_d.nr           |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| rap.t00z.satwnd.tm00.bufr_d              |              6334728 |              6334728 |                       0 |                        0.00% | Identical    |
+| rap.t00z.satwnd.tm00.bufr_d.listing      |             19651643 |             19651642 |                       1 |                        0.00% | Size differs |
+| rap.t00z.sevasr.tm00.bufr_d              |              1434792 |              1434792 |                       0 |                        0.00% | Identical    |
+| rap.t00z.sevcsr.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| rap.t00z.sfcshp.tm00.bufr_d              |              1235608 |              1235608 |                       0 |                        0.00% | Identical    |
+| rap.t00z.sfcshp.tm00.bufr_d.listing      |              2168191 |              2168191 |                       0 |                        0.00% | Identical    |
+| rap.t00z.sfcshp.tm00.bufr_d.nr           |              1235608 |              1235608 |                       0 |                        0.00% | Identical    |
+| rap.t00z.sgesprep.tm00                   |           6758493360 |           6758493360 |                       0 |                        0.00% | Identical    |
+| rap.t00z.sgesprep_pathname.tm00          |                   75 |                   75 |                       0 |                        0.00% | Identical    |
+| rap.t00z.snocvr.tm00.bufr_d              |               644640 |               644640 |                       0 |                        0.00% | Identical    |
+| rap.t00z.ssmisu.tm00.bufr_d              |              8430320 |              8430320 |                       0 |                        0.00% | Identical    |
+| rap.t00z.status.tm00.bufr_d              |                47002 |                47002 |                       0 |                        0.00% | Identical    |
+| rap.t00z.subpfl.tm00.bufr_d              |                    0 |                    0 |                       0 |                        0.00% | Identical    |
+| rap.t00z.tideg.tm00.bufr_d               |               184136 |               184136 |                       0 |                        0.00% | Identical    |
+| rap.t00z.uprair.tm00.bufr_d              |             15928432 |             15928432 |                       0 |                        0.00% | Identical    |
+| rap.t00z.vadwnd.tm00.bufr_d              |               339144 |               339144 |                       0 |                        0.00% | Identical    |
+| rap.t00z.vadwnd.tm00.bufr_d.listing      |              2815847 |              2815847 |                       0 |                        0.00% | Identical    |
++------------------------------------------+----------------------+----------------------+-------------------------+------------------------------+--------------+
+
+File Type Counts per Directory:
++----------------+-----------------+--------------------+
+| File Type      | Count in mySTMP | Count in myCOMROOT |
++----------------+-----------------+--------------------+
+| Listing Files  |              12 |                 12 |
+| NR Files       |              11 |                 11 |
+| BUFR_D Files   |              50 |                 50 |
+| Prepbufr Files |               4 |                  4 |
++----------------+-----------------+--------------------+
+Network: rap, Date: 20250227, HH: 00, TM: 00
+Prepbufr File Creation Times:
+/lfs/h1/ops/prod/com/obsproc/v1.2/rap.20250227/rap.t00z.prepbufr.tm00 -> 2025-02-27 01:03:36
+/lfs/h1/ops/para/com/obsproc/v1.2/rap.20250227/rap.t00z.prepbufr.tm00 -> 2025-02-27 01:03:38
+Separator output saved in: compare_prepb_rap_20250227_00_00.csv
+      name  type  subset     bytes     val
+0   ADPUPA   115     718   5192242    6.24
+1   AIRCAR  1063   99294  10565190   93.41
+2   AIRCFT   111   10692   1096854   96.32
+3   SATWND    15   10370    705970  691.33
+4   PROFLR     8      59     68398    7.38
+5   VADWND   231     676   1881124    2.93
+6   ADPSFC    28   17789   1369580  635.32
+7   SFCSHP    13    9324    614434  717.23
+8   MSONET   920  561122  45941128  609.92
+9   GPSIPW     1     440     22054  440.00
+10  RASSDA     1      33     10150   33.00
+11  ASCATW    17   14380    820578  845.88
+12   TOTAL  2523  724897  68287702     NaN
+      name  type  subset     bytes     val
+0   ADPUPA   115     718   5192242    6.24
+1   AIRCAR  1063   99294  10565190   93.41
+2   AIRCFT   111   10692   1096854   96.32
+3   SATWND    15   10370    705970  691.33
+4   PROFLR     8      59     68398    7.38
+5   VADWND   231     676   1881124    2.93
+6   ADPSFC    28   17789   1369580  635.32
+7   SFCSHP    13    9324    614434  717.23
+8   MSONET   920  561122  45941128  609.92
+9   GPSIPW     1     440     22054  440.00
+10  RASSDA     1      33     10150   33.00
+11  ASCATW    17   14380    820578  845.88
+12   TOTAL  2523  724897  68287702     NaN
+      name  type  subset  bytes  val  bytes_relative_diff
+0   ADPUPA     0       0      0  0.0                  0.0
+1   AIRCAR     0       0      0  0.0                  0.0
+2   AIRCFT     0       0      0  0.0                  0.0
+3   SATWND     0       0      0  0.0                  0.0
+4   PROFLR     0       0      0  0.0                  0.0
+5   VADWND     0       0      0  0.0                  0.0
+6   ADPSFC     0       0      0  0.0                  0.0
+7   SFCSHP     0       0      0  0.0                  0.0
+8   MSONET     0       0      0  0.0                  0.0
+9   GPSIPW     0       0      0  0.0                  0.0
+10  RASSDA     0       0      0  0.0                  0.0
+11  ASCATW     0       0      0  0.0                  0.0
+12   TOTAL     0       0      0  NaN                  0.0

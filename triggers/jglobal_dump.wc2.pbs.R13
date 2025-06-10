@@ -12,7 +12,7 @@
 ##############################################
 # Submit notes:%
 # Run from [ps]tmp when running manually
-# When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
+# When running from cron, output is written to /u/$USER. Bottom of trigger mv's to ptmp
 # For specific PDY:
 # > jtyp=[gdas][gfs] cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jglobal_dump.wc2.pbs
 # For latest/current PDY:
@@ -104,15 +104,16 @@ export TANK=$DCOMROOT
 export TANK_001121=/lfs/h1/ops/dev/dcom #sofar
 export TANK_255161=/lfs/h1/ops/dev/dcom #snomad
 #export TANK_001120=/lfs/h1/ops #INTENTIONALLY bad saildrone path
+export TANK_021243=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/EU_IASI_TEST/EU_IAS_1C_RAD/prod  #/20080223/b021/xx243
 
 # GMI tanks are in prod already June 2022
 #export TANK_021246=/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/git/TANK_DUMP #${userROOT}/DCOMDIR/TEST/prod/
 
 #export EPRM=${userROOT}/sample_sdmedit.txt
-#export EPRM=/lfs/h2/emc/stmp/iliana.genkova/CRON/R13/sdmedit #try turning off saildrone - not working
+#export EPRM=/lfs/h2/emc/ptmp/iliana.genkova/CRON/R13/sdmedit #try turning off saildrone - not working
 
-export DATAROOT=/lfs/h2/emc/stmp/$USER 
-export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
+export DATAROOT=/lfs/h2/emc/ptmp/$USER 
+export jlogfile=/lfs/h2/emc/ptmp/$USER/${JTYP}.$PDY.jlogfile
 
 export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
 export COMPONENT=atmos
@@ -128,10 +129,10 @@ err=$?
 echo 'ILIANA JOB COMPLETED but how??'
 
 # When run from cron, the stdout is written to /u/$USER
-# mv to stmp
+# mv to ptmp
 pbsjobid=$(echo $PBS_JOBID | cut -d'.' -f1)
 cronlogfile=/u/$USER/$PBS_JOBNAME.o$pbsjobid
-outputdir=/lfs/h2/emc/stmp/${USER}/CRON/${DESC}/output
+outputdir=/lfs/h2/emc/ptmp/${USER}/CRON/${DESC}/output
 if [ -f "$cronlogfile" ]; then
   mkdir -p $outputdir
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid

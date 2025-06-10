@@ -13,5 +13,14 @@ Once a release/* is tagged:
 - update "OBSPROC VERSION NUMBER HISTORY inverted" with RFC number
   https://docs.google.com/spreadsheets/d/13uRXpn_tLQQbl84x9QRQjgqLsTo8c4Mgk9V0Wr9iv2g/edit#gid=2138325012
 
+How to Merge:
+1) git checkout release/reponame.v<Lastest>  (the last implemented)
+2) git pull (to be sure the latest implemented bits are there)
+3) git checkout develop
+4) git pull  (to be sure the latest state of develop is there)
+5) git merge release/reponame.v<Latest>
+6) if needed - git status , git add , git commit
+7) git push
+8) go to GitHub and confirm that "git push" took place, i.e. GitHub shows a push a few seconds ago
 
 

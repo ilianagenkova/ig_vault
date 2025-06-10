@@ -11,7 +11,7 @@
 ##############################################
 # Submit notes:%
 # Run from [ps]tmp when running manually
-# When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
+# When running from cron, output is written to /u/$USER. Bottom of trigger mv's to ptmp
 # For specific PDY:
 # > jtyp=[gdas][gfs] cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jglobal_dump.wc2.pbs
 # For latest/current PDY:
@@ -87,8 +87,8 @@ export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
 
-export DATAROOT=/lfs/h2/emc/stmp/$USER 
-export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
+export DATAROOT=/lfs/h2/emc/ptmp/$USER 
+export jlogfile=/lfs/h2/emc/ptmp/$USER/${JTYP}.$PDY.jlogfile
 
 export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
 export COMPONENT=atmos

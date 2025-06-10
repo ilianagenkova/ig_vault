@@ -1,0 +1,57 @@
+
+#first load correct version of python
+module load python
+#networks nam cdas rap rap_e rap_p gfs gdas urma rtma
+#date must be recent since it is compareing production run and using stmp  for local directory (retention 24h) for all except cdas (that one is on ptmp) 
+#hour is set to 00z for now (need to change it in script) using 2 separate python scripts with arguments for network and date
+#for comparing directories and prepbufr in separated steps
+
+#YOU NEED TO EDIT DIRECTORIES WHERE IS YOUR OUTPUT
+##   inside of the script !!!!!!!!!!!!!!!!!!!!!!
+#BASE_COMROOT
+#BASE_STMP
+#
+
+python comp2dir.sh <network> <yyymmdd>
+python comp2prepb.sh <network> <yyymmdd>
+
+
+
+
+
+#######################################################
+#######################################################
+###  OLD STUFF
+# compare 2 obsproc tests tips
+# use AS stipt verif.sh, verif.12z.sh  in  /u/ashley.stanfield/bin
+# or /u/dagmar.merkova/bin
+# make sure  time format is correct or use this commands in you directory (change directories and network name accordingly
+========================================
+#clear old files
+rm -f f* temp*
+# define directories 
+dir10=/lfs/h1/ops/prod/com/obsproc/v1.0/rtma_ru.20221130/
+dir11=/lfs/h1/ops/prod/com/obsproc/v1.1/rtma_ru.20221130/
+#printout number of files 
+echo "number of files in first directory", $dir10
+/u/dagmar.merkova/bin/verif.1200z.sh  $dir10 |paste - -
+echo "number of files in second directory:", $dir11
+/u/dagmar.merkova/bin/verif.1200z.sh  $dir11 |paste - -
+#compare file sizes: change name of the network and time
+ls -l ${dir10}/rtma_ru.t1200z.* |awk '{split($9,a,/[/]/); print a[11], $5}'|sort -k1>file10
+ls -l ${dir11}/rtma_ru.t1200z.* |awk '{split($9,a,/[/]/); print a[11], $5}'|sort -k1>file11
+# sort and join and printout
+cat file10 file11|awk '{print $1}'|sort|uniq>temp
+join -a 1 -j 1 -e -99999 -o 1.1,2.2  temp file10  >temp2
+join -a 1 -e -99999 -j 1 -o 1.1,1.2,2.2  temp2 file11 >temp3
+cat temp3
+#=============================
+#it should be ready to copy to excel sheet Ashley created
+#https://docs.google.com/spreadsheets/d/1Y4H40Jk117pHOj3QRXS5HjTRm3y0RShfPbOBzQv0lrU/edit#gid=0
+
+#### following line doesn't work because of division by 0
+#awk '{print $1,$2,$3,$3-$2,100*$2/$3}' temp3
+
+#following need some debuging too
+#binv  ${dir10}/rtma_ru.t1200z.prepbufr 
+#binv  ${dir11}/rtma_ru.t1200z.prepbufr 

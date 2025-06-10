@@ -1,0 +1,16 @@
+#first load correct version of python
+module load python
+#networks nam cdas rap rap_e rap_p gfs gdas
+#date must be recent since it is compareing production run and using stmp  for local directory (retention 24h) for all except cdas (that one is on ptmp) 
+#hour is set to 00z for now (need to change it in script) using 2 separate python scripts with arguments for network and date
+#for comparing directories and prepbufr in separated steps
+
+#YOU NEED TO EDIT DIRECTORIES WHERE IS YOUR OUTPUT
+##   inside of the script !!!!!!!!!!!!!!!!!!!!!!
+#BASE_COMROOT
+#BASE_STMP
+#
+
+python comp2dir.sh <network> <yyymmdd>
+python comp2prepb.sh <network> <yyymmdd> 
+
