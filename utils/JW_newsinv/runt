@@ -1,0 +1,6 @@
+set -euax
+
+cwbf sinv
+
+time sinv.x /lfs/h1/ops/prod/dcom//20241123/b012/xx023
+

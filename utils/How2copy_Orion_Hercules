@@ -1,0 +1,8 @@
+From Hercules to Hera:   
+
+scp MyFlile Emily.Liu@hera-dtn.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Emily.Liu/
+
+From WCOSS to Hercules:
+1)Log into WCOSS account 
+2) scp eliu@hercules-login.hpc.msstate.edu:/work/noaa.da.eliu/MyFile .
+

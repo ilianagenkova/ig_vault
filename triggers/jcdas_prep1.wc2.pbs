@@ -32,8 +32,8 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.4
-export obsproc_ver_pckg=v1.2.4
+export obsproc_ver_pckg=v1.2.5
+export obsproc_ver_pckg=v1.2.5
 export prepobs_ver=1.1.1
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages

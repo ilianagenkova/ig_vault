@@ -1,0 +1,172 @@
+ diff ../../GIT/NCEPLIBS-bufr.B/src/ufbtab.f  ufbtab.f
+
+4,5d3
+< C>
+< C> @author J. Woollen @date 1994-01-06
+10,13c8,9
+< C> This provides a useful way to scan the ranges of one or more
+< C> specified data values across all of the data subsets within an
+< C> entire BUFR file.  It is similar to subroutine ufbtam(), except
+< C> that ufbtam() works on data subsets within internal arrays.
+---
+> C> <p>This provides a useful way to scan the ranges of one or more
+> C> specified data values across an entire BUFR file. 
+15c11,29
+< C> It is the user's responsibility to ensure that TAB is dimensioned
+---
+> C> @author J. Woollen
+> C> @date 1994-01-06
+> C>      
+> C> @param[in] LUNIN   -- integer: Absolute value is Fortran logical
+> C>                       unit number for BUFR file
+> C> @param[out] TAB    -- real*8(*,*): Data values
+> C> @param[in] I1 -- integer: Actual first dimension of TAB as allocated
+> C>                  within the calling program
+> C> @param[in] I2 -- integer: Actual second dimension of TAB as allocated
+> C>                  within the calling program
+> C> @param[out] IRET -- integer: Number of data subsets in BUFR file
+> C> @param[in] STR -- character*(*): String of blank-separated
+> C>                   Table B mnemonics, in one-to-one correspondence
+> C>                   with the number of data values that will be read
+> C>                   from each data subset within the first dimension of
+> C>                   TAB (see [DX BUFR Tables](@ref dfbftab) for further
+> C>                   information about Table B mnemonics)
+> C>
+> C> <p>It is the user's responsibility to ensure that TAB is dimensioned
+22c36
+< C> If logical unit ABS(LUNIN) has already been opened
+---
+> C> <p>If logical unit ABS(LUNIN) has already been opened
+42,52d55
+< C> - There are a few additional special mnemonics that can be
+< C> included within STR when calling this subroutine, and which in turn
+< C> will result in special information being returned within the
+< C> corresponding location in TAB:
+< C>      - IREC - returns the number of the BUFR message within the
+< C>               file pointed to by ABS(LUNIN) (counting from the
+< C>               beginning of the file) in which the current data
+< C>               subset resides
+< C>      - ISUB - returns the number of the current data subset within
+< C>               the BUFR message pointed to by IREC, counting from
+< C>               the beginning of the message
+54,67c57,79
+< C> @param[in] LUNIN   -- integer: Absolute value is Fortran logical
+< C>                       unit number for BUFR file
+< C> @param[out] TAB    -- real*8(*,*): Data values
+< C> @param[in] I1 -- integer: First dimension of TAB as allocated
+< C>                  within the calling program
+< C> @param[in] I2 -- integer: Second dimension of TAB as allocated
+< C>                  within the calling program
+< C> @param[out] IRET -- integer: Number of data subsets in BUFR file
+< C> @param[in] STR -- character*(*): String of blank-separated
+< C>                   Table B mnemonics, in one-to-one correspondence
+< C>                   with the number of data values that will be read
+< C>                   from each data subset within the first dimension of
+< C>                   TAB (see [DX BUFR Tables](@ref dfbftab) for further
+< C>                   information about Table B mnemonics)
+---
+> C> <b>Program history log:</b>
+> C> | Date | Programmer | Comments |
+> C> | -----|------------|----------|
+> C> | 1994-01-06 | J. Woollen | Original author |
+> C> | 1998-07-08 | J. Woollen | Replaced call to Cray library routine "ABORT" with call to new internal routine bort() |
+> C> | 1999-11-18 | J. Woollen | The number of BUFR files which can be opened at one time increased from 10 to 32 |
+> C> | 2000-09-19 | J. Woollen | Maximum length increased from 10,000 to 20,000 bytes |
+> C> | 2002-05-14 | J. Woollen | Removed old Cray compiler directives |
+> C> | 2003-11-04 | D. Keyser  | Modified to not abort when there are more than I2 data subsets, but instead just process first I2 subsets and print a diagnostic |
+> C> | 2003-11-04 | D. Keyser  | Increased MAXJL from 15000 to 16000; modified to use rewnbf(); upgraded to allow reading from a file that has already been opened via openbf() |
+> C> | 2004-08-09 | J. Ator    | Maximum message length increased from 20,000 to 50,000 bytes |
+> C> | 2005-09-16 | J. Woollen | upgraded to work for compressed BUFR messages, and to allow for LUNIN < 0 option |
+> C> | 2006-04-14 | J. Ator    | Add declaration for CREF |
+> C> | 2007-01-19 | J. Ator    | Replaced call to parseq with call to parstr() |
+> C> | 2009-04-21 | J. Ator    | Use errwrt() |
+> C> | 2009-12-01 | J. Ator    | Fix bug for compressed character strings which are identical across all subsets in a single messagE |
+> C> | 2010-05-07 | J. Ator    | When calling ireadmg(), treat read error as EOF condition |
+> C> | 2012-03-02 | J. Ator    | Use function ups() |
+> C> | 2012-09-15 | J. Woollen | Modified for C/I/O/BUFR interface; added IO type 'INX' to enable open and close for C file without closing FORTRAN file |
+> C> | 2014-11-20 | J. Ator    | Ensure openbf() has been called at least once before calling status() |
+> C> | 2014-12-10 | J. Ator    | Use modules instead of COMMON blocks |
+> C> | 2016-12-19 | J. Woollen | Fix bug to prevent inventory overflow |
+> C> | 2022-05-06 | J. Woollen | Use up8 and upb8 for 8byte integers, use nbmp for usrtpl, add msgunp=1 option |
+69,71c81
+< C> @author J. Woollen @date 1994-01-06
+< 
+<       RECURSIVE SUBROUTINE UFBTAB(LUNIN,TAB,I1,I2,IRET,STR)
+---
+>       SUBROUTINE UFBTAB(LUNIN,TAB,I1,I2,IRET,STR)
+74,75d83
+<       USE MODV_IM8B
+< 
+87c95
+<       CHARACTER*128 ERRSTR
+---
+>       CHARACTER*128 BORT_STR,ERRSTR
+92c100
+<       INTEGER*8     IVAL,LREF,NINC,MPS,LPS
+---
+>       integer*8     ival,lref,ninc,mps,lps
+97a106,107
+>       save subset,jdate,lun,il,im,irec,isub
+> 
+103,113c113,114
+< C  CHECK FOR I8 INTEGERS
+< C  ---------------------
+< 
+<       IF(IM8B) THEN
+<          IM8B=.FALSE.
+< 
+<          CALL X84(LUNIN,MY_LUNIN,1)
+<          CALL X84(I1,MY_I1,1)
+<          CALL X84(I2,MY_I2,1)
+<          CALL UFBTAB(MY_LUNIN,TAB,MY_I1,MY_I2,IRET,STR)
+<          CALL X48(IRET,IRET,1)
+---
+> C  entry to resume ufbtab reading where it left off
+> C  ------------------------------------------------
+115,117c116,121
+<          IM8B=.TRUE.
+<          RETURN
+<       ENDIF
+---
+>       if(iret<-1) then 
+>          lunit = lunin
+>          tab   = bmiss
+>          iret  = 0
+>          goto 11
+>       endif
+153c157
+<          CALL REWNBF(LUNIT,0)
+---
+>          CALL REWNBF(LUNIT,0)        
+173c177
+<          DO WHILE(IREADMG(-LUNIT,SUBSET,JDATE).GE.0)
+---
+>          DO WHILE(IREADMG(-LUNIT,SUBSET,IDATE).GE.0)
+187a192,193
+>       goto 10 
+> 
+195a202,206
+> 11    IF(IRET+MSUB(LUN).GT.I2) then  
+>          iret=-iret
+>          return
+>       endif
+> 
+199c210
+<       if(msgunp(lun)==2) goto 115
+---
+>       if(msgunp(lun)==2) goto 115 
+231,232c242
+<             NBMP=INT(IVAL)
+<             CALL USRTPL(LUN,N,NBMP)
+---
+>             NBMP=IVAL; CALL USRTPL(LUN,N,NBMP)
+379c389
+<            CVAL = CREF(1:8)
+---
+>            CVAL = CREF
+416c426
+< 99    NREP = IRET
+---
+> 99    NREP = IRET 
+422a433
+`> 
