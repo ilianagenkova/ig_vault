@@ -33,7 +33,7 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2 #needs to match what is in /versions/VERSION
-export obsproc_ver_pckg=v1.2.5
+export obsproc_ver_pckg=v1.2.7
 #export bufr_dump_ver=1.1.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
@@ -91,6 +91,11 @@ export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
 export TANK_004015=/lfs/h1/ops/dev/dcom/ #20250625/b004/xx015 # SUAS
+#Meteosat-12
+export TANK_005067=/lfs/h1/ops/dev/dcom/ #started on 20250710 dev; skip HH:30 from July30
+export TANK_005068=/lfs/h1/ops/dev/dcom/
+export TANK_005069=/lfs/h1/ops/dev/dcom/
+export TANK_021042=/lfs/h1/ops/dev/dcom/
 
       DUMP_group1=${DUMP_group1:-"NO"}
             DUMP_group2=${DUMP_group2:-"NO"}

@@ -29,8 +29,8 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.5
-export bufr_dump_ver=1.2.1
+export obsproc_ver_pckg=v1.2.7
+export bufr_dump_ver=1.3.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
@@ -77,6 +77,10 @@ export SENDDBN=NO
 export SENDSDM=NO
 
 export TANK=$DCOMROOT
+export TANK_012160=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/SKYcover/prod
+
+#temporary Sep2025 dump of UMRB data (see 255035 added to bufr-dump.13/fix/bufr_dumplist)
+export TANK_255035=/lfs/h1/ops/dev/dcom
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.${PDY}.jlogfile

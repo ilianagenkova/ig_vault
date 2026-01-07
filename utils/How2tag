@@ -1,26 +1,32 @@
-Make a Tag
+Make a Tag instructions: (also provided below) 
+
 https://vlab.noaa.gov/redmine/projects/emc-obsproc/wiki/Make_a_Tag
 
+A) Tag the released code right AFTER it's implemented and after you pick any last code changes made by the SPAs (hint: use "diff -r")
 
- git checkout branchname_you_want_to_tag
- git tag -a tagname           # where tagname = OT.reponame.vX.Y.Z_YYYYMMDD
- git show tagname             # to view tag annotations at the top of screen
- git push origin tagname      # OR: git push --tags  # for multiple tags
- git tag -l
+ git checkout <branchname_you_want_to_tag, i.e. release/satingest.v5.0.0>
+ git tag -l                   # to check if the code is tagged already 
+ git tag -a <tagname>         # where tagname = OT.reponame.vX.Y.Z_YYYYMMDD
+                              # YYYYMMDD = implementation date, if you don't have it use CDF release date
+ git show <tagname>           # to view tag annotations at the top of screen
+ git push origin <tagname>    
+ git tag -l                   # to confirm a new tag was added
 
-Once a release/* is tagged:
-- merge it into /develop
-- update "OBSPROC VERSION NUMBER HISTORY inverted" with RFC number
-  https://docs.google.com/spreadsheets/d/13uRXpn_tLQQbl84x9QRQjgqLsTo8c4Mgk9V0Wr9iv2g/edit#gid=2138325012
+B) Once a branch release/* is tagged, merge it into /develop
 
 How to Merge:
-1) git checkout release/reponame.v<Lastest>  (the last implemented)
+1) git checkout release/reponame.v<Lastest>  (the last released/implemented)
 2) git pull (to be sure the latest implemented bits are there)
 3) git checkout develop
 4) git pull  (to be sure the latest state of develop is there)
 5) git merge release/reponame.v<Latest>
 6) if needed - git status , git add , git commit
 7) git push
-8) go to GitHub and confirm that "git push" took place, i.e. GitHub shows a push a few seconds ago
+8) Go to GitHub and confirm that "git push" took place, i.e. GitHub shows a push a few seconds ago
 
+C) Update "OBSPROC VERSION NUMBER HISTORY inverted" with RFC number (if you have it)
+
+  https://docs.google.com/spreadsheets/d/13uRXpn_tLQQbl84x9QRQjgqLsTo8c4Mgk9V0Wr9iv2g/edit#gid=2138325012
+
+Well done!
 

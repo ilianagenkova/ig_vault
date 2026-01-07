@@ -116,6 +116,9 @@ export DEBUG_LEVEL=3
 $HOMEobsproc/jobs/JOBSPROC_RAP_DUMP
 err=$?
 
+#for Hui Liu - files come out with restriction 
+chmod -R 755 ${DATAROOT}/CRON/${DESC}/com/obsproc/${obsproc_ver}/${JTYP}.${PDY}/*
+chmod -R 755  /lfs/h2/emc/stmp/iliana.genkova/CRON/R13RAP/com/obsproc/v1.3/*
 
 # When run from cron, the stdout is written to /u/$USER
 # mv to stmp

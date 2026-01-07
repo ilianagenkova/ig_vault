@@ -1,6 +1,11 @@
 Only initialise/start the transfers from WCOSS!!!
 Move tar balls, not directories with many files.
 
+
+To URSA:
+scp -r many_months.sh  Iliana.Genkova@dtn-ursa.fairmont.rdhpcs.noaa.gov:/scratch3/NCEPDEV/da/Iliana.Genkova/.
+
+To Hera(RIP):
 scp -r FILE_NAME.tar  Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/.
 
 scp -r Iliana.Genkova@dtn-hera.fairmont.rdhpcs.noaa.gov:/scratch1/NCEPDEV/da/Iliana.Genkova/FILE_NAME.tar .

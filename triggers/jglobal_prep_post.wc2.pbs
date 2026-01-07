@@ -32,8 +32,8 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsNET=obsproc
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.5 
-export prepobs_ver=1.1.1
+export obsproc_ver_pckg=v1.2.7 
+export prepobs_ver=1.1.2
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod

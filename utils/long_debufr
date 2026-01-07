@@ -1,0 +1,1 @@
+debufr -c -t /lfs/h1/ops/prod/packages/satingest.v4.2.1/fix -f bufrtab.012  VIIRS-ACSPO-SST-Clear_v2r80_npp_s202209131520000_e202209131529590_c202209131609400.bufr

@@ -39,8 +39,8 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.5
-export bufr_dump_ver=1.2.1
+export obsproc_ver_pckg=v1.2.7
+export bufr_dump_ver=1.3.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
@@ -89,6 +89,13 @@ export SENDSDM=NO   # developer
 export SENDDBN=NO   # developer
 
 export TANK=$DCOMROOT
+
+#temporary - Meteosat-12
+#test for satwnd
+export TANK_005067=/lfs/h1/ops/dev/dcom/ #started on 20250710 dev; skip HH:30 from July30
+export TANK_005068=/lfs/h1/ops/dev/dcom/
+export TANK_005069=/lfs/h1/ops/dev/dcom/
+export TANK_021042=/lfs/h1/ops/dev/dcom/ # for sevasr
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile

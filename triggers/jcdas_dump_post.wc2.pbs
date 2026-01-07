@@ -32,8 +32,8 @@ PDYm1=$(date -d "${PDY} 1 day ago" +%Y%m%d)
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.5
-export bufr_dump_ver=1.2.1
+export obsproc_ver_pckg=v1.2.7
+export bufr_dump_ver=1.3.0
 export obsNET=obsproc
 
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
@@ -48,7 +48,7 @@ else
  exit 7
 fi
 
-export bufr_dump_ver=1.2.1
+export bufr_dump_ver=1.3.0
 
 # Load the modules specified in $VERSION_FILE
 module load libjpeg

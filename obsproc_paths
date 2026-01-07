@@ -1,7 +1,8 @@
-GDA (Kate)
+GDA = Global Data Archive on Hera/Ursa and WCOSS2 (Kate->David Huber)
 /scratch1/NCEPDEV/global/glopara/dump	(Hera)
-/lfs/h2/emc/global/noscrub/emc.global/dump      (WCOSS2)
-SOON: /lfs/h2/emc/dump/noscrub/dump
+/lfs/h2/emc/dump/noscrub/dump           (WCOSS2)
+
+OLD and no longer used: /lfs/h2/emc/global/noscrub/emc.global/dump      (WCOSS2)
 
 OPERATIONAL LOGS
 /lfs/h1/ops/prod/output/PDY/obsproc_*.o*

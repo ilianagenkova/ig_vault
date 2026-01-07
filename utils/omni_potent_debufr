@@ -1,0 +1,5 @@
+  /lfs/h2/emc/obsproc/noscrub/steve.stegall/ztest_debufr/NCEPLIBS-bufr/utils/debufr  -p 
+MAXJL=300000   /lfs/h2/emc/obsproc/noscrub/steve.stegall/ztest_debufr/NCEPLIBS-bufr/utils/W_XX-EUMETSAT-Darmstadt,SAT,SGA1-IAS-1C-RAD_C_EUMT_20231219132801_G_D_20080223100148_20080223100418_T_N____.bin
+
+USE explicit PATHS!!!
+

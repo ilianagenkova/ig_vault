@@ -1,0 +1,6 @@
+
+ strings filename | grephead
+ 
+Example: strings $COMROOT/rtma/v2.10/rtma2p5.20251029/wmo/grib2.t17z.awprtmar2dvar*.197   | grephead
+
+where "grephead" is alias : alias grephead='grep "^[A-Z][A-Z][A-Z][A-Z][0-9][0-9] [A-Z][A-Z][A-Z][A-Z]"' 

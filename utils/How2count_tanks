@@ -1,0 +1,5 @@
+ grep "eval"  $PACKAGEROOT/satingest.v5.2.1/fix/* | grep "\/xx" | wc -l 
+
+42 satingest tanks as of 20250724, but 005/080 is empty, so 41 tanks
+
+

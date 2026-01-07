@@ -10,7 +10,6 @@ for i in `cat 2024${mm}.list`; do echo "$i `hsi -qP ls -V $i |grep "PV List"|awk
 
 sort -k 2 2024${mm}.tapes | awk '{print $1}'  > 2024${mm}.order
 
-#awk '$1 !~ /^0/' 2024${mm}.order > 2024${mm}.clean # remove lines starting with 0
 sed -e '/^[0-9]/d' 2024${mm}.order > 2024${mm}.clean # remove lines starting with a digit/number
 
 for i in `cat 2024${mm}.clean`;
@@ -18,7 +17,7 @@ do
 
  pdy=${i: -12:-4}
  echo $pdy
- mkdir $pdy && cd $pdy
+ mkdir -p $pdy && cd $pdy
  htar -xvf $i ./seaice/pda
  htar -xvf $i ./sst
  htar -xvf $i ./wgrdbul/adt

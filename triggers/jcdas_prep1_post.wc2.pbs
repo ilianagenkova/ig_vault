@@ -31,9 +31,9 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.5
+export obsproc_ver_pckg=v1.2.7
 export obsNET=obsproc
-export prepobs_ver=1.1.1
+export prepobs_ver=1.1.2
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver}   # NCO para
 export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
@@ -47,7 +47,7 @@ else
  exit 7
 fi
 
-export prepobs_ver=1.1.1
+export prepobs_ver=1.1.2
 
 #Load the modules
 module load grib_util/${grib_util_ver}
