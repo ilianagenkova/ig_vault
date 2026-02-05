@@ -95,10 +95,12 @@ export SENDSDM=NO   # developer
 export SENDDBN=NO   # developer
 
 export TANK=$DCOMROOT
+#test
+#export TANK_002101=/lfs/h1/ops/dev/dcom/ # 002103->002101dev uprair from ship, to catch Urban sky
 
 #test tank size check for MSONET and MSONE1 tanks
 #export TANK_MAX_255003=500
-export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
+#export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.$PDY.jlogfile

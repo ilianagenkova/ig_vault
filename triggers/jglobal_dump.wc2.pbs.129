@@ -90,7 +90,7 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
-export TANK_002101=/lfs/h1/ops/dev/dcom/ # 002103->002101dev uprair from ship, to catch Urban sky
+export TANK_002103=/lfs/h1/ops/dev/dcom/ #dev uprair from ship, to catch Urban sky
 #export TANK_005067=/lfs/h1/ops/dev/dcom/
 #export TANK_005068=/lfs/h1/ops/dev/dcom/
 #export TANK_005069=/lfs/h1/ops/dev/dcom/
@@ -132,11 +132,20 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
+# Add here the JOBSPROC_GLOBAL_DUMP2 job
+# Kick off dump2 job
+if [ $err -eq 0 ]; then
+  echo "submit jglobal_dump2"
+  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
+  ${userROOT}/Trigs.KEEP/jglobal_dump2.wc2.pbs.129
+fi
+
+
 # Kick off dump_post job
 if [ $err -eq 0 ]; then
   echo "submit jglobal_dump_post"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs 
+  ${userROOT}/Trigs.KEEP/jglobal_dump_post.wc2.pbs.129 
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_dump_post.wc2.pbs
 fi
 
@@ -144,7 +153,7 @@ fi
 if [ $err -eq 0 ]; then
   echo "submit jglobal_prep"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.129
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep.wc2.pbs
 fi
 

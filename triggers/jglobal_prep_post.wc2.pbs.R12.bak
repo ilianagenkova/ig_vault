@@ -113,7 +113,9 @@ export COMINGFS=${COMIN_ROOT}/obsproc/${obsproc_ver}/gfs.$PDY/${cyc}/atmos
 #COMINgfs=/lfs/h1/ops/prod/com/obsproc/v1.1/gfs.20231023/12/atmos
 #COMINGFS=/lfs/h1/ops/prod/com/obsproc/v1.1/gfs.20231023/12/atmos
 
-#export COMIN1=/lfs/h1/ops/para/com/obsproc/v1.2/gdas. # previous cycle's upa_* files ?! check with Shelley # can be taken from PROD or PARA (just to get going the COMIN1)
+#export COMIN1=/lfs/h1/ops/para/com/obsproc/v1.2/gdas. # previous cycle's upa_* files ?! check with Shelley # can be taken from PROD or PARA (just to get timetwin code going the COMIN1)
+# see Diane's document (see JGDAS_PREP_POST section):https://docs.google.com/document/d/1le3BtnGJt9Ir5H7ndQqmVddeAC1NHwDSg-Dl5yiKOC0/edit?tab=t.0
+
 export COMIN1=/lfs/h1/ops/prod/com/obsproc/v1.1/gdas.
 #export COMIN1=${COMOUT_ROOT}/obsproc/v1.2/gdas.
 

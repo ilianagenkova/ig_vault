@@ -2,9 +2,9 @@
 #PBS -N obsproc_%JTYP%_prep_%PDY%_%CC%_%DESC%
 #PBS -j oe
 #PBS -q dev               
-#PBS -l walltime=00:20:00 
+#PBS -l walltime=00:30:00 
 #PBS -A OBSPROC-DEV
-#PBS -l place=vscatter,select=1:ncpus=4:mem=300gb:prepost=true
+#PBS -l place=vscatter,select=1:ncpus=8:mem=500gb:prepost=true
 #PBS -l debug=true
 
 ##############################################

@@ -25,6 +25,7 @@ case "$FRUIT" in
  cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/obsproc_paths .
  cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/pda_IPs.txt .
  cp /lfs/h2/emc/obsproc/noscrub/iliana.genkova/where_are_the_logs .
+ cp /u/iliana.genkova/.netrc .
  echo "PROCEED with manual:............"
  echo "git status"
  echo "git add (Careful not to add *.o)"
@@ -44,6 +45,7 @@ case "$FRUIT" in
    cp obsproc_paths /lfs/h2/emc/obsproc/noscrub/iliana.genkova/obsproc_paths
    cp pda_IPs.txt  /lfs/h2/emc/obsproc/noscrub/iliana.genkova/pda_IPs.txt
    cp where_are_the_logs /lfs/h2/emc/obsproc/noscrub/iliana.genkova/where_are_the_logs   
+   cp .netrc /u/iliana.genkova/.
    echo " "
    echo " "
    echo "..."
