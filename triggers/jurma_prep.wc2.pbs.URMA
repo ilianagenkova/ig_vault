@@ -5,7 +5,7 @@
 #PBS -l walltime=0:25:00
 #PBS -q dev
 #PBS -A OBSPROC-DEV
-#PBS -l select=1:ncpus=1:mem=1gb
+#PBS -l select=1:ncpus=1:mem=6gb
 #PBS -l debug=true
 
 ##############################################

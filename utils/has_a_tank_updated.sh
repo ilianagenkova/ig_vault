@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Configuration
-FILE_TO_CHECK="/lfs/h1/ops/prod/dcom/20251211/b021/xx203"  # <--- **CHANGE THIS PATH after 16:30UTC**
+FILE_TO_CHECK="/lfs/h1/ops/prod/dcom/20251211/b021/xx203"  # <--- **CHANGE THIS PATH**
 EMAIL_RECIPIENT="iliana.genkova@noaa.gov" # <--- **CHANGE THIS EMAIL ADDRESS**
-TIME_LIMIT_MINUTES="15" # Check if updated in the last X minutes
+TIME_LIMIT_MINUTES="15" # Check if updated in the last TIME_LIMIT_MINUTES minutes
 
 # --- Script Logic ---
 
@@ -35,6 +35,7 @@ if [ -z "$FILE_MODIFIED_RECENTLY" ]; then
 
     # Send the email
     echo -e "$BODY" | mail -s "$SUBJECT" "$EMAIL_RECIPIENT"
+
     echo "Alert sent: $FILE_TO_CHECK is stale."
 else
     # The 'find' command returned a file path, meaning the file *was* modified

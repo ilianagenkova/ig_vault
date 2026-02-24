@@ -98,6 +98,9 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
+export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer Feb11, obs as of 16z
+export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky, as of 20260220 00z 
+
 #export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
 
 #export TANK_002101=/lfs/h1/ops/dev/dcom/ # 002103->002101dev uprair from ship, to catch Urban sky

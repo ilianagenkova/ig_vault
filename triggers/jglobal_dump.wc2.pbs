@@ -103,6 +103,7 @@ export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
 
 export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
 export COMPONENT=atmos
+#export COMPONENT=obs # GFSv17
 
 export DEBUG_LEVEL=3
 export LOUD=ON

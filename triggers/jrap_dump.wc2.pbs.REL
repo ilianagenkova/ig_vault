@@ -6,7 +6,7 @@
 #PBS -A OBSPROC-DEV
 #PBS -l walltime=00:45:00
 #PBS -l place=vscatter,select=1:ncpus=14:mem=50gb
-####PBS -l place=vscatter,select=1:ncpus=8:mem=10gb
+####PBS -l place=vscatter,select=1:ncpus=8:mem=50gb
 #PBS -l debug=true
 #####################################################################
 # Submit notes:
@@ -101,6 +101,8 @@ export TANK=$DCOMROOT
 #test tank size check for MSONET and MSONE1 tanks
 #export TANK_MAX_255003=500
 #export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
+export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer
+export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.$PDY.jlogfile

@@ -1,4 +1,6 @@
 GDA = Global Data Archive on Hera/Ursa and WCOSS2 (Kate->David Huber)
+
+ /scratch3/NCEPDEV/global/role.glopara/dump (URSA)
 /scratch1/NCEPDEV/global/glopara/dump	(Hera)
 /lfs/h2/emc/dump/noscrub/dump           (WCOSS2)
 
