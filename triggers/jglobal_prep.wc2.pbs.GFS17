@@ -31,14 +31,14 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsNET=obsproc
-export obsproc_ver=v1.2
+export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.2.7
-export prepobs_ver=1.1.2
+export prepobs_ver=5.0.0
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
-export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
+#export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep          # SM local
-#export HOMEobsproc=${userROOT}/GIT/obsproc                      # IG local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.GFS17                      # IG local
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para&prod
 #VERSION_FILE=${userROOT}/install/obsproc-rmprep/versions/run.ver # SM local
@@ -68,7 +68,8 @@ module load bufr_dump/${bufr_dump_ver}
 
 # use local prepobs installation
 #module use ${userROOT}/install/prepobs/modulefiles            # SM local
-#module use ${userROOT}/GIT/prepobs/install/modulefiles         # IG local
+module unload prepobs
+module use ${userROOT}/GIT/play/prepobs.GFS17/install/modulefiles         # IG local
 module load prepobs/${prepobs_ver}
 
 #Check if they exist
@@ -125,7 +126,7 @@ fi
 if [ $err -eq 0 ]; then
   echo "submit jglobal_prep_post:"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jglobal_prep_post.wc2.pbs 
+  ${userROOT}/Trigs.KEEP/jglobal_prep_post.wc2.pbs.GFS17 
   #/lfs/h2/emc/obsproc/noscrub/iliana.genkova/Trigs.KEEP/jglobal_prep_post.wc2.pbs
 fi
 
