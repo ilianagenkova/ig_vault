@@ -5,7 +5,7 @@
 #PBS -q dev
 #PBS -A OBSPROC-DEV
 #PBS -l walltime=00:15:00
-#PBS -l place=vscatter,select=1:ncpus=7:mem=500MB
+#PBS -l place=vscatter,select=1:ncpus=7:mem=4gb
 #PBS -l debug=TRUE
 
 ##############################################
@@ -36,11 +36,11 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v5.0
-export obsproc_ver_pckg=v1.2.8
+export obsproc_ver_pckg=v1.1.3
 export obsNET=obsproc
 export PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.$obsproc_ver_pckg                 # NCO prod
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.GFS17
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.G  
 
 VERSION_FILE=${HOMEobsproc}/versions/run.ver
 if [ -f $VERSION_FILE ]; then
@@ -103,7 +103,6 @@ export SENDSDM=NO
 
 #export PDY=20210824 # Add this to force in a different date than in /com2/date
 
-#export COMPONENT=obs # GFSv17
 
 export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
 #export COMIN_ROOT=$COMROOT

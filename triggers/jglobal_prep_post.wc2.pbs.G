@@ -5,7 +5,7 @@
 #PBS -q dev
 #PBS -l walltime=00:05:00
 #PBS -A OBSPROC-DEV
-#PBS -l place=vscatter,select=1:ncpus=14:mem=4gb
+#PBS -l place=vscatter,select=1:ncpus=1:mem=4gb
 #PBS -l debug=true
 
 #####################################################################
@@ -32,25 +32,24 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsNET=obsproc
 export obsproc_ver=v5.0
-export obsproc_ver_pckg=v1.2.7 
-export prepobs_ver=5.0.0
+export obsproc_ver_pckg=v1.2.1 
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep          # SM local
-export HOMEobsproc=${userROOT}/GIT/play/obsproc.GFS17                      # IG local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.G                      # IG local
 
-#export COMPONENT=obs # GFSv17
-
-VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para & prod
+#VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para & prod
 #VERSION_FILE=${userROOT}/install/obsproc-rmprep/versions/run.ver # SM local
-#VERSION_FILE=${userROOT}/GIT/obsproc/versions/run.ver             # IG local
+VERSION_FILE=${userROOT}/GIT/play/obsproc/versions/run.ver             # IG local
 if [ -f $VERSION_FILE ]; then
    . $VERSION_FILE
 else
   echo Need version info...  Exiting...
  exit 7
 fi
+
+export prepobs_ver=5.0.0 
 
 #Load the modules
 module load grib_util/${grib_util_ver}
@@ -62,16 +61,15 @@ module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
 
 #use para installation
-#module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304
+module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304
 #use local installation
 #module use ${userROOT}/install/bufr-dump/modulefiles                                   # SM local
 #module use  ${userROOT}/GIT/bufr-dump/install/modulefiles # IG local
-module load bufr_dump/${bufr_dump_ver}
+#module load bufr_dump/${bufr_dump_ver}
 
 # use local prepobs installation
 #module use ${userROOT}/install/prepobs/modulefiles    # SM local
-module unload prepobs
-module use ${userROOT}/GIT/play/prepobs.GFS17/install/modulefiles # IG local
+module use ${userROOT}/GIT/play/prepobs.G/install/modulefiles # IG local
 module load prepobs/${prepobs_ver}
 
 #Check if they exist

@@ -1,80 +1,84 @@
-#!/bin/bash
-#PBS -N obsproc_%JTYP%_dump_%PDY%_%CC%_%DESC%
+#!/bin/sh  
+#PBS -N obsproc_%JTYP%_dump_post_%PDY%_%CC%_%DESC%
 #PBS -j oe
 #PBS -S /bin/bash
 #PBS -q dev
+#PBS -l walltime=00:15:00
 #PBS -A OBSPROC-DEV
-#PBS -l walltime=00:30:00
-#PBS -l place=vscatter,select=1:ncpus=12:mem=50gb
+#PBS -l place=vscatter,select=1:ncpus=3:mem=6gb
 #PBS -l debug=true
+
+
 #####################################################################
 # Submit notes:
 # Run from [ps]tmp when running manually
 # When running from cron, output is written to /u/$USER. Bottom of trigger mv's to stmp
 # For specific PDY:
-# > jtyp=rap|rap_e|rap_p cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/bin/cycqsub /path/to/triggers/jrap_dump.wc2.pbs
+# > jtyp=gdas cyc=00 PDY=20170126 desc=somethingfun /u/iliana.genkova/cycqsub /path/to/triggers/jglobal_dump_post.wc2.pbs
 # For latest/current PDY:
-# > jtyp=rap cyc=00 /u/iliana.genkova/bin/cycqsub /path/to/triggers/jrap_dump.wc2.pbs
+# > jtyp=gdas cyc=00 desc=somethingfun /u/iliana.genkova/cycqsub /path/to/triggers/jglobal_*.wc2.lsf
 # cycqsub location: /u/iliana.genkova/bin
 #####################################################################
 
 set -xu
 
-
 export envir=prod
 export cyc=%CC%
-type=%DESC%
-JTYP=%JTYP%
 DESC=%DESC%
-if [ $JTYP = "rap_e" ]; then
-  export job=$(echo $JTYP | cut -c1-3)_dump_erly_$cyc
-elif [ $JTYP = "rap_p" ]; then
-  export job=$(echo $JTYP | cut -c1-3)_dump_pcyc_$cyc
-else
-  export job=${JTYP}_dump_$cyc
-fi
+JTYP=%JTYP%
+export job=${JTYP}_dump_post_$cyc
 export jobid=$job.$PBS_JOBID
 export PDY=%PDY%
+PDYm1=$(date -d "${PDY} 1 day ago" +%Y%m%d)
 
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
-export obsproc_ver=v1.2
-export obsproc_ver_pckg=v1.2.8
-export bufr_dump_ver=1.3.1
 export obsNET=obsproc
-PACKAGEROOTpara=/lfs/h1/ops/para/packages
-#export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
-export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
-#export HOMEobsproc=${userROOT}/GIT/obsproc   # IG local
-  
+export obsproc_ver=v5.0
+export obsproc_ver_pckg=v1.2.1 
 
-VERSION_FILE=$HOMEobsproc/versions/run.ver                            # NCO prod
-#VERSION_FILE=${userROOT}/GIT/obsproc/versions/run.ver #local
+#export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
+#export HOMEobsproc=${PACKAGEROOT}/${obsNET}.${obsproc_ver_pckg}     # NCO prod
+#export HOMEobsproc=${userROOT}/install/obsproc-rel.v1.0.0      # SM local
+export HOMEobsproc=${userROOT}/GIT/play/obsproc.G                      # IG local  
+
+VERSION_FILE=$HOMEobsproc/versions/run.ver                           # NCO para & prod
+#VERSION_FILE=${userROOT}/install/obsproc-rel.v1.0.0/versions/run.ver # SM local
+#VERSION_FILE=${userROOT}/GIT/obsproc/versions/run.ver                 # IG local
 if [ -f $VERSION_FILE ]; then
-  . $VERSION_FILE
+   . $VERSION_FILE
 else
-  echo Need version info...  Exiting...
-  exit 7
+ echo Need version info...  Exiting...
+ exit 7
 fi
 
+export bufr_dump_ver=5.0.0
+
 # Load the modules specified in $VERSION_FILE
-module load libjpeg
 module load grib_util/${grib_util_ver}
 module load netcdf/${netcdf_ver}
 # use para installation
 #module use /apps/ops/para/nco/modulefiles/compiler/intel/19.1.3.304 
-#module use ${userROOT}/install/bufr-dump/modulefiles
-module load bufr_dump/${bufr_dump_ver}
+# use local installation
+#module use ${userROOT}/install/bufr-dump/modulefiles         # SM local
+#module use ${userROOT}/GIT/bufr-dump/install/modulefiles    # IG local
+#module load bufr_dump/${bufr_dump_ver}
 module load intel/${intel_ver}
 module load craype/${craype_ver}
 module load cray-mpich/${cray_mpich_ver}
 module load cray-pals/${cray_pals_ver}
 module load cfp/${cfp_ver}
 
+# use local installation
+module unload bufr_dump
+#module use ${userROOT}/install/bufr-dump/modulefiles         # SM local
+module use ${userROOT}/GIT/play/bufr-dump.G/install/modulefiles    # IG local
+module load bufr_dump/${bufr_dump_ver}
+
+
 # Be sure the modules are loaded 
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_util/") -eq 0 ]]; then echo "prod_util is not loaded!"; fi
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)prod_envir/") -eq 0 ]]; then echo "prod_envir is not loaded!"; fi
-if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)libjpeg/") -eq 0 ]]; then echo "libjpeg is not loaded!"; fi
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)grib_util/") -eq 0 ]]; then echo "grib_util is not loaded!"; fi
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)netcdf/") -eq 0 ]]; then echo "netcdf is not loaded!"; fi
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)bufr_dump/") -eq 0 ]]; then echo "bufr_dump is not loaded!"; fi
@@ -84,36 +88,35 @@ if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-mpich/") -eq 0 ]]; then echo "
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cray-pals/") -eq 0 ]]; then echo "cray-pals is not loaded!"; fi
 if [[ $(echo $LOADEDMODULES | egrep -c "(^|:)cfp/") -eq 0 ]]; then echo "cfp is not loaded!"; fi
 
-export SENDECF=NO   # developer
-export SENDSDM=NO   # developer
-export SENDDBN=NO   # developer
+export SENDECF=NO  # developer
+export SENDDBN=NO  # developer
+export SENDSDM=NO  # developer
 
 export TANK=$DCOMROOT
 
-#temporary - Meteosat-12
-#test for satwnd
-export TANK_005067=/lfs/h1/ops/dev/dcom/ #started on 20250710 dev; skip HH:30 from July30
-export TANK_005068=/lfs/h1/ops/dev/dcom/
-export TANK_005069=/lfs/h1/ops/dev/dcom/
-export TANK_021042=/lfs/h1/ops/dev/dcom/ # for sevasr
-
-export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer
-
-export TANK_001120=/lfs/h1/ops/dev/dcom/ # oshen C-star
-
-export DATAROOT=/lfs/h2/emc/stmp/$USER
+export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
 
-export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
-
+export DEBUG_LEVEL=3
 export LOUD=ON
 export KEEPDATA=YES
-export DEBUG_LEVEL=3
 
+export COMPONENT=atmos
+export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com 
+export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
+export comin=${COMIN_ROOT}/${obsNET}/${obsproc_ver}/${JTYP}.${PDY}/${cyc}/${COMPONENT}
+export comin_m1=${COMIN_ROOT}/${obsNET}/${obsproc_ver}/${JTYP}.${PDYm1}/${cyc}/${COMPONENT}
 
-$HOMEobsproc/jobs/JOBSPROC_RAP_DUMP
+export COPY=YES
+export HOMEarch=${COMOUT_ROOT}/${obsNET}/${obsproc_ver}/sdm_rtdm/gfs
+export AVGDarch_IN=$HOMEarch/avgdata
+export AVGDarch_OUT=$HOMEarch/avgdata
+export OBCNTarch=$HOMEarch/obcount_30day
+
+$HOMEobsproc/jobs/JOBSPROC_GLOBAL_DUMP_POST
+
 err=$?
-
+echo $err
 
 # When run from cron, the stdout is written to /u/$USER
 # mv to stmp
@@ -125,19 +128,13 @@ if [ -f "$cronlogfile" ]; then
   mv $cronlogfile ${outputdir}/$PBS_JOBNAME.o$pbsjobid
 fi
 
-
-# Kick off dump_post job
-if [ $err -eq 0 ]; then
-  echo "submit jrap_dump_post"
-  jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jrap_dump_post.wc2.pbs
-fi
+#exit
 
 # Kick off prep job
 if [ $err -eq 0 ]; then
   echo "submit jrap_prep"
   jtyp=$JTYP PDY=$PDY desc=$DESC bash -l /u/$USER/bin/cycqsub \
-  ${userROOT}/Trigs.KEEP/jrap_prep.wc2.pbs
+  ${userROOT}/Trigs.KEEP/jglobal_prep.wc2.pbs.G
 fi
 
 exit
