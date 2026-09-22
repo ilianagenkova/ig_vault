@@ -33,7 +33,7 @@ export PDY=%PDY%
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v1.2 #needs to match what is in /versions/VERSION
-export obsproc_ver_pckg=v1.2.10
+export obsproc_ver_pckg=v1.2.7
 #export bufr_dump_ver=1.1.0
 export obsNET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
@@ -90,31 +90,20 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
-
-export TANK_002102=/lfs/h1/ops/para/dcom/ # bufr formatted mobil sondes, to catch Urban sky
-
+export TANK_002101=/lfs/h1/ops/dev/dcom/ # 002103->002101dev uprair from ship, to catch Urban sky
 #export TANK_005067=/lfs/h1/ops/dev/dcom/
 #export TANK_005068=/lfs/h1/ops/dev/dcom/
 #export TANK_005069=/lfs/h1/ops/dev/dcom/
 #export EPRM=${userROOT}/sample_sdmedit.txt
 
-#export TANK_031005=/lfs/h1/ops/dev/dcom/ #monthly tanks with more Argo/Glider obs: 025??/b031/xx005
-#export TANK_004015=/lfs/h1/ops/dev/dcom/ #20250625/b004/xx015 # SUAS
-#dump Meteosat-12 winds and rads
-export TANK_005067=/lfs/h1/ops/dev/dcom/ #started on 20250710 dev; skip HH:30 from July30
-export TANK_005068=/lfs/h1/ops/dev/dcom/ # 3 winds tanks
-export TANK_005069=/lfs/h1/ops/dev/dcom/
-export TANK_021042=/lfs/h1/ops/dev/dcom/ # Met-12 radiances for *sevasr*
-
-export TANK_001120=/lfs/h1/ops/para/dcom/ # oshen C-star
-export TANK_004030=/lfs/h1/ops/para/dcom #Windborne and Sorcerer
+export TANK_031005=/lfs/h1/ops/dev/dcom/ #monthly tanks with more obs: 025??/b031/xx005
 
 export DATAROOT=/lfs/h2/emc/stmp/$USER 
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
 
 export COMOUT_ROOT=${DATAROOT}/CRON/${DESC}/com
-export COMPONENT=atmos
-#export COMPONENT=obs # GFSv17
+#export COMPONENT=atmos
+export COMPONENT=obs # GFSv17
 
 export DEBUG_LEVEL=3
 export LOUD=ON

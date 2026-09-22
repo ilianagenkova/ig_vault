@@ -26,9 +26,9 @@ export envir=prod
 export cyc=%CC%   # choices are 00, 06, 12, 18)
 DESC=%DESC%
 JTYP=%JTYP%       # choices are gfs, gdas, nam
-export NET=$JTYP
+export mNET=$JTYP
 export RUN=$JTYP
-[ $JTYP = gdas ] && export NET=gfs
+[ $JTYP = gdas ] && export mNET=gfs
 export job=${JTYP}_dump_alert_$cyc
 export jobid=$job.$PBS_JOBID
 export PDY=%PDY%
@@ -37,7 +37,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.1.3
-export obsNET=obsproc
+export NET=obsproc
 export PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.$obsproc_ver_pckg                 # NCO prod
 export HOMEobsproc=${userROOT}/GIT/play/obsproc.G  
@@ -95,14 +95,14 @@ export SENDSDM=NO
 ##export RUN=gfs # must always be exported
 #export RUN=nam # must always be exported
 
-#export obsNET=obsproc
-#export NET=$RUN
-#[ $RUN = gdas ] && export NET=gfs
+#export NET=obsproc
+#export mNET=$RUN
+#[ $RUN = gdas ] && export mNET=gfs
 #export job=${RUN}_dump_alert_${cyc} # normally not changed, but needs $RUN and $cyc
-
 
 #export PDY=20210824 # Add this to force in a different date than in /com2/date
 
+#export COMPONENT=obs # GFSv17
 
 export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
 #export COMIN_ROOT=$COMROOT

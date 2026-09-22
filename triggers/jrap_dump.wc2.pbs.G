@@ -41,7 +41,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/${USER}
 
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.0.2
-export obsNET=obsproc
+export NET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
@@ -98,11 +98,11 @@ export TANK=$DCOMROOT
 #test
 #export TANK_002101=/lfs/h1/ops/dev/dcom/ # 002103->002101dev uprair from ship, to catch Urban sky
 
-#test tank size check for MSONET and MSONE1 tanks
+#test tank size check for MSOmmNET and MSONE1 tanks
 #export TANK_MAX_255003=500
 #export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
-export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer
-export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky
+#export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer
+#export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.$PDY.jlogfile

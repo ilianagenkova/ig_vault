@@ -31,7 +31,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.1.3
-export obsNET=obsproc
+export NET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
@@ -78,11 +78,14 @@ export SENDECF=NO
 export SENDDBN=NO
 
 export TANK=$DCOMROOT
+export TANK_003012=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/METOPSGA1/prod/ #20260611/b003/xx012
+export TANK_021247=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/AMSR2_GSI/prod/ #20260611/b021/xx247
+export TANK_021243=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/MWS_METOPSGA1/prod #20260611/b021/xx243/
 
 export DATAROOT=/lfs/h2/emc/stmp/${USER}
 export jlogfile=/lfs/h2/emc/stmp/${USER}/${JTYP}.${PDY}.jlogfile
 
-export COMOUT=${DATAROOT}/CRON/${DESC}/com/${obsNET}/$obsproc_ver/${JTYP}.${PDY}
+export COMOUT=${DATAROOT}/CRON/${DESC}/com/${NET}/$obsproc_ver/${JTYP}.${PDY}
 
 export DEBUG_LEVEL=3
 export KEEPDATA=YES

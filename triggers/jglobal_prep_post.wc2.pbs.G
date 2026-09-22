@@ -30,7 +30,7 @@ export PDY=%PDY%
 
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
-export obsNET=obsproc
+export NET=obsproc
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.2.1 
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
@@ -39,9 +39,9 @@ PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep          # SM local
 export HOMEobsproc=${userROOT}/GIT/play/obsproc.G                      # IG local
 
-#VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para & prod
+VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para & prod
 #VERSION_FILE=${userROOT}/install/obsproc-rmprep/versions/run.ver # SM local
-VERSION_FILE=${userROOT}/GIT/play/obsproc/versions/run.ver             # IG local
+#VERSION_FILE=${userROOT}/GIT/play/obsproc/versions/run.ver             # IG local
 if [ -f $VERSION_FILE ]; then
    . $VERSION_FILE
 else

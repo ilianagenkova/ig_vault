@@ -43,7 +43,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.1.3
 #export prepobs_ver=1.0.0
-export obsNET=obsproc
+export NET=obsproc
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}       # NCO prod
@@ -104,6 +104,13 @@ export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
 #export GETGES_COM=/lfs/h1/ops/canned/com/gfs/${gfs_ver}/
 #export GESROOT=/lfs/h1/ops/canned/com/gfs/${gfs_ver}/
 export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com/
+
+## for GFSv17 !!!!!!!!!!!
+#export COMINgdas=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/${JTYP}.${PDY}/${cyc}/ # for now ${COMPONENT} #GFSv17
+#export COMINgfs=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/${JTYP}.${PDY}/${cyc}/  # for now ${COMPONENT} #GFSv17
+#export COMINtcvital=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/${JTYP}.${PDY}/${cyc}/ # for now no ${COMPONENT} #GFSv17
+#export HOMEgfs=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/ #GFSv17 - is this one needed?
+#export COMPONENT=obs # GFSv17
 
 export KEEPDATA=YES
 export DEBUG_LEVEL=3

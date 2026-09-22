@@ -5,7 +5,7 @@
 #PBS -q dev
 #PBS -l walltime=00:20:00
 #PBS -A OBSPROC-DEV
-#PBS -l place=vscatter,select=1:ncpus=14:mem=500gb
+#PBS -l place=vscatter,select=1:ncpus=15:mem=500gb
 #PBS -l debug=true
 
 ##############################################
@@ -34,7 +34,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.2.1
-export obsNET=obsproc
+export NET=obsproc
 #PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
@@ -98,8 +98,8 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
-export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer Feb11, obs as of 16z
-export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky, as of 20260220 00z 
+#export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer Feb11, obs as of 16z
+#export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky, as of 20260220 00z 
 
 #export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
 
@@ -107,6 +107,12 @@ export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair fro
 
 # GMI tanks are in prod already June 2022
 #export TANK_021246=/lfs/h2/emc/obsproc/noscrub/ashley.stanfield/git/TANK_DUMP #${userROOT}/DCOMDIR/TEST/prod/
+
+#Metop-SG
+export TANK_003012=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/TEST_satV6/prod #RO
+export TANK_021243=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/TEST_satV6/prod #MWS
+
+export DUMP_group14=YES
 
 #export EPRM=${userROOT}/sample_sdmedit.txt
 #export EPRM=/lfs/h2/emc/obsproc/noscrub/iliana.genkova/SDMEDIT/sample_sdmedit.txt

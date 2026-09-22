@@ -34,7 +34,7 @@ userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.2.1
-export obsNET=obsproc
+export NET=obsproc
 #PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${PACKAGEROOTpara}/obsproc.${obsproc_ver_pckg}   # NCO para
 #export HOMEobsproc=${PACKAGEROOT}/obsproc.${obsproc_ver_pckg}        # NCO prod
@@ -98,8 +98,21 @@ export SENDDBN=NO   # developer
 export SENDSDM=NO   # developer
 
 export TANK=$DCOMROOT
-export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer Feb11, obs as of 16z
-export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky, as of 20260220 00z 
+
+#msro amsr msmws tanks
+#export TANK_003012=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/METOPSGA1/prod/ #20260611/b003/xx012
+#export TANK_021247=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/AMSR2_GSI/prod/ #20260611/b021/xx247
+#export TANK_021243=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/MWS_METOPSGA1/prod #20260611/b021/xx243/
+
+#Metop-SG from PDA
+export TANK_003012=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/TEST_satV6/prod #RO
+export TANK_021243=/lfs/h2/emc/obsproc/noscrub/steve.stegall/DCOMDIR/TEST_satV6/prod #MWS
+
+#commercial STAR RO
+export TANK_003010= /lfs/h1/ops/dev/dcom/ #20260909/b003/xx010
+
+#export TANK_004030=/lfs/h1/ops/dev/dcom #Windborne and Sorcerer Feb11, obs as of 16z
+#export TANK_002102=/lfs/h1/ops/dev/dcom/ # 002103->002101->002102 dev uprair from ship, to catch Urban sky, as of 20260220 00z 
 
 #export TANK_001103=/lfs/h1/ops/dev/dcom  #NDBC buoys in BUFR have HSMSL (think GL,M.Morris)
 

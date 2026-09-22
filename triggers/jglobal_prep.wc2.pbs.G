@@ -30,7 +30,7 @@ export PDY=%PDY%
 
 userROOT=/lfs/h2/emc/obsproc/noscrub/$USER
 
-export obsNET=obsproc
+export NET=obsproc
 export obsproc_ver=v5.0
 export obsproc_ver_pckg=v1.2.1
 PACKAGEROOTpara=/lfs/h1/ops/para/packages
@@ -39,9 +39,9 @@ PACKAGEROOTpara=/lfs/h1/ops/para/packages
 #export HOMEobsproc=${userROOT}/install/obsproc-rmprep          # SM local
 export HOMEobsproc=${userROOT}/GIT/play/obsproc.G                      # IG local
 
-#VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para&prod
+VERSION_FILE=${HOMEobsproc}/versions/run.ver                     # NCO para&prod
 #VERSION_FILE=${userROOT}/install/obsproc-rmprep/versions/run.ver # SM local
-VERSION_FILE=${userROOT}/GIT/play/obsproc/versions/run.ver             # IG local
+#VERSION_FILE=${userROOT}/GIT/play/obsproc/versions/run.ver             # IG local
 if [ -f $VERSION_FILE ]; then
    . $VERSION_FILE
 else
@@ -92,11 +92,21 @@ export DATAROOT=/lfs/h2/emc/stmp/$USER
 export jlogfile=/lfs/h2/emc/stmp/$USER/${JTYP}.$PDY.jlogfile
 
 #export HOMEgfs=$PACKAGEROOT/gfs.v16.2.0 #no longer has /fix/prepobs_errtable.global but more /fix dirs
+
 export HOMEgfs=$COMROOT/gfs/v16.3/       #NCO approved shared location for common GFS files
+#export HOMEgfs=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/ #GFSv17
+
+#unused #export COMPONENT=obs # GFSv17
 
 export COMIN_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
 #export COMINgdas=/lfs/h1/ops/canned/com/gfs/v16.2/${JTYP}.${PDY}/${cyc}/${COMPONENT}
 #export COMINgfs=/lfs/h1/ops/canned/com/gfs/v16.2/${JTYP}.${PDY}/${cyc}/${COMPONENT}
+
+## for GFSv17 !!!!!!!!!!!
+#export COMINgdas=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/${JTYP}.${PDY}/${cyc}/ # for now ${COMPONENT} #GFSv17
+#export COMINgfs=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/${JTYP}.${PDY}/${cyc}/  # for now ${COMPONENT} #GFSv17
+#export COMINtcvital=/lfs/h2/emc/gfstemp/emc.global/comroot/retrov17_01_realtime/${JTYP}.${PDY}/${cyc}/ # for now no ${COMPONENT} #GFSv17
+
 export COMOUT_ROOT=/lfs/h2/emc/stmp/$USER/CRON/${DESC}/com
 
 export DEBUG_LEVEL=3
